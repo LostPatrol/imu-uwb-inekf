@@ -5,6 +5,10 @@
 /agent/
 /tmp/
 /tasks/
+/*.pdf
+/reports/_paper_extract.txt
+/tex/*_DELIVERY.txt
+/third_party/*/publication/
 **/.vscode/
 **/.idea/
 .DS_Store
@@ -27,6 +31,7 @@ Thumbs.db
 **/build/
 **/devel/
 **/animations/
+**/setup_files/
 *.pyc
 *.pyo
 *.nbc
