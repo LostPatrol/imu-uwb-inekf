@@ -1,0 +1,65 @@
+{
+  "task": "04 pose propagation formula improvement",
+  "command": [
+    "D:\\conda-envs\\imu-uwb-inekf\\python.exe",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf-update-improve\\experiments\\compare_pose_update.py",
+    "-i",
+    "E:\\datasets\\dataset\\flight-dataset\\survey-results\\anchor_const4.npz",
+    "E:\\datasets\\dataset\\flight-dataset\\csv-data\\const4\\const4-trial7-tdoa2-manual1.csv",
+    "--max-duration",
+    "60",
+    "--output-dir",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf-update-improve\\results\\task04_const4_manual1_60s"
+  ],
+  "author_commit": "f3b664e0e8c86b62c6ed2ea2a112261810228e1c",
+  "inputs": {
+    "anchors": "E:\\datasets\\dataset\\flight-dataset\\survey-results\\anchor_const4.npz",
+    "csv": "E:\\datasets\\dataset\\flight-dataset\\csv-data\\const4\\const4-trial7-tdoa2-manual1.csv",
+    "max_duration_seconds": 60.0,
+    "yaw_degrees": 0.0,
+    "tdoa_variance": 0.13
+  },
+  "source_sha256": {
+    "author_inekf": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+    "improved_inekf": "015feb32c4da60a1cca2feb2bd47ec9b47e6eb580bb9846f03a76878d5dcfba7"
+  },
+  "counts": {
+    "event_states": 86447,
+    "imu_predictions": 60531,
+    "uwb_updates": 25915
+  },
+  "results": {
+    "author_euler": {
+      "label": "author_euler",
+      "position_rmse_m": 0.35525450998259467,
+      "velocity_rmse_mps": 0.18781663624076111,
+      "attitude_geodesic_rmse_rad": 0.10396588400252152,
+      "yaw_rmse_rad": 0.0939715388558725,
+      "elapsed_seconds": 17.496567800058983,
+      "prediction_count": 60531,
+      "uwb_count": 25915,
+      "rejection_count": 138
+    },
+    "improved_jl_ql": {
+      "label": "improved_jl_ql",
+      "position_rmse_m": 0.35525162763428364,
+      "velocity_rmse_mps": 0.18774869855999068,
+      "attitude_geodesic_rmse_rad": 0.10393820516674217,
+      "yaw_rmse_rad": 0.09394119045859164,
+      "elapsed_seconds": 14.137175599928014,
+      "prediction_count": 60531,
+      "uwb_count": 25915,
+      "rejection_count": 138
+    }
+  },
+  "comparison": {
+    "position_rmse_relative_change_percent": -0.0008113474227729672,
+    "velocity_rmse_relative_change_percent": -0.036172344543185846,
+    "attitude_rmse_relative_change_percent": -0.02662299853929045,
+    "yaw_rmse_relative_change_percent": -0.032295307334922856,
+    "max_position_state_difference_m": 0.0004971900446527442,
+    "max_velocity_state_difference_mps": 0.001548358527845796,
+    "final_position_state_difference_m": 4.280356860144161e-05,
+    "final_velocity_state_difference_mps": 0.00039657749976366454
+  }
+}

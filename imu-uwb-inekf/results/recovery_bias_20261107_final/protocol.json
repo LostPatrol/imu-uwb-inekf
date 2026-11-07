@@ -1,0 +1,24 @@
+{
+  "source_sha256": "3f771f3cd395720663d686b0783945d7504b601331ded932ac6bccc546dcba6c",
+  "cache_manifest_sha256": "a9f372a46b33f03e209fe1555808e6520654bc2c858157321b4ab1fa59125a35",
+  "methods": [
+    "bias_2",
+    "bias_4",
+    "bias_8",
+    "bias_multi_2",
+    "bias_gate"
+  ],
+  "bias_prior_std_mps2": 0.1,
+  "bias_covariance_floor_mps2": 0.03,
+  "yaw_information_gate": "Raw-range robust curvature marginalized over p,v,accelerometer bias; no prior",
+  "yaw_prior_for_covariance": "3/pi^2 precision only; not an objective yaw prior",
+  "translation_prior_for_covariance": {
+    "position_std_m": 8.0,
+    "velocity_std_mps": 2.0
+  },
+  "initial_yaw_and_bias_truth": false,
+  "independent_blind_data": false,
+  "max_workers": 12,
+  "rotation_model": "Held-sample Q from gyro; gyro bias is fixed within each window",
+  "covariance_status": "Uncalibrated local curvature plus explicit floors"
+}

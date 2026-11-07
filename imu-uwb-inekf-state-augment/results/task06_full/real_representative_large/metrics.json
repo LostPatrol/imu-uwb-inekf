@@ -1,0 +1,75 @@
+{
+  "sequence": "2021-02-12_09_56_09_twr_random.csv",
+  "duration_s": 65.20000000000005,
+  "samples": 6150,
+  "twr_events": 15724,
+  "initial_offset_m": [
+    6.0,
+    -6.0,
+    3.0
+  ],
+  "range_sigma_m": 0.2,
+  "range_bias_m": -0.18,
+  "effective_accel_noise_std_mps2": 10.0,
+  "runtime_s": 5.250435700058006,
+  "methods": {
+    "direct_twr": {
+      "position_rmse_m": 0.4370969517794072,
+      "position_tail5_rmse_m": 0.1666810523201485,
+      "position_p95_m": 0.8301707574256698,
+      "position_max_m": 3.967702978914394,
+      "velocity_rmse_mps": 0.8026462742125241,
+      "velocity_tail5_rmse_mps": 0.4581295239115532,
+      "convergence_0p5m_s": 0.5900000000000318,
+      "finite": true,
+      "accepted": 15716,
+      "rejected": 8,
+      "invalid": 0,
+      "mean_nis": 0.8506471697681147,
+      "max_nis": 1376.2435298418998,
+      "covariance_min_eigenvalue": 0.0018932920051474213
+    },
+    "lifted_twr": {
+      "position_rmse_m": 0.41773918139708893,
+      "position_tail5_rmse_m": 0.36653274609168335,
+      "position_p95_m": 0.7739755259457284,
+      "position_max_m": 1.896864658617632,
+      "velocity_rmse_mps": 0.603441992175895,
+      "velocity_tail5_rmse_mps": 0.597560316949309,
+      "convergence_0p5m_s": 0.9800000000000182,
+      "finite": true,
+      "accepted": 15716,
+      "rejected": 8,
+      "invalid": 0,
+      "mean_nis": 0.6053778769947187,
+      "max_nis": 801.5687375353082,
+      "covariance_min_eigenvalue": 0.0,
+      "constraint_rms": [
+        0.4416926138490408,
+        2.017361087873921,
+        1.2535902664926795
+      ],
+      "constraint_tail_abs": [
+        1.274604218619982,
+        1.462261959361308,
+        1.6619494945850564
+      ]
+    },
+    "twr_inekf": {
+      "position_rmse_m": 0.38732398849797,
+      "position_tail5_rmse_m": 0.18783049363380572,
+      "position_p95_m": 0.7389489334787879,
+      "position_max_m": 3.179399149815636,
+      "velocity_rmse_mps": 0.42547046603693695,
+      "velocity_tail5_rmse_mps": 0.481610229512342,
+      "convergence_0p5m_s": 0.020000000000038654,
+      "finite": true,
+      "accepted": 15715,
+      "rejected": 9,
+      "invalid": 0,
+      "mean_nis": 0.8637061469428837,
+      "max_nis": 1430.7031199919688,
+      "covariance_min_eigenvalue": 1.8227375809194308e-06
+    }
+  }
+}

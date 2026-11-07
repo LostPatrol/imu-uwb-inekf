@@ -1,0 +1,150 @@
+\documentclass[10pt,a4paper]{ctexart}
+\usepackage[margin=1.85cm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs,graphicx,xcolor,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.15em}
+\title{const3 大初始航向误差失效的根因}
+\author{IMU--UWB 右不变 EKF 坐标与门控一致性分析}
+\date{2026年7月23日}
+
+\begin{document}
+\maketitle
+
+\section{结论}
+
+const3 与 $180^\circ$ 初始 yaw 组合下的发散，首要原因不是 const3 固有不可观测，
+而是当前实现破坏了世界坐标平移不变性：初始协方差未从物理局部误差映射到右不变误差
+坐标，UWB 门控又混用左坐标 Jacobian 和右不变协方差。const3 的初始位置距 survey
+原点更远、采用更严格的 UWB 噪声参数，因而更容易触发门控正反馈。
+
+\section{右不变协方差初始化}
+
+当前默认 UWB 路径使用
+\begin{equation}
+H_r=H_l\operatorname{Ad}_{\hat X^{-1}}.
+\label{eq:hmap}
+\end{equation}
+由 $H_l\delta x_l=H_r\delta x_r$ 得
+\begin{equation}
+\delta x_l=\operatorname{Ad}_{\hat X^{-1}}\delta x_r,\qquad
+\delta x_r=\operatorname{Ad}_{\hat X}\delta x_l.
+\end{equation}
+若工程上指定的独立物理协方差为 $P_{l,0}$，与式~\eqref{eq:hmap} 一致的右不变
+协方差应为
+\begin{equation}
+P_{r,0}=\operatorname{Ad}_{X_0}P_{l,0}
+\operatorname{Ad}_{X_0}^{\mathsf T}.
+\label{eq:pmap}
+\end{equation}
+
+对 $SE_2(3)$，
+\begin{equation}
+\operatorname{Ad}_{X_0}^{p\theta}=[p_0]_\times R_0,
+\end{equation}
+因此
+\begin{equation}
+P_{pp}^{r}\supset[p_0]_\times R_0P_{\theta\theta}^{l}
+R_0^\mathsf T[p_0]_\times^\mathsf T,
+\label{eq:pp}
+\end{equation}
+并存在 $P_{p\theta}^{r}$ 交叉项。const3 手动数据的
+$\|p_{0,xy}\|\simeq1.49$ m，而代码直接采用 $\sigma_p=0.1$ m、
+$\sigma_\psi=1$ rad 的对角 $P_0$。按式~\eqref{eq:pp}，yaw 不确定性引起的位置相关
+尺度约为 $1.49$ m，当前标准差低估约 15 倍。
+
+\section{门控坐标混用}
+
+当前代码先用
+\begin{equation}
+S_{\rm gate}=H_lP_rH_l^\mathsf T+R
+\label{eq:wronggate}
+\end{equation}
+执行 $5\sigma$ 门控，随后才按式~\eqref{eq:hmap} 转换 Jacobian。式~\eqref{eq:wronggate}
+中的 $H_l$ 与 $P_r$ 不属于同一误差坐标。正确形式应为
+\begin{equation}
+S=H_rP_rH_r^\mathsf T+R,
+\label{eq:rightgate}
+\end{equation}
+或先计算
+\begin{equation}
+P_l=\operatorname{Ad}_{\hat X^{-1}}P_r
+\operatorname{Ad}_{\hat X^{-1}}^\mathsf T,\qquad
+S=H_lP_lH_l^\mathsf T+R.
+\end{equation}
+
+大 yaw 初差在快速运动中使世界系加速度方向错误，继而产生位置创新。由于
+式~\eqref{eq:wronggate} 没有一致地表达 yaw 不确定性，观测被判为异常并形成
+\[
+\text{大姿态误差}\to\text{大位置创新}\to\text{拒绝 UWB}
+\to\text{惯性漂移}\to\text{更大创新}.
+\]
+
+\section{等价坐标平移的决定性证据}
+
+锚点和真值位置同时平移常量 $c$：
+\begin{equation}
+p'_t=p_t+c,\qquad a'_i=a_i+c,
+\end{equation}
+不改变任何 IMU、TDoA 或相对几何。理论上误差和 NIS 必须保持一致。
+
+\begin{table}[htbp]
+\centering
+\caption{manual3，yaw 初差 $180^\circ$，前 30 s}
+\begin{tabular}{lrrrr}
+\toprule
+坐标原点 & $\|p_0\|$/m & 位置 RMSE/m & yaw RMSE/rad & 拒绝率\\
+\midrule
+survey 原点 & 1.489 & 197.474 & 2.502 & 82.32\%\\
+原点移到初始位置 & 0 & 0.211 & 0.395 & 1.74\%\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+反向地，将物理不变的 const4 manual1 平移到 const3 式初始坐标，位置 RMSE 从
+0.424 m 变为 369.055 m，拒绝率从 0.30\% 变为 55.84\%。因此当前的
+``constellation 差异''首先是坐标实现问题。
+
+\section{协方差消融}
+
+\begin{table}[htbp]
+\centering
+\caption{const3，yaw 初差 $180^\circ$，前 30 s}
+\begin{tabular}{lrrrr}
+\toprule
+数据 & 对角 $P_0$ RMSE/m & Adjoint $P_0$ RMSE/m &
+对角拒绝率 & Adjoint 拒绝率\\
+\midrule
+manual1 & 107.751 & 0.342 & 75.24\% & 1.57\%\\
+manual3 & 197.474 & 0.211 & 82.32\% & 1.74\%\\
+manual4 & 560.844 & 0.291 & 83.98\% & 1.54\%\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+manual3 仅将对角位置标准差由 0.1 m 增至 0.5 m，也可将位置 RMSE 降至
+0.223 m、拒绝率降至 1.80\%。这只是近似缺失的式~\eqref{eq:pp}，不能代替
+正式的坐标映射。
+
+\section{const4 为何更容易通过}
+
+const4 初始水平位置距原点约 0.62 m，小于 const3 的 1.49 m；同时 const4 使用
+$R=0.13$，const3 使用 $R=0.05$。较大的 $R$ 反而扩大了式~\eqref{eq:wronggate}
+的允许创新。只把 manual3 的 $R$ 改成 0.13，30 s 位置 RMSE 即从 197.5 m
+降至 0.324 m，拒绝率从 82.3\% 降至 2.17\%，但这是参数掩盖。
+
+const4 前 60 s 水平覆盖约 14--17 m$^2$，const3 约 3.5--4.1 m$^2$；
+更大的平移基线也提供更丰富的 yaw--位置激励。锚点总体几何和直接杠杆臂 yaw
+灵敏度并不能解释数量级差异。
+
+\noindent\textbf{修复和验收：}
+首先新增世界坐标平移不变性回归测试；随后统一右不变误差、状态注入、
+式~\eqref{eq:pmap} 的协方差初始化及式~\eqref{eq:rightgate} 的门控。异常值应先做
+TDoA 物理门控，再使用 Student-t/Huber 降权，不能依靠增大 $R$ 放宽硬门限。
+
+$180^\circ$ 圆周先验本身也超出单局部高斯的可靠表达范围，启动时仍应使用多 yaw
+假设或短窗鲁棒批初始化。最终必须在任意世界原点、全部 const3/const4 手动数据和
+多角度初差下得到一致结果，并检查 NIS/NEES。
+
+\end{document}

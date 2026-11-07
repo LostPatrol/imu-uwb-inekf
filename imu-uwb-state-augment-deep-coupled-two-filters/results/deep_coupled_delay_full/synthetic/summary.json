@@ -1,0 +1,163 @@
+{
+  "trials": 20,
+  "seed": 20260731,
+  "duration_s": 45.0,
+  "scenario": "20 s single-anchor large-error capture followed by 25 s cyclic eight-anchor tracking",
+  "capture_phase_s": 20.0,
+  "true_accel_bias_mps2": [
+    0.08,
+    -0.056,
+    0.04
+  ],
+  "initial_accel_bias_std_mps2": 0.2,
+  "tracking_anchor_offsets_m": [
+    [
+      -45.0,
+      5.0,
+      0.0
+    ],
+    [
+      5.0,
+      5.0,
+      0.0
+    ],
+    [
+      -45.0,
+      35.0,
+      0.0
+    ],
+    [
+      5.0,
+      35.0,
+      0.0
+    ],
+    [
+      -45.0,
+      5.0,
+      8.0
+    ],
+    [
+      5.0,
+      5.0,
+      8.0
+    ],
+    [
+      -45.0,
+      35.0,
+      8.0
+    ],
+    [
+      5.0,
+      35.0,
+      8.0
+    ]
+  ],
+  "total_range_rate_hz": 20.0,
+  "initial_position_distribution_m": "independent uniform[-50, 50]",
+  "initial_velocity_distribution_mps": "independent uniform[-10, 10]",
+  "success_definition": "last-5-s position RMSE < 1 m",
+  "methods": {
+    "deep_coupled": {
+      "success_count": 20,
+      "success_rate": 1.0,
+      "tail5_position_rmse_median_m": 0.1676110047479917,
+      "full_position_rmse_median_m": 10.675857645186891,
+      "tail5_velocity_rmse_median_mps": 0.3983151728461226,
+      "full_velocity_rmse_median_mps": 4.12333341889323
+    },
+    "loose_lifted": {
+      "success_count": 2,
+      "success_rate": 0.1,
+      "tail5_position_rmse_median_m": 1.6345233331648972,
+      "full_position_rmse_median_m": 10.685872113280894,
+      "tail5_velocity_rmse_median_mps": 0.5261066334954385,
+      "full_velocity_rmse_median_mps": 4.125192595503129
+    },
+    "ordinary_ekf": {
+      "success_count": 0,
+      "success_rate": 0.0,
+      "tail5_position_rmse_median_m": 630.0076368207572,
+      "full_position_rmse_median_m": 383.4709959827826,
+      "tail5_velocity_rmse_median_mps": 15.940434278774568,
+      "full_velocity_rmse_median_mps": 18.822618403977323
+    },
+    "ordinary_inekf": {
+      "success_count": 0,
+      "success_rate": 0.0,
+      "tail5_position_rmse_median_m": 1857.0060502498977,
+      "full_position_rmse_median_m": 985.0405990384781,
+      "tail5_velocity_rmse_median_mps": 54.6533803978687,
+      "full_velocity_rmse_median_mps": 56.477217420370565
+    },
+    "tight_tracker": {
+      "success_count": 20,
+      "success_rate": 1.0,
+      "tail5_position_rmse_median_m": 0.1676110047479917,
+      "full_position_rmse_median_m": 14.01874581923419,
+      "tail5_velocity_rmse_median_mps": 0.3983151728461226,
+      "full_velocity_rmse_median_mps": 13.436536362113959
+    }
+  },
+  "deep_vs_loose_tail5": {
+    "better_count": 20,
+    "equal_count": 0,
+    "worse_count": 0,
+    "worst_delta_m": -0.8058957512690117,
+    "non_regression_pass": true
+  },
+  "deep_vs_loose_all_core_metrics": {
+    "position_rmse_m": {
+      "loose_median": 10.685872113280894,
+      "deep_median": 10.675857645186891,
+      "median_delta": -0.010014468094002638,
+      "better_count": 20,
+      "equal_count": 0,
+      "worse_count": 0,
+      "worst_delta": -0.004938186708386638,
+      "median_non_regression_pass": true
+    },
+    "position_tail5_rmse_m": {
+      "loose_median": 1.6345233331648972,
+      "deep_median": 0.1676110047479917,
+      "median_delta": -1.4669123284169054,
+      "better_count": 20,
+      "equal_count": 0,
+      "worse_count": 0,
+      "worst_delta": -0.8058957512690117,
+      "median_non_regression_pass": true
+    },
+    "velocity_rmse_mps": {
+      "loose_median": 4.125192595503129,
+      "deep_median": 4.12333341889323,
+      "median_delta": -0.0018591766098987605,
+      "better_count": 11,
+      "equal_count": 0,
+      "worse_count": 9,
+      "worst_delta": 0.0015491851700404347,
+      "median_non_regression_pass": true
+    },
+    "velocity_tail5_rmse_mps": {
+      "loose_median": 0.5261066334954385,
+      "deep_median": 0.3983151728461226,
+      "median_delta": -0.1277914606493159,
+      "better_count": 15,
+      "equal_count": 0,
+      "worse_count": 5,
+      "worst_delta": 0.042634260466418494,
+      "median_non_regression_pass": true
+    }
+  },
+  "all_core_medians_non_regression_pass": true,
+  "success_count_non_regression_pass": true,
+  "adaptive_activation": {
+    "definition": "at least one track-mode switch, positive tracker weight, and nonzero deep-versus-capture trajectory difference",
+    "exercised_count": 20,
+    "exercised_rate": 1.0,
+    "tail5_distinct_count": 20,
+    "median_first_track_time_s": 20.6,
+    "median_track_sample_fraction": 0.5423239280159965,
+    "median_mean_tracker_output_weight": 0.4105976449677845,
+    "full_weight_reached_count": 20,
+    "nontrivial_activation_pass": true
+  }
+}

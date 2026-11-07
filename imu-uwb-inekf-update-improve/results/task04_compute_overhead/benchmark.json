@@ -1,0 +1,415 @@
+{
+  "task": "task04 pose update computational overhead validation",
+  "command": [
+    "D:\\conda-envs\\imu-uwb-inekf\\python.exe",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf-update-improve\\experiments\\benchmark_pose_update_overhead.py",
+    "--repeats",
+    "8",
+    "--micro-repeats",
+    "9",
+    "--micro-target-seconds",
+    "0.15",
+    "--micro-warmup-seconds",
+    "3",
+    "--output-dir",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf-update-improve\\results\\task04_compute_overhead"
+  ],
+  "methodology": {
+    "blas_threads": 1,
+    "replay_order": "AB/BA alternating",
+    "replay_repeats": 8,
+    "micro_repeats": 9,
+    "micro_warmup_seconds_per_regime": 3.0,
+    "warmup_duration_seconds_per_variant": 1.0,
+    "timed_replay_includes": "prediction, covariance, UWB correction, and identical history copies",
+    "timed_replay_excludes": "data loading, filter construction, warmup, metrics, JSON, CSV, and plotting",
+    "summary_statistic": "median with median absolute deviation"
+  },
+  "environment": {
+    "python": "3.11.15",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "processor": "Intel64 Family 6 Model 198 Stepping 2, GenuineIntel",
+    "logical_cpu_count": 20,
+    "numpy": "1.26.4",
+    "scipy": "1.17.1"
+  },
+  "source_sha256": {
+    "author_inekf": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+    "improved_inekf": "015feb32c4da60a1cca2feb2bd47ec9b47e6eb580bb9846f03a76878d5dcfba7"
+  },
+  "theoretical_cost_estimate": {
+    "comparison_scope": "additional work beyond the shared SO3_exp rotation update",
+    "general_angle_branch": {
+      "additional_3x3_matrix_multiplications": 3,
+      "estimated_additional_scalar_multiplications": 129,
+      "estimated_additional_scalar_additions": 92,
+      "additional_transcendentals_in_current_code": {
+        "sqrt": 1,
+        "sin": 1,
+        "cos": 2
+      },
+      "notes": "Counts include Phi@Phi, R@J, R@Q, construction of J/Q, and phi dot phi; scalar coefficient divisions are not included."
+    },
+    "small_angle_branch": {
+      "additional_3x3_matrix_multiplications": 3,
+      "additional_transcendentals_in_motion_jacobians": 0,
+      "notes": "Taylor coefficients replace helper sin/cos/sqrt."
+    },
+    "memory": {
+      "persistent_state_growth_bytes": 0,
+      "temporary_3x3_matrices": [
+        "Phi",
+        "Phi_squared",
+        "J_left",
+        "Q_left"
+      ],
+      "notes": "All temporary arrays are per prediction and are released; filter state and history dimensions are unchanged."
+    }
+  },
+  "nominal_microbenchmarks": {
+    "general_angle": {
+      "input": {
+        "name": "general_angle",
+        "dt_seconds": 0.001,
+        "omega_deg_per_s": [
+          20.0,
+          -14.999999999999998,
+          29.999999999999996
+        ],
+        "phi_norm_rad": 0.0006815728612369557,
+        "iterations_per_batch": 4096,
+        "repeats": 9,
+        "warmup_seconds": 3.0
+      },
+      "author_euler": {
+        "median": 4.158066406034777e-05,
+        "mad": 1.7082518866118335e-07,
+        "minimum": 4.0759350582675324e-05,
+        "maximum": 4.188649901948338e-05,
+        "values": [
+          4.158066406034777e-05,
+          4.082141111894089e-05,
+          4.0759350582675324e-05,
+          4.1653637680383326e-05,
+          4.140983887168659e-05,
+          4.188649901948338e-05,
+          4.1617675776706164e-05,
+          4.1849389646131385e-05,
+          4.1445654289873346e-05
+        ]
+      },
+      "improved_jl_ql": {
+        "median": 5.733327634516172e-05,
+        "mad": 4.5427248096530093e-07,
+        "minimum": 5.667980957468899e-05,
+        "maximum": 5.874631347069226e-05,
+        "values": [
+          5.789746094819748e-05,
+          5.667980957468899e-05,
+          5.874631347069226e-05,
+          5.828034667842985e-05,
+          5.733327634516172e-05,
+          5.7130517603809494e-05,
+          5.7136621109066255e-05,
+          5.778754882612702e-05,
+          5.718154298506306e-05
+        ]
+      },
+      "ratio_of_medians": 1.3788446538985408,
+      "overhead_percent_ratio_of_medians": 37.884465389854086,
+      "paired_overhead_percent": {
+        "median": 38.453270786239564,
+        "mad": 0.7880382610821641,
+        "minimum": 36.39363265293527,
+        "maximum": 44.12966014149954,
+        "values": [
+          39.24130904732173,
+          38.84823679794328,
+          44.12966014149954,
+          39.91658333811462,
+          38.453270786239564,
+          36.39363265293527,
+          37.28931287663642,
+          38.0845678151222,
+          37.967523893173414
+        ]
+      },
+      "added_seconds_per_prediction": 1.575261228481395e-05
+    },
+    "small_angle": {
+      "input": {
+        "name": "small_angle",
+        "dt_seconds": 0.001,
+        "omega_deg_per_s": [
+          1.0,
+          -1.0,
+          1.0
+        ],
+        "phi_norm_rad": 3.022998940390363e-05,
+        "iterations_per_batch": 4096,
+        "repeats": 9,
+        "warmup_seconds": 3.0
+      },
+      "author_euler": {
+        "median": 4.100886229707612e-05,
+        "mad": 2.1667483451892622e-07,
+        "minimum": 4.068937985834964e-05,
+        "maximum": 4.1630273443615806e-05,
+        "values": [
+          4.122553713159505e-05,
+          4.100886229707612e-05,
+          4.093220212553206e-05,
+          4.140861815926655e-05,
+          4.16191650174369e-05,
+          4.1630273443615806e-05,
+          4.068937985834964e-05,
+          4.0909472659222956e-05,
+          4.093776857416742e-05
+        ]
+      },
+      "improved_jl_ql": {
+        "median": 5.718105467167334e-05,
+        "mad": 2.5224611022167664e-07,
+        "minimum": 5.5573803706465696e-05,
+        "maximum": 5.7439086901922565e-05,
+        "values": [
+          5.7433300781895014e-05,
+          5.737277831485699e-05,
+          5.718105467167334e-05,
+          5.7279272482446686e-05,
+          5.7009643569472246e-05,
+          5.7439086901922565e-05,
+          5.605258789387335e-05,
+          5.5573803706465696e-05,
+          5.612155763401461e-05
+        ]
+      },
+      "ratio_of_medians": 1.3943584744546857,
+      "overhead_percent_ratio_of_medians": 39.435847445468575,
+      "paired_overhead_percent": {
+        "median": 37.974320489915286,
+        "mad": 0.9950140920399235,
+        "minimum": 35.84580805867879,
+        "maximum": 39.90336503177654,
+        "values": [
+          39.31486349968844,
+          39.90336503177654,
+          39.69699088338524,
+          38.32693537885796,
+          36.97930639787536,
+          37.974320489915286,
+          37.75729217060337,
+          35.84580805867879,
+          37.089928417418605
+        ]
+      },
+      "added_seconds_per_prediction": 1.6172192374597216e-05
+    }
+  },
+  "complete_replay_cases": [
+    {
+      "name": "const1_5s",
+      "inputs": {
+        "anchors": "E:\\datasets\\dataset\\flight-dataset\\survey-results\\anchor_const1.npz",
+        "csv": "E:\\datasets\\dataset\\flight-dataset\\csv-data\\const1\\const1-trial1-tdoa2.csv",
+        "duration_seconds": 5.0
+      },
+      "counts": {
+        "prediction_count": 5044,
+        "uwb_count": 2365,
+        "rejection_count_both": 0,
+        "event_state_count": 7410
+      },
+      "motion_angles": {
+        "count": 5044,
+        "small_angle_threshold_rad": 0.0001,
+        "small_angle_count": 2393,
+        "small_angle_fraction": 0.47442505947660585,
+        "phi_norm_rad": {
+          "median": 0.00011180310245076593,
+          "p95": 0.0007529205834125677,
+          "maximum": 0.003968620252196158
+        },
+        "propagation_dt_seconds": {
+          "median": 0.0009919999999983276,
+          "p95": 0.00175900000002005,
+          "maximum": 0.0019159999999971422
+        }
+      },
+      "author_euler": {
+        "median": 1.6071877999929711,
+        "mad": 0.0070032000076025724,
+        "minimum": 1.595824799966067,
+        "maximum": 1.6147204999579117,
+        "values": [
+          1.6092797999735922,
+          1.6136615000432357,
+          1.6147204999579117,
+          1.599313999991864,
+          1.5995880999835208,
+          1.6098974000196904,
+          1.60509580001235,
+          1.595824799966067
+        ]
+      },
+      "improved_jl_ql": {
+        "median": 1.6937941499636509,
+        "mad": 0.0054481999832205474,
+        "minimum": 1.6868784000398591,
+        "maximum": 1.7063770999666303,
+        "values": [
+          1.6964754000073299,
+          1.6957040999550372,
+          1.688115100027062,
+          1.6868784000398591,
+          1.7063770999666303,
+          1.701719700009562,
+          1.6885767999337986,
+          1.6918841999722645
+        ]
+      },
+      "ratio_of_medians": 1.0538868886206445,
+      "overhead_percent_ratio_of_medians": 5.38868886206445,
+      "paired_overhead_percent": {
+        "median": 5.4467110019620435,
+        "mad": 0.30968049170737766,
+        "minimum": 4.545343919957874,
+        "maximum": 6.676031159784802,
+        "values": [
+          5.41829954214106,
+          5.084250935503097,
+          4.545343919957874,
+          5.475122461783028,
+          6.676031159784802,
+          5.7036119189178525,
+          5.200997966651349,
+          6.0194201774681
+        ]
+      },
+      "order_effects": {
+        "author_euler": {
+          "first_median_seconds": 1.6071877999929711,
+          "second_median_seconds": 1.6046057000057772
+        },
+        "improved_jl_ql": {
+          "first_median_seconds": 1.6937941499636509,
+          "second_median_seconds": 1.6925260999705642
+        }
+      },
+      "microbenchmark_projection": {
+        "weighted_added_seconds_per_prediction": 1.5951671593864577e-05,
+        "projected_extra_seconds": 0.08046023151945292,
+        "projected_overhead_percent_of_author_median": 5.006274407994187,
+        "observed_extra_seconds_ratio_of_medians": 0.08660634997067973
+      },
+      "state_difference": {
+        "max_position_difference_m": 0.0001470208320945505,
+        "max_velocity_difference_mps": 0.001142178809891433
+      },
+      "deterministic_across_rounds": true,
+      "rejection_decisions_unchanged": true
+    },
+    {
+      "name": "const4_manual1_5s",
+      "inputs": {
+        "anchors": "E:\\datasets\\dataset\\flight-dataset\\survey-results\\anchor_const4.npz",
+        "csv": "E:\\datasets\\dataset\\flight-dataset\\csv-data\\const4\\const4-trial7-tdoa2-manual1.csv",
+        "duration_seconds": 5.0
+      },
+      "counts": {
+        "prediction_count": 5044,
+        "uwb_count": 1983,
+        "rejection_count_both": 2,
+        "event_state_count": 7028
+      },
+      "motion_angles": {
+        "count": 5044,
+        "small_angle_threshold_rad": 0.0001,
+        "small_angle_count": 5044,
+        "small_angle_fraction": 1.0,
+        "phi_norm_rad": {
+          "median": 3.2383516298769713e-06,
+          "p95": 8.63357202536605e-06,
+          "maximum": 1.8280072051985524e-05
+        },
+        "propagation_dt_seconds": {
+          "median": 0.0009910000000017405,
+          "p95": 0.0017528500000000052,
+          "maximum": 0.001949999999998786
+        }
+      },
+      "author_euler": {
+        "median": 1.5307724500307813,
+        "mad": 0.004256600048393011,
+        "minimum": 1.5258198999799788,
+        "maximum": 1.5368982999352738,
+        "values": [
+          1.5280078999930993,
+          1.5349128000671044,
+          1.5368982999352738,
+          1.5263995999703184,
+          1.5367705998942256,
+          1.5273678998928517,
+          1.5258198999799788,
+          1.5335370000684634
+        ]
+      },
+      "improved_jl_ql": {
+        "median": 1.6177523499936797,
+        "mad": 0.0016641999827697873,
+        "minimum": 1.6119471000274643,
+        "maximum": 1.625596800004132,
+        "values": [
+          1.6167317000217736,
+          1.6180326000321656,
+          1.6174720999551937,
+          1.625596800004132,
+          1.6180880999891087,
+          1.6119471000274643,
+          1.6154446000000462,
+          1.6235609999857843
+        ]
+      },
+      "ratio_of_medians": 1.0568209206803725,
+      "overhead_percent_ratio_of_medians": 5.682092068037248,
+      "paired_overhead_percent": {
+        "median": 5.672040068430569,
+        "mad": 0.22929658675371112,
+        "minimum": 5.242624058033848,
+        "maximum": 6.498770049189128,
+        "values": [
+          5.806501394991151,
+          5.415278311668739,
+          5.242624058033848,
+          6.498770049189128,
+          5.291453395873147,
+          5.537578741869987,
+          5.873871485176161,
+          5.870350693416714
+        ]
+      },
+      "order_effects": {
+        "author_euler": {
+          "first_median_seconds": 1.5323892499436624,
+          "second_median_seconds": 1.5304524499806575
+        },
+        "improved_jl_ql": {
+          "first_median_seconds": 1.620796800008975,
+          "second_median_seconds": 1.6171018999884836
+        }
+      },
+      "microbenchmark_projection": {
+        "weighted_added_seconds_per_prediction": 1.6172192374597216e-05,
+        "projected_extra_seconds": 0.08157253833746836,
+        "projected_overhead_percent_of_author_median": 5.328848081622326,
+        "observed_extra_seconds_ratio_of_medians": 0.08697989996289834
+      },
+      "state_difference": {
+        "max_position_difference_m": 7.76615551736125e-07,
+        "max_velocity_difference_mps": 2.793386359658282e-06
+      },
+      "deterministic_across_rounds": true,
+      "rejection_decisions_unchanged": true
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "method_rows": 630,
+  "condition_count": 126,
+  "methods": [
+    "inekf15",
+    "eskf15",
+    "capture_init",
+    "capture_reset",
+    "deep"
+  ],
+  "every_case_has_five_methods": true,
+  "identical_range_event_counts": true,
+  "range_counts_match_raw_schedule": true,
+  "diagnostic_event_totals_conserved": true,
+  "independent_recovery_definition": true,
+  "frozen_csv_hashes_match": true,
+  "full_shard_protocols_match": true,
+  "finite_flags_verified": true,
+  "every_saved_trajectory_rescored": true,
+  "maximum_metric_difference": 3.637978807091713e-12,
+  "nonfinite_position_velocity_rows": 0,
+  "source_fingerprints_match": true,
+  "current_sources_match_frozen_hashes": true,
+  "anchors_sha256": "0da574a4a71f0490eefeebf6feca1b0a3bdf32a48dac3c3d5406cc0ee75dde10"
+}

@@ -1,0 +1,166 @@
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb,bm,booktabs}
+\title{机体系不变 TWR 提升结构：审计结论与单协方差滤波器现状}
+\author{DeepSeek Harness}
+\date{2026年11月4日}
+
+\begin{document}
+\maketitle
+
+\section{结构与被审计的主张}
+
+以 \(z_i=R^{\top}(a_i-p),\ z_v=R^{\top}v,\ z_g=-R^{\top}g,\ a_c=a_m-b_a\) 为提升变量，
+定义二次状态
+\begin{equation}
+s_{00}^{(i)}=\tfrac12 z_i^{\top}z_i,\quad
+s_{01}^{(i)}=\tfrac12 z_i^{\top}z_v,\quad
+s_{02}^{(i)}=\tfrac12 z_i^{\top}z_g,\quad
+s_{11}=\tfrac12 z_v^{\top}z_v,\quad
+s_{12}=\tfrac12 z_v^{\top}z_g,\quad
+s_{22}=\tfrac12 z_g^{\top}z_g .
+\end{equation}
+对时间求导并利用 \(\Omega^{\top}=-\Omega\)，角速度项严格抵消，得到
+\begin{equation}
+\dot s_{00}=-2s_{01},\quad
+\dot s_{01}=-s_{11}-s_{02}+\tfrac12 a_c^{\top}z_i,\quad
+\dot s_{02}=-s_{12},\quad
+\dot s_{11}=-2s_{12}+a_c^{\top}z_v,\quad
+\dot s_{12}=-s_{22}+\tfrac12 a_c^{\top}z_g,\quad
+\dot s_{22}=0 .
+\label{eq:chain}
+\end{equation}
+TWR 输出为
+\begin{equation}
+\tfrac12\rho_i^2=s_{00}^{(i)}-\ell^{\top}z_i+\tfrac12\|\ell\|^2 ,
+\end{equation}
+在 \(\ell=0\) 时测量行为常系数且与姿态无关。这正是“把 TWR 用李群方法统一表示”的严格含义：
+距离不再是需要雅可比的欧氏量，而是不变框架下的线性输出。
+
+\section{数值审计结论}
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lll}
+\toprule
+检查 & 结果 & 判据 \\
+\midrule
+式~\eqref{eq:chain} 与定义式的中心差分 & 最大缩放误差 \(2.3\times10^{-7}\) & \(<10^{-6}\) \\
+角速度项抵消 & 交叉项量级 \(10.7/99.5/14.5\)，残差 \(10^{-7}\) & 可检测比 \(<10^{-3}\) \\
+二次子系统常系数 & 8 组随机输入下系数极差 \(0\) & 严格 \\
+姿态误差可否进入提升传播 & 世界系 \(8.58\) m 等效；机体系 \(6.3\times10^{-6}\) m & 比值 \(7.3\times10^{-7}\) \\
+陀螺/加计偏置通路 & 两者比值 \(1.00/1.00\) & 无改善 \\
+1 kHz Euler 的流形残差（10 s） & \(175.5\ \mathrm{m^2}\) & 不可用 \\
+同步长 RK4 的流形残差 & \(6.0\times10^{-7}\ \mathrm{m^2}\) & 可用 \\
+单锚 Gramian 秩（15 维） & 7，条件数 \(5.5\times10^{9}\) & 多锚必需 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+结论：机体系提升\textbf{确实}消除了“姿态误差注入提升态”这一通路（这正是世界系版本末段退化的根因），
+但\textbf{不}改善偏置可观测性；且提升链是四阶积分器，必须用精确离散（其系统矩阵零幂，
+\(\exp(F\Delta t)=\sum_{k=0}^{4}(F\Delta t)^k/k!\) 可闭式求出），Euler 会发散。
+
+\section{单协方差滤波器的现状}
+
+滤波器取 42 维联合误差
+\(\big[\theta,v,p,b_g,b_a,\,s_{00}^{(1..8)},s_{01}^{(1..8)},s_{02}^{(1..8)},s_{11},s_{12},s_{22}\big]\)，
+测量行对 \(s_{00}^{(i)}\) 为常数。实现中修正了三处真实错误：
+重力符号（\(z_g=-R^{\top}g\)）、更新符号（\(\xi^{+}=+K(y-\hat y)\)）、以及冗余协方差重置
+\begin{equation}
+P_{\xi s}\leftarrow J_sP_{\xi\xi},\qquad
+P_{ss}\leftarrow J_sP_{\xi\xi}J_s^{\top}+\epsilon I ,
+\end{equation}
+后者解决“测距只观测 \(s_{00}\)、其与状态的交叉协方差按 \(\Delta t^2\) 重建导致增益衰减”的结构性问题。
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{lcccc}
+\toprule
+用例（12 s 合成，8 锚 20 Hz） & 全程位置 RMSE & 末 5 s & 接受/拒绝 & 流形残差 \\
+\midrule
+nominal（cm 级初差） & \(0.696\) m & \(0.913\) m & \(240/0\) & \(2.25\ \mathrm{m^2}\) \\
+large（\(5.385\) m 初差） & \(256.6\) m & \(393.3\) m & \(84/156\) & \(9.5\times10^{4}\) \\
+large（门限关闭） & \(9.22\) m & \(11.33\) m & \(240/0\) & \(1.0\times10^{2}\) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{未达标项与诚实结论}
+
+\begin{enumerate}
+\item \textbf{“大收敛域”未被证实。} 即使关闭噪声门限、全部接受更新，5 m 级初差只能收敛到
+10 m 量级且流形残差上升一到两个数量级。当初选择提升法的主要理由因此落空。
+\item 冗余协方差重置解决了小初差下的可用性（nominal 全程 0 拒绝），但它是“把冗余关系强行写回”，
+代价是锁住了 \(s_{00}\) 的额外自由度，与扩大收敛域的目标相冲突。
+\item 真实数据对比（TU Delft 12 条 TWR 日志）因 \texttt{data.4tu.nl} 站点故障无法进行；
+DataCite 元数据（\texttt{10.4121/14827680.v1}）确认该数据集无镜像。
+\end{enumerate}
+
+\subsection*{噪声敏感性对照}
+
+同一 30 s 名义轨迹，唯一变量是 IMU 是否加噪
+（陀螺 \(0.002\) rad/s、加计 \(0.03\) m/s\(^2\)）：
+
+\begin{center}
+\small
+\begin{tabular}{lcccc}
+\toprule
+条件 & RMSE & p95 & max & 误差 \(>1\) m 占比 \\
+\midrule
+无 IMU 噪声 & \(\approx0.4\) m & \(<0.8\) m & \(0.78\) m & \(0\%\) \\
+有 IMU 噪声 & \(1.066\) m & \(2.006\) m & \(2.176\) m & \(37.9\%\) \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+带噪时 \(600/600\) 次更新全部接受、零拒绝，即误差不是门限误拒造成的。
+因此滤波器的薄弱环节是 IMU 噪声经提升链注入，而不是测距更新本身。
+
+\subsection*{被否定的假设}
+
+把提升块的过程噪声由常数 \((1.0\Delta t)^2\) 改为物理量级
+（\(0.5|z_i|\sigma_a\Delta t\) 等，约为原值的 25 倍）后，四项指标**逐位不变**。
+故“提升块过程噪声被低估”这一假设不成立：精度由 15 维不变误差块的传播决定，
+提升块只影响量测加权方式。
+
+\subsection*{方法学教训}
+
+本研究出现过三次自我更正，全部源于同一错误：用单点采样判断滤波器健康度。
+每 3 s 采样一次会系统性错过米级误差峰值，导致连续得出“稳定 0.13--0.7 m”与
+“长时序退化”两个相反且都不正确的结论。凡涉及滤波器健康度，必须给出
+RMSE、p95 与最大值三项，或直接给出逐样本曲线。
+
+\subsection*{作者数据集上的决定性对照}
+
+UTIL \texttt{const1-trial1-tdoa2}，真实 IMU 与 Vicon 真值，由真值和实测锚点合成
+TWR（20 Hz 轮询 8 锚，\(\sigma=0.10\) m）。CLIF 与原始距离 15 维 InEKF 使用
+\textbf{同一套 IMU、同一量测流、同一初值、同一噪声}，唯一差别是量测表示与协方差结构：
+
+\begin{center}
+\small
+\begin{tabular}{llcccc}
+\toprule
+用例 & 方法 & RMSE & p95 & max & 末 5 s \\
+\midrule
+nominal & CLIF & \(0.973\) m & \(1.720\) m & \(1.887\) m & \(1.226\) m \\
+nominal & 原始距离 InEKF & \(\mathbf{0.118}\) m & \(0.202\) m & \(0.281\) m & \(\mathbf{0.114}\) m \\
+3 m 初差 & CLIF & \(7.397\) m & \(8.356\) m & \(8.519\) m & \(8.036\) m \\
+3 m 初差 & 原始距离 InEKF & \(\mathbf{0.229}\) m & \(0.200\) m & \(2.707\) m & \(\mathbf{0.115}\) m \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+结论明确且不利于 CLIF：nominal 差 8.2 倍；3 m 初差下差 32 倍且\textbf{未收敛}
+（末段 8.04 m 仍在恶化），而原始距离 InEKF 末段 0.115 m、与 nominal 持平，
+说明它把初差完全吸收。原始距离 InEKF 的 2.71 m 峰值只出现在捕获瞬间。
+
+因此“机体系提升 + 单协方差能替代或改进原始距离 InEKF”的设想被\textbf{负面对照证伪}。
+
+因此当前的准确表述是：\textbf{机体系提升的数学性质成立并被数值证实；但以其为基础的单协方差
+滤波器在本参数化下不提供大收敛域，且在真实 IMU 噪声下精度为米级，既有的两滤波器方案
+仍是当前最优可用方案。}
+
+\end{document}

@@ -1,0 +1,32 @@
+{
+  "original": {
+    "position_rmse_m": 0.1067136619447566,
+    "velocity_rmse_mps": 0.05941518602421612,
+    "orientation_geodesic_rmse_rad": 0.06104270227222016,
+    "yaw_rmse_rad": 0.05945600227550829,
+    "yaw_convergence_10deg_s": 0.0,
+    "yaw_convergence_5deg_s": 0.0,
+    "rejected_measurements": 0,
+    "total_measurements": 67205,
+    "rejection_rate": 0.0,
+    "nis_median": NaN,
+    "runtime_seconds": 48.279933599988,
+    "stationary_updates": 0,
+    "samples": 209167
+  },
+  "paper_aligned": {
+    "position_rmse_m": 0.10671576647572516,
+    "velocity_rmse_mps": 0.059434733291244844,
+    "orientation_geodesic_rmse_rad": 0.06113635815209655,
+    "yaw_rmse_rad": 0.059550648995693733,
+    "yaw_convergence_10deg_s": 0.0,
+    "yaw_convergence_5deg_s": 0.0,
+    "rejected_measurements": 0,
+    "total_measurements": 67205,
+    "rejection_rate": 0.0,
+    "nis_median": NaN,
+    "runtime_seconds": 36.506757399998605,
+    "stationary_updates": 0,
+    "samples": 209167
+  }
+}

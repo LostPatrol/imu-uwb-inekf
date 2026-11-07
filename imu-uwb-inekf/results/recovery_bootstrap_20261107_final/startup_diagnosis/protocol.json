@@ -1,0 +1,29 @@
+{
+  "horizon_s": 1.0,
+  "policies": {
+    "warmup256": [
+      256,
+      12.25,
+      2.0
+    ],
+    "hard_only": [
+      0,
+      12.25,
+      null
+    ],
+    "huber_only": [
+      0,
+      1e+30,
+      2.0
+    ],
+    "hard_huber": [
+      0,
+      12.25,
+      2.0
+    ]
+  },
+  "truth_initialization": true,
+  "scope": "Causal update diagnostic only; not cold-start evidence",
+  "conditions": 96,
+  "events": 22928
+}

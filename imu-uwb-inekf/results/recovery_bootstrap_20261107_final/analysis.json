@@ -1,0 +1,18 @@
+{
+  "audit": {
+    "cases_checked": 96,
+    "missing": [],
+    "max_absolute_difference": 3.552713678800501e-15,
+    "passed": true,
+    "real_metrics_sha256": "8f290537baaa36a0634cc6c626ce72b15152c305216a69150a6b1e037e57b2df"
+  },
+  "real_rows": 96,
+  "synthetic_rows": 4800,
+  "bias_rows": 12000,
+  "paired_log_rmse_difference_profile_minus_cv_mean_m": -4.25547983376832e-05,
+  "descriptive_cluster_bootstrap_95_interval_m": [
+    -0.00011605139748426437,
+    2.542561336873102e-05
+  ],
+  "inference_limit": "Six same-day development logs; interval is exploratory, not external generalization evidence"
+}

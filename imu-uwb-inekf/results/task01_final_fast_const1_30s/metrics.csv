@@ -1,0 +1,3 @@
+dataset,yaw_error_degrees,variant,position_rmse_m,velocity_rmse_mps,orientation_geodesic_rmse_rad,yaw_rmse_rad,yaw_convergence_10deg_s,yaw_convergence_5deg_s,rejected_measurements,total_measurements,rejection_rate,nis_median,runtime_seconds,stationary_updates,samples
+const1-trial1-tdoa2,0.0,legacy,0.11076526263778108,0.07483693939917961,0.054873851462666566,0.05312350380697336,0.0,0.0,0,14289,0.0,0.05069964953574115,9.183556400006637,0,44548
+const1-trial1-tdoa2,0.0,proposed,0.10713061616747306,0.07235379266369843,0.05333239889886082,0.052867116366753376,0.0,0.0,0,14289,0.0,0.05047149497273414,9.053371100046206,11,44548

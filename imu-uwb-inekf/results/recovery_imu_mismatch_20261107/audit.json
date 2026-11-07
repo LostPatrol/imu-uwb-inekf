@@ -1,0 +1,26 @@
+{
+  "cases": 20,
+  "rerun_fits": 180,
+  "summary_groups": 9,
+  "maximum_differences": {
+    "case_id": 0.0,
+    "seed": 0.0,
+    "displacement_error_max_m": 4.440892098500626e-16,
+    "displacement_error_rms_m": 4.440892098500626e-16,
+    "accel_bias_norm": 9.71445146547012e-17,
+    "gyro_bias_norm": 9.80118763926896e-17,
+    "initial_tilt_norm_deg": 4.440892098500626e-16,
+    "position_error_m": 8.881784197001252e-16,
+    "velocity_error_mps": 4.440892098500626e-16,
+    "yaw_error_deg": 2.842170943040401e-14,
+    "yaw_parameter_error_deg": 1.4210854715202004e-14,
+    "attitude_error_deg": 2.842170943040401e-14,
+    "robust_objective": 2.2737367544323206e-13,
+    "total_nfev": 0.0,
+    "cv_nfev": 0.0,
+    "objective_gap_vs_multistart": 2.842170943040401e-14
+  },
+  "zero_error_shape_max_m": 1.4553208300541337e-13,
+  "all_outputs_finite": true,
+  "completed_utc": "2026-11-06T23:15:24.572215+00:00"
+}

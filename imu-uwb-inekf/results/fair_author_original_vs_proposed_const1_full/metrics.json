@@ -1,0 +1,242 @@
+{
+  "scope": {
+    "description": "Single-filter, common-schedule comparison. Loading, filter construction, history recording, metrics, and plotting are outside measured replay timings.",
+    "dataset": "E:\\datasets\\dataset\\flight-dataset\\csv-data\\const1\\const1-trial1-tdoa2.csv",
+    "anchors": "E:\\datasets\\dataset\\flight-dataset\\survey-results\\anchor_const1.npz",
+    "max_duration": null,
+    "yaw_degrees": 0.0,
+    "warmup_duration_seconds": 30.0,
+    "repeats": 6,
+    "thread_limit": 1,
+    "predict_calls_per_run": 142220,
+    "uwb_calls_per_run": 67205,
+    "events_per_run": 209426
+  },
+  "provenance": {
+    "author_repository": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf - backup",
+    "author_commit": "f3b664e0e8c86b62c6ed2ea2a112261810228e1c",
+    "author_source": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf - backup\\scripts\\estimation\\inekf.py",
+    "author_source_sha256": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+    "author_source_modified": false,
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "timing": {
+    "author_original": {
+      "initialization_seconds": {
+        "runs": [
+          0.0003037,
+          0.0003332,
+          0.0002638,
+          0.000373,
+          0.000262,
+          0.0002969
+        ],
+        "median": 0.0003003,
+        "mad": 3.47e-05,
+        "minimum": 0.000262,
+        "maximum": 0.000373,
+        "p95": 0.00036305,
+        "mean": 0.00030543333333333335,
+        "sample_stdev": 4.2501419584134674e-05
+      },
+      "replay_seconds": {
+        "runs": [
+          45.500240600000005,
+          44.6034957,
+          44.492208000000005,
+          44.7412117,
+          44.538099700000004,
+          44.517197
+        ],
+        "median": 44.5707977,
+        "mad": 0.06609519999999591,
+        "minimum": 44.492208000000005,
+        "maximum": 45.500240600000005,
+        "p95": 45.310483375000004,
+        "mean": 44.73207545,
+        "sample_stdev": 0.3867892589720187
+      },
+      "kernel_seconds": {
+        "runs": [
+          45.0664266,
+          44.1827448,
+          44.0729211,
+          44.3178093,
+          44.118446500000005,
+          44.093436100000005
+        ],
+        "median": 44.15059565,
+        "mad": 0.06741704999999598,
+        "minimum": 44.0729211,
+        "maximum": 45.0664266,
+        "p95": 44.879272275,
+        "mean": 44.30863073333333,
+        "sample_stdev": 0.38163435220234765
+      },
+      "scheduler_seconds": {
+        "runs": [
+          0.43381400000000003,
+          0.42075090000000004,
+          0.4192869,
+          0.4234024,
+          0.4196532,
+          0.42376090000000005
+        ],
+        "median": 0.42207665000000005,
+        "mad": 0.0020538500000000237,
+        "minimum": 0.4192869,
+        "maximum": 0.43381400000000003,
+        "p95": 0.43130072500000005,
+        "mean": 0.42344471666666667,
+        "sample_stdev": 0.005413750746909829
+      }
+    },
+    "proposed": {
+      "initialization_seconds": {
+        "runs": [
+          0.0023545000000000003,
+          0.0021078,
+          0.0020037,
+          0.0021282000000000002,
+          0.0021577000000000002,
+          0.0022111
+        ],
+        "median": 0.0021429500000000002,
+        "mad": 5.165000000000009e-05,
+        "minimum": 0.0020037,
+        "maximum": 0.0023545000000000003,
+        "p95": 0.0023186500000000002,
+        "mean": 0.0021605000000000005,
+        "sample_stdev": 0.000117141811493591
+      },
+      "replay_seconds": {
+        "runs": [
+          18.7047005,
+          18.7208273,
+          18.5901614,
+          18.6290845,
+          18.621740600000003,
+          18.6012227
+        ],
+        "median": 18.62541255,
+        "mad": 0.029720499999999817,
+        "minimum": 18.5901614,
+        "maximum": 18.7208273,
+        "p95": 18.7167956,
+        "mean": 18.644622833333333,
+        "sample_stdev": 0.054829011428683044
+      },
+      "kernel_seconds": {
+        "runs": [
+          18.3646967,
+          18.37639,
+          18.251856200000002,
+          18.2891044,
+          18.282189000000002,
+          18.260580700000002
+        ],
+        "median": 18.2856467,
+        "mad": 0.029428249999998712,
+        "minimum": 18.251856200000002,
+        "maximum": 18.37639,
+        "p95": 18.373466675,
+        "mean": 18.30413616666667,
+        "sample_stdev": 0.05334060433480834
+      },
+      "scheduler_seconds": {
+        "runs": [
+          0.3400038,
+          0.3444373,
+          0.33830520000000003,
+          0.3399801,
+          0.3395516,
+          0.340642
+        ],
+        "median": 0.33999195000000004,
+        "mad": 0.0005451999999999957,
+        "minimum": 0.33830520000000003,
+        "maximum": 0.3444373,
+        "p95": 0.343488475,
+        "mean": 0.34048666666666666,
+        "sample_stdev": 0.0020858834422533383
+      }
+    }
+  },
+  "paired_speedup": {
+    "replay": {
+      "runs": [
+        2.432556490279008,
+        2.3825600752163343,
+        2.3933201569729246,
+        2.4016860141463203,
+        2.391725921689619,
+        2.393240364785268
+      ],
+      "median": 2.393280260879096,
+      "mad": 0.0049800462283506874,
+      "minimum": 2.3825600752163343,
+      "maximum": 2.432556490279008,
+      "p95": 2.424838871245836,
+      "mean": 2.399181503848246,
+      "sample_stdev": 0.01744518504765694
+    },
+    "kernel": {
+      "runs": [
+        2.453970644666296,
+        2.404321240461266,
+        2.4147089817637286,
+        2.4231809459188174,
+        2.4131927801424653,
+        2.4146787456764724
+      ],
+      "median": 2.4146938637201005,
+      "mad": 0.0049940828881760435,
+      "minimum": 2.404321240461266,
+      "maximum": 2.453970644666296,
+      "p95": 2.4462732199794264,
+      "mean": 2.4206755564381743,
+      "sample_stdev": 0.01737732557898195
+    }
+  },
+  "accuracy": {
+    "author_original": {
+      "position_rmse_m": 0.10800313191148765,
+      "velocity_rmse_mps": 0.06090133339010495,
+      "orientation_geodesic_rmse_rad": 0.06382647236440041,
+      "yaw_rmse_rad": 0.0623002600179972,
+      "yaw_convergence_10deg_s": 0.0,
+      "yaw_convergence_5deg_s": 0.0,
+      "rejected_measurements": 0,
+      "total_measurements": 67205,
+      "rejection_rate": 0.0,
+      "nis_median": 0.019229696839254715,
+      "runtime_seconds": 46.5031139,
+      "stationary_updates": 0,
+      "samples": 209167,
+      "evaluated_common_replay_seconds": 46.5031139
+    },
+    "proposed": {
+      "position_rmse_m": 0.0973960164572123,
+      "velocity_rmse_mps": 0.052395778118140716,
+      "orientation_geodesic_rmse_rad": 0.08147694188920243,
+      "yaw_rmse_rad": 0.08109558756395874,
+      "yaw_convergence_10deg_s": 10.438025999999983,
+      "yaw_convergence_5deg_s": 23.988848000000004,
+      "rejected_measurements": 0,
+      "total_measurements": 67205,
+      "rejection_rate": 0.0,
+      "nis_median": 0.04985101459847454,
+      "runtime_seconds": 19.2629316,
+      "stationary_updates": 11,
+      "samples": 209167,
+      "evaluated_common_replay_seconds": 19.2629316
+    }
+  }
+}

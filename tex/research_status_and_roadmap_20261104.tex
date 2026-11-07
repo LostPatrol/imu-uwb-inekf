@@ -1,0 +1,148 @@
+% Current research baseline, mathematical boundaries, and conference roadmap.
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,tabularx}
+\usepackage{graphicx}
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{3pt}
+\title{IMU--UWB InEKF：当前成果与会议论文研究路线}
+\author{Codex}
+\date{2026年11月4日}
+\begin{document}
+\maketitle
+\section{当前研究判断}
+已有成熟的TDoA实现、提升捕获与原始距离跟踪原型、逐锚鲁棒模型和作者代码公平复现。
+尚缺同条件强基线、完整有偏惯导的理论边界及独立场景验证，因此当前不宜直接提交以新算法为核心的完整会议论文。
+建议聚焦\textbf{大初始误差及测距中断后的可靠恢复}，先验证恢复架构相对鲁棒单滤波器的净收益。
+
+\section{与原论文对照：已实现的改进}
+Oursland与Mehrabian（RO-MAN 2024）主要研究大初始航向误差，原文式(33)--(38)采用非线性TDoA及误差坐标转换，式(39)--(40)给出离散传播。
+其姿态收敛优势并不意味着所有位置指标全面领先。
+
+令 $X=(R,v,p)\in SE_2(3)$，误差排列为 $[\theta,v,p,b_g,b_a]$。
+在本项目采用的左右误差坐标约定下，先验与测量需一致：
+\begin{equation}
+ P_{r0}=\mathcal A(X_0)P_{l0}\mathcal A(X_0)^\top,\qquad
+ H_r=H_l\mathcal A(X^{-1}),\quad
+ \mathcal A(X)=\operatorname{diag}(\operatorname{Ad}_X,I_6).
+\end{equation}
+\begin{equation}
+ S=H_rP_rH_r^\top+R_m,\qquad \mathrm{NIS}=\nu^\top S^{-1}\nu .
+\end{equation}
+原实现曾混用左坐标$H$与右坐标$P$门控，并直接填入物理对角先验。
+修复后世界原点平移不再改变结果；这属于有效实现修正，不能当成全新不变滤波理论。
+
+冻结误差矩阵满足 $A^4=0$ 时，可精确计算
+\begin{equation}
+ \Phi=I+A\Delta t+\tfrac12 A^2\Delta t^2+\tfrac16 A^3\Delta t^3.
+\end{equation}
+结合闭式IMU积分、标量更新和固定尺寸编译，形成成熟\texttt{task03\_compiled}。
+完整const1轨迹位置RMSE为$0.108003\to0.097396$ m；回放中位耗时$33.236\to1.067$ s，约31.16倍。
+但姿态RMSE为$0.063826\to0.081477$ rad。计时排除JIT、加载、历史记录和绘图，不能解释为机载最坏执行时间。
+
+\newpage
+\section{目前可用恢复架构的结果}
+TU Delft 12条日志、两种初值，共24次。共同IMU/TWR时间轴校正0.20 s；9 m初差为$[6,-6,3]^\top$ m。
+\begin{center}
+\begin{tabular}{lcc}
+\toprule
+初值 & 全程位置RMSE中位/均值(m) & 当前定义下收敛\\
+\midrule
+nominal & 0.331862 / 0.349604 & 12/12\\
+9 m偏移 & 0.356247 / 0.362371 & 12/12\\
+\bottomrule
+\end{tabular}
+\end{center}
+合并末5 s位置中位为0.211746 m。收敛仅指首次连续1 s误差不超过0.5 m；nominal使用首帧真值位置。
+不能视为无真值冷启动或永久稳定保证。
+
+\section{提升输出为何不自动带来全局收敛}
+对于零杆臂TWR，$d_i=\|p-a_i\|$。设去偏测量$r_i-b_i=d_i+n_i$，$n_i$为零均值高斯噪声，方差$\sigma_i^2$。
+半平方输出可写为
+\begin{equation}
+ y_i=\tfrac12\big[(r_i-b_i)^2-\sigma_i^2\big]
+ =q-a_i^\top p+\tfrac12\|a_i\|^2+\eta_i,\quad q=\tfrac12p^\top p .
+\end{equation}
+\begin{equation}
+ \mathbb E[\eta_i]=0,\qquad
+ \operatorname{Var}(\eta_i)=d_i^2\sigma_i^2+\tfrac12\sigma_i^4 .
+\end{equation}
+这确实使提升状态的输出线性，但噪声随距离变化，完整IMU传播仍受未知姿态、偏置影响。
+若令$s=f(x)$并每次用局部雅可比$J=\partial f/\partial x$重建冗余协方差，则
+\begin{equation}
+ P_{xs}=P_{xx}J^\top,\quad P_{ss}=JP_{xx}J^\top,\quad
+ K_x=P_{xx}J^\top H_s^\top(H_sJP_{xx}J^\top H_s^\top+R_m)^{-1}.
+\end{equation}
+这仍具有有效局部雅可比$H_{\rm eff}=H_sJ$；\textbf{常数$H_s$本身不能消除重构处的大误差线性化}。
+此式解释一种潜在机制，不是对当前CLIF所有误差来源的完整证明。
+
+\newpage
+\section{两支路交接与协方差缺口}
+当前capture负责捕获，tracker维护完整15维不变误差。
+位置与速度输出采用
+\begin{equation}
+ \hat p_o=(1-w)\hat p_C+w\hat p_T,\qquad 0\le w\le1.
+\end{equation}
+若两支路共享IMU/UWB，混合位置协方差原则上还包含互协方差：
+\begin{equation}
+ P_o=(1-w)^2P_C+w^2P_T+w(1-w)(P_{CT}+P_{CT}^\top).
+\end{equation}
+现实现不输出严格融合$P_o$，避免连续伪量测互灌也不等于已解决相关性。
+后续应在状态切换/重置的信息来源、局部误差坐标与不确定度上形成可解释方案。
+
+\section{11月4日CLIF复核与边界}
+旧对照生成零偏差、$\sigma=0.10$ m的合成TWR，却给CLIF使用$-0.18$ m偏差校正与$0.20$ m噪声。
+本次只在内存对齐这两个参数，15 s真实UTIL IMU配合合成TWR：
+\begin{center}
+\small
+\begin{tabular}{lcc}
+\toprule
+初值 & CLIF全程/末5 s(m) & 原始TWR-InEKF全程/末5 s(m)\\
+\midrule
+nominal & 0.149147 / 0.134615 & 0.118194 / 0.114393\\
+2.891 m偏移 & 265.793714 / 444.351903 & 0.228703 / 0.115453\\
+\bottomrule
+\end{tabular}
+\end{center}
+旧nominal的0.973 m不能纯归因于结构。当前大初差优势仍失败，暂停CLIF主线投入合理。
+这是单轨迹单种子的配置诊断，过程噪声、门控与重置未完全匹配；不是对所有机体系提升观测器的数学证伪，也不是真实TWR实测。
+
+\section{先做决定性公平实验}
+8月逐锚LOSO、Huber和预热门控已让普通InEKF在9 m下达到12/12。
+但它仍零时间校正，deep仍使用全局测距模型，尚不能直接比较并归因。
+统一协议后比较：ESKF-15、普通InEKF、鲁棒单InEKF、两支路，以及仅初始化/仅重置后单tracker。
+固定标定与测试划分，冻结参数；使用同测量流、同偏置先验及同恢复计分。
+
+候选研究问题：\textbf{在弱几何、未知初值及测距中断下，提升捕获与因果交接能否降低强单滤波器的失败率和持续恢复时间？}
+若没有优势，停止该贡献叙事；若优势成立，再推导可观性条件、交接准则及误差有界结论。
+不要求同时解决NLOS、外参自标定和全部异步问题。
+
+\newpage
+\section{8--12周路线与交付}
+\begin{center}
+\small
+\begin{tabularx}{\textwidth}{l>{\raggedright\arraybackslash}X>{\raggedright\arraybackslash}X}
+\toprule
+阶段 & 工作 & 交付/继续条件\\
+\midrule
+第1--2周 & 恢复数据；统一协议；补ESKF-15及简化基线 & 初差--失败率/恢复时间图；决定是否保留两支路\\
+第3--5周 & 只研究捕获与交接机制；减少经验阈值；处理重置信息 & 可推导的方法及相对强基线的恢复收益\\
+第6--8周 & 留出场景；随机位置/yaw/偏置；丢包、NLOS、中断恢复 & 失败率区间、持续恢复、RMSE、p95/max、NEES/NIS、消融\\
+第9--10周 & 真实日志/自采TWR；目标CPU与采集时间 & 时延、内存、实际输入下的恢复证据\\
+第11--12周 & 数学假设、主图、失败案例、复现包与全文 & 完整会议论文草稿及可重复实验\\
+\bottomrule
+\end{tabularx}
+\end{center}
+理论先限定激励、锚点几何、偏置和噪声条件，争取局部收敛或实际误差有界；不能从提升子系统直接继承完整有偏惯导AGAS/GES。
+真实数据缺少偏置真值时，不报告伪造的偏置RMSE/完整NEES；用完整真值合成实验补足。
+
+\section{新颖性边界与资料入口}
+有偏惯导等变对称、机体系全局观测器及鲁棒IMU--UWB Lie群融合已有相关工作。
+定题前应核对：Fornasier等，arXiv:2309.03765（Automatica 2025）；Liu与Shen，arXiv:2507.18493；Yin等，\emph{AMC-LIEKF: An Adaptive Maximum Correntropy Left-Invariant Extended Kalman Filter Method for Tightly-Coupled Multi-UWB/IMU Integration}（IEEE TIM 2026 Early Access，文献号11735372）。
+此次检索为初步新颖性核对，不是穷尽综述。
+
+成熟TDoA在\texttt{imu-uwb-inekf}；TWR模型与作者复现在\texttt{imu-uwb-inekf-state-augment}；恢复原型在\texttt{imu-uwb-state-augment-deep-coupled-two-filters}。
+详细统计口径、文件索引和未完成指标见同日\texttt{agent/report}报告。
+当前项目使用根目录\texttt{.venv}；TU Delft原始数据及Git元数据仍待恢复。
+\end{document}

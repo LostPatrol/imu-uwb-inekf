@@ -1,0 +1,27 @@
+{
+  "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+  "executable": "D:\\conda-envs\\imu-uwb-inekf\\python.exe",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "logical_cpus": 20,
+  "packages": {
+    "numpy": "1.26.4",
+    "scipy": "1.17.1",
+    "numba": "0.61.2",
+    "pandas": "3.0.3",
+    "matplotlib": "3.11.1"
+  },
+  "source_sha256": {
+    "analyze_bias_real.py": "f0848fcfea43fddbe250b2a45a7996b17e557f4e7ef425ff8bd4ce3eae22780a",
+    "analyze_research.py": "62f85f8e093acc6479968e13142abeb8830568de27abdb1bc1cac278087a19a9",
+    "bias_real.py": "3f771f3cd395720663d686b0783945d7504b601331ded932ac6bccc546dcba6c",
+    "diagnose_startup.py": "61d88f3ab4d194cde5a788d327457ee1f6212b1ccdbe6022a40d9b32914ce746",
+    "initializer.py": "b5d73061bbff3978a0550b36d98251f79eecb271ab77a23d9656077cdd7c3e0d",
+    "polynomial_bias.py": "b089ec8f004d77f38c1244b708fa1c0ac1f4ef8525311fc30ba300828dd861de",
+    "run_research.py": "8654e561b74a081629583d64de693367562d6669d0c7ad3159ac2a6998729395",
+    "test_bias_real.py": "0ec8f7f2f80d4f992a9d541020b84762ed3e4745e8e6e5b0b8d8545b11923a64",
+    "test_initializer.py": "5060717265812529d5b7f52195a777a7d85ce443f5a4c03817b54f3d66016d2f",
+    "test_polynomial_bias.py": "83f5a3260c0beab7c3b2726500444e0e0a57eb558d28d0ff3f6a27a2ec0dd4f2",
+    "test_polynomial_invariance.py": "e2d8b7b6d654dc5adee16d7efb75b80a500b9de05880dfe1295e8aef930fdab4"
+  },
+  "notes": "Full environment is project Conda; BLAS threads set to 1 during parallel studies; no GPU acceleration needed for tiny dense matrices; source hashes captured after numerical studies."
+}

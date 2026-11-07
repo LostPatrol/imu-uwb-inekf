@@ -1,0 +1,212 @@
+{
+  "scope": {
+    "description": "Untouched paper-author source versus a byte-identical copy executed by a fixed-size native loop. Initial state, bias, covariance, noise, gate, prediction, and correction semantics are unchanged. Loading, construction, JIT warmup, history, metrics, and plots are outside measured replay.",
+    "dataset": "E:\\datasets\\dataset\\flight-dataset\\csv-data\\const1\\const1-trial1-tdoa2.csv",
+    "anchors": "E:\\datasets\\dataset\\flight-dataset\\survey-results\\anchor_const1.npz",
+    "max_duration": 30.0,
+    "yaw_degrees": 0.0,
+    "warmup_duration_seconds": 10.0,
+    "jit_warmup_or_cache_load_seconds": 0.12759529997128993,
+    "repeats": 4,
+    "thread_limit": 1,
+    "history_recorded_in_timing": false,
+    "predict_calls_per_run": 30267,
+    "uwb_calls_per_run": 14289,
+    "events_per_run": 44557,
+    "event_plan_sha256": "6e7b0c65c0c89ffd6b0a14cb69d3bc0a6c8058bdf5a3f2baaa887ddd0b70813f",
+    "tdoa_variance_both_variants": 0.13
+  },
+  "algorithm_settings": {
+    "identical_for_both_variants": true,
+    "initial_yaw_std_rad": 1.0,
+    "initial_roll_pitch_std_rad": 0.01,
+    "initial_velocity_std_mps": 0.01,
+    "initial_position_std_m": 0.1,
+    "initial_accelerometer_bias_std": 0.0001,
+    "initial_gyroscope_bias_std": 1e-06,
+    "initial_bias": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "tdoa_variance": 0.13,
+    "gate_mahalanobis_threshold": 5.0,
+    "ground_clamp": true,
+    "author_bias_layout_preserved": true,
+    "author_pre_gate_coordinate_semantics_preserved": true,
+    "execution_only_changes": [
+      "precomputed integer event lookups",
+      "fixed contiguous float64 buffers",
+      "Numba nopython event/predict/update loop",
+      "exact cubic evaluation of expm(A*dt) because A^4=0",
+      "direct expansion of H_left @ Ad(X_hat^-1)"
+    ]
+  },
+  "provenance": {
+    "author_repository": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf - backup",
+    "author_commit": "f3b664e0e8c86b62c6ed2ea2a112261810228e1c",
+    "author_source": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf - backup\\scripts\\estimation\\inekf.py",
+    "author_source_sha256": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+    "author_source_modified": false,
+    "accelerated_repository": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf-acc",
+    "accelerated_copied_author_source": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf-acc\\scripts\\estimation\\inekf.py",
+    "accelerated_copied_author_source_sha256": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+    "copied_author_source_byte_identical": true,
+    "accelerated_variant": "author_accelerated",
+    "accelerated_core_source": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf-acc\\scripts\\estimation\\accelerated_replay.py",
+    "accelerated_core_source_sha256": "fc66086af6782e8ab3e29fa93917d5827f6f5e7a1a33494c56dbef375cd6cb0c",
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "timing": {
+    "author_original": {
+      "initialization_seconds": {
+        "runs": [
+          0.0003217,
+          0.0003173,
+          0.0001689,
+          0.00028450000000000003
+        ],
+        "median": 0.0003009,
+        "mad": 1.860000000000002e-05,
+        "minimum": 0.0001689,
+        "maximum": 0.0003217,
+        "p95": 0.00032104000000000003,
+        "mean": 0.0002731,
+        "sample_stdev": 7.142175205542543e-05
+      },
+      "replay_seconds": {
+        "runs": [
+          6.8637207,
+          6.8843601,
+          6.760259400000001,
+          6.734569700000001
+        ],
+        "median": 6.81199005,
+        "mad": 0.06205034999999981,
+        "minimum": 6.734569700000001,
+        "maximum": 6.8843601,
+        "p95": 6.8812641900000004,
+        "mean": 6.810727475,
+        "sample_stdev": 0.07433500442242846
+      }
+    },
+    "author_accelerated": {
+      "initialization_seconds": {
+        "runs": [
+          0.0002245,
+          0.00036070000000000004,
+          0.00022410000000000003,
+          0.0003436
+        ],
+        "median": 0.00028405,
+        "mad": 5.974999999999999e-05,
+        "minimum": 0.00022410000000000003,
+        "maximum": 0.00036070000000000004,
+        "p95": 0.00035813500000000004,
+        "mean": 0.000288225,
+        "sample_stdev": 7.414379609920172e-05
+      },
+      "replay_seconds": {
+        "runs": [
+          0.23028690000000002,
+          0.2175186,
+          0.2162917,
+          0.21485990000000002
+        ],
+        "median": 0.21690515,
+        "mad": 0.001329349999999993,
+        "minimum": 0.21485990000000002,
+        "maximum": 0.23028690000000002,
+        "p95": 0.228371655,
+        "mean": 0.219739275,
+        "sample_stdev": 0.007115191830805878
+      }
+    }
+  },
+  "speedup": {
+    "ratio_of_medians": 31.40538640968184,
+    "paired": {
+      "runs": [
+        29.80508530880393,
+        31.649523764864245,
+        31.255288113228573,
+        31.3440046281321
+      ],
+      "median": 31.299646370680335,
+      "mad": 0.19711782581783766,
+      "minimum": 29.80508530880393,
+      "maximum": 31.649523764864245,
+      "p95": 31.603695894354424,
+      "mean": 31.01347545375721,
+      "sample_stdev": 0.8231012683495443
+    }
+  },
+  "accuracy": {
+    "author_original": {
+      "position_rmse_m": 0.11626605215026987,
+      "velocity_rmse_mps": 0.0767476310414053,
+      "orientation_geodesic_rmse_rad": 0.05471385223324894,
+      "yaw_rmse_rad": 0.05294852091088121,
+      "yaw_convergence_10deg_s": 0.0,
+      "yaw_convergence_5deg_s": 0.0,
+      "rejected_measurements": 0,
+      "total_measurements": 14289,
+      "rejection_rate": 0.0,
+      "nis_median": 0.019163901957384332,
+      "runtime_seconds": 7.0701105,
+      "jit_compile_seconds": 0.0,
+      "stationary_updates": 0,
+      "samples": 44548
+    },
+    "author_accelerated": {
+      "position_rmse_m": 0.11626605215027028,
+      "velocity_rmse_mps": 0.07674763104140607,
+      "orientation_geodesic_rmse_rad": 0.054713852233248546,
+      "yaw_rmse_rad": 0.05294852091088082,
+      "yaw_convergence_10deg_s": 0.0,
+      "yaw_convergence_5deg_s": 0.0,
+      "rejected_measurements": 0,
+      "total_measurements": 14289,
+      "rejection_rate": 0.0,
+      "nis_median": 0.019163901957382923,
+      "runtime_seconds": 0.24654500000000001,
+      "jit_compile_seconds": 0.0,
+      "stationary_updates": 0,
+      "samples": 44548
+    }
+  },
+  "numerical_equivalence": {
+    "max_abs_rotation_matrix": 6.772360450213455e-15,
+    "max_abs_velocity_mps": 5.537237335317968e-15,
+    "max_abs_position_m": 3.3306690738754696e-15,
+    "max_abs_bias": 4.9847888945915575e-19,
+    "max_abs_nis": 1.2906342661267445e-14,
+    "rejection_decision_changes": 0
+  },
+  "evaluated_runs": {
+    "author_original": {
+      "replay_seconds": 7.0701105,
+      "kernel_seconds": 6.899754000000001,
+      "scheduler_seconds": 0.17035650000000002,
+      "predict_calls": 30267,
+      "uwb_calls": 14289,
+      "stationary_calls": 0
+    },
+    "author_accelerated": {
+      "replay_seconds": 0.24654500000000001,
+      "predict_calls": 30267,
+      "uwb_calls": 14289,
+      "stationary_calls": 0
+    }
+  }
+}

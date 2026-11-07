@@ -1,0 +1,183 @@
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=2.05cm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{booktabs,array,xcolor,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.3em}
+\title{IMU--UWB InEKF 的实时化与适用范围扩展}
+\author{论文--代码审阅与数据验证说明}
+\date{2026年7月23日}
+
+\begin{document}
+\maketitle
+
+\section{审阅结论}
+
+本文保持“不变卡尔曼滤波 + UWB TDoA + IMU 融合定位”的主题。论文采用
+$SE_2(3)$ 世界中心右不变误差状态
+\begin{equation}
+\delta\bm x=
+\begin{bmatrix}
+\delta\bm\theta&
+\delta\bm v&
+\delta\bm p&
+\delta\bm b_g&
+\delta\bm b_a
+\end{bmatrix}^{\mathsf T}\in\mathbb R^{15}.
+\end{equation}
+当前代码在真值附近已能跑完论文删除的 constellation 3 四个手动数据，但仍依赖
+Vicon 真值初始位置/姿态；manual3 在 $180^\circ$ yaw 初差下发生门控闭锁，
+前 60 s 位置 RMSE 为 $571.8$ m，UWB 拒绝率为 $83.3\%$。因此下一阶段必须同时
+解决固定高频矩阵开销、重尾 TDoA 和全局初始化，不能只调大卡方门限。
+
+\section{与论文传播式的对照}
+
+论文式 (40) 为
+\begin{equation}
+\Phi_k=e^{A_k\Delta t},\qquad
+P_{k+1}=\Phi_kP_k\Phi_k^{\mathsf T}
++L_kQ_kL_k^{\mathsf T}\Delta t.
+\label{eq:paperprop}
+\end{equation}
+当前 Python 默认路径对每个约 1 kHz IMU 样本调用通用 $15\times15$ 矩阵指数，
+并动态构造 $A_k$、Adjoint 和块对角噪声。机载实现建议利用固定稀疏结构，采用经
+NEES/NIS 验证的二阶离散：
+\begin{align}
+\Phi_k&\simeq I+A_k\Delta t+\frac12A_k^2\Delta t^2,
+\label{eq:phi2}\\
+Q_{d,k}&\simeq Q_{c,k}\Delta t+
+\frac12\left(A_kQ_{c,k}+Q_{c,k}A_k^{\mathsf T}\right)\Delta t^2.
+\label{eq:qd2}
+\end{align}
+式~\eqref{eq:paperprop} 的 $Q_k$ 是连续密度还是每样本方差必须通过单位和 Allan
+方差重新确认；不能在没有标定的情况下把代码中的 $\Delta t^2$ 机械改成 $\Delta t$。
+
+\section{多速率流形预积分}
+
+名义状态仍以 IMU 原始速率传播。对 $M$ 个 IMU 样本累积
+\begin{align}
+\Delta R&=\prod_{i=0}^{M-1}
+\operatorname{Exp}\!\left((\omega_i-\hat b_g)\Delta t_i\right),\\
+\Delta v&=\sum_{i=0}^{M-1}
+R_i(a_i-\hat b_a)\Delta t_i,\\
+\Delta p&=\sum_{i=0}^{M-1}
+\left(v_i\Delta t_i+
+\frac12R_i(a_i-\hat b_a)\Delta t_i^2\right),
+\end{align}
+并加入 coning/sculling 修正。协方差和偏置 Jacobian 每 $M=4,5,10$ 个样本或
+UWB 到达时更新一次。这样不牺牲快速机动的名义状态积分，却把最重的协方差传播频率
+从 1 kHz 降至 100--250 Hz。
+
+\section{标量 UWB 更新的结构化实现}
+
+论文采用 Joseph 形式保证协方差稳定。对标量 TDoA，
+\begin{equation}
+c=Ph^{\mathsf T},\qquad
+S=hc+R,\qquad
+K=\frac{c}{S},
+\end{equation}
+可将数学等价的协方差更新写成
+\begin{equation}
+P^+=P-\frac{cc^{\mathsf T}}{S}.
+\label{eq:rankone}
+\end{equation}
+式~\eqref{eq:rankone} 只需 $O(n^2)$ 秩一运算。生产实现应使用平方根/UD 滤波，
+或周期性 Joseph 校正与对称化，避免有限精度使 $P$ 失去半正定性。实时核不保存
+全量 $P_k$ 历史，只保留当前协方差和定长诊断环形缓冲。
+
+\section{物理门控和重尾鲁棒观测}
+
+对任意标签位置，距离差满足反三角不等式
+\begin{equation}
+\left|d_B-d_A\right|
+\leq \left\|\bm a_B-\bm a_A\right\|.
+\label{eq:physical}
+\end{equation}
+const3 TDoA3 manual3/manual4 分别有 193/221 条观测违反
+式~\eqref{eq:physical}，最大绝对值达到 334.6/176.9 m，应在滤波前直接拒绝。
+
+对未违反物理约束但受 NLOS 影响的有限残差，使用 Student-t 权重
+\begin{equation}
+w(\nu)=\frac{\nu_0+1}{\nu_0+\nu^2/S},
+\qquad
+R_{\mathrm{eff}}=\operatorname{clip}
+\left(\frac{R_{ij}}{w},R_{\min},R_{\max}\right).
+\label{eq:student}
+\end{equation}
+其中 $R_{ij}$ 和偏置 $\beta_{ij}$ 按锚点对缓慢自适应。共享锚点、相近时间戳的
+TDoA 应组成小批量并建模相关噪声，或限制有效更新频率，不能把数百 Hz 观测全部当成
+独立高斯样本。
+
+\section{从门控闭锁到全局恢复}
+
+当前固定 $5\sigma$ 门限在大初值误差下形成
+\[
+\text{大姿态误差}\to\text{大创新}\to\text{拒绝 UWB}
+\to\text{惯性漂移}\to\text{更大创新}.
+\]
+启动与失锁恢复应求解一个短窗鲁棒目标：
+\begin{equation}
+\min_{\bm p_0,\psi,\bm b_g,\bm b_a,\delta t}
+\sum_j
+\rho\!\left(
+\frac{
+z_j-h_j(X(t_j+\delta t))-\beta_{i_jk_j}
+}{\sigma_{i_jk_j}}
+\right)
++\|\bm\omega_m-\bm b_g\|_{W_g}^2
++\|\bm a_m-R^{\mathsf T}\bm g-\bm b_a\|_{W_a}^2.
+\label{eq:init}
+\end{equation}
+roll/pitch 和陀螺偏置由初始静止 IMU 获得，位置由鲁棒 TDoA 多边定位获得；
+yaw 使用 8--16 个短时假设或式~\eqref{eq:init} 的多初值优化。多假设只在前
+1--3 s 或 recovery 时运行，选择似然明显占优者后回到单滤波器。
+
+\section{快速机动下的时延和杠杆臂}
+
+若 UWB 时间戳与 IMU 状态存在偏移 $\delta t$，一阶敏感度为
+\begin{equation}
+\frac{\partial h}{\partial\delta t}
+\simeq
+\nabla_{\bm p}h^{\mathsf T}\bm v_{\mathrm{tag}}.
+\label{eq:delay}
+\end{equation}
+快速机动会放大式~\eqref{eq:delay}。应先离线标定固定时延和 UWB 杠杆臂，再在
+可观测性充分时做有界在线慢速更新。完整杠杆臂 Jacobian 虽已通过局部有限差分，
+仍须统一右不变传播、残差、注入和 reset 坐标，并通过 $90^\circ/180^\circ$
+大误差 Monte Carlo 后才能进入默认路径。
+
+\section{数据结果与验收}
+
+\begin{table}[htbp]
+\centering
+\caption{当前 proposed、真值初始姿态/位置下的 const3 手动数据}
+\begin{tabular}{lrrrrr}
+\toprule
+数据 & 位置/m & 速度/(m/s) & 姿态/rad & yaw/rad & 拒绝率\\
+\midrule
+manual1 TDoA2 & 0.267 & 0.236 & 0.054 & 0.052 & 1.06\%\\
+manual2 TDoA2 & 0.331 & 0.268 & 0.137 & 0.136 & 1.24\%\\
+manual3 TDoA3 & 0.242 & 0.197 & 0.132 & 0.131 & 1.82\%\\
+manual4 TDoA3 & 0.258 & 0.212 & 0.097 & 0.095 & 1.76\%\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+轨迹图目视检查显示 yaw $0^\circ$ 时四组均连续无发散，但 manual2 有约 1.1 m
+位置误差峰值，manual2/manual3 存在长时间 $5^\circ$--$13^\circ$ yaw 偏差。
+当前“连续 2 s 进入阈值”会把后续再次越界误报为已收敛，后续应增加末段 RMSE、
+last-exit、全程 95\% 覆盖率、最长连续拒绝时间、NIS/NEES 覆盖率。
+
+最终验收应覆盖全部 79 个 CSV、yaw 初差
+$\{0^\circ,45^\circ,90^\circ,135^\circ,180^\circ\}$，并且禁止用 Vicon 初始化。
+实时性必须在目标机载硬件上报告平均/p99/WCET、CPU 占用、内存峰值和 deadline miss，
+不能用桌面 Python 的实时倍数替代。
+
+\noindent\textbf{推荐实施边界：}
+第一阶段只实现关闭全量历史、固定工作区和秩一更新；物理 TDoA 门控；
+按锚点对的 MAD 与 Student-t 降权；连续高拒绝率恢复；启动期多航向假设。
+只有该阶段证明 manual3 的 $180^\circ$ 初差不再锁死、四个手动数据不退化且目标硬件
+满足 deadline，才进入多速率预积分和在线时空标定。
+
+\end{document}

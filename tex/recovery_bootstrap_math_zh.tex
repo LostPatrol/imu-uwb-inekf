@@ -1,0 +1,351 @@
+% Chinese mathematical companion to the English recovery-initialization research draft.
+\documentclass[11pt,a4paper]{ctexart}
+\usepackage[margin=2cm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,graphicx,tabularx}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref}
+\setlength{\parskip}{4pt}
+\newcommand{\R}{\mathbb R}
+\newcommand{\sk}[1]{[#1]_\times}
+\newcommand{\Proj}{\mathsf P}
+\title{TWR 冷启动与再捕获：数学推导、实验结果及边界}
+\author{研究工作记录}
+\date{2026年11月7日}
+\begin{document}
+\maketitle
+\begin{abstract}
+本轮以单标签、已知锚点、异步TWR和IMU为对象，推导了带多项式干扰的航向候选求解，
+给出无噪声唯一恢复的充分条件、多项式积分误差的不变性及航向不可辨识反例。
+完成156条完整真实回放、29368次合成或记录窗口拟合及96项首秒诊断，另做独立复跑核验。
+结果说明短窗捕获能避免已有预热策略的严重初期峰值；普通常速度窗口在既有完整回放中获得相同稳定成功率。
+新增远域实验进一步表明，代数航向候选显著降低单起点原始距离优化落入较差解的比例，
+在明确几何条件下以较低计算成本达到十二起点对照的解质量。
+本文据此讨论有适用条件的算法贡献及其代价，而不要求所有场景和指标同时改善。
+\end{abstract}
+
+\section{与原文的关系}
+Oursland与Mehrabian的RO-MAN 2024论文采用含杆臂的TDoA观测，重点处理大初始航向误差。
+其几何输出与本轮观测分别为
+\begin{align}
+ h_{BA}(X)&=\|p+R\ell-a_B\|-\|p+R\ell-a_A\|,\\
+ z_i&=\|p(t_i)-a_i\|+\beta_i+n_i .\label{eq:twr}
+\end{align}
+本轮限定零杆臂TWR；不能直接把结果排名解释为超过或否定原论文。
+不变跟踪器仍使用$X\in SE_2(3)$和六维IMU偏置，改动位于捕获与交接环节。
+设物理误差为$[\delta\theta_b,\delta v,\delta p,\delta b_g,\delta b_a]$，对应不变坐标满足
+\begin{equation}
+ \xi_\theta=R\delta\theta_b,\quad
+ \xi_v=\delta v+\sk{v}R\delta\theta_b,\quad
+ \xi_p=\delta p+\sk{p}R\delta\theta_b.
+\end{equation}
+因此$P_r=C(X)P_eC(X)^\top$；新位置或速度交接后必须在新状态处重算$C(X)$。
+这项坐标正确性属于已有工程基线，不作为本轮首创。
+
+\section{异步距离中的多项式干扰与航向}
+\subsection{窗口模型及平方距离展开}
+令$\tau_i=t_i-t_e\leq0$，已知IMU预积分位移为$d_i$，考虑
+\begin{equation}
+ p_i=\sum_{j=0}^{K}c_j\tau_i^j+R_z(\psi)d_i,\qquad
+ u=\begin{bmatrix}\cos\psi&\sin\psi\end{bmatrix}^{\top}.
+ \label{eq:model}
+\end{equation}
+$K=1$对应已校准偏置的惯性窗口；实际回放对$d$作终点重锚，使$d(0)=\dot d(0)=0$，
+故$c_0,c_1$分别为终点位置与速度。$K=2$额外吸收常值世界系加速度误差；
+只有姿态恒定时，它才与常值机体系加速度偏置严格对应。
+
+定义$r_i=z_i-\beta_i$。忽略噪声时，令
+\begin{equation}
+ y_i=\tfrac12(r_i^2-\|a_i\|^2-\|d_i\|^2)+a_{iz}d_{iz},
+\end{equation}
+展开式\eqref{eq:model}得到
+\begin{equation}
+ y=B\nu+Dc+Cu,
+ \label{eq:lift}
+\end{equation}
+其中
+\begin{align}
+ B_i&=\big[1,\tau_i,\ldots,\tau_i^{2K},
+       (\tau_i^jd_{ix},\tau_i^jd_{iy})_{j=0}^{K}\big],\\
+ D_{ij}&=\tau_i^j\big[-a_{ix},-a_{iy},d_{iz}-a_{iz}\big],\\
+ C_i&=\big[-a_{ix}d_{ix}-a_{iy}d_{iy},\quad
+                 a_{ix}d_{iy}-a_{iy}d_{ix}\big].
+\end{align}
+$\nu$含$4K+3$个辅助量；$c$含$3K+3$个物理平移系数。
+这些辅助量在原模型中相互约束，而式\eqref{eq:lift}将其自由化，因此是\textbf{放松}，不是原始最大似然问题的等价变形。
+平方测距的多项式提升已有前作，例如Pacholska等人的\emph{Relax and Recover}（RA-L 2020）；
+本轮需要评价的是引入已知惯性形状与单位圆航向约束后的具体性质，而非声称首次提出提升。
+
+若$n_i\sim\mathcal N(0,\sigma_i^2)$，应从$y_i$中扣除$\sigma_i^2/2$。
+在锚点、标定偏置和$d_i$视为确定的条件下，
+\begin{equation}
+ \operatorname{Var}(y_i)=\rho_i^2\sigma_i^2+\tfrac12\sigma_i^4,
+ \qquad \rho_i=\|p_i-a_i\|.
+\end{equation}
+实现用测得距离代替未知$\rho_i$加权，这是近似；IMU积分噪声及标定不确定度并未由此自动建模。
+
+\subsection{投影、四次多项式与恢复条件}
+记$W$为对角白化权重，$L=W[B\ D]$，
+\begin{equation}
+ \Proj_L=I-LL^\dagger,\quad \bar y=\Proj_LWy,\quad\bar C=\Proj_LWC.
+\end{equation}
+通过SVD实现投影后，仅剩二维圆约束问题
+\begin{equation}
+ \min_{\|u\|=1}\|\bar y-\bar C u\|^2
+ =\min_\psi u^\top H u-2g^\top u+\mathrm{const},\quad
+ H=\bar C^\top\bar C,\ g=\bar C^\top\bar y.
+\end{equation}
+令$\Delta=H_{22}-H_{11}$、$s=\tan(\psi/2)$，驻点满足
+\begin{align}
+0={}&(H_{12}+g_2)s^4+(-2\Delta+2g_1)s^3-6H_{12}s^2\nonumber\\
+ &+(2\Delta+2g_1)s+(H_{12}-g_2).
+\end{align}
+枚举实根并补入$\psi=\pi$即可取得该圆问题的全局最小值。
+
+\textbf{条件性结论。}若模型准确、无噪声且$\operatorname{rank}(\bar C)=2$，真实航向是放松圆问题唯一全局最优。
+证明：真实解成本为零，其他全局最优必满足$\bar C(u-u_*)=0$，满列秩推出$u=u_*$。
+若另外$\operatorname{rank}(\Proj_{WB}WD)=3(K+1)$，平移系数亦唯一。
+秩条件不满足只说明这个充分条件失效，不能据此普遍断言原始非线性模型不可观。
+实际工程只取提升给出的航向，以鲁棒常速度估计提供平移初值再优化原始距离，
+所以不能把上述候选模块定理直接写成完整算法或有偏InEKF的全局收敛保证。
+
+\subsection{多项式污染不变性与一个精确退化反例}
+设积分误差为$b(\tau)=\sum_{j=0}^{K}b_j\tau^j$，作变换
+\begin{equation}
+ d_i'=d_i+b(\tau_i),\qquad c_j'=c_j-R_z(\psi)b_j.
+\end{equation}
+代入\eqref{eq:model}后$p_i$逐点不变。因此，对每个固定$\psi$，消去$c$后的任意原始距离鲁棒代价不变。
+若权重只依赖距离与噪声尺度，放松后的整个圆代价也不变：$B$列空间不变，$D$变化落在$B$内，
+$C$变化落在$[B\ D]$内，$y$变化同样被投影消去。
+该性质有独立随机性质测试，\textbf{但只在指定模型中成立}。
+
+若$d$的水平分量本身为不高于$K$阶多项式，则任意航向变化都能由$c_j$补偿，
+所有位置及距离相同。这是原模型的精确航向歧义。
+特别地，恒定姿态、恒定水平加速度与未知常值加速度偏置共同存在时，不能用距离单独区分航向和偏置。
+即使位置已经精确，也不能据此宣布航向已可可靠交接。
+
+\section{偏置与交接信息}
+原始距离鲁棒拟合使用
+\begin{equation}
+ \min_x\sum_i \rho_H\!\left(\frac{\|p_i(x)-a_i\|-r_i}{\sigma_i}\right),
+ \qquad \rho_H\text{的阈值为 }2.
+\end{equation}
+令$J_\psi$为航向列，$J_n$含待消除的位置、速度及适用的偏置变量，IRLS权重为$W_H$。
+数据提供的局部航向信息写作
+\begin{equation}
+ \mathcal I_{\psi\mid n}
+ =\|\Proj_{W_H^{1/2}J_n}W_H^{1/2}J_\psi\|^2.
+\end{equation}
+该量是局部IRLS代理信息，不是完整Huber Hessian，不是实际误差上界，也不是后验校准证明。
+固定偏置和允许偏置自由变化给出的$J_n$不同，信息可以相差很多数量级。
+交接协方差采用完整物理宽先验正则化后的逆矩阵，再经$C(X)$映射，并保留模型误差下限。
+已修正伪逆会把未观平移方向方差错误置零的问题；现有协方差仍是工程近似，尚无完整NEES验证。
+
+对实际旋转，偏置积分应为
+\begin{equation}
+ B(t)=\int_0^t\int_0^s Q(u)\,du\,ds,\qquad
+ p(t)=p_e+v_e\tau+R_z(\psi)\{d(t)-B_e(t)\delta b_a\},
+\end{equation}
+$B_e$与$d$同样在终点重锚。本轮实现了十变量原始距离优化及联合协方差交接；
+偏置先验标准差固定为$0.1\ \mathrm{m/s^2}$，数据可辨识信息计算明确不含先验。
+
+慢旋转时还可定量界定二次近似：若$\|\dot Q(s)\|_2\leq\Omega$，令$\Delta=t_e-t$，则
+\begin{equation}
+ B_e(t)=\int_t^{t_e}(s-t)Q(s)\,ds,\qquad
+ \big\|B_e(t)-\tfrac12\Delta^2Q(t_e)\big\|_2\leq\frac{\Omega\Delta^3}{6}.
+\end{equation}
+证明由$\|Q(s)-Q(t_e)\|_2\leq\Omega(t_e-s)$直接积分得到。
+故二次项消去后，常值机体系偏置造成的剩余位置误差至多
+$\Omega\|\delta b_a\|\Delta^3/6$；距离函数为1-Lipschitz，距离残差满足同界。
+该结论依赖外部旋转率和偏置范数界，说明短窗、慢旋转近似的适用范围，不是无需假设的在线可信证书。
+
+\subsection{从模型误差到航向误差的定量联系}
+固定实际使用的名义位移$d^0$及由它构造的$L,C,W$，将真实轨迹表示为
+$p_i^{\rm true}=p_i^0+r_i^p$，其中$p_i^0=c_\star(t_i)+R_z(\psi_\star)d_i^0$。
+若$\|r_i^p\|\leq\delta_i$，且$\rho_i^0=\|p_i^0-a_i\|$，平方测距模型误差满足
+\begin{equation}
+ m_i=\tfrac12\big((\rho_i^{\rm true})^2-(\rho_i^0)^2\big),\qquad
+ |m_i|\leq b_i:=\rho_i^0\delta_i+\tfrac12\delta_i^2.
+\end{equation}
+设距离噪声为$e_i$，去均值后的平方噪声为
+$\epsilon_i=\rho_i^{\rm true}e_i+\tfrac12(e_i^2-\sigma_i^2)$，则精确投影满足
+\begin{equation}
+ \bar y=\bar C u_\star+\eta,\quad
+ \eta=\Proj_LW(m+\epsilon),\quad
+ \|\eta\|\leq\|Wb\|+\|\Proj_LW\epsilon\|.
+\end{equation}
+若$s=\sigma_{\min}(\bar C)>0$，圆问题的全局极小解$\hat u$满足标准确定性扰动界
+\begin{equation}
+ \|\hat u-u_\star\|\leq\frac{2\|\eta\|}{s},\qquad
+ |\operatorname{wrap}(\hat\psi-\psi_\star)|
+ \leq2\arcsin\!\left(\min\{1,\|\eta\|/s\}\right).
+\end{equation}
+证明只需用真实圆点比较极小残差，再用三角不等式与最小奇异值下界。
+取$\delta_i=\Omega\|\delta b_a\||\tau_i|^3/6$便把旋转、偏置、窗长、测距与航向敏感性联系起来。
+该关系是标准最小二乘扰动论的应用，不作为独创新定理；未知误差上界使它尚不能直接充当在线证书。
+
+实现采用截断SVD投影$\widetilde\Proj$时，若舍弃的奇异值不严格为零，必须增加
+\begin{equation}
+ \widetilde\eta=\widetilde\Proj W(m+\epsilon)+\zeta,\qquad
+ \zeta=\widetilde\Proj Lx_\star,
+ \quad x_\star=[\nu_\star^\top,c_\star^\top]^\top.
+\end{equation}
+此时上界用$\widetilde\eta$及$\sigma_{\min}(\widetilde\Proj WC)$，不能忽略非零干扰泄漏。
+若$W$由同一批观测距离决定，上式逐实现仍成立；但一般不能声称
+$\mathbb E[\epsilon\mid W]=0$，也不能直接将未条件化方差解释为后验置信区间。
+
+在相同名义数据和权重下，提高阶数使线性干扰列空间嵌套扩大，因此精确投影满足
+\begin{equation}
+ K_2>K_1\ \Longrightarrow\
+ H_{K_2}=C^\top W\Proj_{L_{K_2}}WC\preceq
+ H_{K_1},\qquad
+ \sigma_{\min}(\bar C_{K_2})\leq\sigma_{\min}(\bar C_{K_1}).
+\end{equation}
+更多自由偏置方向可能减小模型误差，也削弱航向几何约束；恒加速度在二次模型中不可辨识正是极端情形。
+1000个圆问题、128个带旋转余项和平方噪声模型各两种权重的独立数值核验未发现界限违反，
+并检查了截断泄漏反例及权重条件均值偏移；这些不是统计覆盖率实验。
+
+初始倾斜误差还有直接解释。若陀螺无误，令$E=\hat Q(0)Q(0)^\top$，相同右增量传播保持
+$\hat Q(t)=EQ(t)$。无加计误差时，$a=Qf+g$给出
+\begin{equation}
+ \hat a=Ea+(I-E)g,\qquad
+ \hat d(t)=E d(t)+\tfrac12\tau^2(I-E)g.
+\end{equation}
+二次平移项可精确吸收这里的重力泄漏；残余形状误差满足
+$\|(E-I)d(t)\|\leq2\sin(\theta_E/2)\|d(t)\|$。
+这是标准惯导误差关系，解释下文模型阶数实验；有陀螺误差时$E(t)$不再常值，不能继续声称精确二次等价。
+
+\section{实验事实与决策}
+\subsection{真实日志与原有初期峰值}
+六条同日评估日志采用另六条训练日志的冻结逐锚标定。全部日志此前已有开发暴露，不能称为独立盲测。
+初始化运行时不读取位置真值；真值参与离线训练标定、有效区间裁剪与共同时间轴校正，
+评价阶段用真值计算误差，故不能笼统声称整个研究流程只在评分时使用真值。
+静止IMU前缀为1.5秒，IMU与TWR共同相对真值校正0.20秒；这不是在线相对时延标定。
+中断为15--25秒，恢复触发由新测距距上次有效测距超过1秒发现，不预告恢复时刻。
+
+独立首秒诊断故意使用准确真值初始位置，以隔离预热策略因果。
+random日志在$0.00$秒的锚3原始距离14.509 m，校准后距离误差7.883 m，创新8.102 m、NIS18.441。
+前256次无门控使该事件被接纳，位置注入34.117 m；当次姿态注入只有0.0091 rad，后续才出现大旋转。
+只开Huber仍有33.972 m峰值，立即硬拒绝则为0.324 m。
+但错误9 m初值与过窄0.2 m位置先验又可使硬门控难以捕获，不能把单个诊断胜出当普遍方案。
+数学上$K=Pq/(q^\top Pq+\sigma^2)$的欧氏范数并不被1约束；顺序更新后的各向异性协方差可以放大位置增量。
+
+\begin{center}\small
+\begin{tabular}{lrrrr}
+\toprule
+方法&正常成功/6&正常RMSE中位&中断RMSE中位&正常输出峰值\\
+\midrule
+常速度窗口&5&0.28523&2.34902&1.50399\\
+原始距离单起点&5&0.28524&2.16406&1.50389\\
+本文航向候选&5&0.28524&2.16411&1.50389\\
+旧提升捕获&5&0.28522&1.38686&16.26515\\
+两秒偏置窗口&5&0.28507&2.33199&1.49232\\
+八秒偏置窗口&5&0.28875&11.54979&1.17280\\
+\bottomrule
+\end{tabular}
+\end{center}
+表内距离单位均为m；RMSE采用共同$t\geq8.1$秒区间。
+固定窗口方法启动前2/8秒不输出，旧提升捕获立即输出；峰值改善不能脱离可用性代价单独比较。
+所有已输出的失测及等待期间预测误差保留。信息触发法正常仅4/6成功，且一条日志完全未初始化。
+
+\subsection{合成证据及其限制}
+基础研究为200个种子、三种运动、两种噪声、四种方法，共4800次求解。
+偏置研究采用1000个配对种子、两种运动、三种偏置尺度、两种方法，共12000次求解。
+这些是同种子的配对设计，不能把不同偏置尺度当完全独立数据。
+在有激励、每轴偏置标准差$0.3\ \mathrm{m/s^2}$的受限模型中，
+固定偏置模型与二次干扰模型的航向误差中位为$7.675^\circ/0.916^\circ$，位置为$0.7368/0.0732$ m。
+在恒定加速度下，后者航向信息约$10^{-26}$，拒绝全部航向交接；这属于正确识别歧义，不是成功恢复航向。
+前者992/1000次通过信息阈值，其中554次实际航向误差超过0.35 rad；这只是阈值冲突事件，不能称95\%置信覆盖失败。
+
+完整曲线与四分位区间见配套英文论文，回放轨迹另存于随附的\texttt{trajectories.pdf}；
+所有失败与未初始化案例均保留。
+\subsection{远域捕获的条件性优势}
+将终点设在锚点中心水平距离10或30 m处，锚点高度跨度设为3或0.1 m，
+使用两类运动、每格200个固定随机种子及四方法，共6400次配对求解。
+所有惯性方法使用相同鲁棒常速度位置和速度初值、相同原始距离损失；
+单起点航向为零，真实航向均匀覆盖整个圆。十二起点是经验求解对照，不是全局最优证书。
+
+在30 m、3 m高度跨度、有激励的格点中，单起点41/200次落入比十二起点更差的目标值；
+本文候选为0/200次。位置误差p95从4.462 m降至0.509 m，航向误差p95从$155.54^\circ$降至$3.48^\circ$。
+本文方法与十二起点取得相同解质量，并行压力实验的耗时中位为11.88/59.90 ms。
+这支持\textbf{远域捕获可靠性与计算代价}方面的贡献，不依赖稳态RMSE也全面改善。
+0.1 m弱高度几何仍出现高度歧义和较大位置误差，必须保留该限制；
+不能把上述结果概括成所有几何下的三维全局恢复。
+
+\subsection{真实窗口的可靠性与计算代价}
+真实日志构造66个物理窗口（六日志，每条11个不同终点或时长的窗口），
+分别采用全部八锚或最低四锚，并改变四种yaw坐标参数化，共528个配对配置。
+坐标改变不改变物理问题，但检验局部求解对航向初值的敏感性；不能把528个配置当独立采集。
+全部六方法使用相同两次CV位置/速度初始化、同一Huber损失和同一优化限额。
+
+\begin{center}\small
+\begin{tabular}{lrrr}
+\toprule
+方法&目标miss/528&总函数评估&串行耗时中位(ms)\\
+\midrule
+局部单起点&87&36157&15.54\\
+单航向候选&40&32632&13.28\\
+双航向候选&28&47466&17.79\\
+全部圆候选&11&93690&37.01\\
+均匀四起点&12&85229&33.44\\
+均匀十二起点&0&216893&83.08\\
+\bottomrule
+\end{tabular}
+\end{center}
+miss定义为Huber目标超过六方法找到的最优值$10^{-4}(1+F_{\min})$以上，
+不是相对已认证全局最优。总函数评估包含共同CV计算；SVD及四次根枚举只计入墙钟耗时。
+串行计时采用预先指定的12窗口、六方法、10次交错重复，共720次。
+单候选相对局部法胜出58配置、退化11配置、共同miss29配置，
+总函数评估减少9.75\%；其p95延迟65.58 ms略高于局部法63.35 ms。
+全部圆候选并未普遍优于均匀四起点，十二起点仍是本实验最可靠但更昂贵的经验对照。
+这些结果支持有取舍的求解可靠性提升，不依赖每个指标都占优。
+
+\subsection{物理IMU标定失配压力试验}
+追加200种子、理想/轻微/中等三级条件及三方法，共1800次拟合。
+采用30 m距离、3 m锚高跨度、4秒窗口和200 Hz离散IMU传播；
+滚转/俯仰为幅值$10^\circ/8^\circ$的正弦运动，真实比力和陀螺增量由同一姿态轨迹产生。
+两种非理想条件的每轴加计偏置标准差为0.02/0.10 $\mathrm{m/s^2}$，
+陀螺偏置为0.002/0.01 rad/s，初始两轴倾斜误差为$0.5^\circ/2^\circ$。
+这些是组合标定失配条件，没有额外IMU白噪声，不能据此分解单因素因果或声称全面传感器验证。
+
+\begin{center}\small
+\begin{tabular}{llrrr}
+\toprule
+条件&方法&目标miss/200&位置p95(m)&物理航向p95($^\circ$)\\
+\midrule
+理想&局部/本文/十二起点&53/0/0&4.221/0.546/0.546&161.26/3.58/3.58\\
+轻微&局部/本文/十二起点&57/0/0&4.254/1.031/1.031&161.05/16.90/16.90\\
+中等&局部/本文/十二起点&65/31/0&5.902/4.698/4.223&156.75/52.10/133.85\\
+\bottomrule
+\end{tabular}
+\end{center}
+零失配下名义与真实重锚位移最大差$1.46\times10^{-13}$ m；20个完整种子共180次拟合独立重跑通过。
+轻微失配下本文仍达到十二起点目标质量，但真值精度较理想条件下降；
+中等失配下本文也有目标失败，而十二起点更低目标并未带来更小航向真值误差。
+应分别评价优化可靠性和模型准确性，不能用原始残差替代后者，也不能将某一项优势推广为全面占优。
+
+进一步对完全相同的600个条件追加一次与二次模型各600次拟合，
+两者均采用提升平移和鲁棒CV平移两个初值、同一损失和迭代限额；
+因此控制了额外初值的影响，改变的是模型阶数及其自然诱导的提升候选。
+下表比较$K=1/K=2$，没有把不同维数模型的原始目标值用于跨模型miss排名。
+\begin{center}\small
+\begin{tabular}{lrr}
+\toprule
+条件&位置p95(m)，$K=1/K=2$&物理航向p95($^\circ$)，$K=1/K=2$\\
+\midrule
+理想&0.546/0.732&3.578/4.747\\
+轻微失配&1.031/0.731&16.902/5.525\\
+中等失配&4.535/0.761&54.854/12.393\\
+\bottomrule
+\end{tabular}
+\end{center}
+各自20个种子共60次拟合独立重跑通过，全部结果有限且优化器正常终止。
+二次干扰模型以理想条件下的噪声代价，换取了明显的标定失配保护，
+与偏置吸收、重力泄漏和投影信息减弱的分析一致；仍非独立实测或任意IMU误差的保证。
+
+\section{当前结论与后续验证}
+已得到可检查的数学恒等式、条件性恢复证明、偏置歧义分析和可复现实验。
+真实冷启动补齐了强常速度、局部原始距离、多起点和含偏置窗口对照，避免继续仅对比脆弱的裸滤波器。
+\textbf{远域求解可靠性、固定模型下的偏置污染不变性，以及相对多起点求解的计算代价构成当前论文的主要贡献依据。}
+完整真实轨迹的稳态精度和失测瞬态未形成普遍优势，这是适用范围与系统代价，不能单独否定上述贡献。
+仍需新日期或新几何真实盲测、完整姿态与偏置真值、协方差校准、改进MHE等现代强对照和目标硬件预算，
+以进一步支持部署或广泛推广的主张。英文IEEE初稿准确区分已证命题、已测收益和这些尚未验证的外推。
+\end{document}

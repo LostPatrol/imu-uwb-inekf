@@ -1,0 +1,30 @@
+{
+  "trials": 20,
+  "seed": 20260728,
+  "initial_position_distribution_m": "independent uniform[-50, 50]",
+  "initial_velocity_distribution_mps": "independent uniform[-10, 10]",
+  "success_definition": "last-5-s position RMSE < 1 m",
+  "methods": {
+    "direct_twr": {
+      "success_count": 0,
+      "success_rate": 0.0,
+      "tail5_rmse_median_m": 276.88676612822644,
+      "tail5_rmse_p95_m": 409.7305194306613,
+      "full_rmse_median_m": 190.80959696250818
+    },
+    "lifted_twr": {
+      "success_count": 20,
+      "success_rate": 1.0,
+      "tail5_rmse_median_m": 0.3810191189698784,
+      "tail5_rmse_p95_m": 0.4233024601127923,
+      "full_rmse_median_m": 13.49253965134211
+    },
+    "twr_inekf": {
+      "success_count": 0,
+      "success_rate": 0.0,
+      "tail5_rmse_median_m": 226.07750906416538,
+      "tail5_rmse_p95_m": 332.83296426831436,
+      "full_rmse_median_m": 164.06388558133995
+    }
+  }
+}

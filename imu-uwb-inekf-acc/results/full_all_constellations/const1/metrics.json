@@ -1,0 +1,202 @@
+{
+  "scope": {
+    "description": "Untouched paper-author source versus a byte-identical copy executed by a fixed-size native loop. Initial state, bias, covariance, noise, gate, prediction, and correction semantics are unchanged. Loading, construction, JIT warmup, history, metrics, and plots are outside measured replay.",
+    "dataset": "E:\\datasets\\dataset\\flight-dataset\\csv-data\\const1\\const1-trial1-tdoa2.csv",
+    "anchors": "E:\\datasets\\dataset\\flight-dataset\\survey-results\\anchor_const1.npz",
+    "max_duration": null,
+    "yaw_degrees": 0.0,
+    "warmup_duration_seconds": 10.0,
+    "jit_warmup_or_cache_load_seconds": 0.16839180001989007,
+    "repeats": 2,
+    "thread_limit": 1,
+    "history_recorded_in_timing": false,
+    "predict_calls_per_run": 142220,
+    "uwb_calls_per_run": 67205,
+    "events_per_run": 209426,
+    "event_plan_sha256": "78cb513823f61ff7bd4ca79aab7bc4a149877a5c4bdbe050cfc3232aeb8291ff",
+    "tdoa_variance_both_variants": 0.13
+  },
+  "algorithm_settings": {
+    "identical_for_both_variants": true,
+    "initial_yaw_std_rad": 1.0,
+    "initial_roll_pitch_std_rad": 0.01,
+    "initial_velocity_std_mps": 0.01,
+    "initial_position_std_m": 0.1,
+    "initial_accelerometer_bias_std": 0.0001,
+    "initial_gyroscope_bias_std": 1e-06,
+    "initial_bias": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "tdoa_variance": 0.13,
+    "gate_mahalanobis_threshold": 5.0,
+    "ground_clamp": true,
+    "author_bias_layout_preserved": true,
+    "author_pre_gate_coordinate_semantics_preserved": true,
+    "execution_only_changes": [
+      "precomputed integer event lookups",
+      "fixed contiguous float64 buffers",
+      "Numba nopython event/predict/update loop",
+      "exact cubic evaluation of expm(A*dt) because A^4=0",
+      "direct expansion of H_left @ Ad(X_hat^-1)"
+    ]
+  },
+  "provenance": {
+    "author_repository": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf - backup",
+    "author_commit": "f3b664e0e8c86b62c6ed2ea2a112261810228e1c",
+    "author_source": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf - backup\\scripts\\estimation\\inekf.py",
+    "author_source_sha256": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+    "author_source_modified": false,
+    "accelerated_repository": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf-acc",
+    "accelerated_copied_author_source": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf-acc\\scripts\\estimation\\inekf.py",
+    "accelerated_copied_author_source_sha256": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+    "copied_author_source_byte_identical": true,
+    "accelerated_variant": "author_accelerated",
+    "accelerated_core_source": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf-acc\\scripts\\estimation\\accelerated_replay.py",
+    "accelerated_core_source_sha256": "fc66086af6782e8ab3e29fa93917d5827f6f5e7a1a33494c56dbef375cd6cb0c",
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "timing": {
+    "author_original": {
+      "initialization_seconds": {
+        "runs": [
+          0.00042070000000000003,
+          0.000378
+        ],
+        "median": 0.00039935000000000003,
+        "mad": 2.1350000000000004e-05,
+        "minimum": 0.000378,
+        "maximum": 0.00042070000000000003,
+        "p95": 0.00041856500000000003,
+        "mean": 0.00039935000000000003,
+        "sample_stdev": 3.0193459556665583e-05
+      },
+      "replay_seconds": {
+        "runs": [
+          45.7853052,
+          45.506429600000004
+        ],
+        "median": 45.6458674,
+        "mad": 0.1394377999999996,
+        "minimum": 45.506429600000004,
+        "maximum": 45.7853052,
+        "p95": 45.771361420000005,
+        "mean": 45.6458674,
+        "sample_stdev": 0.19719482786746662
+      }
+    },
+    "author_accelerated": {
+      "initialization_seconds": {
+        "runs": [
+          0.0005878000000000001,
+          0.0007553000000000001
+        ],
+        "median": 0.0006715500000000001,
+        "mad": 8.375e-05,
+        "minimum": 0.0005878000000000001,
+        "maximum": 0.0007553000000000001,
+        "p95": 0.0007469250000000001,
+        "mean": 0.0006715500000000001,
+        "sample_stdev": 0.00011844038584874671
+      },
+      "replay_seconds": {
+        "runs": [
+          1.1230107,
+          1.1207553000000001
+        ],
+        "median": 1.121883,
+        "mad": 0.0011276999999999537,
+        "minimum": 1.1207553000000001,
+        "maximum": 1.1230107,
+        "p95": 1.12289793,
+        "mean": 1.121883,
+        "sample_stdev": 0.001594808634288074
+      }
+    }
+  },
+  "speedup": {
+    "ratio_of_medians": 40.68683401032015,
+    "paired": {
+      "runs": [
+        40.77014154896298,
+        40.603358824178656
+      ],
+      "median": 40.68675018657082,
+      "mad": 0.08339136239216316,
+      "minimum": 40.603358824178656,
+      "maximum": 40.77014154896298,
+      "p95": 40.76180241272377,
+      "mean": 40.68675018657082,
+      "sample_stdev": 0.1179331956797668
+    }
+  },
+  "accuracy": {
+    "author_original": {
+      "position_rmse_m": 0.10800313191148765,
+      "velocity_rmse_mps": 0.06090133339010495,
+      "orientation_geodesic_rmse_rad": 0.06382647236440041,
+      "yaw_rmse_rad": 0.0623002600179972,
+      "yaw_convergence_10deg_s": 0.0,
+      "yaw_convergence_5deg_s": 0.0,
+      "rejected_measurements": 0,
+      "total_measurements": 67205,
+      "rejection_rate": 0.0,
+      "nis_median": 0.019229696839254715,
+      "runtime_seconds": 47.2658074,
+      "jit_compile_seconds": 0.0,
+      "stationary_updates": 0,
+      "samples": 209167
+    },
+    "author_accelerated": {
+      "position_rmse_m": 0.10800313191149045,
+      "velocity_rmse_mps": 0.06090133339010661,
+      "orientation_geodesic_rmse_rad": 0.06382647236439862,
+      "yaw_rmse_rad": 0.062300260017995365,
+      "yaw_convergence_10deg_s": 0.0,
+      "yaw_convergence_5deg_s": 0.0,
+      "rejected_measurements": 0,
+      "total_measurements": 67205,
+      "rejection_rate": 0.0,
+      "nis_median": 0.019229696839250653,
+      "runtime_seconds": 1.2601463000000002,
+      "jit_compile_seconds": 0.0,
+      "stationary_updates": 0,
+      "samples": 209167
+    }
+  },
+  "numerical_equivalence": {
+    "max_abs_rotation_matrix": 8.770761894538737e-15,
+    "max_abs_velocity_mps": 1.6542323066914832e-14,
+    "max_abs_position_m": 1.1546319456101628e-14,
+    "max_abs_bias": 9.0801931945661e-19,
+    "max_abs_nis": 2.2593038551121936e-14,
+    "rejection_decision_changes": 0
+  },
+  "evaluated_runs": {
+    "author_original": {
+      "replay_seconds": 47.2658074,
+      "kernel_seconds": 46.1096117,
+      "scheduler_seconds": 1.1561957,
+      "predict_calls": 142220,
+      "uwb_calls": 67205,
+      "stationary_calls": 0
+    },
+    "author_accelerated": {
+      "replay_seconds": 1.2601463000000002,
+      "predict_calls": 142220,
+      "uwb_calls": 67205,
+      "stationary_calls": 0
+    }
+  }
+}

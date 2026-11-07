@@ -1,0 +1,95 @@
+{
+  "sequences": 12,
+  "rows": 84,
+  "scope": "nominal initial position; final 5 seconds of every real TWR log",
+  "methods": {
+    "direct_twr": {
+      "position_rmse_median_m": 0.387110626347857,
+      "position_tail5_rmse_median_m": 0.192064778474814,
+      "position_xy_rmse_median_m": 0.19176679641132444,
+      "position_xy_tail5_rmse_median_m": 0.10681014499214046,
+      "velocity_tail5_rmse_median_mps": 0.46588709459312744,
+      "velocity_xy_tail5_rmse_median_mps": 0.24755070607924723,
+      "tail5_worse_than_direct_count": 0,
+      "tail5_better_than_direct_count": 0,
+      "tail5_minus_direct_median_m": 0.0
+    },
+    "lifted_projected": {
+      "position_rmse_median_m": 0.3859317799326769,
+      "position_tail5_rmse_median_m": 0.2065741523433473,
+      "position_xy_rmse_median_m": 0.18963024425940106,
+      "position_xy_tail5_rmse_median_m": 0.1050788011483601,
+      "velocity_tail5_rmse_median_mps": 0.4663271309261123,
+      "velocity_xy_tail5_rmse_median_mps": 0.250657515610991,
+      "tail5_worse_than_direct_count": 10,
+      "tail5_better_than_direct_count": 2,
+      "tail5_minus_direct_median_m": 0.011547229340404613
+    },
+    "lifted_q20": {
+      "position_rmse_median_m": 0.4042666971254635,
+      "position_tail5_rmse_median_m": 0.2846287699325726,
+      "position_xy_rmse_median_m": 0.19055317543065398,
+      "position_xy_tail5_rmse_median_m": 0.10868972610329426,
+      "velocity_tail5_rmse_median_mps": 0.6148515742683174,
+      "velocity_xy_tail5_rmse_median_mps": 0.29739467330091063,
+      "tail5_worse_than_direct_count": 11,
+      "tail5_better_than_direct_count": 1,
+      "tail5_minus_direct_median_m": 0.09910115069684511
+    },
+    "lifted_q40": {
+      "position_rmse_median_m": 0.4149045034600741,
+      "position_tail5_rmse_median_m": 0.27295295791009777,
+      "position_xy_rmse_median_m": 0.19209882259964442,
+      "position_xy_tail5_rmse_median_m": 0.10922989378570534,
+      "velocity_tail5_rmse_median_mps": 0.7977153305548336,
+      "velocity_xy_tail5_rmse_median_mps": 0.4421584525756401,
+      "tail5_worse_than_direct_count": 11,
+      "tail5_better_than_direct_count": 1,
+      "tail5_minus_direct_median_m": 0.07663608271388156
+    },
+    "lifted_q5": {
+      "position_rmse_median_m": 0.406721138318599,
+      "position_tail5_rmse_median_m": 0.36311980875714456,
+      "position_xy_rmse_median_m": 0.19431302038942455,
+      "position_xy_tail5_rmse_median_m": 0.11115436105095473,
+      "velocity_tail5_rmse_median_mps": 0.5827691208964945,
+      "velocity_xy_tail5_rmse_median_mps": 0.25135550723068945,
+      "tail5_worse_than_direct_count": 11,
+      "tail5_better_than_direct_count": 1,
+      "tail5_minus_direct_median_m": 0.20743296956765428
+    },
+    "lifted_twr": {
+      "position_rmse_median_m": 0.40444567510743756,
+      "position_tail5_rmse_median_m": 0.3346504700802182,
+      "position_xy_rmse_median_m": 0.18961202845595504,
+      "position_xy_tail5_rmse_median_m": 0.10814442368355232,
+      "velocity_tail5_rmse_median_mps": 0.5646903433335202,
+      "velocity_xy_tail5_rmse_median_mps": 0.2443610233326349,
+      "tail5_worse_than_direct_count": 11,
+      "tail5_better_than_direct_count": 1,
+      "tail5_minus_direct_median_m": 0.14079385762463797
+    },
+    "squared_twr": {
+      "position_rmse_median_m": 0.3859667330056481,
+      "position_tail5_rmse_median_m": 0.20657415234334708,
+      "position_xy_rmse_median_m": 0.18960492294008782,
+      "position_xy_tail5_rmse_median_m": 0.10507880114836027,
+      "velocity_tail5_rmse_median_mps": 0.46632713092611233,
+      "velocity_xy_tail5_rmse_median_mps": 0.2506575156109911,
+      "tail5_worse_than_direct_count": 10,
+      "tail5_better_than_direct_count": 2,
+      "tail5_minus_direct_median_m": 0.011547229340404364
+    }
+  },
+  "constraint_diagnosis": {
+    "quantity": "Spearman correlation between tail RMS of q-0.5*p^T*p and lifted-minus-direct tail position RMSE",
+    "rho": 0.7552447552447553,
+    "p_value_two_sided": 0.004508435484294223,
+    "sample_count": 12
+  },
+  "projection_equivalence": {
+    "max_abs_full_rmse_difference_m": 0.0005738802389153586,
+    "max_abs_tail5_rmse_difference_m": 3.3306690738754696e-16,
+    "interpretation": "projection removes independent q/s/h freedom and numerically reduces the lifted filter to the six-state squared-range EKF"
+  }
+}

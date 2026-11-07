@@ -1,0 +1,56 @@
+{
+  "original": {
+    "position_rmse_m": 0.10671366194475683,
+    "velocity_rmse_mps": 0.05941518602421615,
+    "orientation_geodesic_rmse_rad": 0.06104270227222033,
+    "yaw_rmse_rad": 0.059456002275508464,
+    "yaw_convergence_10deg_s": 0.0,
+    "yaw_convergence_5deg_s": 0.0,
+    "rejected_measurements": 0,
+    "total_measurements": 67205,
+    "rejection_rate": 0.0,
+    "nis_median": NaN,
+    "runtime_seconds": 51.03432189999148,
+    "stationary_updates": 0,
+    "samples": 209167,
+    "final_gyro_bias_rad_s": [
+      -5.51850271896019e-13,
+      1.5119866740874968e-11,
+      5.074295400448996e-10
+    ],
+    "final_accel_bias_mps2": [
+      0.00010622517562929417,
+      2.0092960177895224e-05,
+      -5.1158975844868535e-06
+    ],
+    "max_gyro_bias_norm_rad_s": 5.251255773521987e-10,
+    "max_accel_bias_norm_mps2": 0.00010823295224397743
+  },
+  "bias_revised": {
+    "position_rmse_m": 0.09773240182066004,
+    "velocity_rmse_mps": 0.056660495856864626,
+    "orientation_geodesic_rmse_rad": 0.05847646247893406,
+    "yaw_rmse_rad": 0.057879717905216704,
+    "yaw_convergence_10deg_s": 0.0,
+    "yaw_convergence_5deg_s": 0.0,
+    "rejected_measurements": 0,
+    "total_measurements": 67205,
+    "rejection_rate": 0.0,
+    "nis_median": NaN,
+    "runtime_seconds": 53.48201509995852,
+    "stationary_updates": 0,
+    "samples": 209167,
+    "final_gyro_bias_rad_s": [
+      0.0008899849032661502,
+      0.00018742205057432914,
+      -0.00023230977069185624
+    ],
+    "final_accel_bias_mps2": [
+      0.017338652281091067,
+      0.06031520989718459,
+      0.018835126463041512
+    ],
+    "max_gyro_bias_norm_rad_s": 0.0009935472414848163,
+    "max_accel_bias_norm_mps2": 0.06982149063119822
+  }
+}

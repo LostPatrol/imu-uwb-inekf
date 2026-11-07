@@ -1,13 +1,60 @@
+# Local agent instructions, work records, and editor state.
+/AGENTS.md
+/MEMORY.md
+/TODO.md
+/agent/
+/tmp/
+/tasks/
+**/.vscode/
+**/.idea/
+.DS_Store
+Thumbs.db
+.stfolder/
+.stversions/
+.stignore
 
-sd-card-data/__pycache__/
-
-*.bag
-*/__pycache__
-ros_ws/build
-ros_ws/devel
+# Environments, datasets, caches, and executable build outputs.
+**/.venv/
+**/venv/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/node_modules/
+**/dataset/
+**/datasets/
+**/sd-card-data/
+**/build/
+**/devel/
+**/animations/
 *.pyc
-3_scripts/survey/__pycache__/
+*.pyo
+*.nbc
+*.nbi
+*.bag
+*.db3
+*.mcap
+*.pid
+*.log
+*.tmp
+*.bak
+*.zip
 
-dataset.zip
+# New experiment outputs stay local; explicitly tracked compact evidence is retained.
+**/results/
+*.npz
+*.npy
 
-dataset/
+# Keep final manuscript PDFs and source; ignore TeX compiler intermediates.
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+*.bbl
+*.blg
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.xdv
+_minted*/

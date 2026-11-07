@@ -1,0 +1,269 @@
+{
+  "description": "AB/BA paired steady-state benchmark. JIT compilation/cache load is measured separately and excluded from replay latency.",
+  "repeats": 2,
+  "jit_warmup_or_cache_load_seconds": 0.3004011999582872,
+  "cases": [
+    {
+      "name": "const1_auto_yaw0_30s",
+      "constellation": "const1",
+      "csv": "const1-trial1-tdoa2.csv",
+      "duration": 30.0,
+      "yaw": 0.0
+    },
+    {
+      "name": "const4_manual_yaw90_60s",
+      "constellation": "const4",
+      "csv": "const4-trial7-tdoa2-manual1.csv",
+      "duration": 60.0,
+      "yaw": 90.0
+    },
+    {
+      "name": "const3_fast_yaw180_60s",
+      "constellation": "const3",
+      "csv": "const3-trial7-tdoa3-manual3.csv",
+      "duration": 60.0,
+      "yaw": 180.0
+    }
+  ],
+  "rows": [
+    {
+      "case": "const1_auto_yaw0_30s",
+      "variant": "proposed",
+      "position_rmse_m": 0.1070156263872222,
+      "velocity_rmse_mps": 0.07289117159593712,
+      "orientation_geodesic_rmse_rad": 0.15759769810102808,
+      "yaw_rmse_rad": 0.15749050292302916,
+      "yaw_convergence_10deg_s": 10.438025999999983,
+      "yaw_convergence_5deg_s": 23.988848000000004,
+      "rejected_measurements": 0,
+      "total_measurements": 14289,
+      "rejection_rate": 0.0,
+      "nis_median": 0.05031936474888538,
+      "runtime_seconds": 4.844443800044246,
+      "jit_compile_seconds": 0.0,
+      "stationary_updates": 11,
+      "samples": 44548,
+      "runtime_runs_seconds": [
+        4.268863199977204,
+        4.844443800044246
+      ]
+    },
+    {
+      "case": "const1_auto_yaw0_30s",
+      "variant": "task03_compiled",
+      "position_rmse_m": 0.10701562638722362,
+      "velocity_rmse_mps": 0.0728911715959351,
+      "orientation_geodesic_rmse_rad": 0.15759769810060242,
+      "yaw_rmse_rad": 0.1574905029226031,
+      "yaw_convergence_10deg_s": 10.438025999999983,
+      "yaw_convergence_5deg_s": 23.988848000000004,
+      "rejected_measurements": 0,
+      "total_measurements": 14289,
+      "rejection_rate": 0.0,
+      "nis_median": 0.05031936474886964,
+      "runtime_seconds": 0.26901719998568296,
+      "jit_compile_seconds": 0.0,
+      "stationary_updates": 11,
+      "samples": 44548,
+      "runtime_runs_seconds": [
+        0.2722674999386072,
+        0.26901719998568296
+      ]
+    },
+    {
+      "case": "const4_manual_yaw90_60s",
+      "variant": "proposed",
+      "position_rmse_m": 0.3550498696015851,
+      "velocity_rmse_mps": 0.18672147740347356,
+      "orientation_geodesic_rmse_rad": 0.19716710686226083,
+      "yaw_rmse_rad": 0.19174328210996466,
+      "yaw_convergence_10deg_s": 14.544980999999998,
+      "yaw_convergence_5deg_s": 17.954773,
+      "rejected_measurements": 151,
+      "total_measurements": 25915,
+      "rejection_rate": 0.005826741269535018,
+      "nis_median": 0.10780251735178566,
+      "runtime_seconds": 9.309370700037107,
+      "jit_compile_seconds": 0.0,
+      "stationary_updates": 78,
+      "samples": 86442,
+      "runtime_runs_seconds": [
+        9.41375639999751,
+        9.309370700037107
+      ]
+    },
+    {
+      "case": "const4_manual_yaw90_60s",
+      "variant": "task03_compiled",
+      "position_rmse_m": 0.35504986960158735,
+      "velocity_rmse_mps": 0.18672147740347453,
+      "orientation_geodesic_rmse_rad": 0.1971671068622606,
+      "yaw_rmse_rad": 0.19174328210996447,
+      "yaw_convergence_10deg_s": 14.544980999999998,
+      "yaw_convergence_5deg_s": 17.954773,
+      "rejected_measurements": 151,
+      "total_measurements": 25915,
+      "rejection_rate": 0.005826741269535018,
+      "nis_median": 0.10780251735178727,
+      "runtime_seconds": 0.5274245000910014,
+      "jit_compile_seconds": 0.0,
+      "stationary_updates": 78,
+      "samples": 86442,
+      "runtime_runs_seconds": [
+        0.5263132000109181,
+        0.5274245000910014
+      ]
+    },
+    {
+      "case": "const3_fast_yaw180_60s",
+      "variant": "proposed",
+      "position_rmse_m": 0.205953575700623,
+      "velocity_rmse_mps": 0.17103303566159841,
+      "orientation_geodesic_rmse_rad": 0.22718687461410322,
+      "yaw_rmse_rad": 0.22628809102283057,
+      "yaw_convergence_10deg_s": 8.868516,
+      "yaw_convergence_5deg_s": 10.415806000000002,
+      "rejected_measurements": 215,
+      "total_measurements": 13647,
+      "rejection_rate": 0.015754378251630397,
+      "nis_median": 0.28901803295564027,
+      "runtime_seconds": 7.935496099991724,
+      "jit_compile_seconds": 0.0,
+      "stationary_updates": 47,
+      "samples": 74173,
+      "runtime_runs_seconds": [
+        7.9263217999832705,
+        7.935496099991724
+      ]
+    },
+    {
+      "case": "const3_fast_yaw180_60s",
+      "variant": "task03_compiled",
+      "position_rmse_m": 0.20595357570062103,
+      "velocity_rmse_mps": 0.1710330356615974,
+      "orientation_geodesic_rmse_rad": 0.2271868746140974,
+      "yaw_rmse_rad": 0.22628809102282474,
+      "yaw_convergence_10deg_s": 8.868516,
+      "yaw_convergence_5deg_s": 10.415806000000002,
+      "rejected_measurements": 215,
+      "total_measurements": 13647,
+      "rejection_rate": 0.015754378251630397,
+      "nis_median": 0.2890180329556487,
+      "runtime_seconds": 0.47646889998577535,
+      "jit_compile_seconds": 0.0,
+      "stationary_updates": 47,
+      "samples": 74173,
+      "runtime_runs_seconds": [
+        0.47380250005517155,
+        0.47646889998577535
+      ]
+    }
+  ],
+  "summaries": [
+    {
+      "case": "const1_auto_yaw0_30s",
+      "imu_samples": 30268,
+      "uwb_measurements": 14289,
+      "imu_rate_hz": 1008.9375708711307,
+      "uwb_rate_hz": 476.30200046840184,
+      "proposed_runtime_median_seconds": 4.556653500010725,
+      "compiled_runtime_median_seconds": 0.2706423499621451,
+      "steady_state_speedup": 16.836439310581166,
+      "paired_speedup_median": 16.84343189495832,
+      "paired_speedups": [
+        15.678930467058233,
+        18.007933322858413
+      ],
+      "runtime_reduction_percent": 94.06050185818368,
+      "proposed_runtime_runs_seconds": [
+        4.268863199977204,
+        4.844443800044246
+      ],
+      "compiled_runtime_runs_seconds": [
+        0.2722674999386072,
+        0.26901719998568296
+      ],
+      "position_rmse_change_percent": 1.3322676295501878e-12,
+      "velocity_rmse_change_percent": -2.7755575615628914e-12,
+      "orientation_rmse_change_percent": -2.700950574308081e-10,
+      "yaw_rmse_change_percent": -2.705280444104119e-10,
+      "max_abs_times_delta": 0.0,
+      "max_abs_states_delta": 1.0775991210465463e-11,
+      "max_abs_rotations_delta": 1.0509287884374885e-11,
+      "max_abs_covariances_delta": 2.2183144210430328e-11,
+      "max_abs_biases_delta": 1.0738632205686827e-13,
+      "max_abs_nis_delta": 1.6371348721122558e-12,
+      "rejection_decision_changes": 0
+    },
+    {
+      "case": "const4_manual_yaw90_60s",
+      "imu_samples": 60532,
+      "uwb_measurements": 25915,
+      "imu_rate_hz": 1008.8725517565518,
+      "uwb_rate_hz": 431.9191861952528,
+      "proposed_runtime_median_seconds": 9.361563550017308,
+      "compiled_runtime_median_seconds": 0.5268688500509597,
+      "steady_state_speedup": 17.76829954762336,
+      "paired_speedup_median": 17.76842378411815,
+      "paired_speedups": [
+        17.886225159852017,
+        17.650622408384283
+      ],
+      "runtime_reduction_percent": 94.37199942898444,
+      "proposed_runtime_runs_seconds": [
+        9.41375639999751,
+        9.309370700037107
+      ],
+      "compiled_runtime_runs_seconds": [
+        0.5263132000109181,
+        0.5274245000910014
+      ],
+      "position_rmse_change_percent": 6.439293542825908e-13,
+      "velocity_rmse_change_percent": 5.10702591327572e-13,
+      "orientation_rmse_change_percent": -1.1102230246251565e-13,
+      "yaw_rmse_change_percent": -9.992007221626409e-14,
+      "max_abs_times_delta": 0.0,
+      "max_abs_states_delta": 3.148592497836944e-13,
+      "max_abs_rotations_delta": 2.6251223417261826e-13,
+      "max_abs_covariances_delta": 1.1213252548714081e-13,
+      "max_abs_biases_delta": 1.1828645701816853e-16,
+      "max_abs_nis_delta": 5.112354983793921e-12,
+      "rejection_decision_changes": 0
+    },
+    {
+      "case": "const3_fast_yaw180_60s",
+      "imu_samples": 60532,
+      "uwb_measurements": 13648,
+      "imu_rate_hz": 1008.8802529207394,
+      "uwb_rate_hz": 227.46972992569636,
+      "proposed_runtime_median_seconds": 7.930908949987497,
+      "compiled_runtime_median_seconds": 0.47513570002047345,
+      "steady_state_speedup": 16.691881813228846,
+      "paired_speedup_median": 16.691986144157983,
+      "paired_speedups": [
+        16.729168375135835,
+        16.65480391318013
+      ],
+      "runtime_reduction_percent": 94.00906374015021,
+      "proposed_runtime_runs_seconds": [
+        7.9263217999832705,
+        7.935496099991724
+      ],
+      "compiled_runtime_runs_seconds": [
+        0.47380250005517155,
+        0.47646889998577535
+      ],
+      "position_rmse_change_percent": -9.547918011776346e-13,
+      "velocity_rmse_change_percent": -5.995204332975845e-13,
+      "orientation_rmse_change_percent": -2.5646151868841116e-12,
+      "yaw_rmse_change_percent": -2.575717417130363e-12,
+      "max_abs_times_delta": 0.0,
+      "max_abs_states_delta": 1.9849399901517017e-13,
+      "max_abs_rotations_delta": 1.9728663147589032e-13,
+      "max_abs_covariances_delta": 1.7319479184152442e-13,
+      "max_abs_biases_delta": 9.183192400952223e-17,
+      "max_abs_nis_delta": 4.423782229423523e-09,
+      "rejection_decision_changes": 0
+    }
+  ]
+}

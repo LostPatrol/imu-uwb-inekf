@@ -1,0 +1,229 @@
+{
+  "sequence": "2021-02-12_09_56_09_twr_random.csv",
+  "duration_s": 65.20000000000005,
+  "samples": 6150,
+  "twr_events": 15724,
+  "initial_offset_m": [
+    6.0,
+    -6.0,
+    3.0
+  ],
+  "range_sigma_m": 0.2,
+  "range_bias_m": -0.18,
+  "gate_threshold_nis": 25.0,
+  "gate_warmup_updates": 64,
+  "ordinary_gate_warmup_updates": 0,
+  "huber_threshold_sigma": null,
+  "effective_accel_noise_std_mps2": 10.0,
+  "runtime_s": 4.564611300127581,
+  "methods": {
+    "direct_twr": {
+      "position_rmse_m": 0.4370969517794072,
+      "position_tail5_rmse_m": 0.1666810523201485,
+      "position_p95_m": 0.8301707574256698,
+      "position_max_m": 3.967702978914394,
+      "position_xy_rmse_m": 0.20220911070863593,
+      "position_xy_tail5_rmse_m": 0.1135156741378952,
+      "position_xy_p95_m": 0.37253055268845414,
+      "position_xy_max_m": 1.4350092118301598,
+      "velocity_rmse_mps": 0.8026462742125241,
+      "velocity_tail5_rmse_mps": 0.4581295239115532,
+      "velocity_xy_rmse_mps": 0.49091176564776845,
+      "velocity_xy_tail5_rmse_mps": 0.28525081686143333,
+      "convergence_0p5m_s": 0.5900000000000318,
+      "finite": true,
+      "accepted": 15716,
+      "rejected": 8,
+      "downweighted": 0,
+      "invalid": 0,
+      "mean_nis": 0.8506471697681147,
+      "mean_accepted_weight": 1.0,
+      "max_nis": 1376.2435298418998,
+      "per_anchor_updates": {
+        "1": {
+          "accepted": 1925,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "2": {
+          "accepted": 1911,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "4": {
+          "accepted": 1955,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "7": {
+          "accepted": 2116,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "3": {
+          "accepted": 1925,
+          "rejected": 7,
+          "downweighted": 0
+        },
+        "5": {
+          "accepted": 1992,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "6": {
+          "accepted": 1996,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "0": {
+          "accepted": 1896,
+          "rejected": 1,
+          "downweighted": 0
+        }
+      },
+      "covariance_min_eigenvalue": 0.0018932920051474213
+    },
+    "lifted_twr": {
+      "position_rmse_m": 0.41773918139708893,
+      "position_tail5_rmse_m": 0.36653274609168335,
+      "position_p95_m": 0.7739755259457284,
+      "position_max_m": 1.896864658617632,
+      "position_xy_rmse_m": 0.19798231122566312,
+      "position_xy_tail5_rmse_m": 0.12004185890536677,
+      "position_xy_p95_m": 0.369588465863235,
+      "position_xy_max_m": 0.635035194629484,
+      "velocity_rmse_mps": 0.603441992175895,
+      "velocity_tail5_rmse_mps": 0.597560316949309,
+      "velocity_xy_rmse_mps": 0.377081947240459,
+      "velocity_xy_tail5_rmse_mps": 0.2891718922930028,
+      "convergence_0p5m_s": 0.9800000000000182,
+      "finite": true,
+      "accepted": 15716,
+      "rejected": 8,
+      "downweighted": 0,
+      "invalid": 0,
+      "mean_nis": 0.6053778769947187,
+      "mean_accepted_weight": 1.0,
+      "max_nis": 801.5687375353082,
+      "per_anchor_updates": {
+        "1": {
+          "accepted": 1925,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "2": {
+          "accepted": 1911,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "4": {
+          "accepted": 1955,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "7": {
+          "accepted": 2116,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "3": {
+          "accepted": 1925,
+          "rejected": 7,
+          "downweighted": 0
+        },
+        "5": {
+          "accepted": 1992,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "6": {
+          "accepted": 1996,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "0": {
+          "accepted": 1896,
+          "rejected": 1,
+          "downweighted": 0
+        }
+      },
+      "covariance_min_eigenvalue": 0.0,
+      "constraint_rms": [
+        0.4416926138490408,
+        2.017361087873921,
+        1.2535902664926795
+      ],
+      "constraint_tail_abs": [
+        1.274604218619982,
+        1.462261959361308,
+        1.6619494945850564
+      ]
+    },
+    "twr_inekf": {
+      "position_rmse_m": 0.38732398849797,
+      "position_tail5_rmse_m": 0.18783049363380572,
+      "position_p95_m": 0.7389489334787879,
+      "position_max_m": 3.179399149815636,
+      "position_xy_rmse_m": 0.19449292781839816,
+      "position_xy_tail5_rmse_m": 0.12743640149514543,
+      "position_xy_p95_m": 0.3664612378529894,
+      "position_xy_max_m": 0.6231726661347429,
+      "velocity_rmse_mps": 0.42547046603693695,
+      "velocity_tail5_rmse_mps": 0.481610229512342,
+      "velocity_xy_rmse_mps": 0.33418426395353207,
+      "velocity_xy_tail5_rmse_mps": 0.24510116717612457,
+      "convergence_0p5m_s": 0.020000000000038654,
+      "finite": true,
+      "accepted": 15715,
+      "rejected": 9,
+      "downweighted": 0,
+      "invalid": 0,
+      "mean_nis": 0.8637061469428837,
+      "mean_accepted_weight": 1.0,
+      "max_nis": 1430.7031199919688,
+      "per_anchor_updates": {
+        "1": {
+          "accepted": 1925,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "2": {
+          "accepted": 1911,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "4": {
+          "accepted": 1955,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "7": {
+          "accepted": 2116,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "3": {
+          "accepted": 1924,
+          "rejected": 8,
+          "downweighted": 0
+        },
+        "5": {
+          "accepted": 1992,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "6": {
+          "accepted": 1996,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "0": {
+          "accepted": 1896,
+          "rejected": 1,
+          "downweighted": 0
+        }
+      },
+      "covariance_min_eigenvalue": 1.8227375809194308e-06
+    }
+  }
+}

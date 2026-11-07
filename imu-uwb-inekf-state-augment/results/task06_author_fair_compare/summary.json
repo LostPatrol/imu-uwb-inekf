@@ -1,0 +1,149 @@
+{
+  "author_repository": "https://github.com/SUPfeiffer/uwb-simulator",
+  "author_commit": "955360a8736cae3600a1fbed530a9ec19a2ad724",
+  "expected_author_commit": "955360a8736cae3600a1fbed530a9ec19a2ad724",
+  "author_source_unchanged": true,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "protocols": {
+    "paper_oracle": {
+      "name": "paper_oracle",
+      "altitude_enabled": true,
+      "truth_dependent_range_sigma": true,
+      "calibration": "none",
+      "initial_position": "author_zero",
+      "score_start_s": 1.0,
+      "score_strictly_after_start": true,
+      "purpose": "exact 2021 publication script protocol"
+    },
+    "no_oracle_raw": {
+      "name": "no_oracle_raw",
+      "altitude_enabled": false,
+      "truth_dependent_range_sigma": false,
+      "calibration": "global_fixed",
+      "initial_position": "first_optitrack_position",
+      "score_start_s": 0.0,
+      "score_strictly_after_start": false,
+      "purpose": "remove all runtime truth aid without dataset calibration"
+    },
+    "no_oracle_loso": {
+      "name": "no_oracle_loso",
+      "altitude_enabled": false,
+      "truth_dependent_range_sigma": false,
+      "calibration": "loso_per_anchor",
+      "initial_position": "first_optitrack_position",
+      "score_start_s": 0.0,
+      "score_strictly_after_start": false,
+      "purpose": "same LOSO calibration and scoring window as current Task 06"
+    }
+  },
+  "protocol_summary": {
+    "no_oracle_loso/ekf": {
+      "runs": 120,
+      "success_count": 120,
+      "position_rmse_mean_m": 0.32128959415971503,
+      "position_rmse_median_m": 0.31300207567318455,
+      "position_xy_rmse_mean_m": 0.16107162477694517,
+      "position_z_rmse_mean_m": 0.27421236932872733,
+      "mean_estimator_step_ms": 0.8222789690037825
+    },
+    "no_oracle_loso/mhe": {
+      "runs": 120,
+      "success_count": 110,
+      "position_rmse_mean_m": 0.338650466392079,
+      "position_rmse_median_m": 0.318419606999755,
+      "position_xy_rmse_mean_m": 0.1898097904161125,
+      "position_z_rmse_mean_m": 0.2759321001233049,
+      "mean_estimator_step_ms": 3.796642660362667
+    },
+    "no_oracle_raw/ekf": {
+      "runs": 120,
+      "success_count": 20,
+      "position_rmse_mean_m": 0.5586602446355784,
+      "position_rmse_median_m": 0.5774952175687074,
+      "position_xy_rmse_mean_m": 0.1826017133164904,
+      "position_z_rmse_mean_m": 0.5274698962183101,
+      "mean_estimator_step_ms": 0.8422775722527223
+    },
+    "no_oracle_raw/mhe": {
+      "runs": 120,
+      "success_count": 20,
+      "position_rmse_mean_m": 0.5636039467019318,
+      "position_rmse_median_m": 0.5786546290898036,
+      "position_xy_rmse_mean_m": 0.1871211964654611,
+      "position_z_rmse_mean_m": 0.5309337217018709,
+      "mean_estimator_step_ms": 3.8742821678474457
+    },
+    "paper_oracle/ekf": {
+      "runs": 120,
+      "success_count": 120,
+      "position_rmse_mean_m": 0.2353750646814427,
+      "position_rmse_median_m": 0.234154405516738,
+      "position_xy_rmse_mean_m": 0.23262979080440313,
+      "position_z_rmse_mean_m": 0.03572555467593275,
+      "mean_estimator_step_ms": 1.113582933993709
+    },
+    "paper_oracle/mhe": {
+      "runs": 120,
+      "success_count": 120,
+      "position_rmse_mean_m": 0.20105074067135498,
+      "position_rmse_median_m": 0.20124959761817815,
+      "position_xy_rmse_mean_m": 0.19106051643706398,
+      "position_z_rmse_mean_m": 0.0615951146565131,
+      "mean_estimator_step_ms": 4.24193458683614
+    }
+  },
+  "fair_common_protocol_summary": {
+    "author_ekf": {
+      "sequences": 12,
+      "position_rmse_mean_m": 0.321289594159715,
+      "position_rmse_median_m": 0.31300207567318455,
+      "position_xy_rmse_mean_m": 0.16107162477694514,
+      "position_xy_rmse_median_m": 0.16510992692006143,
+      "position_z_rmse_mean_m": 0.2742123693287274
+    },
+    "author_mhe": {
+      "sequences": 12,
+      "position_rmse_mean_m": 0.338650466392079,
+      "position_rmse_median_m": 0.318419606999755,
+      "position_xy_rmse_mean_m": 0.18980979041611254,
+      "position_xy_rmse_median_m": 0.18932047749652922,
+      "position_z_rmse_mean_m": 0.2759321001233049
+    },
+    "task06_direct": {
+      "sequences": 12,
+      "position_rmse_mean_m": 0.3344756357297855,
+      "position_rmse_median_m": 0.3328754487458808,
+      "position_xy_rmse_mean_m": 0.17125889425375487,
+      "position_xy_rmse_median_m": 0.17449205257391795,
+      "position_z_rmse_mean_m": 0.2839504207209102
+    },
+    "task06_inekf": {
+      "sequences": 12,
+      "position_rmse_mean_m": 0.3337033355480609,
+      "position_rmse_median_m": 0.3283051297180045,
+      "position_xy_rmse_mean_m": 0.17003297070463588,
+      "position_xy_rmse_median_m": 0.17280714841201675,
+      "position_z_rmse_mean_m": 0.2832013281980776
+    },
+    "task06_lifted": {
+      "sequences": 12,
+      "position_rmse_mean_m": 0.3617556512553847,
+      "position_rmse_median_m": 0.3576573327713838,
+      "position_xy_rmse_mean_m": 0.1707502722924115,
+      "position_xy_rmse_median_m": 0.17322335470950434,
+      "position_z_rmse_mean_m": 0.31701493529001
+    }
+  },
+  "scope_limit": "2021 SG+RANSAC MHE/EKF are upstream-source reproductions; 2023/2025 LS/Newton/SVOR code and full tuning are not public and are therefore analyzed from the papers but not impersonated here."
+}

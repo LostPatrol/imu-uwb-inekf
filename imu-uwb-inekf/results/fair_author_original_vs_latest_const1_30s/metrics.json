@@ -1,0 +1,170 @@
+{
+  "scope": {
+    "description": "Untouched paper-author source versus latest compiled production path on one precomputed event plan. Loading, construction, JIT warmup, history, metrics, and plots are outside measured replay.",
+    "dataset": "E:\\datasets\\dataset\\flight-dataset\\csv-data\\const1\\const1-trial1-tdoa2.csv",
+    "anchors": "E:\\datasets\\dataset\\flight-dataset\\survey-results\\anchor_const1.npz",
+    "max_duration": 30.0,
+    "yaw_degrees": 0.0,
+    "warmup_duration_seconds": 10.0,
+    "jit_warmup_or_cache_load_seconds": 0.13359259988646954,
+    "repeats": 4,
+    "thread_limit": 1,
+    "history_recorded_in_timing": false,
+    "predict_calls_per_run": 30267,
+    "uwb_calls_per_run": 14289,
+    "events_per_run": 44557,
+    "event_plan_sha256": "6e7b0c65c0c89ffd6b0a14cb69d3bc0a6c8058bdf5a3f2baaa887ddd0b70813f"
+  },
+  "provenance": {
+    "author_repository": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf - backup",
+    "author_commit": "f3b664e0e8c86b62c6ed2ea2a112261810228e1c",
+    "author_source": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf - backup\\scripts\\estimation\\inekf.py",
+    "author_source_sha256": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+    "author_source_modified": false,
+    "latest_variant": "task03_compiled",
+    "latest_compiled_source": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\scripts\\estimation\\compiled_replay.py",
+    "latest_compiled_source_sha256": "3064dd64d974f57f97cdeb2f20ef0e1b65bdcea286fe5ccc484c5956b5aee48a",
+    "python": "3.11.15 | packaged by conda-forge | (main, Jun 11 2026, 03:27:10) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-10-10.0.26200-SP0",
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1"
+    }
+  },
+  "timing": {
+    "author_original": {
+      "initialization_seconds": {
+        "runs": [
+          0.0005887,
+          0.00038740000000000004,
+          0.0001465,
+          0.00048610000000000005
+        ],
+        "median": 0.00043675000000000007,
+        "mad": 0.00010065000000000001,
+        "minimum": 0.0001465,
+        "maximum": 0.0005887,
+        "p95": 0.00057331,
+        "mean": 0.00040217500000000006,
+        "sample_stdev": 0.00018922912698630728
+      },
+      "replay_seconds": {
+        "runs": [
+          7.898691500000001,
+          8.0360662,
+          7.9754062,
+          8.0212117
+        ],
+        "median": 7.99830895,
+        "mad": 0.03033000000000019,
+        "minimum": 7.898691500000001,
+        "maximum": 8.0360662,
+        "p95": 8.033838025,
+        "mean": 7.982843900000001,
+        "sample_stdev": 0.06175663824286402
+      }
+    },
+    "task03_compiled": {
+      "initialization_seconds": {
+        "runs": [
+          0.0007085,
+          0.0008971000000000001,
+          0.0007159,
+          0.0010963000000000001
+        ],
+        "median": 0.0008065,
+        "mad": 9.430000000000002e-05,
+        "minimum": 0.0007085,
+        "maximum": 0.0010963000000000001,
+        "p95": 0.00106642,
+        "mean": 0.00085445,
+        "sample_stdev": 0.00018331025612332777
+      },
+      "replay_seconds": {
+        "runs": [
+          0.22911120000000001,
+          0.22501310000000002,
+          0.2419685,
+          0.2415596
+        ],
+        "median": 0.23533540000000003,
+        "mad": 0.006428649999999994,
+        "minimum": 0.22501310000000002,
+        "maximum": 0.2419685,
+        "p95": 0.241907165,
+        "mean": 0.2344131,
+        "sample_stdev": 0.00865306641254994
+      }
+    }
+  },
+  "speedup": {
+    "ratio_of_medians": 33.98685004465966,
+    "paired": {
+      "runs": [
+        34.475361745737445,
+        35.71377044269867,
+        32.96051428181767,
+        33.20593220058321
+      ],
+      "median": 33.84064697316033,
+      "mad": 0.7574237319598893,
+      "minimum": 32.96051428181767,
+      "maximum": 35.71377044269867,
+      "p95": 35.52800913815448,
+      "mean": 34.08889466770925,
+      "sample_stdev": 1.2704911255318068
+    }
+  },
+  "accuracy": {
+    "author_original": {
+      "position_rmse_m": 0.11626605215026987,
+      "velocity_rmse_mps": 0.0767476310414053,
+      "orientation_geodesic_rmse_rad": 0.05471385223324894,
+      "yaw_rmse_rad": 0.05294852091088121,
+      "yaw_convergence_10deg_s": 0.0,
+      "yaw_convergence_5deg_s": 0.0,
+      "rejected_measurements": 0,
+      "total_measurements": 14289,
+      "rejection_rate": 0.0,
+      "nis_median": 0.019163901957384332,
+      "runtime_seconds": 8.165494500000001,
+      "jit_compile_seconds": 0.0,
+      "stationary_updates": 0,
+      "samples": 44548
+    },
+    "task03_compiled": {
+      "position_rmse_m": 0.10701562638722362,
+      "velocity_rmse_mps": 0.0728911715959351,
+      "orientation_geodesic_rmse_rad": 0.15759769810060242,
+      "yaw_rmse_rad": 0.1574905029226031,
+      "yaw_convergence_10deg_s": 10.438025999999983,
+      "yaw_convergence_5deg_s": 23.988848000000004,
+      "rejected_measurements": 0,
+      "total_measurements": 14289,
+      "rejection_rate": 0.0,
+      "nis_median": 0.05031936474886964,
+      "runtime_seconds": 0.2663104,
+      "jit_compile_seconds": 0.0,
+      "stationary_updates": 11,
+      "samples": 44548
+    }
+  },
+  "evaluated_runs": {
+    "author_original": {
+      "replay_seconds": 8.165494500000001,
+      "kernel_seconds": 7.965413600000001,
+      "scheduler_seconds": 0.2000809,
+      "predict_calls": 30267,
+      "uwb_calls": 14289,
+      "stationary_calls": 0
+    },
+    "task03_compiled": {
+      "replay_seconds": 0.2663104,
+      "predict_calls": 30267,
+      "uwb_calls": 14289,
+      "stationary_calls": 11
+    }
+  }
+}

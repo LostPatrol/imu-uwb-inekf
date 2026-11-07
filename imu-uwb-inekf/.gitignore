@@ -1,0 +1,24 @@
+
+sd-card-data/__pycache__/
+
+*.bag
+*/__pycache__
+**/__pycache__/
+*.nbc
+*.nbi
+ros_ws/build
+ros_ws/devel
+*.pyc
+3_scripts/survey/__pycache__/
+
+dataset.zip
+
+dataset/
+
+# task01 exploratory ablations; keep only the current low-overhead frozen sets.
+results/task01_*/
+!results/task01_final_fast_const1_30s/
+!results/task01_final_fast_const1_30s/**
+!results/task01_final_fast_const4_60s/
+!results/task01_final_fast_const4_60s/**
+results/interactive_smoke*/

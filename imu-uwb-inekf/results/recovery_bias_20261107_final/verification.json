@@ -1,0 +1,23 @@
+{
+  "verified_rows": 60,
+  "verified_trajectories": 60,
+  "max_absolute_metric_difference": 3.552713678800501e-15,
+  "all_success_flags_match": true,
+  "all_window_covariances_positive_definite": true,
+  "source_sha256": {
+    "bias_real.py": "3f771f3cd395720663d686b0783945d7504b601331ded932ac6bccc546dcba6c",
+    "test_bias_real.py": "0ec8f7f2f80d4f992a9d541020b84762ed3e4745e8e6e5b0b8d8545b11923a64",
+    "analyze_bias_real.py": "f0848fcfea43fddbe250b2a45a7996b17e557f4e7ef425ff8bd4ce3eae22780a",
+    "initializer.py": "b5d73061bbff3978a0550b36d98251f79eecb271ab77a23d9656077cdd7c3e0d",
+    "run_research.py": "8654e561b74a081629583d64de693367562d6669d0c7ad3159ac2a6998729395"
+  },
+  "note": "Dependency fingerprints recorded at audit time; base cache is from the initial study.",
+  "identical_final_baseline_cache_logs": [
+    "2021-02-12_09_43_34_twr_triangle.csv",
+    "2021-02-12_09_46_15_twr_octagon.csv",
+    "2021-02-12_09_51_57_twr_hourglass.csv",
+    "2021-02-12_09_56_09_twr_random.csv",
+    "2021-02-12_10_09_28_twr_star.csv",
+    "2021-02-12_13_43_51_twr_square.csv"
+  ]
+}

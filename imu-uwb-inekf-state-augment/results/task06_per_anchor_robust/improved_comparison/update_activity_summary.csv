@@ -1,0 +1,13 @@
+offset,configuration,method,accepted_total,rejected_total,downweighted_total,attempted_total,hard_rejection_rate,downweighted_fraction_of_accepted
+large,baseline_fixed,direct_twr,148838,218,0,149056,0.0014625375697724346,0.0
+large,baseline_fixed,lifted_twr,148987,69,0,149056,0.00046291326749677974,0.0
+large,baseline_fixed,twr_inekf,129961,19095,0,149056,0.12810621511378273,0.0
+large,loso_per_anchor_robust,direct_twr,148647,409,2083,149056,0.002743935165306999,0.014013064508533641
+large,loso_per_anchor_robust,lifted_twr,148689,367,1783,149056,0.002462161872048089,0.011991472133110049
+large,loso_per_anchor_robust,twr_inekf,148552,504,2390,149056,0.003381279519106913,0.01608864236092412
+nominal,baseline_fixed,direct_twr,148990,66,0,149056,0.0004427866036925719,0.0
+nominal,baseline_fixed,lifted_twr,148987,69,0,149056,0.00046291326749677974,0.0
+nominal,baseline_fixed,twr_inekf,148984,72,0,149056,0.00048303993130098755,0.0
+nominal,loso_per_anchor_robust,direct_twr,148647,409,2083,149056,0.002743935165306999,0.014013064508533641
+nominal,loso_per_anchor_robust,lifted_twr,148689,367,1783,149056,0.002462161872048089,0.011991472133110049
+nominal,loso_per_anchor_robust,twr_inekf,148569,487,2267,149056,0.003267228424216402,0.01525890327053423

@@ -1,0 +1,66 @@
+{
+  "seed": 7,
+  "duration_s": 20.0,
+  "range_rate_hz": 20.0,
+  "range_sigma_m": 0.1,
+  "initial_position_m": [
+    35.0,
+    -25.0,
+    20.0
+  ],
+  "initial_velocity_mps": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "coordinate_offset_m": [
+    0.0,
+    0.0,
+    100.0
+  ],
+  "coordinate_offset_reason": "avoid the author's application-specific z>=0 ground clamp; all geometry is translated together",
+  "methods": {
+    "direct_twr": {
+      "position_rmse_m": 147.800852357478,
+      "position_tail5_rmse_m": 204.41803409472547,
+      "position_p95_m": 217.10641372795226,
+      "position_max_m": 225.94733082995526,
+      "velocity_rmse_mps": 15.580556395263153,
+      "velocity_tail5_rmse_mps": 8.861770482687682,
+      "convergence_0p5m_s": null,
+      "finite": true,
+      "success_tail5_below_1m": false,
+      "accepted": 80,
+      "rejected": 321,
+      "invalid": 0
+    },
+    "lifted_twr": {
+      "position_rmse_m": 19.067420297316147,
+      "position_tail5_rmse_m": 0.291697143622818,
+      "position_p95_m": 54.46291859949728,
+      "position_max_m": 69.36328324144425,
+      "velocity_rmse_mps": 6.1058544191783515,
+      "velocity_tail5_rmse_mps": 0.3122680036876324,
+      "convergence_0p5m_s": 12.0,
+      "finite": true,
+      "success_tail5_below_1m": true,
+      "accepted": 401,
+      "rejected": 0,
+      "invalid": 0
+    },
+    "twr_inekf": {
+      "position_rmse_m": 122.88197503350895,
+      "position_tail5_rmse_m": 151.56428174646368,
+      "position_p95_m": 154.4450294224452,
+      "position_max_m": 154.93355279150572,
+      "velocity_rmse_mps": 14.202988382973151,
+      "velocity_tail5_rmse_mps": 3.41774216474126,
+      "convergence_0p5m_s": null,
+      "finite": true,
+      "success_tail5_below_1m": false,
+      "accepted": 80,
+      "rejected": 321,
+      "invalid": 0
+    }
+  }
+}

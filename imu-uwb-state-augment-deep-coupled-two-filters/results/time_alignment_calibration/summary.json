@@ -1,0 +1,24 @@
+{
+  "model": "t_acquisition = t_log - tau for paired IMU+TWR",
+  "uwb_only_shift": false,
+  "calibration_sequence": "2021-02-12_09_41_16_twr_triangle.csv",
+  "selected_delay_s": 0.2,
+  "calibration_joint_coarse_delay_s": 0.2,
+  "calibration": {
+    "sequence": "2021-02-12_09_41_16_twr_triangle.csv",
+    "range_optimal_delay_s": 0.21,
+    "imu_optimal_delay_s": 0.22,
+    "range_rmse_zero_delay_m": 0.179564040696216,
+    "range_rmse_selected_delay_m": 0.15395021612116705,
+    "imu_rmse_zero_delay": 1.4576672083061277,
+    "imu_rmse_selected_delay": 0.3507635489307482
+  },
+  "validation_sequences": 11,
+  "validation_range_improved_count": 11,
+  "validation_imu_improved_count": 11,
+  "all_sequence_range_rmse_zero_median_m": 0.1824556401457047,
+  "all_sequence_range_rmse_selected_median_m": 0.1570774030272435,
+  "all_sequence_imu_rmse_zero_median": 1.353348877428048,
+  "all_sequence_imu_rmse_selected_median": 0.6656978232208179,
+  "limitations": "offline calibration uses OptiTrack; live operation must obtain hardware acquisition timestamps or apply an equivalent fixed-lag state-buffer update"
+}

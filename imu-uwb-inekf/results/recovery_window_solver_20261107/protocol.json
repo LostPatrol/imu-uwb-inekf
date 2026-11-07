@@ -1,0 +1,37 @@
+{
+  "endpoints_s": [
+    5.0,
+    10.0,
+    20.0,
+    30.0
+  ],
+  "durations_s": [
+    2.0,
+    4.0,
+    8.0
+  ],
+  "yaw_frames_deg": [
+    0.0,
+    90.0,
+    180.0,
+    270.0
+  ],
+  "layouts": [
+    "all eight anchors",
+    "four anchors with smallest known z coordinate"
+  ],
+  "same_cv_translation_seed": true,
+  "relative_cost_tolerance": 0.0001,
+  "reference": "Best objective found by these three methods; not a certified global raw-range optimum",
+  "independent_real_logs": 6,
+  "independent_blind_data": false,
+  "windows": 528,
+  "workers": 4,
+  "runtime_note": "Per-fit wall clock under parallel host load; not unloaded latency or WCET",
+  "nfev_note": "Raw inertial-refinement nfev summed across yaw seeds; common CV candidate nfev excluded equally",
+  "source_sha256": {
+    "window_solver_study.py": "7fefdd031fb9242ab97bfc86fba731086a4e9e94944fa2d26ad87742a78db859",
+    "initializer.py": "b5d73061bbff3978a0550b36d98251f79eecb271ab77a23d9656077cdd7c3e0d",
+    "run_research.py": "8654e561b74a081629583d64de693367562d6669d0c7ad3159ac2a6998729395"
+  }
+}

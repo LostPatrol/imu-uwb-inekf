@@ -1,0 +1,16 @@
+{
+  "cases_per_method": {
+    "local": 528,
+    "multistart": 528,
+    "profile": 528,
+    "profile_all": 528,
+    "profile_two": 528,
+    "uniform_four": 528
+  },
+  "cv_nfev_identical_across_variants": true,
+  "cv_calls_per_method": 2,
+  "same_quality_local_profile_windows": 430,
+  "same_quality_local_total_nfev": 27564,
+  "same_quality_profile_total_nfev": 24612,
+  "profile_total_nfev_saved_fraction": 0.09749149542273972
+}

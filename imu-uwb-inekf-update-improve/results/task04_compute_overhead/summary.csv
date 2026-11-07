@@ -1,0 +1,3 @@
+case,author_median_seconds,improved_median_seconds,overhead_percent,paired_overhead_median_percent,micro_projected_overhead_percent,prediction_count,uwb_count,rejection_count_both,small_angle_fraction
+const1_5s,1.6071877999929711,1.6937941499636509,5.38868886206445,5.4467110019620435,5.006274407994187,5044,2365,0,0.47442505947660585
+const4_manual1_5s,1.5307724500307813,1.6177523499936797,5.682092068037248,5.672040068430569,5.328848081622326,5044,1983,2,1.0

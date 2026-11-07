@@ -1,0 +1,23 @@
+{
+  "dataset": "const1-trial1-tdoa2.csv",
+  "duration": "full",
+  "samples": 209167,
+  "uwb_measurements": 67205,
+  "runs": [
+    {
+      "order": ["original", "paper_aligned"],
+      "runtime_seconds": {
+        "original": 48.279933599988,
+        "paper_aligned": 36.506757399998605
+      }
+    },
+    {
+      "order": ["paper_aligned", "original"],
+      "runtime_seconds": {
+        "paper_aligned": 37.45251710002776,
+        "original": 40.15568229998462
+      }
+    }
+  ],
+  "interpretation": "The first run was cold. Reversing the order changes the timing relationship, so no inherent speedup is claimed. The patch does not add matrix operations or change asymptotic complexity."
+}

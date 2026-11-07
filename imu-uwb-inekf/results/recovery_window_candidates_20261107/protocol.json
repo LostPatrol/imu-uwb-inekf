@@ -1,0 +1,21 @@
+{
+  "variants": [
+    "profile_two",
+    "profile_all",
+    "uniform_four"
+  ],
+  "windows": 528,
+  "workers": 8,
+  "candidate_definition": "All distinct quartic candidates returned by lifted_candidate, including auxiliary 0/pi; profile_two takes two smallest relaxed costs",
+  "duplicate_angle_tolerance_rad": 1e-07,
+  "main_relative_cost_tolerance": 0.0001,
+  "timing_panel": "Each of six logs: (end10,duration2,all8,yaw0) and (end30,duration8,lower4,yaw180);10 interleaved repetitions in one process",
+  "developmental_selection": true,
+  "independent_blind_data": false,
+  "cv_cost_included": true,
+  "source_sha256": {
+    "window_candidate_study.py": "fa88f6f6c6ecd7f1871ac1e1ae97aa195055ef75911ce0f6981204c85997be28",
+    "initializer.py": "b5d73061bbff3978a0550b36d98251f79eecb271ab77a23d9656077cdd7c3e0d",
+    "window_solver_study.py": "7fefdd031fb9242ab97bfc86fba731086a4e9e94944fa2d26ad87742a78db859"
+  }
+}

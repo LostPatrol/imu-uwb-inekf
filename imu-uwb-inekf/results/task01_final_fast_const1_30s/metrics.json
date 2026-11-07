@@ -1,0 +1,38 @@
+[
+  {
+    "dataset": "const1-trial1-tdoa2",
+    "yaw_error_degrees": 0.0,
+    "variant": "legacy",
+    "position_rmse_m": 0.11076526263778108,
+    "velocity_rmse_mps": 0.07483693939917961,
+    "orientation_geodesic_rmse_rad": 0.054873851462666566,
+    "yaw_rmse_rad": 0.05312350380697336,
+    "yaw_convergence_10deg_s": 0.0,
+    "yaw_convergence_5deg_s": 0.0,
+    "rejected_measurements": 0,
+    "total_measurements": 14289,
+    "rejection_rate": 0.0,
+    "nis_median": 0.05069964953574115,
+    "runtime_seconds": 9.183556400006637,
+    "stationary_updates": 0,
+    "samples": 44548
+  },
+  {
+    "dataset": "const1-trial1-tdoa2",
+    "yaw_error_degrees": 0.0,
+    "variant": "proposed",
+    "position_rmse_m": 0.10713061616747306,
+    "velocity_rmse_mps": 0.07235379266369843,
+    "orientation_geodesic_rmse_rad": 0.05333239889886082,
+    "yaw_rmse_rad": 0.052867116366753376,
+    "yaw_convergence_10deg_s": 0.0,
+    "yaw_convergence_5deg_s": 0.0,
+    "rejected_measurements": 0,
+    "total_measurements": 14289,
+    "rejection_rate": 0.0,
+    "nis_median": 0.05047149497273414,
+    "runtime_seconds": 9.053371100046206,
+    "stationary_updates": 11,
+    "samples": 44548
+  }
+]

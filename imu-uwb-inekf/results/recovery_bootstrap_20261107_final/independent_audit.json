@@ -1,0 +1,7 @@
+{
+  "cases_checked": 96,
+  "missing": [],
+  "max_absolute_difference": 3.552713678800501e-15,
+  "passed": true,
+  "real_metrics_sha256": "8f290537baaa36a0634cc6c626ce72b15152c305216a69150a6b1e037e57b2df"
+}
