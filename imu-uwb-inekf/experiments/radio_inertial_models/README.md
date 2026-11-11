@@ -5,6 +5,8 @@ This research module compares two ways to improve position acquisition. With a p
 
 The [Chinese mathematical note](../../../tex/range_inertial_models_zh.pdf) contains the main equations and comparisons. [Compact evidence](evidence) retains tables for the principal claims; [paired window scores](results_restart/windows.csv) include capped solves.
 
+[Matched acquisition against the original paper](evidence/paired_acquisition/README.md) keeps the Profile-1 candidate and physical endpoints fixed. Delft horizontal endpoint RMSE changes from 1.625 to 0.159 m with 0.48% more function evaluations. The four-site QDrone test uses no Delft radio calibration and scores the surveyed prism as a position proxy; its horizontal improvement is concentrated in longer windows.
+
 | Delft endpoint RMSE (m) | All eight TWR | Four lowest TWR |
 |---|---:|---:|
 | Affine IMU shape, static radio offset | 1.799 | 2.029 |

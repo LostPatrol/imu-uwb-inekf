@@ -110,4 +110,45 @@ TDoA 是有符号距离差；没有把它平方或伪造成 TWR。本试验逐�
 \topic{文献与本试验的关系。}{\small
 Jiang 等，ICRA 2024，\emph{Robust Indoor Localization with Ranging--IMU Fusion}：原始测距与惯性因子联合初始化的系统参照（\href{https://doi.org/10.1109/ICRA57147.2024.10611274}{DOI}）。
 Zhao、Panerati、Schoellig，RA-L 2021，\emph{Learning-Based Bias Correction for TDOA UWB Localization of Resource-Constrained Mobile Robots}：支持检验位姿相关的无线偏差（\href{https://doi.org/10.1109/LRA.2020.3043199}{DOI}）。Goudar 等，RA-L 2024，\emph{Optimal Initialization Strategies for Range-Only Trajectory Estimation}：用于区分放松问题最优与实际轨迹精度（\href{https://doi.org/10.1109/LRA.2024.3354623}{DOI}）。未声称在本数据上复现并击败这些完整系统。}
+\newpage
+% Keep the final audit on one page without reducing the body font size.
+\begingroup\setlength{\parskip}{2pt}
+\parttitle{4 \quad 同窗核查：物理模型收益与候选收益分开}
+{\small\color{accent}2026 年 11 月 12 日补充；保留原有试验，新增原稿与当前模型的直接配对。}\par
+
+\topic{同一物理窗，确有水平位置收益。}Delft 六条后录日志的 66 个时间窗、两种布局，共 132 个配置；固定重力对齐 IMU 坐标为 $0^\circ$。原稿缓存与新分支的时间、IMU、逐笔测距、锚点、预积分和真值数组逐项一致；静态无线均值、尺度及六条训练日志也一致。实际端点时间差不超过 $3.6\!\times\!10^{-15}$ s。原稿 Profile-1 与 Uniform-4 的归档三维误差分别复现至 $5.7\!\times\!10^{-7}$、$8.7\!\times\!10^{-8}$ m。
+
+\begin{center}
+{\small\bfseries 表 3 \quad 同窗端点 RMSE（m）；XY 为水平范数，Z 为垂向绝对误差}\par
+\smallskip{\small\setlength{\tabcolsep}{6pt}
+\begin{tabular}{lrrrrrr}
+\toprule & \multicolumn{3}{c}{全部八锚，66 窗} & \multicolumn{3}{c}{四个最低锚，66 窗}\\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+模型 / 起点策略 & XY & Z & 3D & XY & Z & 3D\\\midrule
+原稿仿射 / Profile-1 & 1.624 & .756 & 1.792 & 1.665 & 1.169 & 2.034\\
+原稿仿射 / Uniform-4 & 1.631 & .760 & 1.799 & 1.665 & 1.159 & 2.029\\
+$K=2$ + 几何均值 / 四起点 & .111 & .250 & .273 & .188 & .560 & .591\\
+旋转偏置 + 几何均值 / 四起点 & .116 & .209 & .239 & .192 & .526 & .560\\\bottomrule
+\end{tabular}}\end{center}
+
+相对原稿 Profile-1，旋转偏置与几何均值组合的 XY / Z / 3D 总体 RMSE 为 $1.645\to.159$、$.984\to.400$、$1.917\to.431$ m；XY 胜 $110/132$，三维胜 $111/132$，六条日志各自的三项 RMSE 均改善。增益被长窗放大：2 / 4 / 8 s 的 XY RMSE 分别为 $.222\to.164$、$.709\to.175$、$3.031\to.126$ m，水平配对胜数为 $37/48$、$37/48$、$36/36$。但相对 $K=2$ 与相同几何均值，XY 总体由 $.1545$ 微升至 $.1590$ m，仅三条日志改善；三维为四条改善。不能宣称旋转偏置全面优于自由二次修正，也不能把组合收益只归于偏置状态。
+
+四个等价坐标下均用同一 Profile-1 候选与相同 CV 初猜，旧模型到新模型的 XY RMSE 为 $1.62498\to.15898$ m，Z 为 $.98148\to.40025$ m，3D 为 $1.89838\to.43067$ m；XY 在 $440/528$ 个配置改善，含 CV 总 nfev 为 $32\,632\to32\,789$（增加 $0.48\%$，不是耗时增幅）。
+
+排除相同动作的训练日志后，组合的 XY / Z / 3D RMSE 为 $.164/.441/.470$ m；相对同样五动作校准的常数均值，XY 胜 $88/132$，三维胜 $98/132$。仅四条日志水平 RMSE 改善，三维为六条。这支持同场地跨动作适配，不构成跨场地无线校准证明。
+
+\topic{固定新目标后，候选只带来较小的优化收益。}冻结旋转偏置、几何均值、先验与停止准则，三臂只改航向种子：Local 为坐标零航向，Profile-1 为原稿放松候选，Uniform-4 为四均匀航向。实际求解 $0^\circ/90^\circ/180^\circ/270^\circ$ 的等价参数化，累计结果为：
+
+\begin{center}
+{\small\setlength{\tabcolsep}{9pt}\begin{tabular}{lrrr}
+\toprule 策略 & 目标遗漏 / 528 & 含 CV 总 nfev & 三维 RMSE（m）\\\midrule
+Local & 7 & 36\,313 & .42856\\
+Profile-1 & 0 & 32\,789 & .43067\\
+Uniform-4 & 0 & 86\,508 & .43073\\\bottomrule
+\end{tabular}}\end{center}
+
+遗漏定义为 $J-J_{\rm best}>10^{-4}(1+J_{\rm best})$，不是全局最优证书。Local 四帧遗漏数为 $0/1/6/0$；Profile-1 的优势是本面板中减少目标遗漏与工作量，不是更低的总体位置误差。三臂原始解算触及 120 次上限的次数为 $3/4/12$，选中解未收敛数为 $3/4/0$，均保留计分。坐标旋转未增加独立实飞样本；nfev 也不代表等量耗时，未作跨机器时延比较。
+
+\topic{QDrone：只检验有限外场适配。}四类场地 10 条录制，按 IMU/TWR 共同支持区间中点取 2 / 4 / 8 s 窗，共 30 窗、10 个端点。棱镜代理 XY RMSE：Profile-1 为 $2.930$ m，四起点仿射为 $2.844$ m，$K=2$ 为 $1.677$ m，旋转偏置为 $1.631$ m。同一旋转偏置目标的 Local / Profile-1 / 四起点各 30 窗：遗漏 $1/0/0$，总 nfev 为 $1677/1429/4174$，Profile-1 的 XY 亦为 $1.631$ m；属评估原四臂后的补验，非独立盲测。相对四起点仿射，2 s 为 $1.634\to1.659$ m，未改善；8 s 为 $4.312\to1.605$ m。发布棱镜已插值；缺少精确 IMU--天线--棱镜外参、原始全站仪时间戳和姿态真值；共同前缀初始化，不作真值配准。无线均值为零、尺度 $.30$ m，未迁移 Delft 系数。故只支持轨迹形状适配，不是精确机体定位或完整几何无线模型的跨场地验证。尚无通用航向交接、恢复新后端或整段 InEKF 收益保证。
+\endgroup
 \end{document}
