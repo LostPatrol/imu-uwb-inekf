@@ -1,0 +1,13 @@
+{
+  "windows": 12,
+  "fits": 36,
+  "max_position_error_difference_m": 8.901120196469492e-08,
+  "max_relative_objective_difference": 5.409049599078839e-12,
+  "max_raw_truth_difference_m": 0.0,
+  "max_frame_residual_difference": 1.1368683772161603e-13,
+  "replay_elapsed_s": 15.631379300262779,
+  "current_python": "3.11.15",
+  "numpy": "1.26.4",
+  "scipy": "1.17.1",
+  "timing_scope": "Verification panel only, current host; not original full-panel latency"
+}

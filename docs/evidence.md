@@ -31,10 +31,12 @@
 | `imu-uwb-inekf/results/manual_author_original_vs_latest` | 1 | 6 KiB |
 | `imu-uwb-inekf/results/recovery_bias_20261107_final` | 5 | 38 KiB |
 | `imu-uwb-inekf/results/recovery_bootstrap_20261107_final` | 12 | 7817 KiB |
+| `imu-uwb-inekf/results/recovery_candidate_budget_20261111` | 7 | 770 KiB |
 | `imu-uwb-inekf/results/recovery_geometry_20261107` | 6 | 2334 KiB |
 | `imu-uwb-inekf/results/recovery_imu_affine_control_20261107` | 4 | 126 KiB |
 | `imu-uwb-inekf/results/recovery_imu_mismatch_20261107` | 4 | 539 KiB |
 | `imu-uwb-inekf/results/recovery_imu_polynomial_20261107` | 4 | 128 KiB |
+| `imu-uwb-inekf/results/recovery_real_windows_20261111` | 13 | 935 KiB |
 | `imu-uwb-inekf/results/recovery_window_candidates_20261107` | 9 | 1135 KiB |
 | `imu-uwb-inekf/results/recovery_window_solver_20261107` | 5 | 678 KiB |
 | `imu-uwb-inekf/results/roadmap_stage1_20261104_final` | 11 | 1450 KiB |
@@ -52,3 +54,24 @@
 
 源码与表格保持既有科学含义。仅共同数据位置新增 `INEKF_TWR_DATASET` 环境覆盖，
 以及将几何核验脚本从过程目录收纳到实验目录；估计器和优化器公式未随同步整理改写。
+
+## 2026-11-11 修订结果
+
+会议稿的最小复现快照共 20 个文件，约 1.67 MiB；论文实际引用的表格和图片另存于根 `tex`。
+
+- `imu-uwb-inekf/results/recovery_candidate_budget_20261111`：400 个原种子窗口、
+  五策略 2,000 条方法结果、400 次顺序计时、两种 miss 参考及核验。
+- `imu-uwb-inekf/results/recovery_real_windows_20261111`：复用既有 3,168 条拟合的
+  每日志/布局终点误差、frame 0 重汇总、历史成本、36 次窗口重跑与原始真值坐标核验。
+
+前者保留 `protocol.json`、`metrics.csv`、`summary.csv/json`、`sequential_timing.csv`、
+`validation.json` 和 `tolerance_sensitivity.csv`。后者保留协议、逐次终点指标、总体及
+逐日志/布局汇总（含 frame 0）、历史顺序计时汇总和坐标/重跑核验表与 JSON。
+真实窗口的逐次历史计时仍取自已保存的
+`recovery_window_candidates_20261107/sequential_timing.csv`；新目录不重复存放它。
+原始数据、缓存、NPZ 和结果目录中的重复图片不属于此快照。
+
+新仿真计时使用本机 i5-12600KF；历史真实计时使用 Core Ultra 7 265KF。
+本轮未重做 96/60 条完整滤波回放，也未新增独立采集。具体入口与限制见
+[会议稿修订](conference-revision.md)。仅重汇总及重绘的命令见
+[实验说明](../imu-uwb-inekf/experiments/recovery_bootstrap/README.md#manuscript-visuals)，无需原始数据或优化重跑。

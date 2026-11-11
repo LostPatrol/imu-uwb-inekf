@@ -1,0 +1,25 @@
+{
+  "original_objective_max_abs_difference": {
+    "local": 0.00021792394545627758,
+    "profile_1": 3.348458790242148e-07,
+    "uniform_12": 1.6318292693995318e-05
+  },
+  "original_position_error_max_abs_difference_m": {
+    "local": 0.004426380489165993,
+    "profile_1": 0.00025104522116325967,
+    "uniform_12": 0.01010274732190819
+  },
+  "archived_cross_host_objective_tolerance": 0.001,
+  "direct_current_initializer_objective_differences": {
+    "800_local": 1.1368683772161603e-13,
+    "800_profile_1": 0.0,
+    "800_uniform_12": 0.0,
+    "1200_local": 0.0,
+    "1200_profile_1": 2.842170943040401e-14,
+    "1200_uniform_12": 0.0
+  },
+  "timing_max_abs_objective_difference": 8.526512829121202e-14,
+  "common_cv_calls": 2,
+  "one_raw_fit_per_yaw_verified": true,
+  "all_finite": true
+}

@@ -52,6 +52,8 @@ Check `analyze_bias_real.py --help` if supplying a different cache or output dir
 | `results/recovery_imu_mismatch_20261107` | 1,800 physical IMU calibration-mismatch fits; 180 independent repeat fits and a separate frame/integration audit |
 | `results/recovery_imu_polynomial_20261107` | 600 quadratic-model fits on the identical physical cases; 60 repeat fits |
 | `results/recovery_imu_affine_control_20261107` | 600 affine-model fits with the same two-translation-seed strategy as the quadratic model; 60 repeat fits |
+| `results/recovery_candidate_budget_20261111` | 400 paired windows, 2,000 fits, 400 sequential timings, protocols, summaries and validation |
+| `results/recovery_real_windows_20261111` | 3,168 saved endpoint fits, per-log/layout and frame-zero summaries, historical timing summary and 36-fit verification |
 
 The 528 window configurations come from 66 physical trajectory windows, two anchor subsets and four yaw-frame parameterizations; they are not independent recordings. The candidate count and objective tolerance are fixed in the saved protocols. A miss denotes an objective above the best value found by the compared solvers, not failure against a certified global optimum. All CV initialization solves are included in the recorded nonlinear evaluation totals; SVD and polynomial costs are included in wall time, not in the nonlinear evaluation count.
 
@@ -67,4 +69,45 @@ The algebraic solver globally minimizes a relaxed two-dimensional unit-circle pr
 
 Real window methods deliberately report startup unavailability. Subsequent outage predictions remain in the metrics, including large finite errors. `startup_diagnosis` deliberately uses truth initialization only to isolate update-policy effects; it is not cold-start performance evidence.
 
-Paper sources and PDFs are in the project-root `tex` directory. From the project root, run `& ./tex/build_recovery_paper.ps1` with the installed TeX Live 2026. The script uses IEEEtran and pdfLaTeX/BibTeX for the English paper and XeLaTeX for the Chinese mathematical companion. Compiler intermediates are kept under `agent/codex/research_20261107/repro_build`; final PDFs are copied to `tex`. The English draft retains negative comparisons and distinguishes demonstrated initialization improvements from broader claims requiring new evidence. Compact frozen tables, protocols and audit summaries are retained; full trajectory/cache arrays and local delivery inventories are not part of Git. See the workspace-root `docs/evidence.md` (workspace root) for the retained evidence scope.
+Paper sources and PDFs are in the project-root `tex` directory. From the project root, run `& ./tex/build_recovery_paper.ps1` with the installed TeX Live 2026. The script builds the English paper and supplement with IEEEtran/pdfLaTeX/BibTeX, and the Chinese mathematical companion with XeLaTeX. Compiler intermediates are kept under `agent/codex/recovery_paper_build`; final PDFs are copied to `tex`. Compact frozen tables, protocols and audit summaries are retained; full trajectory/cache arrays and local delivery inventories are not part of Git. See the workspace-root `docs/evidence.md` for retained evidence scope.
+
+## Conference revision: candidate cost and real endpoint error
+
+`budget_candidate_study.py` compares Local, Profile-1 and Uniform-2/4/12 on the same two existing 30 m excited-motion cells, each with 200 original seeds. Two CV translation fits select one shared translation; each yaw then receives one raw-range refinement. Per-solve settings match, while total evaluation/time budgets differ and are explicitly measured. Misses use the five-method joint best; a second column retains the twelve-start reference. Wall timing includes CV, profile generation and final curvature, from a separate sequential subset.
+
+`real_window_metrics.py` resummarizes saved endpoint position errors and computation by log/layout, with frame-zero summaries to expose repeated parameterizations. It uses 66 overlapping physical windows, 132 layout windows and 528 correlated configurations. Optional cached replay checks endpoint coordinates against raw OptiTrack interpolation. These data have no usable heading truth and are not blind testing.
+
+From the workspace root in Windows PowerShell, using the local project environment:
+
+```powershell
+$env:INEKF_TWR_DATASET = 'E:/datasets/tu-delft-uwb-mhe/data_v1/UWB dataset'
+$env:OPENBLAS_NUM_THREADS = '1'
+$env:MKL_NUM_THREADS = '1'
+$env:OMP_NUM_THREADS = '1'
+$env:MPLBACKEND = 'Agg'
+& ./.venv/Scripts/python.exe imu-uwb-inekf/experiments/recovery_bootstrap/budget_candidate_study.py --seeds 200 --workers 4 --main-only --output imu-uwb-inekf/results/candidate_cost_reproduction
+# Run sequential timing after other numerical experiments are idle.
+& ./.venv/Scripts/python.exe imu-uwb-inekf/experiments/recovery_bootstrap/budget_candidate_study.py --seeds 200 --timing-only --output imu-uwb-inekf/results/candidate_cost_reproduction
+& ./.venv/Scripts/python.exe imu-uwb-inekf/experiments/recovery_bootstrap/real_window_metrics.py --output imu-uwb-inekf/results/endpoint_reproduction
+```
+
+For optional endpoint verification, first prepare a fresh cache with `run_research.py --suite prepare --output <study>`, then add `--cache <study>/cache` to the endpoint command. All endpoint times use the post-prefix retained clock, not raw recording start; a first 2 s capture follows the approximately 1.5 s static prefix. The November 11 timing uses an i5-12600KF, while saved November 7 real-window timings use the original Core Ultra 7 265KF. See `docs/conference-revision.md` at workspace root for result paths and interpretation.
+
+## Manuscript visuals
+
+`plot_paper_visuals.py` draws a vector method overview and a two-panel real-window plot from the saved per-log CSV. The trajectory and projection panels are model schematics; the real points use the recorded objective misses and endpoint position percentiles. Profile-1 is teal, Local orange, and uniform policies use cool hues with distinct markers.
+
+From the workspace root:
+
+```powershell
+$env:MPLBACKEND = 'Agg'
+# Optional: rebuild endpoint summaries from the retained historical CSVs, without raw data or fits.
+& ./.venv/Scripts/python.exe imu-uwb-inekf/experiments/recovery_bootstrap/real_window_metrics.py --output imu-uwb-inekf/results/endpoint_reproduction
+& ./.venv/Scripts/python.exe imu-uwb-inekf/experiments/recovery_bootstrap/plot_paper_visuals.py
+& ./.venv/Scripts/python.exe imu-uwb-inekf/experiments/recovery_bootstrap/budget_candidate_study.py --plot-only
+Copy-Item -LiteralPath imu-uwb-inekf/results/recovery_candidate_budget_20261111/candidate_budget_compact.pdf, imu-uwb-inekf/results/recovery_candidate_budget_20261111/candidate_budget_compact.png -Destination tex/recovery_bootstrap_figures
+```
+
+These commands use retained CSVs without rerunning fits. The endpoint command reads the saved `recovery_window_candidates_20261107` and `recovery_window_solver_20261107` tables; adding `--cache` enables separate replay verification. The budget plot needs only its saved `summary.csv` and `protocol.json`, and updates the plot fingerprint in that protocol. Its `--summarize-only` option also runs six fit checks, so use `--plot-only` for figure-only work.
+
+Use `--real-summary` and `--output` on `plot_paper_visuals.py` to select regenerated summaries or a different destination. The TeX build uses the copied figures directly. The November 11 evidence snapshot retains protocols, per-fit metrics, summaries, timing and verification records (20 files, about 1.67 MiB); raw data, caches, NPZ and duplicate result-directory images are excluded. See the workspace-root `docs/evidence.md` for the retained scope. Submission access and anonymity must be arranged for the selected venue.

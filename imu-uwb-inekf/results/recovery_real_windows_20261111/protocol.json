@@ -1,0 +1,63 @@
+{
+  "configurations_per_method": 528,
+  "method_count": 6,
+  "physical_time_windows": 66,
+  "physical_time_windows_per_log": 11,
+  "anchor_layout_windows": 132,
+  "configurations_per_log_method": 88,
+  "frame0_configurations_per_log_method": 22,
+  "layouts": [
+    "all8",
+    "lower4"
+  ],
+  "yaw_frames_deg": [
+    0,
+    90,
+    180,
+    270
+  ],
+  "endpoints_s": [
+    5,
+    10,
+    20,
+    30
+  ],
+  "durations_s": [
+    2,
+    4,
+    8
+  ],
+  "duration_restriction": "duration <= endpoint, giving 2+3+3+3=11 windows/log",
+  "statistical_unit": "Descriptive configurations; overlapping windows, layouts and yaw frames are correlated; no independent-sample inference",
+  "endpoint_model": "p(t)=p_end+v_end*tau+Rz(yaw)*d(t); tau=0 and d=0 at endpoint; p_end is directly in the anchor/OptiTrack world frame",
+  "translation_model_order": 1,
+  "nuisance_basis": "1,tau,tau^2,d_x,d_y,tau*d_x,tau*d_y",
+  "translation_seeds": "Two CV solves: squared-range linear seed and anchor-centroid/zero-velocity fallback; choose robust best, then share one CV translation across all yaw candidates",
+  "yaw_seed_counts": {
+    "local": 1,
+    "profile": 1,
+    "profile_two": 2,
+    "profile_all": "all distinct stationary plus 0/pi candidates",
+    "uniform_four": 4,
+    "multistart": 12
+  },
+  "yaw_frame_transform": "d_frame=Rz(frame)*d; yaw_original=yaw_frame+frame; p_end, v_end, anchors and truth unchanged",
+  "loss": "Huber, normalized residual, f_scale=2; scipy least_squares analytic Jacobian, max_nfev=120 per solve; same original solvers",
+  "error_definition": "Euclidean endpoint error; RMSE=sqrt(mean(endpoint_error^2)) across the indicated configurations, not full-trajectory RMSE",
+  "truth_matching": "Last arrived cached sample <= requested endpoint; OptiTrack XYZ linearly interpolated at corrected sensor acquisition time; not interpolated to requested endpoint afterward",
+  "time_origin": "Loader t=0 is first valid OptiTrack time. IMU and TWR share a 0.20 s acquisition-time correction. Alignment/bias uses loader t<=1.5 s; cache t=0 is first retained sample at loader t>=1.5 s (square:1.51 s, others:1.50 s). Window endpoints are relative to this cache origin, not raw recording start.",
+  "startup_note": "2/4/8 s capture windows add to 1.5 s prefix; full-replay shared scoring begins cache t=8.1 s. This window study tests endpoints 5/10/20/30 s, not online startup latency.",
+  "objective_reference": "Joint best found over six policies per identical configuration, no global certificate; original-three misses also retained separately",
+  "objective_relative_tolerance": 0.0001,
+  "cost_nfev": "CV nfev from both translation solves plus all raw yaw-refinement nfev; SVD/polynomial work included only in wall time",
+  "historical_timing": "Saved November 7 results on source-study host (documented Intel Core Ultra 7 265KF); parallel full-panel times and separate 12-window x 10-repeat interleaved sequential times are historical, not new local timings or WCET",
+  "ground_truth_yaw_available": false,
+  "yaw_accuracy_claim": false,
+  "independent_blind_test": false,
+  "source_files": {
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\results\\recovery_window_candidates_20261107\\combined_metrics.csv": "22a51f294b77e8c220c2e227c96ec2ac6bb9c2af25208cf0ed78610961cda432",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\results\\recovery_window_candidates_20261107\\sequential_timing.csv": "60ab4d2662417c70b7c998687c43d5ac93d41be4dca528256b1d73b86cc67366",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\results\\recovery_window_solver_20261107\\metrics.csv": "5192aeab19e140705177bc156102c5036ee88e9f7c38d76c54aab259e57be6c8",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\recovery_bootstrap\\real_window_metrics.py": "c4e895af910cab9877b19e07643f7136903daf35563adb25ca199a2b330f8a81"
+  }
+}

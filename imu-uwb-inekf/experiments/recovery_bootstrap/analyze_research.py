@@ -26,6 +26,36 @@ def save_figure(fig,directory,name):
     plt.close(fig)
 
 
+def configure_plot_style():
+    """Apply the shared publication style to full and figure-only exports."""
+    plt.rcParams.update({"font.family":"DejaVu Sans","font.size":8,"axes.spines.top":False,
+                         "axes.spines.right":False,"axes.labelsize":8,"xtick.labelsize":7,
+                         "ytick.labelsize":7,"legend.fontsize":7,"pdf.fonttype":42})
+
+
+def plot_bias_tradeoff(bias,destination):
+    """Plot saved bias errors and information-test violations without replaying data."""
+    configure_plot_style()
+    fig,axes=plt.subplots(2,1,figsize=(3.48,3.65),layout="constrained")
+    for method,color,label in (("fixed_bias",ORANGE,"Bias fixed"),("free_bias",BLUE,"Quadratic nuisance")):
+        data=bias[(bias.motion=="excited")&(bias.method==method)]
+        group=data.groupby("bias_std").yaw_error_deg
+        med=group.median()
+        axes[0].plot(med.index,med.values,"o-",color=color,label=label,markersize=4)
+        axes[0].fill_between(med.index,group.quantile(.25),group.quantile(.75),color=color,alpha=.14)
+        subset=bias[(bias.motion=="constant_acceleration")&(bias.method==method)]
+        rates=subset.groupby("bias_std").false_confident.mean()*100
+        axes[1].plot(rates.index,rates.values,"o-",color=color,label=label,markersize=4)
+    axes[0].set(ylabel="Yaw error (deg)",title="Excited motion: median and IQR")
+    axes[0].legend(loc="upper left")
+    axes[1].set(ylabel="Threshold violations (%)",xlabel="Accelerometer bias SD (m/s$^2$)",
+                title="Constant acceleration: acceptance can mislead",ylim=(-3,70))
+    axes[1].text(.01,58,"Quadratic nuisance rejects all headings",fontsize=7,color=BLUE)
+    for ax in axes:
+        ax.set_xticks([0,.1,.3]); ax.grid(alpha=.2)
+    save_figure(fig,destination,"bias_tradeoff")
+
+
 def audit(root,frame):
     """Recompute metrics from full arrays without calling the experiment's scorer."""
     differences=[]
@@ -70,9 +100,7 @@ def audit(root,frame):
 
 def figures(root,destination):
     """Generate comparable figures and machine-readable aggregates from frozen outputs."""
-    plt.rcParams.update({"font.family":"DejaVu Sans","font.size":8,"axes.spines.top":False,
-                         "axes.spines.right":False,"axes.labelsize":8,"xtick.labelsize":7,
-                         "ytick.labelsize":7,"legend.fontsize":7,"pdf.fonttype":42})
+    configure_plot_style()
     real=pd.read_csv(root/"real_metrics.csv")
     synthetic=pd.read_csv(root/"synthetic_metrics.csv")
     bias=pd.read_csv(root/"bias_metrics.csv")
@@ -107,24 +135,7 @@ def figures(root,destination):
         ax.grid(axis="y",alpha=.2)
     save_figure(fig,destination,"real_summary")
 
-    fig,axes=plt.subplots(2,1,figsize=(3.48,3.65),layout="constrained")
-    for method,color,label in (("fixed_bias",ORANGE,"Bias fixed"),("free_bias",BLUE,"Quadratic nuisance")):
-        data=bias[(bias.motion=="excited")&(bias.method==method)]
-        group=data.groupby("bias_std").yaw_error_deg
-        med=group.median()
-        axes[0].plot(med.index,med.values,"o-",color=color,label=label,markersize=4)
-        axes[0].fill_between(med.index,group.quantile(.25),group.quantile(.75),color=color,alpha=.14)
-        subset=bias[(bias.motion=="constant_acceleration")&(bias.method==method)]
-        rates=subset.groupby("bias_std").false_confident.mean()*100
-        axes[1].plot(rates.index,rates.values,"o-",color=color,label=label,markersize=4)
-    axes[0].set(ylabel="Yaw error (deg)",title="Excited motion: median and IQR")
-    axes[0].legend(loc="upper left")
-    axes[1].set(ylabel="Threshold violations (%)",xlabel="Accelerometer bias SD (m/s$^2$)",
-                title="Constant acceleration: acceptance can mislead",ylim=(-3,70))
-    axes[1].text(.01,58,"Quadratic nuisance rejects all yaw handoffs",fontsize=7,color=BLUE)
-    for ax in axes:
-        ax.set_xticks([0,.1,.3]); ax.grid(alpha=.2)
-    save_figure(fig,destination,"bias_tradeoff")
+    plot_bias_tradeoff(bias,destination)
 
     # Display a difficult recorded sequence without censoring large finite errors.
     name=next(name for name in real.sequence.unique() if "random" in name)
@@ -194,5 +205,10 @@ if __name__=="__main__":
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--results",type=Path,required=True)
     parser.add_argument("--figures",type=Path,required=True)
+    parser.add_argument("--bias-plot-only",action="store_true",
+                        help="Redraw bias_tradeoff from saved bias_metrics.csv without trajectory auditing")
     arguments=parser.parse_args()
-    figures(arguments.results,arguments.figures)
+    if arguments.bias_plot_only:
+        plot_bias_tradeoff(pd.read_csv(arguments.results/"bias_metrics.csv"),arguments.figures)
+    else:
+        figures(arguments.results,arguments.figures)

@@ -1,0 +1,6 @@
+{
+  "windows": 12,
+  "max_endpoint_residual_difference": 0.0,
+  "max_raw_truth_difference_m": 0.0,
+  "max_frame_residual_difference": 1.1368683772161603e-13
+}
