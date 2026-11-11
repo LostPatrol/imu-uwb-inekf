@@ -1,0 +1,505 @@
+domain,sequence,gap_s,window,method,K_m,candidate_m,coverage
+Delft TDoA,2021-02-12_14_00_34_tdoa_octagon,2.0,0-2,post_update_write,0.2378042641190566,0.2378042641190566,1.0
+Delft TDoA,2021-02-12_14_00_34_tdoa_octagon,2.0,2-5,post_update_write,0.2064589374915929,0.2064589374915929,1.0
+Delft TDoA,2021-02-12_14_00_34_tdoa_octagon,2.0,6-11,post_update_write,0.1688870068660187,0.1688870068660187,1.0
+Delft TDoA,2021-02-12_14_00_34_tdoa_octagon,5.0,0-2,post_update_write,0.3831814467989287,0.3831814467989287,1.0
+Delft TDoA,2021-02-12_14_00_34_tdoa_octagon,5.0,2-5,post_update_write,0.2034566953830876,0.2034566953830876,1.0
+Delft TDoA,2021-02-12_14_00_34_tdoa_octagon,5.0,6-11,post_update_write,0.1685369025446945,0.1685369025446945,1.0
+Delft TDoA,2021-02-12_14_00_34_tdoa_octagon,10.0,0-2,post_update_write,49.457871258563095,49.457871258563095,1.0
+Delft TDoA,2021-02-12_14_00_34_tdoa_octagon,10.0,2-5,post_update_write,46.77261887378261,46.77261887378261,1.0
+Delft TDoA,2021-02-12_14_00_34_tdoa_octagon,10.0,6-11,post_update_write,29.12880617485911,29.12880617485911,1.0
+Delft TDoA,2021-02-12_14_00_34_tdoa_octagon,20.0,0-2,post_update_write,73.99339240105934,7.074016423800953,1.0
+Delft TDoA,2021-02-12_14_00_34_tdoa_octagon,20.0,2-5,post_update_write,62.38818491351592,0.2219666863928071,1.0
+Delft TDoA,2021-02-12_14_00_34_tdoa_octagon,20.0,6-11,post_update_write,62.78016415923425,0.1705679811416707,1.0
+Delft TDoA,2021-02-12_14_05_09_tdoa_star,2.0,0-2,post_update_write,0.1586844910080123,0.1586844910080123,1.0
+Delft TDoA,2021-02-12_14_05_09_tdoa_star,2.0,2-5,post_update_write,0.1923722719739881,0.1923722719739881,1.0
+Delft TDoA,2021-02-12_14_05_09_tdoa_star,2.0,6-11,post_update_write,0.1993302161865426,0.1993302161865426,1.0
+Delft TDoA,2021-02-12_14_05_09_tdoa_star,5.0,0-2,post_update_write,0.5388193287759829,0.5388193287759829,1.0
+Delft TDoA,2021-02-12_14_05_09_tdoa_star,5.0,2-5,post_update_write,0.1968786395654085,0.1968786395654085,1.0
+Delft TDoA,2021-02-12_14_05_09_tdoa_star,5.0,6-11,post_update_write,0.1986931913431547,0.1986931913431547,1.0
+Delft TDoA,2021-02-12_14_05_09_tdoa_star,10.0,0-2,post_update_write,0.2569798127146961,0.2569798127146961,1.0
+Delft TDoA,2021-02-12_14_05_09_tdoa_star,10.0,2-5,post_update_write,0.1980243999519146,0.1980243999519146,1.0
+Delft TDoA,2021-02-12_14_05_09_tdoa_star,10.0,6-11,post_update_write,0.1982216079159834,0.1982216079159834,1.0
+Delft TDoA,2021-02-12_14_05_09_tdoa_star,20.0,0-2,post_update_write,120.8057750218544,106.11014062857674,1.0
+Delft TDoA,2021-02-12_14_05_09_tdoa_star,20.0,2-5,post_update_write,124.2757770065666,103.62242204395795,1.0
+Delft TDoA,2021-02-12_14_05_09_tdoa_star,20.0,6-11,post_update_write,79.12881385165926,98.31219708436784,1.0
+Delft TDoA,2021-02-12_14_06_55_tdoa_hourglass,2.0,0-2,post_update_write,0.1390779541836088,0.1390779541836088,1.0
+Delft TDoA,2021-02-12_14_06_55_tdoa_hourglass,2.0,2-5,post_update_write,0.2195316353912052,0.2195316353912052,1.0
+Delft TDoA,2021-02-12_14_06_55_tdoa_hourglass,2.0,6-11,post_update_write,0.2362352559115909,0.2362352559115909,1.0
+Delft TDoA,2021-02-12_14_06_55_tdoa_hourglass,5.0,0-2,post_update_write,0.1790501037350521,0.1790501037350521,1.0
+Delft TDoA,2021-02-12_14_06_55_tdoa_hourglass,5.0,2-5,post_update_write,0.2205780304349708,0.2205780304349708,1.0
+Delft TDoA,2021-02-12_14_06_55_tdoa_hourglass,5.0,6-11,post_update_write,0.2362717226570182,0.2362717226570182,1.0
+Delft TDoA,2021-02-12_14_06_55_tdoa_hourglass,10.0,0-2,post_update_write,0.5092122907497187,0.5092122907497187,1.0
+Delft TDoA,2021-02-12_14_06_55_tdoa_hourglass,10.0,2-5,post_update_write,0.2258890116103674,0.2258890116103674,1.0
+Delft TDoA,2021-02-12_14_06_55_tdoa_hourglass,10.0,6-11,post_update_write,0.2363823684977845,0.2363823684977845,1.0
+Delft TDoA,2021-02-12_14_06_55_tdoa_hourglass,20.0,0-2,post_update_write,150.44337529737535,150.44337529737535,1.0
+Delft TDoA,2021-02-12_14_06_55_tdoa_hourglass,20.0,2-5,post_update_write,226.48465599465607,226.48465599465607,1.0
+Delft TDoA,2021-02-12_14_06_55_tdoa_hourglass,20.0,6-11,post_update_write,481.34549309867526,481.34549309867526,1.0
+Delft TDoA,2021-02-12_14_13_51_tdoa_hourglass_BAD,2.0,0-2,post_update_write,0.3547277929877401,0.3610465765145208,1.0
+Delft TDoA,2021-02-12_14_13_51_tdoa_hourglass_BAD,2.0,2-5,post_update_write,0.3504485309960219,0.3579545128492181,1.0
+Delft TDoA,2021-02-12_14_13_51_tdoa_hourglass_BAD,2.0,6-11,post_update_write,3.952870209977789,3.956388930196587,1.0
+Delft TDoA,2021-02-12_14_13_51_tdoa_hourglass_BAD,5.0,0-2,post_update_write,0.3597796879323696,0.365979791809044,1.0
+Delft TDoA,2021-02-12_14_13_51_tdoa_hourglass_BAD,5.0,2-5,post_update_write,0.2645009970523998,0.288643095743487,1.0
+Delft TDoA,2021-02-12_14_13_51_tdoa_hourglass_BAD,5.0,6-11,post_update_write,3.379936519657233,3.5215132105865705,1.0
+Delft TDoA,2021-02-12_14_13_51_tdoa_hourglass_BAD,10.0,0-2,post_update_write,21.31935443823752,20.389570864004337,1.0
+Delft TDoA,2021-02-12_14_13_51_tdoa_hourglass_BAD,10.0,2-5,post_update_write,40.0351017281959,26.39749038754285,1.0
+Delft TDoA,2021-02-12_14_13_51_tdoa_hourglass_BAD,10.0,6-11,post_update_write,43.08368722040476,54.91448184806587,1.0
+Delft TDoA,2021-02-12_14_13_51_tdoa_hourglass_BAD,20.0,0-2,post_update_write,12.367371676795154,11.367319164400373,1.0
+Delft TDoA,2021-02-12_14_13_51_tdoa_hourglass_BAD,20.0,2-5,post_update_write,18.550529360654973,1.129296844102535,1.0
+Delft TDoA,2021-02-12_14_13_51_tdoa_hourglass_BAD,20.0,6-11,post_update_write,20.286945297797416,19.74305040460732,1.0
+Delft TDoA,2021-02-12_14_15_41_tdoa_random,2.0,0-2,post_update_write,0.9630502656835428,0.9630502656835428,1.0
+Delft TDoA,2021-02-12_14_15_41_tdoa_random,2.0,2-5,post_update_write,0.39420091943233,0.39420091943233,1.0
+Delft TDoA,2021-02-12_14_15_41_tdoa_random,2.0,6-11,post_update_write,0.5082173921161626,0.5082173921161626,1.0
+Delft TDoA,2021-02-12_14_15_41_tdoa_random,5.0,0-2,post_update_write,2.3222950138864507,2.3222950138864507,1.0
+Delft TDoA,2021-02-12_14_15_41_tdoa_random,5.0,2-5,post_update_write,0.4032812984888028,0.4032812984888028,1.0
+Delft TDoA,2021-02-12_14_15_41_tdoa_random,5.0,6-11,post_update_write,0.4438437723926042,0.4438437723926042,1.0
+Delft TDoA,2021-02-12_14_15_41_tdoa_random,10.0,0-2,post_update_write,25.629165157955367,25.629165157955367,1.0
+Delft TDoA,2021-02-12_14_15_41_tdoa_random,10.0,2-5,post_update_write,33.41322005775289,33.41322005775289,1.0
+Delft TDoA,2021-02-12_14_15_41_tdoa_random,10.0,6-11,post_update_write,70.46078441897832,70.46078441897832,1.0
+Delft TDoA,2021-02-12_14_15_41_tdoa_random,20.0,0-2,post_update_write,109.76635252168968,109.76635252168968,1.0
+Delft TDoA,2021-02-12_14_15_41_tdoa_random,20.0,2-5,post_update_write,151.53745281230402,151.53745281230402,1.0
+Delft TDoA,2021-02-12_14_15_41_tdoa_random,20.0,6-11,post_update_write,166.62538781033422,166.62538781033422,1.0
+Delft TDoA,2021-02-12_14_18_57_tdoa_random,2.0,0-2,post_update_write,0.1713272302160129,0.1713272302160129,1.0
+Delft TDoA,2021-02-12_14_18_57_tdoa_random,2.0,2-5,post_update_write,0.1635241873578691,0.1635241873578691,1.0
+Delft TDoA,2021-02-12_14_18_57_tdoa_random,2.0,6-11,post_update_write,0.1149595427955033,0.1149595427955033,1.0
+Delft TDoA,2021-02-12_14_18_57_tdoa_random,5.0,0-2,post_update_write,0.6662501717460041,0.6662501717460041,1.0
+Delft TDoA,2021-02-12_14_18_57_tdoa_random,5.0,2-5,post_update_write,0.2041794019359949,0.2041794019359949,1.0
+Delft TDoA,2021-02-12_14_18_57_tdoa_random,5.0,6-11,post_update_write,0.11571851445482,0.11571851445482,1.0
+Delft TDoA,2021-02-12_14_18_57_tdoa_random,10.0,0-2,post_update_write,12.723357511057324,10.056074042414576,1.0
+Delft TDoA,2021-02-12_14_18_57_tdoa_random,10.0,2-5,post_update_write,35.8139805180656,26.86113766444541,1.0
+Delft TDoA,2021-02-12_14_18_57_tdoa_random,10.0,6-11,post_update_write,79.06836547232197,80.07838181954432,1.0
+Delft TDoA,2021-02-12_14_18_57_tdoa_random,20.0,0-2,post_update_write,25.84737075405216,25.84737075405216,1.0
+Delft TDoA,2021-02-12_14_18_57_tdoa_random,20.0,2-5,post_update_write,24.63298095752993,24.63298095752993,1.0
+Delft TDoA,2021-02-12_14_18_57_tdoa_random,20.0,6-11,post_update_write,32.33784706010479,32.33784706010479,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,2.0,0-2,bound_before_capture,0.1150705873095582,0.1150705873095582,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,2.0,2-5,bound_before_capture,0.0571364677731374,0.0571364677731374,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,2.0,6-11,bound_before_capture,0.0750931770577326,0.0750931770577326,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,5.0,0-2,bound_before_capture,0.1275827215711748,0.1275827215711748,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,5.0,2-5,bound_before_capture,0.0584264991541997,0.0584264991541997,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,5.0,6-11,bound_before_capture,0.0751379697843059,0.0751379697843059,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,10.0,0-2,bound_before_capture,0.6766956584834719,0.4567271930772913,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,10.0,2-5,bound_before_capture,0.0569022612552691,0.0569018289421108,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,10.0,6-11,bound_before_capture,0.0751290662449499,0.0751291705581521,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,20.0,0-2,bound_before_capture,6.31473687843882,0.4066773802102907,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,20.0,2-5,bound_before_capture,0.0553996781543995,0.0554608728169443,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,20.0,6-11,bound_before_capture,0.0752685844942431,0.0752677878992038,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,2.0,0-2,post_update_write,0.1150705873095582,0.1150705873095582,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,2.0,2-5,post_update_write,0.0571364677731374,0.0571364677731374,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,2.0,6-11,post_update_write,0.0750931770577326,0.0750931770577326,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,5.0,0-2,post_update_write,0.1275827215711749,0.1264648632839131,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,5.0,2-5,post_update_write,0.0584264991541997,0.0584252247663858,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,5.0,6-11,post_update_write,0.0751379697843059,0.0751379776820496,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,10.0,0-2,post_update_write,0.6766956584834719,0.7873702579677234,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,10.0,2-5,post_update_write,0.0569022612552691,0.0552609848046451,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,10.0,6-11,post_update_write,0.0751290662449499,0.0751368354886546,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,20.0,0-2,post_update_write,6.314736878438819,15.291958506585566,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,20.0,2-5,post_update_write,0.0553996781543995,3.052954522091787,1.0
+Delft TWR,2021-02-12_09_43_34_twr_triangle,20.0,6-11,post_update_write,0.0752685844942431,29.38977774407373,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,2.0,0-2,bound_before_capture,0.1247167415526596,0.1247167415526596,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,2.0,2-5,bound_before_capture,0.1124918561675068,0.1124918561675068,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,2.0,6-11,bound_before_capture,0.0986677876721246,0.0986677876721246,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,5.0,0-2,bound_before_capture,0.0986137197426793,0.0986137197426793,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,5.0,2-5,bound_before_capture,0.1063639300916069,0.1063639300916069,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,5.0,6-11,bound_before_capture,0.09500051751539,0.09500051751539,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,10.0,0-2,bound_before_capture,0.1072894204480144,0.1630167179639092,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,10.0,2-5,bound_before_capture,0.1093574916525188,0.1093559386244156,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,10.0,6-11,bound_before_capture,0.0949133352929597,0.094913323513502,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,20.0,0-2,bound_before_capture,1.0160794319242026,0.4654083924560934,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,20.0,2-5,bound_before_capture,0.1102652830936992,0.1102634328372868,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,20.0,6-11,bound_before_capture,0.0950817678563644,0.0950817530292132,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,2.0,0-2,post_update_write,0.1247167415526596,0.11670920187193,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,2.0,2-5,post_update_write,0.1124918561675068,0.1124917641675337,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,2.0,6-11,post_update_write,0.0986677876721246,0.0986678288604779,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,5.0,0-2,post_update_write,0.0986137197426793,0.0986137197426793,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,5.0,2-5,post_update_write,0.1063639300916069,0.1063639300916069,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,5.0,6-11,post_update_write,0.09500051751539,0.09500051751539,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,10.0,0-2,post_update_write,0.1072894204480144,0.351402699846393,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,10.0,2-5,post_update_write,0.1093574916525188,0.1094247268192518,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,10.0,6-11,post_update_write,0.0949133352929597,0.0949126820945583,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,20.0,0-2,post_update_write,1.0160794319242028,0.3722941765186273,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,20.0,2-5,post_update_write,0.1102652830936992,0.1103892360330075,1.0
+Delft TWR,2021-02-12_09_46_15_twr_octagon,20.0,6-11,post_update_write,0.0950817678563644,0.0950793660546874,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,2.0,0-2,bound_before_capture,0.1087836992773966,0.1087836992773966,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,2.0,2-5,bound_before_capture,0.1063898334963874,0.1063898334963874,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,2.0,6-11,bound_before_capture,0.0944007796155444,0.0944007796155444,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,5.0,0-2,bound_before_capture,0.1172735033076182,0.115212732984778,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,5.0,2-5,bound_before_capture,0.1084581151519398,0.1084541945066146,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,5.0,6-11,bound_before_capture,0.0941747446269275,0.0941749390375985,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,10.0,0-2,bound_before_capture,0.1203794062028306,0.1203794062028306,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,10.0,2-5,bound_before_capture,0.1067681841603997,0.1067681841603997,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,10.0,6-11,bound_before_capture,0.0938333885142463,0.0938333885142463,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,20.0,0-2,bound_before_capture,0.3300677507083065,0.2636275813334267,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,20.0,2-5,bound_before_capture,0.109131400675024,0.1091373561732385,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,20.0,6-11,bound_before_capture,0.0941235242631319,0.0941246557006174,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,2.0,0-2,post_update_write,0.1087836992773966,0.1087836992773966,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,2.0,2-5,post_update_write,0.1063898334963874,0.1063898334963874,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,2.0,6-11,post_update_write,0.0944007796155444,0.0944007796155444,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,5.0,0-2,post_update_write,0.1172735033076182,0.1396961346793763,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,5.0,2-5,post_update_write,0.1084581151519398,0.1084240267445503,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,5.0,6-11,post_update_write,0.0941747446269275,0.0941764162780148,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,10.0,0-2,post_update_write,0.1203794062028306,0.1203794062028306,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,10.0,2-5,post_update_write,0.1067681841603997,0.1067681841603997,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,10.0,6-11,post_update_write,0.0938333885142463,0.0938333885142463,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,20.0,0-2,post_update_write,0.3300677507083065,2.8611300997680824,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,20.0,2-5,post_update_write,0.109131400675024,1.3255188346656663,1.0
+Delft TWR,2021-02-12_09_51_57_twr_hourglass,20.0,6-11,post_update_write,0.0941235242631319,0.1252474118336984,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,2.0,0-2,bound_before_capture,0.0862735177065442,0.0862735177065442,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,2.0,2-5,bound_before_capture,0.1158133246387794,0.1158133246387794,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,2.0,6-11,bound_before_capture,0.0593540313883244,0.0593540313883244,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,5.0,0-2,bound_before_capture,0.0831327986689468,0.0834645655419673,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,5.0,2-5,bound_before_capture,0.113017634014758,0.113015091316909,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,5.0,6-11,bound_before_capture,0.0593456926167434,0.0593457672128654,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,10.0,0-2,bound_before_capture,0.081654036567367,0.0821714255790807,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,10.0,2-5,bound_before_capture,0.1126181653287104,0.1126146863579965,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,10.0,6-11,bound_before_capture,0.0593995826335403,0.0593996900127222,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,20.0,0-2,bound_before_capture,0.9411502426700552,0.1160145147400961,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,20.0,2-5,bound_before_capture,0.1119939628619972,0.1125760953595853,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,20.0,6-11,bound_before_capture,0.0597026958043653,0.0596764832845071,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,2.0,0-2,post_update_write,0.0862735177065442,0.0862735177065442,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,2.0,2-5,post_update_write,0.1158133246387794,0.1158133246387794,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,2.0,6-11,post_update_write,0.0593540313883244,0.0593540313883244,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,5.0,0-2,post_update_write,0.0831327986689468,0.1397017229542129,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,5.0,2-5,post_update_write,0.113017634014758,0.1129621866352203,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,5.0,6-11,post_update_write,0.0593456926167434,0.0593472300235605,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,10.0,0-2,post_update_write,0.081654036567367,0.1792036968690804,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,10.0,2-5,post_update_write,0.1126181653287104,0.1125190658276477,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,10.0,6-11,post_update_write,0.0593995826335403,0.0594024347109965,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,20.0,0-2,post_update_write,0.9411502426700552,11.501599666425438,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,20.0,2-5,post_update_write,0.1119939628619972,5.0305986143484684,1.0
+Delft TWR,2021-02-12_09_56_09_twr_random,20.0,6-11,post_update_write,0.0597026958043653,102.21902094843452,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,2.0,0-2,bound_before_capture,0.1663191742249537,0.1663191742249537,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,2.0,2-5,bound_before_capture,0.0919670161483294,0.0919670161483294,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,2.0,6-11,bound_before_capture,0.0936014404567481,0.0936014404567481,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,5.0,0-2,bound_before_capture,0.199071595968147,0.1758290076946073,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,5.0,2-5,bound_before_capture,0.0906216983308204,0.0906205000646348,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,5.0,6-11,bound_before_capture,0.0940183027431657,0.0940181573409775,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,10.0,0-2,bound_before_capture,0.2147089716704856,0.2182030011550517,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,10.0,2-5,bound_before_capture,0.0899836839208574,0.0899830314156825,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,10.0,6-11,bound_before_capture,0.0925168758258021,0.0925166900535628,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,20.0,0-2,bound_before_capture,1.713140234100074,0.6058385563180334,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,20.0,2-5,bound_before_capture,0.09016498344058,0.0901689978760633,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,20.0,6-11,bound_before_capture,0.0918945135575181,0.0918942928447748,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,2.0,0-2,post_update_write,0.1663191742249537,0.1663191742249537,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,2.0,2-5,post_update_write,0.0919670161483294,0.0919670161483294,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,2.0,6-11,post_update_write,0.0936014404567481,0.0936014404567481,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,5.0,0-2,post_update_write,0.199071595968147,0.1764893935093016,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,5.0,2-5,post_update_write,0.0906216983308204,0.0906124078611416,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,5.0,6-11,post_update_write,0.0940183027431657,0.0940171788379092,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,10.0,0-2,post_update_write,0.2147089716704857,0.2112696270792274,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,10.0,2-5,post_update_write,0.0899836839208574,0.0899838692464639,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,10.0,6-11,post_update_write,0.0925168758258021,0.0925169067726381,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,20.0,0-2,post_update_write,1.713140234100074,1.8127488759944788,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,20.0,2-5,post_update_write,0.09016498344058,0.0861289911221147,1.0
+Delft TWR,2021-02-12_10_09_28_twr_star,20.0,6-11,post_update_write,0.0918945135575181,0.0909408389075353,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,2.0,0-2,bound_before_capture,0.0339224064885049,0.0329164007542935,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,2.0,2-5,bound_before_capture,0.0690509767695993,0.0690489433047471,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,2.0,6-11,bound_before_capture,0.1248556407307441,0.1248555885733129,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,5.0,0-2,bound_before_capture,0.0354664936628843,0.0344728065436917,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,5.0,2-5,bound_before_capture,0.0695280042291917,0.0695257449911391,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,5.0,6-11,bound_before_capture,0.1246367225083727,0.1246366614283056,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,10.0,0-2,bound_before_capture,0.0355197345047588,0.069545172398496,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,10.0,2-5,bound_before_capture,0.0700467674967718,0.0700447038476669,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,10.0,6-11,bound_before_capture,0.1243940091899479,0.1243939119675767,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,20.0,0-2,bound_before_capture,0.0680337875581675,0.0690953810524837,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,20.0,2-5,bound_before_capture,0.0705204922961198,0.0705173199434372,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,20.0,6-11,bound_before_capture,0.1241621732731865,0.1241621128247405,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,2.0,0-2,post_update_write,0.0339224064885049,0.0339224064885049,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,2.0,2-5,post_update_write,0.0690509767695993,0.0690509767695993,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,2.0,6-11,post_update_write,0.1248556407307441,0.1248556407307441,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,5.0,0-2,post_update_write,0.0354664936628843,0.0772284081439796,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,5.0,2-5,post_update_write,0.0695280042291917,0.0694850722766738,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,5.0,6-11,post_update_write,0.1246367225083727,0.124635489227594,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,10.0,0-2,post_update_write,0.0355197345047588,0.047875066133639,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,10.0,2-5,post_update_write,0.0700467674967718,0.0700253011795405,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,10.0,6-11,post_update_write,0.1243940091899479,0.124392977377232,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,20.0,0-2,post_update_write,0.0680337875581675,0.2935177036823873,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,20.0,2-5,post_update_write,0.0705204922961198,0.0704202338420708,1.0
+Delft TWR,2021-02-12_13_43_51_twr_square,20.0,6-11,post_update_write,0.1241621732731865,0.1241595253359899,1.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,2.0,0-2,post_update_write,,,0.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,2.0,2-5,post_update_write,0.4631296425179029,0.4631296425179029,0.5666666666666667
+QDrone TWR,2019-08-28-16-32-12_exp5_success,2.0,6-11,post_update_write,0.4637456690038629,0.4637456690038629,1.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,5.0,0-2,post_update_write,,,0.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,5.0,2-5,post_update_write,0.4766388502011556,0.4766388502011556,0.5666666666666667
+QDrone TWR,2019-08-28-16-32-12_exp5_success,5.0,6-11,post_update_write,0.4518492798963613,0.4518492798963613,1.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,10.0,0-2,post_update_write,,,0.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,10.0,2-5,post_update_write,0.4577863994443851,0.4577863994443851,0.5666666666666667
+QDrone TWR,2019-08-28-16-32-12_exp5_success,10.0,6-11,post_update_write,0.4497999048899403,0.4497999048899403,1.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,20.0,0-2,post_update_write,,,0.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,20.0,2-5,post_update_write,0.4465092281281611,0.4465092281281611,0.5666666666666667
+QDrone TWR,2019-08-28-16-32-12_exp5_success,20.0,6-11,post_update_write,0.4334670206732401,0.4334670206732401,1.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,2.0,0-2,post_update_write,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,2.0,2-5,post_update_write,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,2.0,6-11,post_update_write,0.3706469324478558,0.3706469324478558,0.73
+QDrone TWR,2019-08-28-16-38-48_exp6_success,5.0,0-2,post_update_write,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,5.0,2-5,post_update_write,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,5.0,6-11,post_update_write,0.370911407973215,0.370911407973215,0.73
+QDrone TWR,2019-08-28-16-38-48_exp6_success,10.0,0-2,post_update_write,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,10.0,2-5,post_update_write,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,10.0,6-11,post_update_write,0.3710892632315222,0.3710892632315222,0.73
+QDrone TWR,2019-08-28-16-38-48_exp6_success,20.0,0-2,post_update_write,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,20.0,2-5,post_update_write,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,20.0,6-11,post_update_write,0.3737478125072415,0.3709939737652295,0.73
+QDrone TWR,2019-08-29-16-28-34_Flight1,2.0,0-2,post_update_write,0.6259069030054122,0.6259069030054122,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,2.0,2-5,post_update_write,0.621016094912059,0.621016094912059,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,2.0,6-11,post_update_write,0.8135118177998277,0.8135118177998277,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,5.0,0-2,post_update_write,0.6140116346239288,0.6140116346239288,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,5.0,2-5,post_update_write,0.6171314561668282,0.6171314561668282,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,5.0,6-11,post_update_write,0.8130614260185404,0.8130614260185404,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,10.0,0-2,post_update_write,0.663933226178316,0.663933226178316,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,10.0,2-5,post_update_write,0.6196325048639072,0.6196325048639072,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,10.0,6-11,post_update_write,0.813441044182746,0.813441044182746,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,20.0,0-2,post_update_write,0.825408058650954,0.825408058650954,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,20.0,2-5,post_update_write,0.6186561902128482,0.6186561902128482,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,20.0,6-11,post_update_write,0.8144274153486863,0.8144274153486863,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,2.0,0-2,post_update_write,1.0002411486017748,1.0002411486017748,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,2.0,2-5,post_update_write,3.009854282937746,3.009854282937746,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,2.0,6-11,post_update_write,3.441840077235757,3.441840077235757,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,5.0,0-2,post_update_write,1.0005520787079514,1.0005520787079514,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,5.0,2-5,post_update_write,3.0095878612310094,3.0095878612310094,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,5.0,6-11,post_update_write,3.442697559168329,3.442697559168329,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,10.0,0-2,post_update_write,1.0403404485546763,1.0403404485546763,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,10.0,2-5,post_update_write,3.008281757652486,3.008281757652486,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,10.0,6-11,post_update_write,3.443826638329336,3.443826638329336,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,20.0,0-2,post_update_write,1.608529489472024,1.608529489472024,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,20.0,2-5,post_update_write,3.003046764399472,3.003046764399472,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,20.0,6-11,post_update_write,3.443977340583312,3.443977340583312,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,2.0,0-2,post_update_write,0.642083165605509,0.642083165605509,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,2.0,2-5,post_update_write,0.6342047669681208,0.6342047669681208,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,2.0,6-11,post_update_write,0.6386520438873333,0.6386520438873333,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,5.0,0-2,post_update_write,0.6454412327901464,0.6454412327901464,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,5.0,2-5,post_update_write,0.6317256948199921,0.6317256948199921,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,5.0,6-11,post_update_write,0.6386907551878525,0.6386907551878525,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,10.0,0-2,post_update_write,1.7577355005465627,1.7577355005465627,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,10.0,2-5,post_update_write,0.6244363435490684,0.6244363435490684,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,10.0,6-11,post_update_write,0.6387425846413524,0.6387425846413524,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,20.0,0-2,post_update_write,10.004623545900122,11.18612328452491,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,20.0,2-5,post_update_write,0.6464480142152943,0.7573034269966845,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,20.0,6-11,post_update_write,0.6385505673323267,0.6025504134262042,1.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,2.0,0-2,bound_before_capture,,,0.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,2.0,2-5,bound_before_capture,0.4631296425179029,0.4631296425179029,0.5666666666666667
+QDrone TWR,2019-08-28-16-32-12_exp5_success,2.0,6-11,bound_before_capture,0.4637456690038629,0.4637456690038629,1.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,5.0,0-2,bound_before_capture,,,0.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,5.0,2-5,bound_before_capture,0.4766388502011556,0.4766388502011556,0.5666666666666667
+QDrone TWR,2019-08-28-16-32-12_exp5_success,5.0,6-11,bound_before_capture,0.4518492798963613,0.4518492798963613,1.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,10.0,0-2,bound_before_capture,,,0.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,10.0,2-5,bound_before_capture,0.4577863994443851,0.4577102800921,0.5666666666666667
+QDrone TWR,2019-08-28-16-32-12_exp5_success,10.0,6-11,bound_before_capture,0.4497999048899403,0.4507278193503556,1.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,20.0,0-2,bound_before_capture,,,0.0
+QDrone TWR,2019-08-28-16-32-12_exp5_success,20.0,2-5,bound_before_capture,0.4465092281281611,0.4467341951759755,0.5666666666666667
+QDrone TWR,2019-08-28-16-32-12_exp5_success,20.0,6-11,bound_before_capture,0.4334670206732401,0.4335084739079585,1.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,2.0,0-2,bound_before_capture,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,2.0,2-5,bound_before_capture,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,2.0,6-11,bound_before_capture,0.3706469324478558,0.3706469324478558,0.73
+QDrone TWR,2019-08-28-16-38-48_exp6_success,5.0,0-2,bound_before_capture,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,5.0,2-5,bound_before_capture,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,5.0,6-11,bound_before_capture,0.370911407973215,0.370911407973215,0.73
+QDrone TWR,2019-08-28-16-38-48_exp6_success,10.0,0-2,bound_before_capture,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,10.0,2-5,bound_before_capture,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,10.0,6-11,bound_before_capture,0.3710892632315222,0.3710892632315222,0.73
+QDrone TWR,2019-08-28-16-38-48_exp6_success,20.0,0-2,bound_before_capture,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,20.0,2-5,bound_before_capture,,,0.0
+QDrone TWR,2019-08-28-16-38-48_exp6_success,20.0,6-11,bound_before_capture,0.3737478125072415,0.3728754578085944,0.73
+QDrone TWR,raw_data7_site2_newmarket_building1,2.0,0-2,bound_before_capture,35.93817134716284,35.93817134716284,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,2.0,2-5,bound_before_capture,26.6065486181955,26.6065486181955,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,2.0,6-11,bound_before_capture,24.43311257379676,24.43311257379676,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,5.0,0-2,bound_before_capture,35.9289510284505,35.9289510284505,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,5.0,2-5,bound_before_capture,26.26198612505349,26.26198612505349,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,5.0,6-11,bound_before_capture,35.72489617902554,35.72489617902554,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,10.0,0-2,bound_before_capture,36.00133211779674,36.00133211779674,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,10.0,2-5,bound_before_capture,26.455402340504044,26.455402340504044,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,10.0,6-11,bound_before_capture,33.648830845444884,33.648830845444884,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,20.0,0-2,bound_before_capture,36.20349189662378,36.20349189662378,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,20.0,2-5,bound_before_capture,26.12439385151872,26.12439385151872,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,20.0,6-11,bound_before_capture,28.95254251613387,28.95254251613387,1.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,2.0,0-2,bound_before_capture,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,2.0,2-5,bound_before_capture,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,2.0,6-11,bound_before_capture,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,5.0,0-2,bound_before_capture,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,5.0,2-5,bound_before_capture,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,5.0,6-11,bound_before_capture,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,10.0,0-2,bound_before_capture,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,10.0,2-5,bound_before_capture,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,10.0,6-11,bound_before_capture,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,20.0,0-2,bound_before_capture,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,20.0,2-5,bound_before_capture,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,20.0,6-11,bound_before_capture,,,0.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,2.0,0-2,bound_before_capture,0.1037857024833455,0.1037857024833455,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,2.0,2-5,bound_before_capture,0.1010840401480917,0.1010840401480917,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,2.0,6-11,bound_before_capture,0.0921917042786894,0.0921917042786894,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,5.0,0-2,bound_before_capture,0.1950709078878009,0.1950709078878009,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,5.0,2-5,bound_before_capture,0.1034266799329714,0.1034266799329714,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,5.0,6-11,bound_before_capture,0.0921382091497418,0.0921382091497418,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,10.0,0-2,bound_before_capture,0.8686726561422438,0.8686726561422438,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,10.0,2-5,bound_before_capture,0.1077785289838693,0.1077785289838693,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,10.0,6-11,bound_before_capture,0.0919231228705511,0.0919231228705511,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,20.0,0-2,bound_before_capture,0.5803012284413067,0.5803012284413067,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,20.0,2-5,bound_before_capture,0.0965151382932002,0.0965151382932002,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,20.0,6-11,bound_before_capture,0.0917261153576276,0.0917261153576276,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,2.0,0-2,bound_before_capture,0.0800580599539586,0.0800580599539586,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,2.0,2-5,bound_before_capture,0.1219195251156642,0.1219195251156642,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,2.0,6-11,bound_before_capture,0.1253656105202411,0.1253656105202411,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,5.0,0-2,bound_before_capture,0.099621461046449,0.099621461046449,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,5.0,2-5,bound_before_capture,0.1237278429048122,0.1237278429048122,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,5.0,6-11,bound_before_capture,0.1253121632915631,0.1253121632915631,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,10.0,0-2,bound_before_capture,0.1211419396302328,0.1211419396302328,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,10.0,2-5,bound_before_capture,0.1241972589347199,0.1241972589347199,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,10.0,6-11,bound_before_capture,0.1250073438464757,0.1250073438464757,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,20.0,0-2,bound_before_capture,0.6075702281208888,0.6375013347337908,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,20.0,2-5,bound_before_capture,0.1260841982182899,0.1260719959772394,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,20.0,6-11,bound_before_capture,0.1265964418826739,0.1265963044609894,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,2.0,0-2,bound_before_capture,0.1278408946939751,0.1278408946939751,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,2.0,2-5,bound_before_capture,0.1161475690210938,0.1161475690210938,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,2.0,6-11,bound_before_capture,0.1610018537390671,0.1610018537390671,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,5.0,0-2,bound_before_capture,0.2884890288492082,0.2884890288492082,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,5.0,2-5,bound_before_capture,0.1239914412286564,0.1239914412286564,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,5.0,6-11,bound_before_capture,0.1704097149835828,0.1704097149835828,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,10.0,0-2,bound_before_capture,0.2607267321778138,0.2607267321778138,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,10.0,2-5,bound_before_capture,0.1161199866110848,0.1161199866110848,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,10.0,6-11,bound_before_capture,0.1829501162137818,0.1829501162137818,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,20.0,0-2,bound_before_capture,1.047679036441938,1.3071442414320538,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,20.0,2-5,bound_before_capture,0.1170764381133507,0.1170505349757681,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,20.0,6-11,bound_before_capture,0.1811853735796953,0.1811738910942222,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,2.0,0-2,post_update_write,0.1037857024833455,0.1037857024833455,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,2.0,2-5,post_update_write,0.1010840401480917,0.1010840401480917,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,2.0,6-11,post_update_write,0.0921917042786894,0.0921917042786894,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,5.0,0-2,post_update_write,0.1950709078878009,0.1950709078878009,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,5.0,2-5,post_update_write,0.1034266799329714,0.1034266799329714,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,5.0,6-11,post_update_write,0.0921382091497418,0.0921382091497418,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,10.0,0-2,post_update_write,0.8686726561422438,0.8686726561422438,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,10.0,2-5,post_update_write,0.1077785289838693,0.1077785289838693,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,10.0,6-11,post_update_write,0.0919231228705511,0.0919231228705511,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,20.0,0-2,post_update_write,0.5803012284413067,0.5803012284413067,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,20.0,2-5,post_update_write,0.0965151382932002,0.0965151382932002,1.0
+QDrone TWR,raw_data2_site1_uxbridge_vertical_zigzag2,20.0,6-11,post_update_write,0.0917261153576276,0.0917261153576276,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,2.0,0-2,post_update_write,0.0800580599539586,0.0800580599539586,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,2.0,2-5,post_update_write,0.1219195251156642,0.1219195251156642,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,2.0,6-11,post_update_write,0.1253656105202411,0.1253656105202411,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,5.0,0-2,post_update_write,0.099621461046449,0.099621461046449,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,5.0,2-5,post_update_write,0.1237278429048122,0.1237278429048122,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,5.0,6-11,post_update_write,0.1253121632915631,0.1253121632915631,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,10.0,0-2,post_update_write,0.1211419396302328,0.1211419396302328,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,10.0,2-5,post_update_write,0.1241972589347199,0.1241972589347199,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,10.0,6-11,post_update_write,0.1250073438464757,0.1250073438464757,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,20.0,0-2,post_update_write,0.6075702281208888,0.6075702281208888,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,20.0,2-5,post_update_write,0.1260841982182899,0.1260841982182899,1.0
+QDrone TWR,raw_data3_site1_uxbridge_sq_path1,20.0,6-11,post_update_write,0.1265964418826739,0.1265964418826739,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,2.0,0-2,post_update_write,0.1278408946939751,0.1278408946939751,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,2.0,2-5,post_update_write,0.1161475690210938,0.1161475690210938,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,2.0,6-11,post_update_write,0.1610018537390671,0.1610018537390671,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,5.0,0-2,post_update_write,0.2884890288492082,0.2884890288492082,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,5.0,2-5,post_update_write,0.1239914412286564,0.1239914412286564,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,5.0,6-11,post_update_write,0.1704097149835828,0.1704097149835828,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,10.0,0-2,post_update_write,0.2607267321778138,0.2607267321778138,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,10.0,2-5,post_update_write,0.1161199866110848,0.1161199866110848,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,10.0,6-11,post_update_write,0.1829501162137818,0.1829501162137818,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,20.0,0-2,post_update_write,1.047679036441938,1.047679036441938,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,20.0,2-5,post_update_write,0.1170764381133507,0.1170764381133507,1.0
+QDrone TWR,raw_data5_site1_uxbridge_rec_path1,20.0,6-11,post_update_write,0.1811853735796953,0.1811853735796953,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,2.0,0-2,post_update_write,35.93817134716284,36.29892050650092,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,2.0,2-5,post_update_write,26.6065486181955,26.72937423323633,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,2.0,6-11,post_update_write,24.43311257379676,28.09768675490482,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,5.0,0-2,post_update_write,35.9289510284505,36.23753407928904,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,5.0,2-5,post_update_write,26.26198612505349,26.36461015662899,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,5.0,6-11,post_update_write,35.72489617902554,34.806352202921204,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,10.0,0-2,post_update_write,36.00133211779674,36.42349322945738,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,10.0,2-5,post_update_write,26.455402340504044,26.557824981432,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,10.0,6-11,post_update_write,33.648830845444884,24.67471109087672,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,20.0,0-2,post_update_write,36.20349189662378,36.51819157462723,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,20.0,2-5,post_update_write,26.12439385151872,25.557927013744376,1.0
+QDrone TWR,raw_data7_site2_newmarket_building1,20.0,6-11,post_update_write,28.95254251613387,28.38377241405499,1.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,2.0,0-2,post_update_write,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,2.0,2-5,post_update_write,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,2.0,6-11,post_update_write,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,5.0,0-2,post_update_write,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,5.0,2-5,post_update_write,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,5.0,6-11,post_update_write,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,10.0,0-2,post_update_write,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,10.0,2-5,post_update_write,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,10.0,6-11,post_update_write,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,20.0,0-2,post_update_write,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,20.0,2-5,post_update_write,,,0.0
+QDrone TWR,raw_data9_site2_newmarket_zigzag1,20.0,6-11,post_update_write,,,0.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,2.0,0-2,bound_before_capture,0.6259069030054122,0.6259069030054122,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,2.0,2-5,bound_before_capture,0.621016094912059,0.621016094912059,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,2.0,6-11,bound_before_capture,0.8135118177998277,0.8135118177998277,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,5.0,0-2,bound_before_capture,0.6140116346239288,0.6140116346239288,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,5.0,2-5,bound_before_capture,0.6171314561668282,0.6171314561668282,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,5.0,6-11,bound_before_capture,0.8130614260185404,0.8130614260185404,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,10.0,0-2,bound_before_capture,0.663933226178316,0.663933226178316,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,10.0,2-5,bound_before_capture,0.6196325048639072,0.6196325048639072,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,10.0,6-11,bound_before_capture,0.813441044182746,0.813441044182746,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,20.0,0-2,bound_before_capture,0.825408058650954,0.8313915312554341,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,20.0,2-5,bound_before_capture,0.6186561902128482,0.6186124528203358,1.0
+QDrone TWR,2019-08-29-16-28-34_Flight1,20.0,6-11,bound_before_capture,0.8144274153486863,0.8144120110683395,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,2.0,0-2,bound_before_capture,1.0002411486017748,1.0002411486017748,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,2.0,2-5,bound_before_capture,3.009854282937746,3.009854282937746,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,2.0,6-11,bound_before_capture,3.441840077235757,3.441840077235757,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,5.0,0-2,bound_before_capture,1.0005520787079514,1.0005520787079514,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,5.0,2-5,bound_before_capture,3.0095878612310094,3.0095878612310094,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,5.0,6-11,bound_before_capture,3.442697559168329,3.442697559168329,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,10.0,0-2,bound_before_capture,1.0403404485546763,1.0403404485546763,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,10.0,2-5,bound_before_capture,3.008281757652486,3.008281757652486,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,10.0,6-11,bound_before_capture,3.443826638329336,3.443826638329336,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,20.0,0-2,bound_before_capture,1.608529489472024,1.608529489472024,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,20.0,2-5,bound_before_capture,3.003046764399472,3.003046764399472,1.0
+QDrone TWR,2019-08-29-16-38-43_Flight2,20.0,6-11,bound_before_capture,3.443977340583312,3.443977340583312,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,2.0,0-2,bound_before_capture,0.642083165605509,0.642083165605509,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,2.0,2-5,bound_before_capture,0.6342047669681208,0.6342047669681208,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,2.0,6-11,bound_before_capture,0.6386520438873333,0.6386520438873333,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,5.0,0-2,bound_before_capture,0.6454412327901464,0.6454412327901464,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,5.0,2-5,bound_before_capture,0.6317256948199921,0.6317256948199921,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,5.0,6-11,bound_before_capture,0.6386907551878525,0.6386907551878525,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,10.0,0-2,bound_before_capture,1.7577355005465627,1.7577355005465627,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,10.0,2-5,bound_before_capture,0.6244363435490684,0.6244363435490684,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,10.0,6-11,bound_before_capture,0.6387425846413524,0.6387425846413524,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,20.0,0-2,bound_before_capture,10.004623545900122,9.847465372090584,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,20.0,2-5,bound_before_capture,0.6464480142152943,0.6456437573391293,1.0
+QDrone TWR,2019-08-29-17-11-16_Flight5,20.0,6-11,bound_before_capture,0.6385505673323267,0.6388005849934331,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj2,2.0,0-2,post_update_write,0.0527969652146911,0.0527969652146911,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj2,2.0,2-5,post_update_write,0.051671655345092,0.051671655345092,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj2,2.0,6-11,post_update_write,0.1088269765769241,0.1088269765769241,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj2,5.0,0-2,post_update_write,0.1732812636207297,0.1732812636207297,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj2,5.0,2-5,post_update_write,0.0515283034072584,0.0515283034072584,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj2,5.0,6-11,post_update_write,0.1089247122017164,0.1089247122017164,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj2,10.0,0-2,post_update_write,0.4509205997648708,0.4509205997648708,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj2,10.0,2-5,post_update_write,0.0476624120115012,0.0476624120115012,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj2,10.0,6-11,post_update_write,0.1102926949845145,0.1102926949845145,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj2,20.0,0-2,post_update_write,84.29469524660622,4.960359286065369,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj2,20.0,2-5,post_update_write,104.74643885274293,0.078402339240592,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj2,20.0,6-11,post_update_write,128.41128438284883,0.1051636714531654,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj3,2.0,0-2,post_update_write,0.0586213716747417,0.0586213716747417,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj3,2.0,2-5,post_update_write,0.0574761215614542,0.0574761215614542,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj3,2.0,6-11,post_update_write,0.0554900117398522,0.0554900117398522,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj3,5.0,0-2,post_update_write,0.091954948663319,0.091954948663319,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj3,5.0,2-5,post_update_write,0.0559168728159862,0.0559168728159862,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj3,5.0,6-11,post_update_write,0.0552635697490191,0.0552635697490191,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj3,10.0,0-2,post_update_write,0.4068732334418255,0.4068732334418255,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj3,10.0,2-5,post_update_write,0.0552540338850831,0.0552540338850831,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj3,10.0,6-11,post_update_write,0.0552759848704253,0.0552759848704253,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj3,20.0,0-2,post_update_write,45.416196065188736,45.416196065188736,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj3,20.0,2-5,post_update_write,55.91669566244782,55.91669566244782,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa2-traj3,20.0,6-11,post_update_write,82.59415866629963,82.59415866629963,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj2,2.0,0-2,post_update_write,0.0421717462785623,0.0421717462785623,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj2,2.0,2-5,post_update_write,0.0753980785964835,0.0753980785964835,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj2,2.0,6-11,post_update_write,0.0878109659540776,0.0878109659540776,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj2,5.0,0-2,post_update_write,0.2013349632851888,0.2013349632851888,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj2,5.0,2-5,post_update_write,0.0756002240404103,0.0756002240404103,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj2,5.0,6-11,post_update_write,0.0877373387241083,0.0877373387241083,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj2,10.0,0-2,post_update_write,11.11207783332817,1.2878947814287842,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj2,10.0,2-5,post_update_write,31.081688597396948,0.0748600058451135,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj2,10.0,6-11,post_update_write,72.56539861806789,0.0866838165096139,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj2,20.0,0-2,post_update_write,56.8575478578055,56.8575478578055,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj2,20.0,2-5,post_update_write,71.28242409859826,71.28242409859826,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj2,20.0,6-11,post_update_write,87.81265859972072,87.81265859972072,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj3,2.0,0-2,post_update_write,0.1455594765232101,0.1455594765232101,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj3,2.0,2-5,post_update_write,0.0640231097356597,0.0640231097356597,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj3,2.0,6-11,post_update_write,0.060732402475412,0.060732402475412,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj3,5.0,0-2,post_update_write,0.4355030997697022,0.4355030997697022,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj3,5.0,2-5,post_update_write,0.0653144555763032,0.0653144555763032,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj3,5.0,6-11,post_update_write,0.0626208781158545,0.0626208781158545,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj3,10.0,0-2,post_update_write,0.6585715775178889,0.6585715775178889,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj3,10.0,2-5,post_update_write,0.0713991070453184,0.0713991070453184,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj3,10.0,6-11,post_update_write,0.0697415142519123,0.0697415142519123,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj3,20.0,0-2,post_update_write,93.23060077679864,64.46178521426614,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj3,20.0,2-5,post_update_write,112.0318926505057,84.1248629508808,1.0
+Toronto supplementary TDoA,const4-trial2-tdoa3-traj3,20.0,6-11,post_update_write,135.53276140048936,109.2687717233565,1.0

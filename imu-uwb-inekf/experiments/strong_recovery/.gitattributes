@@ -1,0 +1,8 @@
+# Frozen numerical source and handwritten registration files are hashed byte-for-byte.
+*.py text eol=lf
+/protocol.json text eol=lf
+feedback_protocol.json text eol=lf
+qdrone_midpoint_protocol.json text eol=lf
+twr/prior_capture_protocol.json text eol=lf
+# Keep the exact verified publisher-coordinate serialization across platforms.
+external_twr/data_provenance/qdrone_anchors_final.json -text whitespace=cr-at-eol

@@ -1,0 +1,10 @@
+{
+  "native_traces": 60,
+  "native_failures": 0,
+  "minimum_score_coverage": 1.0,
+  "paired_traces": 192,
+  "maximum_yaw_change": 0.0,
+  "outside_overlay_max_position_change": 0.0,
+  "later_xy_score_max_change": 0.0,
+  "height_score_max_change": 0.0
+}

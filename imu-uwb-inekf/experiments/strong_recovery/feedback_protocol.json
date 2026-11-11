@@ -1,0 +1,9 @@
+{
+  "stage": "Separate follow-up motivated by observed large display-to-K steps in the primary study. It does not amend or replace either registered output-only candidate.",
+  "registered_before": "Scores from four supplementary Toronto trial2 trajectories and the QDrone external transfer.",
+  "supplementary_toronto": ["const4-trial2-tdoa2-traj2", "const4-trial2-tdoa2-traj3", "const4-trial2-tdoa3-traj2", "const4-trial2-tdoa3-traj3"],
+  "earlier_cohorts": "Any feedback scores on the already-scored Delft and original eight Toronto flights are exploratory. Keep QDrone eligibility metadata-only.",
+  "trigger": "First newly offered native packet in [25,27) for which the current native post-update horizontal mean violates that one packet's frozen radio_bounds constraint. Use its native sensor sigma, known lever norm (QDrone engineering allowance 1 m); no averaging, future blocks or repeated writes.",
+  "update": "Apply exactly that XY translation once to the mean. Preserve physical attitude, height, velocity, bias and their physical covariance at the reset; transform the covariance to the new invariant chart. In lifted capture translate its homogeneous quadratic nuisance state and covariance by its exact linear change of chart. Subsequent packets and all post-27s estimates come from the updated native recursion. Future attitude is an outcome, not guaranteed identical.",
+  "score": "Same recovery time, nominal heading, 2/5/10/20 s masks, same packets/initial state and causal XY scoring windows. Report triggers, full-window medians, paired changes, detrimental cases and later heading changes where ground truth exists. Nontriggered records must remain exactly K."
+}

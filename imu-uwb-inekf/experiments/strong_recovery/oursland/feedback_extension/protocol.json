@@ -1,0 +1,48 @@
+{
+  "names": [
+    "const4-trial2-tdoa2-traj2",
+    "const4-trial2-tdoa2-traj3",
+    "const4-trial2-tdoa3-traj2",
+    "const4-trial2-tdoa3-traj3"
+  ],
+  "stage": "supplementary prospective extension; not balanced primary cohort",
+  "gaps_s": [
+    2.0,
+    5.0,
+    10.0,
+    20.0
+  ],
+  "resume_s": 25.0,
+  "end_s": 36.0,
+  "windows": {
+    "early": [
+      0.0,
+      2.0
+    ],
+    "middle": [
+      2.0,
+      5.0
+    ],
+    "later": [
+      6.0,
+      11.0
+    ]
+  },
+  "workers_max": 6,
+  "BLAS_threads": 1,
+  "initial": "same sensor-only X and original recommended invariant P; nominal yaw0",
+  "variance_m2": 0.13,
+  "sigma_m": 0.36055512754639896,
+  "lever_radius_m": 0.0916583624117298,
+  "trigger": "first currently offered native packet in [25,27), after its original correction, with nonzero single_offset",
+  "update": "single XY translation; unchanged instantaneous R/v/z/bias and physical additive covariance; no forced return",
+  "queue": "original first-per-stamp native queue, same clock; actual source class for both arms",
+  "truth": "freeze reads timestamps only; scoring starts only after all16 paired trajectories are generated",
+  "source_hashes": {
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\strong_recovery\\feedback.py": "aebe098436fb5320e395c19a0d6da1462db6b611eca2d1ba7593a593fda0ebb9",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\strong_recovery\\feedback_protocol.json": "dac105e50b3f2e0da98a24198aa9fe429755e242a5803ac06fe74aff0788eace",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\strong_recovery\\radio_bounds.py": "bbfd1e6df883deda5affcf334f1a1d2b5ed3b8961ede75f4546fdc389cc677e9",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\strong_recovery\\oursland\\feedback_runner.py": "703ae7bdf127315d516b7dbb39973fe27949fb2163a1ffecb8a7ad7f5a07d09a",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf - backup\\scripts\\estimation\\inekf.py": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0"
+  }
+}

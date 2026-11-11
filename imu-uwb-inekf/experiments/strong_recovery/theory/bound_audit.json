@@ -1,0 +1,29 @@
+{
+  "seed": 20261112,
+  "no_real_data_scores": true,
+  "all_checks_passed": true,
+  "module_sha256": "bbfd1e6df883deda5affcf334f1a1d2b5ed3b8961ede75f4546fdc389cc677e9",
+  "twr": {
+    "cases": 1000,
+    "active_cases": 915,
+    "max_projection_steps": 5,
+    "worst_relative_squared_error_increase": 0.0
+  },
+  "tdoa": {
+    "cases": 1000,
+    "active_cases": 494,
+    "max_projection_steps": 5,
+    "worst_relative_squared_error_increase": 0.0
+  },
+  "height": {
+    "cases": 1000,
+    "worst_sampled_supremum_excess": 0.0,
+    "worst_attained_supremum_error": 1.6928680679484387e-12
+  },
+  "edges": {
+    "vertical_boundary_skipped": true,
+    "later_packet_cannot_change_earlier_output": true,
+    "exact_k_return": true,
+    "constructed_biased_tdoa_moves_correct_k_m": 1.9850000000000003
+  }
+}

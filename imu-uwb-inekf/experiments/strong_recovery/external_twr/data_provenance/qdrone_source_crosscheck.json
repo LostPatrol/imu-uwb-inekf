@@ -1,0 +1,55 @@
+{
+  "sources": [
+    {
+      "file": "qdrone_documentation_source.html",
+      "url": "https://benchmark.qdrone.ausmlab.com/documentation/",
+      "sha256": "5785a4163c59369c49fd8d152f468025d7e2597904ecc0fd1f3bea40ceba2351"
+    },
+    {
+      "file": "park2020_same_indoor_source.pdf",
+      "url": "https://isprs-annals.copernicus.org/articles/V-1-2020/317/2020/isprs-annals-V-1-2020-317-2020.pdf",
+      "sha256": "88519eda7659e418b1031d675b10c91dd871a0dabeeebc17aff03f04d482b861"
+    }
+  ],
+  "paper_text_sha256": "742264b1e36d1f7d71aa583bde3448b5a290c12685b1d1b1cff636c86505eab6",
+  "indoor_12_coordinates_exactly_match": true,
+  "paper_coordinates_m": {
+    "100": [
+      0.0,
+      0.0,
+      0.62
+    ],
+    "101": [
+      8.51,
+      0.0,
+      0.96
+    ],
+    "102": [
+      -0.26,
+      10.77,
+      1.32
+    ],
+    "103": [
+      8.25,
+      10.84,
+      1.58
+    ]
+  },
+  "paper_section": "Park et al., Multilateration under Flip Ambiguity for UAV Positioning Using Ultra-wideband, ISPRS Annals V-1-2020, section3.2",
+  "other_sites_independent_pdf_crosscheck": "not established; their tables are preserved from the official dataset website",
+  "numeric_id_mapping_limit": "Website labels UWB0..3 and paper labels anchors1..4; raw IDs100..103 are mapped in the same order, fixed before residual inspection. An explicit numeric-ID correspondence statement was not located.",
+  "frame_evidence": "Official documentation Data Format says uncalibrated raw data are in the UWB anchor coordinate system; per-event XYZ are supplied as prism ground truth. Outdoor range-vs-prism audit is consistent with this common-frame reading, without alignment fitting.",
+  "time_evidence_limit": "Related indoor paper section3.2 states MultiStation/UAV synchronization used comparison of MultiStation and IMU height. Original RTS clock samples and interpolation procedure are not included here; do not claim independently audited hardware synchronization.",
+  "lever_limit": "Prism underneath the UAV and UWB antenna on the UAV body are distinct points; no measured prism/tag/IMU extrinsic vector is supplied.",
+  "calibration_policy": "Official optional per-record a*range+b is minimized against GT range and is not used by this audit or the frozen estimator input.",
+  "indoor_source_anomaly": {
+    "record": "2018-05-30-13-13-21_exp3_big_circle",
+    "raw_csv_line": 21910,
+    "gt_copy_csv_line": 32865,
+    "timestamp_s": 62.827735,
+    "anchor_id": 101,
+    "raw_range_m": 4294961.75,
+    "self_range_error_metadata": 65.535,
+    "policy": "kept exactly; no reinterpretation of unsigned encoding or removal"
+  }
+}

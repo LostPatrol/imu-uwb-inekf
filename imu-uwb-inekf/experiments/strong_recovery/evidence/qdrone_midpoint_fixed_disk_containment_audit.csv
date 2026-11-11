@@ -1,0 +1,11 @@
+site,sequence,resume_s,received_packets,supported_packets,contained_fraction,max_disk_violation_m,radius_was_fixed_before_errors,physical_lever_unverified
+bridge,2019-08-28-16-32-12_exp5_success,53.0693465,95,95,1.0,-1.8955957594518225,True,True
+bridge,2019-08-28-16-38-48_exp6_success,67.9426235,95,95,1.0,-1.8147932017793913,True,True
+building,raw_data7_site2_newmarket_building1,115.34790550000001,94,94,1.0,-3.3004984950045753,True,True
+building,raw_data9_site2_newmarket_zigzag1,172.57324,95,95,1.0,-2.0054974844352618,True,True
+field,raw_data2_site1_uxbridge_vertical_zigzag2,158.49871449999998,94,94,1.0,-3.900326273513352,True,True
+field,raw_data3_site1_uxbridge_sq_path1,253.57925,79,79,1.0,-2.1397935489854625,True,True
+field,raw_data5_site1_uxbridge_rec_path1,255.630666,86,86,1.0,-2.425018869868662,True,True
+tunnel,2019-08-29-16-28-34_Flight1,111.362095,94,94,0.5106382978723404,1.1053902983886594,True,True
+tunnel,2019-08-29-16-38-43_Flight2,66.1103115,94,94,0.8297872340425532,0.4801366157535458,True,True
+tunnel,2019-08-29-17-11-16_Flight5,127.977693,94,94,1.0,-0.40984228527131217,True,True

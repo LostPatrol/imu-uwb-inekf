@@ -1,0 +1,31 @@
+{
+  "working_directory": "repository root containing .venv and imu-uwb-inekf",
+  "powershell_commands": [
+    ".venv/Scripts/python.exe imu-uwb-inekf/experiments/strong_recovery/external_twr/data_provenance/download_qdrone.py --root E:/datasets/qdrone-benchmark",
+    ".venv/Scripts/python.exe imu-uwb-inekf/experiments/strong_recovery/external_twr/data_provenance/freeze_qdrone_anchors.py",
+    ".venv/Scripts/python.exe imu-uwb-inekf/experiments/strong_recovery/external_twr/data_provenance/check_qdrone_sources.py",
+    ".venv/Scripts/python.exe imu-uwb-inekf/experiments/strong_recovery/external_twr/data_provenance/audit_qdrone_ranges.py --root E:/datasets/qdrone-benchmark/extracted"
+  ],
+  "requirements": "Python with NumPy. For the optional paper source check on a fresh clone, put Poppler pdftotext on PATH or pass --pdftotext PATH. The full paper and webpage caches are not required for filter replay.",
+  "immutable_hf_revision": "cd3774c9db03899afde886a52f06687bbe4a1ed1",
+  "downloaded_artifacts": 12,
+  "downloaded_bytes": 59114023,
+  "extracted_csv_count": 37,
+  "original_raw_record_count": 24,
+  "published_collection_record_count": 23,
+  "raw_count_discrepancy": "An extra sixth indoor track-failed recording is present in the author archive; it has no supplied GT counterpart. It is retained, not silently counted as a published evaluation record.",
+  "gt_record_count": 13,
+  "valid_timestamp_bound_radio_gt_pairs": 143866,
+  "nonfinite_gt_pairs_retained_as_missing": 269,
+  "frozen_anchor_json_sha256": "9b7d90cf9b2d37098d73d6a8d08179bcf66d5efef5b0806855fdb9b0c73b2720",
+  "scoring_policy": "All finite supplied per-radio XYZ pairs, original raw sensor event confirmed unchanged; no GT interpolation/extrapolation, calibration, axis fitting, coordinate alignment, or outlier removal.",
+  "timestamped_filename_date_evidence": {
+    "indoor": "2018-05-30",
+    "bridge": "2019-08-28",
+    "tunnel": "2019-08-29",
+    "field": "no explicit recording date in supplied filenames",
+    "building": "no explicit recording date in supplied filenames"
+  },
+  "survey_limit": "Official coordinates are provided in meters. The located source text does not explicitly certify that every anchor coordinate at each site was independently surveyed using the same RTS used for prism tracking.",
+  "earlier_anchor_error": "Earlier hand-transcribed anchor matrices were wrong; all estimator evaluations using them were invalidated before inspecting scores. Only the final parsed JSON hash above is valid."
+}

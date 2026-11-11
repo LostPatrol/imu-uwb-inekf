@@ -1,0 +1,146 @@
+[
+  {
+    "type": "directory",
+    "oid": "8cc43562c8154f6222db57a1f647314b91068c18",
+    "size": 0,
+    "path": "All Datasets"
+  },
+  {
+    "type": "directory",
+    "oid": "4877514d54fbc53fb62e47708b49189b412ee734",
+    "size": 0,
+    "path": "Dataset with Ground Truth"
+  },
+  {
+    "type": "file",
+    "oid": "1ef325f1b111266a6b26e0196871bd78baa8c2f3",
+    "size": 2461,
+    "path": ".gitattributes"
+  },
+  {
+    "type": "file",
+    "oid": "125b487d45efef5fea6c9a5e834efa0832d7a870",
+    "size": 3659534,
+    "lfs": {
+      "oid": "65b26624977c6c8276a08d48881e4ad20967a0b99220a2b8c9877e607ac73082",
+      "size": 3659534,
+      "pointerSize": 132
+    },
+    "xetHash": "aff73b2a904d3076044969184e53d327f7ade9d0946628fb69be13583e44ae67",
+    "path": "All Datasets/bridge.zip"
+  },
+  {
+    "type": "file",
+    "oid": "7ce935af88b8bdf734dc903113cf930a39025e17",
+    "size": 3923719,
+    "lfs": {
+      "oid": "9e3aef75586c822e249c762105d864a1394e9b1246370512a7964d0342855f16",
+      "size": 3923719,
+      "pointerSize": 132
+    },
+    "xetHash": "19cbb293da49682379a61fcc853c46d26700df9497f794b0189b5a4b63e6304e",
+    "path": "All Datasets/building.zip"
+  },
+  {
+    "type": "file",
+    "oid": "db778c96e92a22021d75fdc587230d6d7e0b8ab6",
+    "size": 10808243,
+    "lfs": {
+      "oid": "f501cc42d94372861d294474cff1acf5a658fa02c3eca487919bc3e433417dd7",
+      "size": 10808243,
+      "pointerSize": 133
+    },
+    "xetHash": "86cc3d03426a3bb4ae46e333588bd8ce0c5edbbbeb687f8e9daa4e1ed06ef6ff",
+    "path": "All Datasets/field.zip"
+  },
+  {
+    "type": "file",
+    "oid": "afb66f20dca2db374aaca6a2792408c2de4661d9",
+    "size": 9635549,
+    "lfs": {
+      "oid": "0bd32415be7d81250d95eb9f4acae044c797ffe49ac1decd247c4f5b47538ce9",
+      "size": 9635549,
+      "pointerSize": 132
+    },
+    "xetHash": "e2eb255a4012276f65f622ba811d3735c4a5696a48f9c9424ee97fd4d7d4dae6",
+    "path": "All Datasets/indoor.zip"
+  },
+  {
+    "type": "file",
+    "oid": "ff58e67c4450b319547848ec6cfe4468e57db102",
+    "size": 5395974,
+    "lfs": {
+      "oid": "8424689a414f1e25b9d17de2133e85bcc3b61e96234fcb35a5b47e746b22f124",
+      "size": 5395974,
+      "pointerSize": 132
+    },
+    "xetHash": "936e0edcb0d0ecf804e66f652f20bdc45e5bf28f3291f681cac84d7bb7363a77",
+    "path": "All Datasets/tunnel.zip"
+  },
+  {
+    "type": "file",
+    "oid": "2704677f245661326e12f7c63f07663f37b99ac8",
+    "size": 1463113,
+    "lfs": {
+      "oid": "9a6434441b5e6370c139ced20ad1234e6b74d525a4a6af825daf7fa5f9529a6c",
+      "size": 1463113,
+      "pointerSize": 132
+    },
+    "xetHash": "69c4b3b6ccaf863300bb2803e40edb49279df7bed4e997e242b47a415ee04a61",
+    "path": "Dataset with Ground Truth/bridge-gt.zip"
+  },
+  {
+    "type": "file",
+    "oid": "d397f6ee3bedfe171c366c354dd5501250575d73",
+    "size": 4093145,
+    "lfs": {
+      "oid": "103a5ca5cbff6bdc8ef0efb3b34f9a9d31aa2311be5c21541fc2e4f6af6df80c",
+      "size": 4093145,
+      "pointerSize": 132
+    },
+    "xetHash": "fa2def79f4b14c0767e6ab1b24beb699ddbe60d64d15d7200151b28b244376a5",
+    "path": "Dataset with Ground Truth/building-gt.zip"
+  },
+  {
+    "type": "file",
+    "oid": "9a881ddd896444d70b19d7e1560bddf377031f1d",
+    "size": 10130371,
+    "lfs": {
+      "oid": "067f5c9b648af21fb8d618f68dcb4967908b967b7cb51b219c88e1a830487017",
+      "size": 10130371,
+      "pointerSize": 133
+    },
+    "xetHash": "0abdc94e4481fe46193fa4dec5ab15acc8f253c060fd0991f8ba665b23cbfdd7",
+    "path": "Dataset with Ground Truth/field-gt.zip"
+  },
+  {
+    "type": "file",
+    "oid": "485234b3d5c32a57af1ae58983dbb5a9e8f54bc3",
+    "size": 6276458,
+    "lfs": {
+      "oid": "110dddc745f291fe9693fd42f6540d9116691f922421a22d5511c3e7378c2899",
+      "size": 6276458,
+      "pointerSize": 132
+    },
+    "xetHash": "336947d308db403a35753b8bb1a479bdc6b6ec2b8da4aa1d569c2072d0d5e696",
+    "path": "Dataset with Ground Truth/indoor-gt.zip"
+  },
+  {
+    "type": "file",
+    "oid": "f6caa1a6fa4c0bd40578e57a559300aef902280b",
+    "size": 3719791,
+    "lfs": {
+      "oid": "b1d52b2af670e8cb2610b55d624acbc8aa8f7d972abc2bb4cae023ad779ead5a",
+      "size": 3719791,
+      "pointerSize": 132
+    },
+    "xetHash": "b05a73c23ac2f793f76f24b5597e5e3d0e9cd16801a8dd2fccf765a3f31a234d",
+    "path": "Dataset with Ground Truth/tunnel-gt.zip"
+  },
+  {
+    "type": "file",
+    "oid": "63bd420048022f05ade556da03963aa2c4f76122",
+    "size": 5665,
+    "path": "README.md"
+  }
+]

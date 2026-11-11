@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "record": "2021-02-12_14_00_34_tdoa_octagon",
+  "uses_truth": false,
+  "results": [
+    {
+      "case": "masked_radio",
+      "native_max_difference": 0.0,
+      "shadow_max_difference": 0.0,
+      "bound_max_difference": 0.0
+    },
+    {
+      "case": "future_at_26",
+      "shadow_max_difference": 0.0,
+      "bound_max_difference": 0.0
+    },
+    {
+      "case": "future_at_27",
+      "shadow_max_difference": 0.0,
+      "bound_max_difference": 0.0
+    }
+  ],
+  "future_state_scoring_sentinel_xy_rmse": 0.0,
+  "shadow_sha256": "440b127c2923d2bb7ee15ce0966b0b1d1512550e19d900efbe4017b767ea697e",
+  "bounds_sha256": "bbfd1e6df883deda5affcf334f1a1d2b5ed3b8961ede75f4546fdc389cc677e9"
+}

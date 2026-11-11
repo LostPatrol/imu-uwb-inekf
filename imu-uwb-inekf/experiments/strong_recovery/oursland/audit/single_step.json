@@ -1,0 +1,238 @@
+[
+  {
+    "name": "const1-trial4-tdoa2",
+    "yaw_offset_deg": 0.0,
+    "dt": 0.0008379999999961196,
+    "propagation": {
+      "production_X_max": 2.1085684594190912e-08,
+      "production_P_max": 7.021737756172643e-15,
+      "util_X_max": 7.074419175467916e-18,
+      "util_P_max": 1.1769635223423315e-09
+    },
+    "transformed_jacobian_finite_difference_error": 0.13289779781569921,
+    "complete_jacobian_finite_difference_error": 5.492515331440018e-10,
+    "residual": 0.047425480013875365,
+    "original_gate_variance": 0.14628999532140616,
+    "transformed_variance": 0.2699851222402693,
+    "complete_variance": 0.2712190144060292,
+    "author_transformed_H": [
+      [
+        0.031528713773765045,
+        0.5985646767745173,
+        -0.35165210469963715,
+        0.0,
+        0.0,
+        0.0,
+        1.1919510854494477,
+        -0.2762021842528068,
+        -0.3632686533906719,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "complete_H": [
+      [
+        0.05738380989926643,
+        0.7314624745704309,
+        -0.3533768371963937,
+        0.0,
+        0.0,
+        0.0,
+        1.1830007845489396,
+        -0.28044868424744196,
+        -0.3884029228608893,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "production_post_X_max": 2.084640472743704e-08,
+    "util_post_X_max": 4.396953916109558e-05,
+    "production_post_yaw_difference_deg": 5.044323353418989e-10,
+    "util_post_yaw_difference_deg": 0.0011800098188043948
+  },
+  {
+    "name": "const1-trial4-tdoa2",
+    "yaw_offset_deg": 180.0,
+    "dt": 0.0008379999999961196,
+    "propagation": {
+      "production_X_max": 2.1085684594190912e-08,
+      "production_P_max": 7.021737756172643e-15,
+      "util_X_max": 7.074419175467916e-18,
+      "util_P_max": 1.176963520316242e-09
+    },
+    "transformed_jacobian_finite_difference_error": 2.368714439949228,
+    "complete_jacobian_finite_difference_error": 7.807637522616595e-10,
+    "residual": 0.0820833981392628,
+    "original_gate_variance": 0.14623502200775915,
+    "transformed_variance": 0.27439579081539733,
+    "complete_variance": 0.2812521313324376,
+    "author_transformed_H": [
+      [
+        -0.028751106901315295,
+        0.3397076219661033,
+        0.35797925917304985,
+        0.0,
+        0.0,
+        0.0,
+        -1.1888190940784094,
+        0.28108517683310197,
+        -0.3622183088249424,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "complete_H": [
+      [
+        0.05853663853999599,
+        0.740651238666147,
+        -0.36737162825314446,
+        0.0,
+        0.0,
+        0.0,
+        1.1798953456916892,
+        -0.2853190784122547,
+        -0.38722321087168576,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "production_post_X_max": 2.130961325105818e-08,
+    "util_post_X_max": 0.2782058863276001,
+    "production_post_yaw_difference_deg": 5.049432220321429e-10,
+    "util_post_yaw_difference_deg": 12.27444798618856
+  },
+  {
+    "name": "const2-trial4-tdoa3",
+    "yaw_offset_deg": 0.0,
+    "dt": 0.0007549999999973966,
+    "propagation": {
+      "production_X_max": 6.902779348116894e-09,
+      "production_P_max": 5.699679975564167e-15,
+      "util_X_max": 2.220446049250313e-16,
+      "util_P_max": 8.608082272454818e-10
+    },
+    "transformed_jacobian_finite_difference_error": 0.1727203482931,
+    "complete_jacobian_finite_difference_error": 4.2425840618420807e-10,
+    "residual": -0.015016557072415448,
+    "original_gate_variance": 0.16427690379646806,
+    "transformed_variance": 1.6034650608837921,
+    "complete_variance": 1.5770749139462596,
+    "author_transformed_H": [
+      [
+        -0.0774447241780494,
+        0.8344944129517157,
+        1.1996324153018667,
+        0.0,
+        0.0,
+        0.0,
+        -1.5167649868864939,
+        0.8231259285796215,
+        -0.6705049182964359,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "complete_H": [
+      [
+        -0.15192752603984994,
+        0.66177406475441,
+        1.188592411108337,
+        0.0,
+        0.0,
+        0.0,
+        -1.5252849336701435,
+        0.8218249901041652,
+        -0.6525325447544476,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "production_post_X_max": 6.846220063083663e-09,
+    "util_post_X_max": 0.00011653716964546423,
+    "production_post_yaw_difference_deg": -6.780217385682247e-11,
+    "util_post_yaw_difference_deg": 0.004748084580070363
+  },
+  {
+    "name": "const2-trial4-tdoa3",
+    "yaw_offset_deg": 180.0,
+    "dt": 0.0007549999999973966,
+    "propagation": {
+      "production_X_max": 6.902779348116894e-09,
+      "production_P_max": 5.699679975564167e-15,
+      "util_X_max": 2.1396052247643627e-17,
+      "util_P_max": 8.608082350842026e-10
+    },
+    "transformed_jacobian_finite_difference_error": 3.0380595352106647,
+    "complete_jacobian_finite_difference_error": 3.1433922131895997e-10,
+    "residual": -0.058326372641742896,
+    "original_gate_variance": 0.16424043016121812,
+    "transformed_variance": 1.5986983879786725,
+    "complete_variance": 1.617838501738028,
+    "author_transformed_H": [
+      [
+        0.030224169763465897,
+        1.0380615868108631,
+        -1.197643569828964,
+        0.0,
+        0.0,
+        0.0,
+        1.5147470419538969,
+        -0.8217487818566399,
+        -0.6740268081801315,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "complete_H": [
+      [
+        -0.15040700194276183,
+        0.6848405192751224,
+        1.2056321665618641,
+        0.0,
+        0.0,
+        0.0,
+        -1.5233124931938526,
+        0.8204409003993407,
+        -0.6560774167488894,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "production_post_X_max": 7.114411171293966e-09,
+    "util_post_X_max": 0.12195543654515048,
+    "production_post_yaw_difference_deg": -6.354517884652944e-11,
+    "util_post_yaw_difference_deg": 4.993470987062658
+  }
+]

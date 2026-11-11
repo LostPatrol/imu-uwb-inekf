@@ -1,0 +1,9 @@
+{
+  "author_source": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf - backup\\scripts\\estimation\\inekf.py",
+  "author_sha256": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+  "protocol_sha256": "c16bbf8accc98bf18adcc22424c7d2d3f37cb5141ca80ad2e1262fe585eb9fef",
+  "adapter_sha256": "e6e1734d35d93bc339e988e9313f3f6fd17cd48f80a437f6d139e1c04168307d",
+  "run_sha256": "16a13b72f783a29592785039ffb509f42ec213fe67fa9dfc66ae046cb054972f",
+  "calibration_sha256": "54bf1fd7b77630a072a6f43c2c1adb778c24002a493816a8459f7b908dbfed33",
+  "test_truth_used_during_generation": false
+}

@@ -1,0 +1,290 @@
+{
+  "repo": "QDrone/UWB_IMU_GT_QDrone_Benchmark_Dataset",
+  "revision": "cd3774c9db03899afde886a52f06687bbe4a1ed1",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 2461,
+      "sha256": "e7a120ab07b1bc5b486be249e9fc6c83d59448d0093e1dfebe95d1566d9cafc0"
+    },
+    {
+      "path": "All Datasets/bridge.zip",
+      "bytes": 3659534,
+      "sha256": "65b26624977c6c8276a08d48881e4ad20967a0b99220a2b8c9877e607ac73082"
+    },
+    {
+      "path": "All Datasets/building.zip",
+      "bytes": 3923719,
+      "sha256": "9e3aef75586c822e249c762105d864a1394e9b1246370512a7964d0342855f16"
+    },
+    {
+      "path": "All Datasets/field.zip",
+      "bytes": 10808243,
+      "sha256": "f501cc42d94372861d294474cff1acf5a658fa02c3eca487919bc3e433417dd7"
+    },
+    {
+      "path": "All Datasets/indoor.zip",
+      "bytes": 9635549,
+      "sha256": "0bd32415be7d81250d95eb9f4acae044c797ffe49ac1decd247c4f5b47538ce9"
+    },
+    {
+      "path": "All Datasets/tunnel.zip",
+      "bytes": 5395974,
+      "sha256": "8424689a414f1e25b9d17de2133e85bcc3b61e96234fcb35a5b47e746b22f124"
+    },
+    {
+      "path": "Dataset with Ground Truth/bridge-gt.zip",
+      "bytes": 1463113,
+      "sha256": "9a6434441b5e6370c139ced20ad1234e6b74d525a4a6af825daf7fa5f9529a6c"
+    },
+    {
+      "path": "Dataset with Ground Truth/building-gt.zip",
+      "bytes": 4093145,
+      "sha256": "103a5ca5cbff6bdc8ef0efb3b34f9a9d31aa2311be5c21541fc2e4f6af6df80c"
+    },
+    {
+      "path": "Dataset with Ground Truth/field-gt.zip",
+      "bytes": 10130371,
+      "sha256": "067f5c9b648af21fb8d618f68dcb4967908b967b7cb51b219c88e1a830487017"
+    },
+    {
+      "path": "Dataset with Ground Truth/indoor-gt.zip",
+      "bytes": 6276458,
+      "sha256": "110dddc745f291fe9693fd42f6540d9116691f922421a22d5511c3e7378c2899"
+    },
+    {
+      "path": "Dataset with Ground Truth/tunnel-gt.zip",
+      "bytes": 3719791,
+      "sha256": "b1d52b2af670e8cb2610b55d624acbc8aa8f7d972abc2bb4cae023ad779ead5a"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5665,
+      "sha256": "77514c151ece4c113641ce8791867571a2215da0ea94e39a59c18c3337ab0c9d"
+    }
+  ],
+  "members": [
+    {
+      "archive": "All Datasets/bridge.zip",
+      "member": "4_Bridge/2019-08-28-16-32-12_exp5_success.csv",
+      "bytes": 1451637,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\bridge\\4_Bridge\\2019-08-28-16-32-12_exp5_success.csv"
+    },
+    {
+      "archive": "All Datasets/bridge.zip",
+      "member": "4_Bridge/2019-08-28-16-38-48_exp6_success.csv",
+      "bytes": 1880337,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\bridge\\4_Bridge\\2019-08-28-16-38-48_exp6_success.csv"
+    },
+    {
+      "archive": "All Datasets/bridge.zip",
+      "member": "4_Bridge/2019-08-28-16-46-41_exp7_success.csv",
+      "bytes": 3749822,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\bridge\\4_Bridge\\2019-08-28-16-46-41_exp7_success.csv"
+    },
+    {
+      "archive": "All Datasets/bridge.zip",
+      "member": "4_Bridge/2019-08-28-17-14-49_exp8_success.csv",
+      "bytes": 3846282,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\bridge\\4_Bridge\\2019-08-28-17-14-49_exp8_success.csv"
+    },
+    {
+      "archive": "All Datasets/building.zip",
+      "member": "3_Building/raw_data7_site2_newmarket_building1.csv",
+      "bytes": 3219859,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\building\\3_Building\\raw_data7_site2_newmarket_building1.csv"
+    },
+    {
+      "archive": "All Datasets/building.zip",
+      "member": "3_Building/raw_data8_site2_newmarket_building2.csv",
+      "bytes": 3670464,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\building\\3_Building\\raw_data8_site2_newmarket_building2.csv"
+    },
+    {
+      "archive": "All Datasets/building.zip",
+      "member": "3_Building/raw_data9_site2_newmarket_zigzag1.csv",
+      "bytes": 4841325,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\building\\3_Building\\raw_data9_site2_newmarket_zigzag1.csv"
+    },
+    {
+      "archive": "All Datasets/field.zip",
+      "member": "2_Field/raw_data2_site1_uxbridge_vertical_zigzag2.csv",
+      "bytes": 4410797,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\field\\2_Field\\raw_data2_site1_uxbridge_vertical_zigzag2.csv"
+    },
+    {
+      "archive": "All Datasets/field.zip",
+      "member": "2_Field/raw_data3_site1_uxbridge_sq_path1.csv",
+      "bytes": 7033884,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\field\\2_Field\\raw_data3_site1_uxbridge_sq_path1.csv"
+    },
+    {
+      "archive": "All Datasets/field.zip",
+      "member": "2_Field/raw_data4_site1_uxbridge_sq_path2.csv",
+      "bytes": 6648310,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\field\\2_Field\\raw_data4_site1_uxbridge_sq_path2.csv"
+    },
+    {
+      "archive": "All Datasets/field.zip",
+      "member": "2_Field/raw_data5_site1_uxbridge_rec_path1.csv",
+      "bytes": 7098767,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\field\\2_Field\\raw_data5_site1_uxbridge_rec_path1.csv"
+    },
+    {
+      "archive": "All Datasets/field.zip",
+      "member": "2_Field/raw_data6_site1_uxbridge_rec_path2.csv",
+      "bytes": 7115052,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\field\\2_Field\\raw_data6_site1_uxbridge_rec_path2.csv"
+    },
+    {
+      "archive": "All Datasets/indoor.zip",
+      "member": "1_Indoor/2018-05-30-11-15-17_exp1_groundtruth_addedtest.csv",
+      "bytes": 4750139,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\indoor\\1_Indoor\\2018-05-30-11-15-17_exp1_groundtruth_addedtest.csv"
+    },
+    {
+      "archive": "All Datasets/indoor.zip",
+      "member": "1_Indoor/2018-05-30-11-31-47_exp2_groundtruth_addedtest.csv",
+      "bytes": 5530118,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\indoor\\1_Indoor\\2018-05-30-11-31-47_exp2_groundtruth_addedtest.csv"
+    },
+    {
+      "archive": "All Datasets/indoor.zip",
+      "member": "1_Indoor/2018-05-30-13-13-21_exp3_big_circle_groundtruth_addedtest.csv",
+      "bytes": 7794351,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\indoor\\1_Indoor\\2018-05-30-13-13-21_exp3_big_circle_groundtruth_addedtest.csv"
+    },
+    {
+      "archive": "All Datasets/indoor.zip",
+      "member": "1_Indoor/2018-05-30-13-26-45_exp4_up_down_groundtruth_addedtest.csv",
+      "bytes": 4013472,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\indoor\\1_Indoor\\2018-05-30-13-26-45_exp4_up_down_groundtruth_addedtest.csv"
+    },
+    {
+      "archive": "All Datasets/indoor.zip",
+      "member": "1_Indoor/2018-05-30-13-32-30_exp5_left_right_groundtruth_addedtest.csv",
+      "bytes": 7895195,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\indoor\\1_Indoor\\2018-05-30-13-32-30_exp5_left_right_groundtruth_addedtest.csv"
+    },
+    {
+      "archive": "All Datasets/indoor.zip",
+      "member": "1_Indoor/2018-05-30-13-45-38_exp6_free_motion_track_failed_groundtruth_addedtest.csv",
+      "bytes": 6542791,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\indoor\\1_Indoor\\2018-05-30-13-45-38_exp6_free_motion_track_failed_groundtruth_addedtest.csv"
+    },
+    {
+      "archive": "All Datasets/tunnel.zip",
+      "member": "5_Tunnel/2019-08-29-16-28-34_Flight1.csv",
+      "bytes": 3076699,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\tunnel\\5_Tunnel\\2019-08-29-16-28-34_Flight1.csv"
+    },
+    {
+      "archive": "All Datasets/tunnel.zip",
+      "member": "5_Tunnel/2019-08-29-16-38-43_Flight2.csv",
+      "bytes": 1809563,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\tunnel\\5_Tunnel\\2019-08-29-16-38-43_Flight2.csv"
+    },
+    {
+      "archive": "All Datasets/tunnel.zip",
+      "member": "5_Tunnel/2019-08-29-17-11-16_Flight5.csv",
+      "bytes": 3545488,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\tunnel\\5_Tunnel\\2019-08-29-17-11-16_Flight5.csv"
+    },
+    {
+      "archive": "All Datasets/tunnel.zip",
+      "member": "5_Tunnel/2019-08-29-17-27-58_Flight7.csv",
+      "bytes": 2774261,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\tunnel\\5_Tunnel\\2019-08-29-17-27-58_Flight7.csv"
+    },
+    {
+      "archive": "All Datasets/tunnel.zip",
+      "member": "5_Tunnel/2019-08-29-17-34-34_Flight8.csv",
+      "bytes": 3190850,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\tunnel\\5_Tunnel\\2019-08-29-17-34-34_Flight8.csv"
+    },
+    {
+      "archive": "All Datasets/tunnel.zip",
+      "member": "5_Tunnel/2019-08-29-17-42-36_Flight9.csv",
+      "bytes": 2391890,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\All Datasets\\tunnel\\5_Tunnel\\2019-08-29-17-42-36_Flight9.csv"
+    },
+    {
+      "archive": "Dataset with Ground Truth/bridge-gt.zip",
+      "member": "bridge-gt/2019-08-28-16-32-12_exp5_success.csv",
+      "bytes": 1838568,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\Dataset with Ground Truth\\bridge-gt\\bridge-gt\\2019-08-28-16-32-12_exp5_success.csv"
+    },
+    {
+      "archive": "Dataset with Ground Truth/bridge-gt.zip",
+      "member": "bridge-gt/2019-08-28-16-38-48_exp6_success.csv",
+      "bytes": 2538567,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\Dataset with Ground Truth\\bridge-gt\\bridge-gt\\2019-08-28-16-38-48_exp6_success.csv"
+    },
+    {
+      "archive": "Dataset with Ground Truth/building-gt.zip",
+      "member": "building-gt/raw_data9_site2_newmarket_zigzag1.csv",
+      "bytes": 7027032,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\Dataset with Ground Truth\\building-gt\\building-gt\\raw_data9_site2_newmarket_zigzag1.csv"
+    },
+    {
+      "archive": "Dataset with Ground Truth/building-gt.zip",
+      "member": "building-gt/raw_data7_site2_newmarket_building1.csv",
+      "bytes": 5396425,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\Dataset with Ground Truth\\building-gt\\building-gt\\raw_data7_site2_newmarket_building1.csv"
+    },
+    {
+      "archive": "Dataset with Ground Truth/field-gt.zip",
+      "member": "field-gt/raw_data2_site1_uxbridge_vertical_zigzag2.csv",
+      "bytes": 7193687,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\Dataset with Ground Truth\\field-gt\\field-gt\\raw_data2_site1_uxbridge_vertical_zigzag2.csv"
+    },
+    {
+      "archive": "Dataset with Ground Truth/field-gt.zip",
+      "member": "field-gt/raw_data3_site1_uxbridge_sq_path1.csv",
+      "bytes": 11822844,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\Dataset with Ground Truth\\field-gt\\field-gt\\raw_data3_site1_uxbridge_sq_path1.csv"
+    },
+    {
+      "archive": "Dataset with Ground Truth/field-gt.zip",
+      "member": "field-gt/raw_data5_site1_uxbridge_rec_path1.csv",
+      "bytes": 12078759,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\Dataset with Ground Truth\\field-gt\\field-gt\\raw_data5_site1_uxbridge_rec_path1.csv"
+    },
+    {
+      "archive": "Dataset with Ground Truth/indoor-gt.zip",
+      "member": "indoor-gt/2018-05-30-13-13-21_exp3_big_circle_groundtruth_added.csv",
+      "bytes": 9450188,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\Dataset with Ground Truth\\indoor-gt\\indoor-gt\\2018-05-30-13-13-21_exp3_big_circle_groundtruth_added.csv"
+    },
+    {
+      "archive": "Dataset with Ground Truth/indoor-gt.zip",
+      "member": "indoor-gt/2018-05-30-11-31-47_exp2_groundtruth_added.csv",
+      "bytes": 6646112,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\Dataset with Ground Truth\\indoor-gt\\indoor-gt\\2018-05-30-11-31-47_exp2_groundtruth_added.csv"
+    },
+    {
+      "archive": "Dataset with Ground Truth/indoor-gt.zip",
+      "member": "indoor-gt/2018-05-30-11-15-17_exp1_groundtruth_added.csv",
+      "bytes": 5759758,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\Dataset with Ground Truth\\indoor-gt\\indoor-gt\\2018-05-30-11-15-17_exp1_groundtruth_added.csv"
+    },
+    {
+      "archive": "Dataset with Ground Truth/tunnel-gt.zip",
+      "member": "tunnel-gt/2019-08-29-16-28-34_flight1.csv",
+      "bytes": 5016597,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\Dataset with Ground Truth\\tunnel-gt\\tunnel-gt\\2019-08-29-16-28-34_flight1.csv"
+    },
+    {
+      "archive": "Dataset with Ground Truth/tunnel-gt.zip",
+      "member": "tunnel-gt/2019-08-29-17-11-16_flight5.csv",
+      "bytes": 4445466,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\Dataset with Ground Truth\\tunnel-gt\\tunnel-gt\\2019-08-29-17-11-16_flight5.csv"
+    },
+    {
+      "archive": "Dataset with Ground Truth/tunnel-gt.zip",
+      "member": "tunnel-gt/2019-08-29-16-38-43_flight2.csv",
+      "bytes": 2279553,
+      "local_path": "E:\\datasets\\qdrone-benchmark\\extracted\\Dataset with Ground Truth\\tunnel-gt\\tunnel-gt\\2019-08-29-16-38-43_flight2.csv"
+    }
+  ]
+}

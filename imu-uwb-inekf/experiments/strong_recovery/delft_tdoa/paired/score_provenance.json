@@ -1,0 +1,7 @@
+{
+  "state_sampling": "100Hz causal ZOH: searchsorted(right)-1; GT interpolation only",
+  "output_scope": "At t>=27 query original K directly, including between recorded samples",
+  "correction": "Replaces initial offline state linear interpolation; no algorithm, calibration or gate changes",
+  "run_sha256": "d2053525a33106817bf4e16549fd85c3a2850a70ebd50c4e67c39abfef60c648",
+  "paired_sha256": "f5cbd3b98136c194fbb4312ffe8942083fe5c7b99a1dcd31de0148d51ea18130"
+}

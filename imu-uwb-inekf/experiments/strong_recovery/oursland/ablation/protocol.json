@@ -1,0 +1,38 @@
+{
+  "names": [
+    "const1-trial4-tdoa2",
+    "const2-trial4-tdoa3"
+  ],
+  "yaws": [
+    0.0,
+    180.0
+  ],
+  "modes": [
+    "mirrored_source",
+    "complete_jacobian",
+    "consistent_gate",
+    "refresh_prior",
+    "zero_updated_bias",
+    "no_ground_clamp",
+    "class_default_radio_variance",
+    "physical_covariance_propagation"
+  ],
+  "workers": 6,
+  "independent_test": false,
+  "backend": "full-trajectory validated author mirror; source unchanged",
+  "changes": {
+    "complete_jacobian": "only author transformed H replaced by exact physical world H; original pre-gate retained",
+    "consistent_gate": "only pre-gate variance uses transformed H; update unchanged",
+    "refresh_prior": "only refresh Xhat/Phat after each correction; same packets",
+    "zero_updated_bias": "only set native bias to zero after corrections; initial sensor bias unchanged",
+    "no_ground_clamp": "only omit negative-z/vzero nominal clamp",
+    "class_default_radio_variance": "only .13 main variance replaced by original class default .05; no fitted noise",
+    "physical_covariance_propagation": "only propagated P from existing standalone frozen-R physical discrete model; author nominal mean retained"
+  },
+  "initial": "same sensor-only X and original author P, nominal/180, raw native clock, no outage",
+  "source_hashes": {
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf - backup\\scripts\\estimation\\inekf.py": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\strong_recovery\\oursland\\fast_original.py": "3af3c2f677581ff3b7e5776a7be6e4aae8234d2bf7e3b2e3e5dadeaea6fe89bb",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\strong_recovery\\oursland\\ablate.py": "fedab0584a8b8a16417f783285d4ec2854d96ff4d0348042fdbc8daa4272ea23"
+  }
+}

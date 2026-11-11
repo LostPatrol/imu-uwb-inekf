@@ -1,0 +1,5 @@
+name,path,exists,sufficient_length,origin,minimum_end_s
+const4-trial2-tdoa2-traj2,E:\datasets\dataset\flight-dataset\csv-data\const4\const4-trial2-tdoa2-traj2.csv,True,True,0.0004839999999967,126.43955300000002
+const4-trial2-tdoa2-traj3,E:\datasets\dataset\flight-dataset\csv-data\const4\const4-trial2-tdoa2-traj3.csv,True,True,0.0002770000000018,126.495312
+const4-trial2-tdoa3-traj2,E:\datasets\dataset\flight-dataset\csv-data\const4\const4-trial2-tdoa3-traj2.csv,True,True,0.0003099999999976,125.803169
+const4-trial2-tdoa3-traj3,E:\datasets\dataset\flight-dataset\csv-data\const4\const4-trial2-tdoa3-traj3.csv,True,True,0.0004360000000015,127.035249

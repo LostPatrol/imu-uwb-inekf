@@ -1,0 +1,19 @@
+{
+  "status": "Post-hoc exploratory, explicitly motivated after scoring Delft output-only policies",
+  "registered_before": "Generating any Delft state-projection trajectory",
+  "cohort": "All six previously frozen late Delft recordings, including BAD",
+  "queue": "first_per_stamp, same fixed initialization and original-author native recurrence as existing K",
+  "outage_lengths_s": [2,5,10,20],
+  "resume_s": 25,
+  "trigger_scope": "First newly offered packet in [25,27) whose age-zero single-packet frozen radio_bounds constraint is violated by the native post-correction state",
+  "trigger_order": "native predict -> native correct -> shared feedback.single_offset -> at most one nonzero feedback.translate_original",
+  "radio_variance_m2": 0.13,
+  "lever_radius_m": 0,
+  "transport": "Delta=(dx,dy,0); mean p+=delta; A=I with A[6:9,0:3]=wedge(delta); Pnew=A P A.T; synchronize Xhat/Phat only on actual translation",
+  "instant_invariants": "Attitude/Z/velocity/bias unchanged and full physical covariance unchanged under chart transport; no covariance shrink or independent pseudo-measurement",
+  "after_trigger": "Continue actual original predict/correct for every future offered packet, no repeated projection and no return-to-K policy",
+  "truth": "No test truth in generation or trigger; existing independent early-six calibration frozen; scoring and diagnostics only after all 24 generated",
+  "score": "Same 100Hz causal state ZOH and GT-only interpolation; [25,27),[27,30),[31,36); incomplete full-period metrics are NaN and available-prefix scores separate",
+  "comparisons": "Existing K cache from same original recurrence, primary queue only; all 24 cases and nontriggers retained",
+  "not_independent": "Four outage counterfactuals per flight; only six distinct flights"
+}

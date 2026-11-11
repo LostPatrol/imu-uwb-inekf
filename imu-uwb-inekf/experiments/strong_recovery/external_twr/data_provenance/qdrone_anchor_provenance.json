@@ -1,0 +1,164 @@
+{
+  "source_url": "https://benchmark.qdrone.ausmlab.com/datasets/",
+  "source_sha256": "c98f4ee17c4ec48886b2d54a7113b0dc372eef4004d7f18cff866748d528026f",
+  "response_headers": {
+    "Date": "Wed, 11 Nov 2026 17:11:37 GMT",
+    "Content-Type": "text/html; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "close",
+    "Cache-Control": "public, max-age=0, s-maxage=300",
+    "Age": "53",
+    "etag": "W/\"602e432d3fc6924cbfa2ea81ba0808d1\"",
+    "last-modified": "Fri, 25 Apr 2025 02:32:24 UTC",
+    "rndr-id": "3bf5142a-7b13-4449",
+    "Server": "cloudflare",
+    "vary": "Accept-Encoding",
+    "x-content-type-options": "nosniff",
+    "cf-cache-status": "HIT",
+    "CF-RAY": "a58eeaca2a5be364-NRT",
+    "alt-svc": "h3=\":443\"; ma=86400"
+  },
+  "units": "meters",
+  "published_labels": "UWB0..UWB3",
+  "raw_numeric_ids": "100..103",
+  "id_mapping": "numeric raw ID 100+i maps to publisher UWB i; fixed before range/GT audit",
+  "source_evidence": [
+    {
+      "publisher_label": "Indoor",
+      "archive_site": "indoor",
+      "verbatim_table_coordinate_text": "Indoor UWB0(0, 0, 0.62), UWB1(8.51, 0, 0.96), UWB2(-0.26, 10.77, 1.32), UWB3(8.25, 10.84 ,1.58)",
+      "anchors": {
+        "100": [
+          0.0,
+          0.0,
+          0.62
+        ],
+        "101": [
+          8.51,
+          0.0,
+          0.96
+        ],
+        "102": [
+          -0.26,
+          10.77,
+          1.32
+        ],
+        "103": [
+          8.25,
+          10.84,
+          1.58
+        ]
+      }
+    },
+    {
+      "publisher_label": "Outdoor Field",
+      "archive_site": "field",
+      "verbatim_table_coordinate_text": "Outdoor Field UWB0(0, 0, 0.99), UWB1(12.091, 0,1.60), UWB2(-0.66, 12.99,1.41), UWB3(11.62, 13.06,1.19)",
+      "anchors": {
+        "100": [
+          0.0,
+          0.0,
+          0.99
+        ],
+        "101": [
+          12.091,
+          0.0,
+          1.6
+        ],
+        "102": [
+          -0.66,
+          12.99,
+          1.41
+        ],
+        "103": [
+          11.62,
+          13.06,
+          1.19
+        ]
+      }
+    },
+    {
+      "publisher_label": "Outdoor Structure",
+      "archive_site": "building",
+      "verbatim_table_coordinate_text": "Outdoor Structure UWB0(0, 0, 0.78), UWB1(7.19, 0, 1.58), UWB2(0.82, 7.31, 1.41), UWB3(7.92, 6.64, 1.33)",
+      "anchors": {
+        "100": [
+          0.0,
+          0.0,
+          0.78
+        ],
+        "101": [
+          7.19,
+          0.0,
+          1.58
+        ],
+        "102": [
+          0.82,
+          7.31,
+          1.41
+        ],
+        "103": [
+          7.92,
+          6.64,
+          1.33
+        ]
+      }
+    },
+    {
+      "publisher_label": "Bridge",
+      "archive_site": "bridge",
+      "verbatim_table_coordinate_text": "Bridge UWB0(0, 0, 1.17), UWB1(10.73 0 0.54), UWB2(-0.27 23.61 0.52), UWB3(10.87 22.72 0.75)",
+      "anchors": {
+        "100": [
+          0.0,
+          0.0,
+          1.17
+        ],
+        "101": [
+          10.73,
+          0.0,
+          0.54
+        ],
+        "102": [
+          -0.27,
+          23.61,
+          0.52
+        ],
+        "103": [
+          10.87,
+          22.72,
+          0.75
+        ]
+      }
+    },
+    {
+      "publisher_label": "Tunnel",
+      "archive_site": "tunnel",
+      "verbatim_table_coordinate_text": "Tunnel UWB0(0, 0, 1.134), UWB1(8.520, 0, 1.740), UWB2(-3.783, 23.080, 1.602), UWB3(5.433, 29.110, 1.129)",
+      "anchors": {
+        "100": [
+          0.0,
+          0.0,
+          1.134
+        ],
+        "101": [
+          8.52,
+          0.0,
+          1.74
+        ],
+        "102": [
+          -3.783,
+          23.08,
+          1.602
+        ],
+        "103": [
+          5.433,
+          29.11,
+          1.129
+        ]
+      }
+    }
+  ],
+  "final_json_sha256": "9b7d90cf9b2d37098d73d6a8d08179bcf66d5efef5b0806855fdb9b0c73b2720",
+  "supersedes": "Both earlier strong_data/qdrone_anchors JSONs were erroneous hand transcriptions; all resulting evaluations invalidated."
+}

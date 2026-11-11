@@ -1,0 +1,19 @@
+[
+  {
+    "name": "const1-trial4-tdoa2",
+    "yaw_offset_deg": 180.0,
+    "full_45s": false,
+    "row_shape_equal": true,
+    "rows_max_abs": 9.992007221626409e-16,
+    "X_max_abs": 6.661338147750939e-16,
+    "P_max_abs": 5.204170427930421e-18,
+    "bias_max_abs": 7.411538288475128e-22,
+    "accepted_equal": true,
+    "rejected_equal": true,
+    "failure_equal": true,
+    "fast_runtime_seconds": 35.602327800006606,
+    "predict_calls": 1008,
+    "correction_calls": 469,
+    "validated": true
+  }
+]

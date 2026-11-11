@@ -1,0 +1,114 @@
+[
+  {
+    "key": "const4-trial2-tdoa3-traj3__gap2",
+    "trigger_count": 0,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": 0.0,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj3__gap5",
+    "trigger_count": 0,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": 0.0,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj3__gap10",
+    "trigger_count": 0,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": 0.0,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj3__gap20",
+    "trigger_count": 1,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": null,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj2__gap2",
+    "trigger_count": 0,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": 0.0,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj2__gap5",
+    "trigger_count": 0,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": 0.0,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj2__gap10",
+    "trigger_count": 1,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": null,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj2__gap20",
+    "trigger_count": 0,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": 0.0,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj3__gap2",
+    "trigger_count": 0,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": 0.0,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj3__gap5",
+    "trigger_count": 0,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": 0.0,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj3__gap10",
+    "trigger_count": 0,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": 0.0,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj3__gap20",
+    "trigger_count": 0,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": 0.0,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj2__gap2",
+    "trigger_count": 0,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": 0.0,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj2__gap5",
+    "trigger_count": 0,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": 0.0,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj2__gap10",
+    "trigger_count": 0,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": 0.0,
+    "mirror_valid": true
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj2__gap20",
+    "trigger_count": 1,
+    "pretrigger_max_abs": 0.0,
+    "nontrigger_max_abs": null,
+    "mirror_valid": true
+  }
+]

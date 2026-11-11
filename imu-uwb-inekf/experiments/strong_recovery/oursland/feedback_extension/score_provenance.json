@@ -1,0 +1,22 @@
+{
+  "source_sha256": "cc350bb0f1f2ef02ee129e04c2c762b7d92bbb44abf0274c1d0b01881041bbc4",
+  "correction": "Explicit common deadline at resume+2, emitting strict ZOH K value, to prevent reporting hold leakage",
+  "algorithms_unchanged": true,
+  "raw_candidate_cache_unchanged": true,
+  "exact_no_future_contract": "every method equals K before resume and at/after resume+2; R/yaw/z identical at all times",
+  "windows_half_open_after_resume_s": {
+    "early": [
+      0.0,
+      2.0
+    ],
+    "middle": [
+      2.0,
+      5.0
+    ],
+    "later": [
+      6.0,
+      11.0
+    ]
+  },
+  "score_clock_hz": 20
+}

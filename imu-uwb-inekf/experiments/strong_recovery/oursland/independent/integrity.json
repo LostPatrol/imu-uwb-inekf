@@ -1,0 +1,898 @@
+[
+  {
+    "key": "const1-trial2-tdoa3__gap2",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap2",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap2",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap2",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap5",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap5",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap5",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap5",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap10",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap10",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap10",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap10",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap20",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap20",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap20",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa3__gap20",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap2",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap2",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap2",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap2",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap5",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap5",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap5",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap5",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap10",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap10",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap10",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap10",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap20",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap20",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap20",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa3__gap20",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap2",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap2",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap2",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap2",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap5",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap5",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap5",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap5",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap10",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap10",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap10",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap10",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap20",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap20",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap20",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa3__gap20",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap2",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap2",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap2",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap2",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap5",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap5",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap5",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap5",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap10",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap10",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap10",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap10",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap20",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap20",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap20",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const1-trial2-tdoa2__gap20",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap2",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap2",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap2",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap2",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap5",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap5",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap5",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap5",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap10",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap10",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap10",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap10",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap20",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap20",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap20",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const3-trial2-tdoa2__gap20",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap2",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap2",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap2",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap2",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap5",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap5",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap5",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap5",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap10",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap10",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap10",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap10",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap20",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap20",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap20",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const2-trial2-tdoa2__gap20",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap2",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap2",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap2",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap2",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap5",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap5",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap5",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap5",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap10",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap10",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap10",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap10",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap20",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap20",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap20",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa3-traj1__gap20",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap2",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap2",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap2",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap2",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap5",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap5",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap5",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap5",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap10",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap10",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap10",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap10",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap20",
+    "method": "K",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap20",
+    "method": "always_C",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap20",
+    "method": "guarded",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  },
+  {
+    "key": "const4-trial2-tdoa2-traj1__gap20",
+    "method": "radio_bounds",
+    "outside_phase_max_abs": 0.0,
+    "rotation_max_abs": 0.0,
+    "z_max_abs": 0.0
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "trial": 2,
+  "names": [
+    "const1-trial2-tdoa2",
+    "const1-trial2-tdoa3",
+    "const2-trial2-tdoa2",
+    "const2-trial2-tdoa3",
+    "const3-trial2-tdoa2",
+    "const3-trial2-tdoa3",
+    "const4-trial2-tdoa2-traj1",
+    "const4-trial2-tdoa3-traj1"
+  ],
+  "nominal_yaw_offset_deg": 0,
+  "resume_s": 25.0,
+  "gap_lengths_s": [
+    2.0,
+    5.0,
+    10.0,
+    20.0
+  ],
+  "required_coverage_end_s": 36.0,
+  "score_windows_after_resume_s": [
+    [
+      0,
+      2
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      6,
+      11
+    ]
+  ],
+  "initial": "sensor-only0.6s, exact original main invariant P, same native streams",
+  "backend": "unchanged author class or full-trajectory validated numerical author mirror; no retuning",
+  "adaptation": "native Toronto TDoA2 ring/TDoA3 complete pairs; no truth alignment",
+  "variants": [
+    "K",
+    "always_C",
+    "guarded"
+  ],
+  "truth": "only sensor/pose timestamps read for this inventory, no evaluation pose coordinates",
+  "cohort": "independent trial2; mechanism trial4 scores must remain separate",
+  "workers_max": 6
+}

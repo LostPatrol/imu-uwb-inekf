@@ -1,0 +1,147 @@
+{
+  "lever": {
+    "tag_range_jacobian_max_error": 3.297007111768835e-10,
+    "capture_effective_anchor_range_error": 0.0
+  },
+  "delft": {
+    "sequence": "2021-02-12_09_43_34_twr_triangle.csv",
+    "duration_s": 30.0,
+    "elapsed_s": 4.617716599954292,
+    "max_X_difference": 0.0,
+    "max_P_difference": 0.0,
+    "max_bias_difference": 0.0,
+    "max_lifted_P_difference": 0.0,
+    "max_lifted_chi_difference": 0.0,
+    "mode_or_gate_decision_mismatches": 0,
+    "native_stats": {
+      "accepted": 4851,
+      "rejected": 80,
+      "invalid": 0,
+      "nis_sum": 7510.13168017257,
+      "nis_max": 2357.6053440313995,
+      "downweighted": 151,
+      "weight_sum": 4819.487266336071,
+      "per_anchor": {
+        "2": {
+          "accepted": 598,
+          "rejected": 25,
+          "downweighted": 29
+        },
+        "4": {
+          "accepted": 630,
+          "rejected": 0,
+          "downweighted": 14
+        },
+        "5": {
+          "accepted": 604,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "7": {
+          "accepted": 626,
+          "rejected": 12,
+          "downweighted": 6
+        },
+        "1": {
+          "accepted": 647,
+          "rejected": 0,
+          "downweighted": 4
+        },
+        "6": {
+          "accepted": 587,
+          "rejected": 1,
+          "downweighted": 11
+        },
+        "0": {
+          "accepted": 581,
+          "rejected": 27,
+          "downweighted": 13
+        },
+        "3": {
+          "accepted": 578,
+          "rejected": 15,
+          "downweighted": 74
+        }
+      },
+      "tracker_reseeds": 2,
+      "capture_restarts": 1,
+      "mode_switches_to_track": 2,
+      "fallbacks_to_capture": 1,
+      "tracker_accepted": 3904,
+      "tracker_rejected": 80,
+      "tracker_invalid": 0,
+      "capture_accepted": 947,
+      "capture_rejected": 0,
+      "capture_invalid": 0,
+      "output_track_updates": 3984,
+      "output_capture_updates": 947,
+      "output_full_tracker_updates": 3984
+    },
+    "adapted_stats": {
+      "accepted": 4851,
+      "rejected": 80,
+      "invalid": 0,
+      "nis_sum": 7510.13168017257,
+      "nis_max": 2357.6053440313995,
+      "downweighted": 151,
+      "weight_sum": 4819.487266336071,
+      "per_anchor": {
+        "2": {
+          "accepted": 598,
+          "rejected": 25,
+          "downweighted": 29
+        },
+        "4": {
+          "accepted": 630,
+          "rejected": 0,
+          "downweighted": 14
+        },
+        "5": {
+          "accepted": 604,
+          "rejected": 0,
+          "downweighted": 0
+        },
+        "7": {
+          "accepted": 626,
+          "rejected": 12,
+          "downweighted": 6
+        },
+        "1": {
+          "accepted": 647,
+          "rejected": 0,
+          "downweighted": 4
+        },
+        "6": {
+          "accepted": 587,
+          "rejected": 1,
+          "downweighted": 11
+        },
+        "0": {
+          "accepted": 581,
+          "rejected": 27,
+          "downweighted": 13
+        },
+        "3": {
+          "accepted": 578,
+          "rejected": 15,
+          "downweighted": 74
+        }
+      },
+      "tracker_reseeds": 2,
+      "capture_restarts": 1,
+      "mode_switches_to_track": 2,
+      "fallbacks_to_capture": 1,
+      "tracker_accepted": 3904,
+      "tracker_rejected": 80,
+      "tracker_invalid": 0,
+      "capture_accepted": 947,
+      "capture_rejected": 0,
+      "capture_invalid": 0,
+      "output_track_updates": 3984,
+      "output_capture_updates": 947,
+      "output_full_tracker_updates": 3984
+    },
+    "zero_lever_port_is_exact": true,
+    "checked_startup_and_post_gap_capture": true
+  }
+}

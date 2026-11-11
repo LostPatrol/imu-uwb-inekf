@@ -1,0 +1,31 @@
+{
+  "names": [
+    "const1-trial2-tdoa2",
+    "const1-trial2-tdoa3",
+    "const2-trial2-tdoa2",
+    "const2-trial2-tdoa3",
+    "const3-trial2-tdoa2",
+    "const3-trial2-tdoa3",
+    "const4-trial2-tdoa2-traj1",
+    "const4-trial2-tdoa3-traj1"
+  ],
+  "trial": 2,
+  "gaps_s": [
+    2.0,
+    5.0,
+    10.0,
+    20.0
+  ],
+  "resume_s": 25.0,
+  "end_s": 36.0,
+  "workers": 6,
+  "original_class_sha256": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+  "source_sha256": "dc597cd4a0899aad15e73358f344803ed1584cc7252c1f63e05cf5fbfe9473cd",
+  "backend": "every K uses untouched source class; mirror only checks equivalence",
+  "initial": "same sensor-only0.6s X/gyro bias; original invariant P exactly; nominal yaw0",
+  "radio_variance_m2": 0.13,
+  "candidate_radio_sigma_m": 0.36055512754639896,
+  "queue": "original raw native queue, first-per-stamp, same event clocks during mask",
+  "reuse": "common full author prefix; deepcopies include X/P/Xhat/Phat/bias and previous IMU timestamp",
+  "evaluation": "no candidate scores consulted; GT stored only for later scoring"
+}

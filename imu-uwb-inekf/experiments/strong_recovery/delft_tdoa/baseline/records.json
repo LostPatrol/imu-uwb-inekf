@@ -1,0 +1,1622 @@
+[
+  {
+    "key": "2021-02-12_14_00_34_tdoa_octagon__first_per_stamp__L0",
+    "name": "2021-02-12_14_00_34_tdoa_octagon",
+    "queue": "first_per_stamp",
+    "outage_s": 0,
+    "origin": 21.772,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2281,
+    "rejected_radio": 43,
+    "outage_skipped": 0,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      0.0017763350492219544,
+      0.13618886785067674,
+      0.026878030397276646
+    ],
+    "initial_velocity": [
+      0.4725988003283781,
+      0.4162304979814669,
+      1.50879175534646
+    ],
+    "runtime_s": 0.9906807000515983,
+    "last_time": 44.98,
+    "offered_radio": 2371
+  },
+  {
+    "key": "2021-02-12_14_00_34_tdoa_octagon__first_per_stamp__L2",
+    "name": "2021-02-12_14_00_34_tdoa_octagon",
+    "queue": "first_per_stamp",
+    "outage_s": 2,
+    "origin": 21.772,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2183,
+    "rejected_radio": 40,
+    "outage_skipped": 101,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      0.0017763350492219544,
+      0.13618886785067674,
+      0.026878030397276646
+    ],
+    "initial_velocity": [
+      0.4725988003283781,
+      0.4162304979814669,
+      1.50879175534646
+    ],
+    "runtime_s": 1.1200952000217512,
+    "last_time": 44.98,
+    "offered_radio": 2371
+  },
+  {
+    "key": "2021-02-12_14_00_34_tdoa_octagon__first_per_stamp__L5",
+    "name": "2021-02-12_14_00_34_tdoa_octagon",
+    "queue": "first_per_stamp",
+    "outage_s": 5,
+    "origin": 21.772,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2029,
+    "rejected_radio": 36,
+    "outage_skipped": 259,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      0.0017763350492219544,
+      0.13618886785067674,
+      0.026878030397276646
+    ],
+    "initial_velocity": [
+      0.4725988003283781,
+      0.4162304979814669,
+      1.50879175534646
+    ],
+    "runtime_s": 3.8267829000251368,
+    "last_time": 44.98,
+    "offered_radio": 2371
+  },
+  {
+    "key": "2021-02-12_14_00_34_tdoa_octagon__first_per_stamp__L10",
+    "name": "2021-02-12_14_00_34_tdoa_octagon",
+    "queue": "first_per_stamp",
+    "outage_s": 10,
+    "origin": 21.772,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1022,
+    "rejected_radio": 772,
+    "outage_skipped": 530,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      0.0017763350492219544,
+      0.13618886785067674,
+      0.026878030397276646
+    ],
+    "initial_velocity": [
+      0.4725988003283781,
+      0.4162304979814669,
+      1.50879175534646
+    ],
+    "runtime_s": 3.448246099986136,
+    "last_time": 44.98,
+    "offered_radio": 2371
+  },
+  {
+    "key": "2021-02-12_14_00_34_tdoa_octagon__first_per_stamp__L20",
+    "name": "2021-02-12_14_00_34_tdoa_octagon",
+    "queue": "first_per_stamp",
+    "outage_s": 20,
+    "origin": 21.772,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 734,
+    "rejected_radio": 553,
+    "outage_skipped": 1037,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      0.0017763350492219544,
+      0.13618886785067674,
+      0.026878030397276646
+    ],
+    "initial_velocity": [
+      0.4725988003283781,
+      0.4162304979814669,
+      1.50879175534646
+    ],
+    "runtime_s": 2.602764999959618,
+    "last_time": 44.98,
+    "offered_radio": 2371
+  },
+  {
+    "key": "2021-02-12_14_00_34_tdoa_octagon__all_packets_zero_predict__L0",
+    "name": "2021-02-12_14_00_34_tdoa_octagon",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 0,
+    "origin": 21.772,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 6487,
+    "rejected_radio": 106,
+    "outage_skipped": 0,
+    "zero_dt_predict_calls": 4269,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.1227861298641402,
+      0.0826778994614332,
+      -0.025083968414798694
+    ],
+    "initial_velocity": [
+      0.073301786889294,
+      0.24389954016234597,
+      1.0682819145641609
+    ],
+    "runtime_s": 9.831639499985613,
+    "last_time": 44.98,
+    "offered_radio": 6718
+  },
+  {
+    "key": "2021-02-12_14_00_34_tdoa_octagon__all_packets_zero_predict__L2",
+    "name": "2021-02-12_14_00_34_tdoa_octagon",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 2,
+    "origin": 21.772,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 6185,
+    "rejected_radio": 99,
+    "outage_skipped": 309,
+    "zero_dt_predict_calls": 4061,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.1227861298641402,
+      0.0826778994614332,
+      -0.025083968414798694
+    ],
+    "initial_velocity": [
+      0.073301786889294,
+      0.24389954016234597,
+      1.0682819145641609
+    ],
+    "runtime_s": 9.862469600047916,
+    "last_time": 44.98,
+    "offered_radio": 6718
+  },
+  {
+    "key": "2021-02-12_14_00_34_tdoa_octagon__all_packets_zero_predict__L5",
+    "name": "2021-02-12_14_00_34_tdoa_octagon",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 5,
+    "origin": 21.772,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 5754,
+    "rejected_radio": 93,
+    "outage_skipped": 746,
+    "zero_dt_predict_calls": 3782,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.1227861298641402,
+      0.0826778994614332,
+      -0.025083968414798694
+    ],
+    "initial_velocity": [
+      0.073301786889294,
+      0.24389954016234597,
+      1.0682819145641609
+    ],
+    "runtime_s": 8.491061600041576,
+    "last_time": 44.98,
+    "offered_radio": 6718
+  },
+  {
+    "key": "2021-02-12_14_00_34_tdoa_octagon__all_packets_zero_predict__L10",
+    "name": "2021-02-12_14_00_34_tdoa_octagon",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 10,
+    "origin": 21.772,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 3271,
+    "rejected_radio": 1866,
+    "outage_skipped": 1456,
+    "zero_dt_predict_calls": 3343,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.1227861298641402,
+      0.0826778994614332,
+      -0.025083968414798694
+    ],
+    "initial_velocity": [
+      0.073301786889294,
+      0.24389954016234597,
+      1.0682819145641609
+    ],
+    "runtime_s": 7.322361800004728,
+    "last_time": 44.98,
+    "offered_radio": 6718
+  },
+  {
+    "key": "2021-02-12_14_00_34_tdoa_octagon__all_packets_zero_predict__L20",
+    "name": "2021-02-12_14_00_34_tdoa_octagon",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 20,
+    "origin": 21.772,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1476,
+    "rejected_radio": 2194,
+    "outage_skipped": 2923,
+    "zero_dt_predict_calls": 2383,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.1227861298641402,
+      0.0826778994614332,
+      -0.025083968414798694
+    ],
+    "initial_velocity": [
+      0.073301786889294,
+      0.24389954016234597,
+      1.0682819145641609
+    ],
+    "runtime_s": 5.56187710002996,
+    "last_time": 44.98,
+    "offered_radio": 6718
+  },
+  {
+    "key": "2021-02-12_14_05_09_tdoa_star__first_per_stamp__L0",
+    "name": "2021-02-12_14_05_09_tdoa_star",
+    "queue": "first_per_stamp",
+    "outage_s": 0,
+    "origin": 24.132,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 3207,
+    "rejected_radio": 72,
+    "outage_skipped": 0,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.9871005831013889,
+      0.2569043002443936,
+      1.9952396183881558
+    ],
+    "initial_velocity": [
+      -1.5920921492915412,
+      0.3237389175614883,
+      1.9226427665756005
+    ],
+    "runtime_s": 5.47982630005572,
+    "last_time": 45.0,
+    "offered_radio": 3326
+  },
+  {
+    "key": "2021-02-12_14_05_09_tdoa_star__first_per_stamp__L2",
+    "name": "2021-02-12_14_05_09_tdoa_star",
+    "queue": "first_per_stamp",
+    "outage_s": 2,
+    "origin": 24.132,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 3058,
+    "rejected_radio": 71,
+    "outage_skipped": 150,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.9871005831013889,
+      0.2569043002443936,
+      1.9952396183881558
+    ],
+    "initial_velocity": [
+      -1.5920921492915412,
+      0.3237389175614883,
+      1.9226427665756005
+    ],
+    "runtime_s": 5.338938600034453,
+    "last_time": 45.0,
+    "offered_radio": 3326
+  },
+  {
+    "key": "2021-02-12_14_05_09_tdoa_star__first_per_stamp__L5",
+    "name": "2021-02-12_14_05_09_tdoa_star",
+    "queue": "first_per_stamp",
+    "outage_s": 5,
+    "origin": 24.132,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2823,
+    "rejected_radio": 68,
+    "outage_skipped": 388,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.9871005831013889,
+      0.2569043002443936,
+      1.9952396183881558
+    ],
+    "initial_velocity": [
+      -1.5920921492915412,
+      0.3237389175614883,
+      1.9226427665756005
+    ],
+    "runtime_s": 5.2066455000313,
+    "last_time": 45.0,
+    "offered_radio": 3326
+  },
+  {
+    "key": "2021-02-12_14_05_09_tdoa_star__first_per_stamp__L10",
+    "name": "2021-02-12_14_05_09_tdoa_star",
+    "queue": "first_per_stamp",
+    "outage_s": 10,
+    "origin": 24.132,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2454,
+    "rejected_radio": 61,
+    "outage_skipped": 764,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.9871005831013889,
+      0.2569043002443936,
+      1.9952396183881558
+    ],
+    "initial_velocity": [
+      -1.5920921492915412,
+      0.3237389175614883,
+      1.9226427665756005
+    ],
+    "runtime_s": 5.073641300085001,
+    "last_time": 45.0,
+    "offered_radio": 3326
+  },
+  {
+    "key": "2021-02-12_14_05_09_tdoa_star__first_per_stamp__L20",
+    "name": "2021-02-12_14_05_09_tdoa_star",
+    "queue": "first_per_stamp",
+    "outage_s": 20,
+    "origin": 24.132,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 780,
+    "rejected_radio": 1036,
+    "outage_skipped": 1463,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.9871005831013889,
+      0.2569043002443936,
+      1.9952396183881558
+    ],
+    "initial_velocity": [
+      -1.5920921492915412,
+      0.3237389175614883,
+      1.9226427665756005
+    ],
+    "runtime_s": 4.4080672999843955,
+    "last_time": 45.0,
+    "offered_radio": 3326
+  },
+  {
+    "key": "2021-02-12_14_05_09_tdoa_star__all_packets_zero_predict__L0",
+    "name": "2021-02-12_14_05_09_tdoa_star",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 0,
+    "origin": 24.132,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 6696,
+    "rejected_radio": 166,
+    "outage_skipped": 0,
+    "zero_dt_predict_calls": 3583,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.6197232807589176,
+      0.09399816164610177,
+      2.0558243898323556
+    ],
+    "initial_velocity": [
+      -0.7019952547122691,
+      -0.03292280703376038,
+      1.6590900738566152
+    ],
+    "runtime_s": 10.80782210000325,
+    "last_time": 45.0,
+    "offered_radio": 6985
+  },
+  {
+    "key": "2021-02-12_14_05_09_tdoa_star__all_packets_zero_predict__L2",
+    "name": "2021-02-12_14_05_09_tdoa_star",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 2,
+    "origin": 24.132,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 6396,
+    "rejected_radio": 164,
+    "outage_skipped": 302,
+    "zero_dt_predict_calls": 3431,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.6197232807589176,
+      0.09399816164610177,
+      2.0558243898323556
+    ],
+    "initial_velocity": [
+      -0.7019952547122691,
+      -0.03292280703376038,
+      1.6590900738566152
+    ],
+    "runtime_s": 10.727040900033899,
+    "last_time": 45.0,
+    "offered_radio": 6985
+  },
+  {
+    "key": "2021-02-12_14_05_09_tdoa_star__all_packets_zero_predict__L5",
+    "name": "2021-02-12_14_05_09_tdoa_star",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 5,
+    "origin": 24.132,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 5897,
+    "rejected_radio": 158,
+    "outage_skipped": 807,
+    "zero_dt_predict_calls": 3164,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.6197232807589176,
+      0.09399816164610177,
+      2.0558243898323556
+    ],
+    "initial_velocity": [
+      -0.7019952547122691,
+      -0.03292280703376038,
+      1.6590900738566152
+    ],
+    "runtime_s": 9.89985050004907,
+    "last_time": 45.0,
+    "offered_radio": 6985
+  },
+  {
+    "key": "2021-02-12_14_05_09_tdoa_star__all_packets_zero_predict__L10",
+    "name": "2021-02-12_14_05_09_tdoa_star",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 10,
+    "origin": 24.132,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 5111,
+    "rejected_radio": 150,
+    "outage_skipped": 1601,
+    "zero_dt_predict_calls": 2746,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.6197232807589176,
+      0.09399816164610177,
+      2.0558243898323556
+    ],
+    "initial_velocity": [
+      -0.7019952547122691,
+      -0.03292280703376038,
+      1.6590900738566152
+    ],
+    "runtime_s": 8.744815099984407,
+    "last_time": 45.0,
+    "offered_radio": 6985
+  },
+  {
+    "key": "2021-02-12_14_05_09_tdoa_star__all_packets_zero_predict__L20",
+    "name": "2021-02-12_14_05_09_tdoa_star",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 20,
+    "origin": 24.132,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2174,
+    "rejected_radio": 1630,
+    "outage_skipped": 3058,
+    "zero_dt_predict_calls": 1988,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.6197232807589176,
+      0.09399816164610177,
+      2.0558243898323556
+    ],
+    "initial_velocity": [
+      -0.7019952547122691,
+      -0.03292280703376038,
+      1.6590900738566152
+    ],
+    "runtime_s": 7.1216928999638185,
+    "last_time": 45.0,
+    "offered_radio": 6985
+  },
+  {
+    "key": "2021-02-12_14_06_55_tdoa_hourglass__first_per_stamp__L0",
+    "name": "2021-02-12_14_06_55_tdoa_hourglass",
+    "queue": "first_per_stamp",
+    "outage_s": 0,
+    "origin": 129.686,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2230,
+    "rejected_radio": 29,
+    "outage_skipped": 0,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.08669137534268907,
+      -0.3418509693623183,
+      1.576218306100722
+    ],
+    "initial_velocity": [
+      0.0023240310029979056,
+      -0.6643307748290377,
+      4.0168576648376915
+    ],
+    "runtime_s": 3.603737600031309,
+    "last_time": 45.0,
+    "offered_radio": 2302
+  },
+  {
+    "key": "2021-02-12_14_06_55_tdoa_hourglass__first_per_stamp__L2",
+    "name": "2021-02-12_14_06_55_tdoa_hourglass",
+    "queue": "first_per_stamp",
+    "outage_s": 2,
+    "origin": 129.686,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2125,
+    "rejected_radio": 29,
+    "outage_skipped": 105,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.08669137534268907,
+      -0.3418509693623183,
+      1.576218306100722
+    ],
+    "initial_velocity": [
+      0.0023240310029979056,
+      -0.6643307748290377,
+      4.0168576648376915
+    ],
+    "runtime_s": 2.713869500090368,
+    "last_time": 45.0,
+    "offered_radio": 2302
+  },
+  {
+    "key": "2021-02-12_14_06_55_tdoa_hourglass__first_per_stamp__L5",
+    "name": "2021-02-12_14_06_55_tdoa_hourglass",
+    "queue": "first_per_stamp",
+    "outage_s": 5,
+    "origin": 129.686,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1971,
+    "rejected_radio": 26,
+    "outage_skipped": 262,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.08669137534268907,
+      -0.3418509693623183,
+      1.576218306100722
+    ],
+    "initial_velocity": [
+      0.0023240310029979056,
+      -0.6643307748290377,
+      4.0168576648376915
+    ],
+    "runtime_s": 2.763230999931693,
+    "last_time": 45.0,
+    "offered_radio": 2302
+  },
+  {
+    "key": "2021-02-12_14_06_55_tdoa_hourglass__first_per_stamp__L10",
+    "name": "2021-02-12_14_06_55_tdoa_hourglass",
+    "queue": "first_per_stamp",
+    "outage_s": 10,
+    "origin": 129.686,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1729,
+    "rejected_radio": 23,
+    "outage_skipped": 507,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.08669137534268907,
+      -0.3418509693623183,
+      1.576218306100722
+    ],
+    "initial_velocity": [
+      0.0023240310029979056,
+      -0.6643307748290377,
+      4.0168576648376915
+    ],
+    "runtime_s": 2.6289461000123993,
+    "last_time": 45.0,
+    "offered_radio": 2302
+  },
+  {
+    "key": "2021-02-12_14_06_55_tdoa_hourglass__first_per_stamp__L20",
+    "name": "2021-02-12_14_06_55_tdoa_hourglass",
+    "queue": "first_per_stamp",
+    "outage_s": 20,
+    "origin": 129.686,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 646,
+    "rejected_radio": 576,
+    "outage_skipped": 1037,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.08669137534268907,
+      -0.3418509693623183,
+      1.576218306100722
+    ],
+    "initial_velocity": [
+      0.0023240310029979056,
+      -0.6643307748290377,
+      4.0168576648376915
+    ],
+    "runtime_s": 2.20466759998817,
+    "last_time": 45.0,
+    "offered_radio": 2302
+  },
+  {
+    "key": "2021-02-12_14_06_55_tdoa_hourglass__all_packets_zero_predict__L0",
+    "name": "2021-02-12_14_06_55_tdoa_hourglass",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 0,
+    "origin": 129.686,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 6410,
+    "rejected_radio": 88,
+    "outage_skipped": 0,
+    "zero_dt_predict_calls": 4239,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      0.008089601840741445,
+      -0.16078803771705644,
+      0.25098158339926646
+    ],
+    "initial_velocity": [
+      0.22925328479213847,
+      -0.17776282601747692,
+      0.2736160664686725
+    ],
+    "runtime_s": 8.605163100059144,
+    "last_time": 45.0,
+    "offered_radio": 6619
+  },
+  {
+    "key": "2021-02-12_14_06_55_tdoa_hourglass__all_packets_zero_predict__L2",
+    "name": "2021-02-12_14_06_55_tdoa_hourglass",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 2,
+    "origin": 129.686,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 6111,
+    "rejected_radio": 88,
+    "outage_skipped": 299,
+    "zero_dt_predict_calls": 4045,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      0.008089601840741445,
+      -0.16078803771705644,
+      0.25098158339926646
+    ],
+    "initial_velocity": [
+      0.22925328479213847,
+      -0.17776282601747692,
+      0.2736160664686725
+    ],
+    "runtime_s": 8.597509199986234,
+    "last_time": 45.0,
+    "offered_radio": 6619
+  },
+  {
+    "key": "2021-02-12_14_06_55_tdoa_hourglass__all_packets_zero_predict__L5",
+    "name": "2021-02-12_14_06_55_tdoa_hourglass",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 5,
+    "origin": 129.686,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 5681,
+    "rejected_radio": 80,
+    "outage_skipped": 737,
+    "zero_dt_predict_calls": 3764,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      0.008089601840741445,
+      -0.16078803771705644,
+      0.25098158339926646
+    ],
+    "initial_velocity": [
+      0.22925328479213847,
+      -0.17776282601747692,
+      0.2736160664686725
+    ],
+    "runtime_s": 8.396947600063868,
+    "last_time": 45.0,
+    "offered_radio": 6619
+  },
+  {
+    "key": "2021-02-12_14_06_55_tdoa_hourglass__all_packets_zero_predict__L10",
+    "name": "2021-02-12_14_06_55_tdoa_hourglass",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 10,
+    "origin": 129.686,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 4948,
+    "rejected_radio": 75,
+    "outage_skipped": 1475,
+    "zero_dt_predict_calls": 3271,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      0.008089601840741445,
+      -0.16078803771705644,
+      0.25098158339926646
+    ],
+    "initial_velocity": [
+      0.22925328479213847,
+      -0.17776282601747692,
+      0.2736160664686725
+    ],
+    "runtime_s": 6.048056500032544,
+    "last_time": 45.0,
+    "offered_radio": 6619
+  },
+  {
+    "key": "2021-02-12_14_06_55_tdoa_hourglass__all_packets_zero_predict__L20",
+    "name": "2021-02-12_14_06_55_tdoa_hourglass",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 20,
+    "origin": 129.686,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1523,
+    "rejected_radio": 2064,
+    "outage_skipped": 2911,
+    "zero_dt_predict_calls": 2365,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      0.008089601840741445,
+      -0.16078803771705644,
+      0.25098158339926646
+    ],
+    "initial_velocity": [
+      0.22925328479213847,
+      -0.17776282601747692,
+      0.2736160664686725
+    ],
+    "runtime_s": 2.880744499969296,
+    "last_time": 45.0,
+    "offered_radio": 6619
+  },
+  {
+    "key": "2021-02-12_14_13_51_tdoa_hourglass_BAD__first_per_stamp__L0",
+    "name": "2021-02-12_14_13_51_tdoa_hourglass_BAD",
+    "queue": "first_per_stamp",
+    "outage_s": 0,
+    "origin": 27.086,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1235,
+    "rejected_radio": 32,
+    "outage_skipped": 0,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.15134939225489014,
+      0.017303075022427075,
+      0.19917736682192297
+    ],
+    "initial_velocity": [
+      -0.23479406209973866,
+      -0.09074004032846075,
+      0.4515516120466807
+    ],
+    "runtime_s": 1.7716336000012234,
+    "last_time": 45.0,
+    "offered_radio": 1307
+  },
+  {
+    "key": "2021-02-12_14_13_51_tdoa_hourglass_BAD__first_per_stamp__L2",
+    "name": "2021-02-12_14_13_51_tdoa_hourglass_BAD",
+    "queue": "first_per_stamp",
+    "outage_s": 2,
+    "origin": 27.086,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1155,
+    "rejected_radio": 31,
+    "outage_skipped": 81,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.15134939225489014,
+      0.017303075022427075,
+      0.19917736682192297
+    ],
+    "initial_velocity": [
+      -0.23479406209973866,
+      -0.09074004032846075,
+      0.4515516120466807
+    ],
+    "runtime_s": 1.7105477000586689,
+    "last_time": 45.0,
+    "offered_radio": 1307
+  },
+  {
+    "key": "2021-02-12_14_13_51_tdoa_hourglass_BAD__first_per_stamp__L5",
+    "name": "2021-02-12_14_13_51_tdoa_hourglass_BAD",
+    "queue": "first_per_stamp",
+    "outage_s": 5,
+    "origin": 27.086,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1035,
+    "rejected_radio": 28,
+    "outage_skipped": 204,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.15134939225489014,
+      0.017303075022427075,
+      0.19917736682192297
+    ],
+    "initial_velocity": [
+      -0.23479406209973866,
+      -0.09074004032846075,
+      0.4515516120466807
+    ],
+    "runtime_s": 1.3290261999936774,
+    "last_time": 45.0,
+    "offered_radio": 1307
+  },
+  {
+    "key": "2021-02-12_14_13_51_tdoa_hourglass_BAD__first_per_stamp__L10",
+    "name": "2021-02-12_14_13_51_tdoa_hourglass_BAD",
+    "queue": "first_per_stamp",
+    "outage_s": 10,
+    "origin": 27.086,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 735,
+    "rejected_radio": 91,
+    "outage_skipped": 441,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.15134939225489014,
+      0.017303075022427075,
+      0.19917736682192297
+    ],
+    "initial_velocity": [
+      -0.23479406209973866,
+      -0.09074004032846075,
+      0.4515516120466807
+    ],
+    "runtime_s": 1.5846924999495968,
+    "last_time": 45.0,
+    "offered_radio": 1307
+  },
+  {
+    "key": "2021-02-12_14_13_51_tdoa_hourglass_BAD__first_per_stamp__L20",
+    "name": "2021-02-12_14_13_51_tdoa_hourglass_BAD",
+    "queue": "first_per_stamp",
+    "outage_s": 20,
+    "origin": 27.086,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 265,
+    "rejected_radio": 73,
+    "outage_skipped": 929,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.15134939225489014,
+      0.017303075022427075,
+      0.19917736682192297
+    ],
+    "initial_velocity": [
+      -0.23479406209973866,
+      -0.09074004032846075,
+      0.4515516120466807
+    ],
+    "runtime_s": 1.1305140999611467,
+    "last_time": 45.0,
+    "offered_radio": 1307
+  },
+  {
+    "key": "2021-02-12_14_13_51_tdoa_hourglass_BAD__all_packets_zero_predict__L0",
+    "name": "2021-02-12_14_13_51_tdoa_hourglass_BAD",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 0,
+    "origin": 27.086,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 3247,
+    "rejected_radio": 59,
+    "outage_skipped": 0,
+    "zero_dt_predict_calls": 2039,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.04636368914475354,
+      -0.061526431049605854,
+      0.3005843692463323
+    ],
+    "initial_velocity": [
+      0.1321556246666033,
+      -0.07518948895004952,
+      1.346342298352577
+    ],
+    "runtime_s": 2.1437237999634817,
+    "last_time": 45.0,
+    "offered_radio": 3425
+  },
+  {
+    "key": "2021-02-12_14_13_51_tdoa_hourglass_BAD__all_packets_zero_predict__L2",
+    "name": "2021-02-12_14_13_51_tdoa_hourglass_BAD",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 2,
+    "origin": 27.086,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 3076,
+    "rejected_radio": 58,
+    "outage_skipped": 172,
+    "zero_dt_predict_calls": 1948,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.04636368914475354,
+      -0.061526431049605854,
+      0.3005843692463323
+    ],
+    "initial_velocity": [
+      0.1321556246666033,
+      -0.07518948895004952,
+      1.346342298352577
+    ],
+    "runtime_s": 2.283957100007683,
+    "last_time": 45.0,
+    "offered_radio": 3425
+  },
+  {
+    "key": "2021-02-12_14_13_51_tdoa_hourglass_BAD__all_packets_zero_predict__L5",
+    "name": "2021-02-12_14_13_51_tdoa_hourglass_BAD",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 5,
+    "origin": 27.086,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2778,
+    "rejected_radio": 54,
+    "outage_skipped": 474,
+    "zero_dt_predict_calls": 1769,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.04636368914475354,
+      -0.061526431049605854,
+      0.3005843692463323
+    ],
+    "initial_velocity": [
+      0.1321556246666033,
+      -0.07518948895004952,
+      1.346342298352577
+    ],
+    "runtime_s": 2.126468100002967,
+    "last_time": 45.0,
+    "offered_radio": 3425
+  },
+  {
+    "key": "2021-02-12_14_13_51_tdoa_hourglass_BAD__all_packets_zero_predict__L10",
+    "name": "2021-02-12_14_13_51_tdoa_hourglass_BAD",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 10,
+    "origin": 27.086,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2132,
+    "rejected_radio": 55,
+    "outage_skipped": 1119,
+    "zero_dt_predict_calls": 1361,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.04636368914475354,
+      -0.061526431049605854,
+      0.3005843692463323
+    ],
+    "initial_velocity": [
+      0.1321556246666033,
+      -0.07518948895004952,
+      1.346342298352577
+    ],
+    "runtime_s": 1.6544202000368387,
+    "last_time": 45.0,
+    "offered_radio": 3425
+  },
+  {
+    "key": "2021-02-12_14_13_51_tdoa_hourglass_BAD__all_packets_zero_predict__L20",
+    "name": "2021-02-12_14_13_51_tdoa_hourglass_BAD",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 20,
+    "origin": 27.086,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 818,
+    "rejected_radio": 18,
+    "outage_skipped": 2470,
+    "zero_dt_predict_calls": 498,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.04636368914475354,
+      -0.061526431049605854,
+      0.3005843692463323
+    ],
+    "initial_velocity": [
+      0.1321556246666033,
+      -0.07518948895004952,
+      1.346342298352577
+    ],
+    "runtime_s": 1.0699505000375211,
+    "last_time": 45.0,
+    "offered_radio": 3425
+  },
+  {
+    "key": "2021-02-12_14_15_41_tdoa_random__first_per_stamp__L0",
+    "name": "2021-02-12_14_15_41_tdoa_random",
+    "queue": "first_per_stamp",
+    "outage_s": 0,
+    "origin": 20.166,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1056,
+    "rejected_radio": 20,
+    "outage_skipped": 0,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3966229413609395,
+      -0.057945181329671,
+      -0.08413243116968736
+    ],
+    "initial_velocity": [
+      -0.29006238074037305,
+      -0.12770698285857696,
+      -1.3474306133312617
+    ],
+    "runtime_s": 0.9412831999361515,
+    "last_time": 45.0,
+    "offered_radio": 1116
+  },
+  {
+    "key": "2021-02-12_14_15_41_tdoa_random__first_per_stamp__L2",
+    "name": "2021-02-12_14_15_41_tdoa_random",
+    "queue": "first_per_stamp",
+    "outage_s": 2,
+    "origin": 20.166,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1018,
+    "rejected_radio": 19,
+    "outage_skipped": 39,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3966229413609395,
+      -0.057945181329671,
+      -0.08413243116968736
+    ],
+    "initial_velocity": [
+      -0.29006238074037305,
+      -0.12770698285857696,
+      -1.3474306133312617
+    ],
+    "runtime_s": 0.9461262000259012,
+    "last_time": 45.0,
+    "offered_radio": 1116
+  },
+  {
+    "key": "2021-02-12_14_15_41_tdoa_random__first_per_stamp__L5",
+    "name": "2021-02-12_14_15_41_tdoa_random",
+    "queue": "first_per_stamp",
+    "outage_s": 5,
+    "origin": 20.166,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 956,
+    "rejected_radio": 14,
+    "outage_skipped": 106,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3966229413609395,
+      -0.057945181329671,
+      -0.08413243116968736
+    ],
+    "initial_velocity": [
+      -0.29006238074037305,
+      -0.12770698285857696,
+      -1.3474306133312617
+    ],
+    "runtime_s": 0.9485052999807522,
+    "last_time": 45.0,
+    "offered_radio": 1116
+  },
+  {
+    "key": "2021-02-12_14_15_41_tdoa_random__first_per_stamp__L10",
+    "name": "2021-02-12_14_15_41_tdoa_random",
+    "queue": "first_per_stamp",
+    "outage_s": 10,
+    "origin": 20.166,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 700,
+    "rejected_radio": 172,
+    "outage_skipped": 204,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3966229413609395,
+      -0.057945181329671,
+      -0.08413243116968736
+    ],
+    "initial_velocity": [
+      -0.29006238074037305,
+      -0.12770698285857696,
+      -1.3474306133312617
+    ],
+    "runtime_s": 0.9046715999720618,
+    "last_time": 45.0,
+    "offered_radio": 1116
+  },
+  {
+    "key": "2021-02-12_14_15_41_tdoa_random__first_per_stamp__L20",
+    "name": "2021-02-12_14_15_41_tdoa_random",
+    "queue": "first_per_stamp",
+    "outage_s": 20,
+    "origin": 20.166,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 351,
+    "rejected_radio": 167,
+    "outage_skipped": 558,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3966229413609395,
+      -0.057945181329671,
+      -0.08413243116968736
+    ],
+    "initial_velocity": [
+      -0.29006238074037305,
+      -0.12770698285857696,
+      -1.3474306133312617
+    ],
+    "runtime_s": 0.7918852999573573,
+    "last_time": 45.0,
+    "offered_radio": 1116
+  },
+  {
+    "key": "2021-02-12_14_15_41_tdoa_random__all_packets_zero_predict__L0",
+    "name": "2021-02-12_14_15_41_tdoa_random",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 0,
+    "origin": 20.166,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2247,
+    "rejected_radio": 32,
+    "outage_skipped": 0,
+    "zero_dt_predict_calls": 1203,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3323615516784932,
+      0.025445772588635625,
+      -0.08230697147643976
+    ],
+    "initial_velocity": [
+      -0.21507069605527052,
+      0.04426182858613085,
+      -1.4272354131122236
+    ],
+    "runtime_s": 1.4627219999674708,
+    "last_time": 45.0,
+    "offered_radio": 2390
+  },
+  {
+    "key": "2021-02-12_14_15_41_tdoa_random__all_packets_zero_predict__L2",
+    "name": "2021-02-12_14_15_41_tdoa_random",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 2,
+    "origin": 20.166,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2179,
+    "rejected_radio": 29,
+    "outage_skipped": 71,
+    "zero_dt_predict_calls": 1171,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3323615516784932,
+      0.025445772588635625,
+      -0.08230697147643976
+    ],
+    "initial_velocity": [
+      -0.21507069605527052,
+      0.04426182858613085,
+      -1.4272354131122236
+    ],
+    "runtime_s": 1.7226238999282941,
+    "last_time": 45.0,
+    "offered_radio": 2390
+  },
+  {
+    "key": "2021-02-12_14_15_41_tdoa_random__all_packets_zero_predict__L5",
+    "name": "2021-02-12_14_15_41_tdoa_random",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 5,
+    "origin": 20.166,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2057,
+    "rejected_radio": 23,
+    "outage_skipped": 199,
+    "zero_dt_predict_calls": 1110,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3323615516784932,
+      0.025445772588635625,
+      -0.08230697147643976
+    ],
+    "initial_velocity": [
+      -0.21507069605527052,
+      0.04426182858613085,
+      -1.4272354131122236
+    ],
+    "runtime_s": 1.4580923999892548,
+    "last_time": 45.0,
+    "offered_radio": 2390
+  },
+  {
+    "key": "2021-02-12_14_15_41_tdoa_random__all_packets_zero_predict__L10",
+    "name": "2021-02-12_14_15_41_tdoa_random",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 10,
+    "origin": 20.166,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1658,
+    "rejected_radio": 274,
+    "outage_skipped": 347,
+    "zero_dt_predict_calls": 1060,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3323615516784932,
+      0.025445772588635625,
+      -0.08230697147643976
+    ],
+    "initial_velocity": [
+      -0.21507069605527052,
+      0.04426182858613085,
+      -1.4272354131122236
+    ],
+    "runtime_s": 1.3704908000072464,
+    "last_time": 45.0,
+    "offered_radio": 2390
+  },
+  {
+    "key": "2021-02-12_14_15_41_tdoa_random__all_packets_zero_predict__L20",
+    "name": "2021-02-12_14_15_41_tdoa_random",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 20,
+    "origin": 20.166,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 751,
+    "rejected_radio": 264,
+    "outage_skipped": 1264,
+    "zero_dt_predict_calls": 497,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3323615516784932,
+      0.025445772588635625,
+      -0.08230697147643976
+    ],
+    "initial_velocity": [
+      -0.21507069605527052,
+      0.04426182858613085,
+      -1.4272354131122236
+    ],
+    "runtime_s": 2.2256449001142755,
+    "last_time": 45.0,
+    "offered_radio": 2390
+  },
+  {
+    "key": "2021-02-12_14_18_57_tdoa_random__first_per_stamp__L0",
+    "name": "2021-02-12_14_18_57_tdoa_random",
+    "queue": "first_per_stamp",
+    "outage_s": 0,
+    "origin": 31.753,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2217,
+    "rejected_radio": 46,
+    "outage_skipped": 0,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.6895355607681233,
+      0.5777061186208297,
+      -0.0662427981999898
+    ],
+    "initial_velocity": [
+      -0.7452559619593159,
+      1.0893036116553565,
+      0.7989262987377233
+    ],
+    "runtime_s": 2.871029300033115,
+    "last_time": 44.989999999999995,
+    "offered_radio": 2300
+  },
+  {
+    "key": "2021-02-12_14_18_57_tdoa_random__first_per_stamp__L2",
+    "name": "2021-02-12_14_18_57_tdoa_random",
+    "queue": "first_per_stamp",
+    "outage_s": 2,
+    "origin": 31.753,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 2111,
+    "rejected_radio": 46,
+    "outage_skipped": 106,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.6895355607681233,
+      0.5777061186208297,
+      -0.0662427981999898
+    ],
+    "initial_velocity": [
+      -0.7452559619593159,
+      1.0893036116553565,
+      0.7989262987377233
+    ],
+    "runtime_s": 3.241224199999124,
+    "last_time": 44.989999999999995,
+    "offered_radio": 2300
+  },
+  {
+    "key": "2021-02-12_14_18_57_tdoa_random__first_per_stamp__L5",
+    "name": "2021-02-12_14_18_57_tdoa_random",
+    "queue": "first_per_stamp",
+    "outage_s": 5,
+    "origin": 31.753,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1963,
+    "rejected_radio": 45,
+    "outage_skipped": 255,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.6895355607681233,
+      0.5777061186208297,
+      -0.0662427981999898
+    ],
+    "initial_velocity": [
+      -0.7452559619593159,
+      1.0893036116553565,
+      0.7989262987377233
+    ],
+    "runtime_s": 3.1103463999461383,
+    "last_time": 44.989999999999995,
+    "offered_radio": 2300
+  },
+  {
+    "key": "2021-02-12_14_18_57_tdoa_random__first_per_stamp__L10",
+    "name": "2021-02-12_14_18_57_tdoa_random",
+    "queue": "first_per_stamp",
+    "outage_s": 10,
+    "origin": 31.753,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1132,
+    "rejected_radio": 649,
+    "outage_skipped": 482,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.6895355607681233,
+      0.5777061186208297,
+      -0.0662427981999898
+    ],
+    "initial_velocity": [
+      -0.7452559619593159,
+      1.0893036116553565,
+      0.7989262987377233
+    ],
+    "runtime_s": 2.622108399984427,
+    "last_time": 44.989999999999995,
+    "offered_radio": 2300
+  },
+  {
+    "key": "2021-02-12_14_18_57_tdoa_random__first_per_stamp__L20",
+    "name": "2021-02-12_14_18_57_tdoa_random",
+    "queue": "first_per_stamp",
+    "outage_s": 20,
+    "origin": 31.753,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 678,
+    "rejected_radio": 586,
+    "outage_skipped": 999,
+    "zero_dt_predict_calls": 0,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.6895355607681233,
+      0.5777061186208297,
+      -0.0662427981999898
+    ],
+    "initial_velocity": [
+      -0.7452559619593159,
+      1.0893036116553565,
+      0.7989262987377233
+    ],
+    "runtime_s": 2.61983840004541,
+    "last_time": 44.989999999999995,
+    "offered_radio": 2300
+  },
+  {
+    "key": "2021-02-12_14_18_57_tdoa_random__all_packets_zero_predict__L0",
+    "name": "2021-02-12_14_18_57_tdoa_random",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 0,
+    "origin": 31.753,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 5796,
+    "rejected_radio": 145,
+    "outage_skipped": 0,
+    "zero_dt_predict_calls": 3678,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3349417334432132,
+      0.1218528928842866,
+      0.37129707192134404
+    ],
+    "initial_velocity": [
+      -0.18965274560366654,
+      0.10481368202624493,
+      0.4723702423899609
+    ],
+    "runtime_s": 7.69048190000467,
+    "last_time": 44.989999999999995,
+    "offered_radio": 6037
+  },
+  {
+    "key": "2021-02-12_14_18_57_tdoa_random__all_packets_zero_predict__L2",
+    "name": "2021-02-12_14_18_57_tdoa_random",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 2,
+    "origin": 31.753,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 5477,
+    "rejected_radio": 140,
+    "outage_skipped": 324,
+    "zero_dt_predict_calls": 3460,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3349417334432132,
+      0.1218528928842866,
+      0.37129707192134404
+    ],
+    "initial_velocity": [
+      -0.18965274560366654,
+      0.10481368202624493,
+      0.4723702423899609
+    ],
+    "runtime_s": 7.087898599915206,
+    "last_time": 44.989999999999995,
+    "offered_radio": 6037
+  },
+  {
+    "key": "2021-02-12_14_18_57_tdoa_random__all_packets_zero_predict__L5",
+    "name": "2021-02-12_14_18_57_tdoa_random",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 5,
+    "origin": 31.753,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 5097,
+    "rejected_radio": 138,
+    "outage_skipped": 706,
+    "zero_dt_predict_calls": 3227,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3349417334432132,
+      0.1218528928842866,
+      0.37129707192134404
+    ],
+    "initial_velocity": [
+      -0.18965274560366654,
+      0.10481368202624493,
+      0.4723702423899609
+    ],
+    "runtime_s": 6.688679300015792,
+    "last_time": 44.989999999999995,
+    "offered_radio": 6037
+  },
+  {
+    "key": "2021-02-12_14_18_57_tdoa_random__all_packets_zero_predict__L10",
+    "name": "2021-02-12_14_18_57_tdoa_random",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 10,
+    "origin": 31.753,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 3107,
+    "rejected_radio": 1502,
+    "outage_skipped": 1332,
+    "zero_dt_predict_calls": 2828,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3349417334432132,
+      0.1218528928842866,
+      0.37129707192134404
+    ],
+    "initial_velocity": [
+      -0.18965274560366654,
+      0.10481368202624493,
+      0.4723702423899609
+    ],
+    "runtime_s": 5.885454899980687,
+    "last_time": 44.989999999999995,
+    "offered_radio": 6037
+  },
+  {
+    "key": "2021-02-12_14_18_57_tdoa_random__all_packets_zero_predict__L20",
+    "name": "2021-02-12_14_18_57_tdoa_random",
+    "queue": "all_packets_zero_predict",
+    "outage_s": 20,
+    "origin": 31.753,
+    "failed": false,
+    "failure": null,
+    "accepted_radio": 1763,
+    "rejected_radio": 1455,
+    "outage_skipped": 2723,
+    "zero_dt_predict_calls": 1954,
+    "initial_wait_s": 0.6,
+    "initial_position": [
+      -0.3349417334432132,
+      0.1218528928842866,
+      0.37129707192134404
+    ],
+    "initial_velocity": [
+      -0.18965274560366654,
+      0.10481368202624493,
+      0.4723702423899609
+    ],
+    "runtime_s": 1.880132699967362,
+    "last_time": 44.989999999999995,
+    "offered_radio": 6037
+  }
+]

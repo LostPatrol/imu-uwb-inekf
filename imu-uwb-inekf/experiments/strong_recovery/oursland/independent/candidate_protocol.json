@@ -1,0 +1,31 @@
+{
+  "methods": [
+    "K",
+    "always_C",
+    "guarded",
+    "radio_bounds"
+  ],
+  "sigma_m": 0.36055512754639896,
+  "author_variance_m2": 0.13,
+  "lever_radius_m": 0.0916583624117298,
+  "windows_after_resume_s": {
+    "early": [
+      0.0,
+      2.0
+    ],
+    "middle": [
+      2.0,
+      5.0
+    ],
+    "later": [
+      6.0,
+      11.0
+    ]
+  },
+  "source_hashes": {
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\strong_recovery\\shadow.py": "440b127c2923d2bb7ee15ce0966b0b1d1512550e19d900efbe4017b767ea697e",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\strong_recovery\\radio_bounds.py": "bbfd1e6df883deda5affcf334f1a1d2b5ed3b8961ede75f4546fdc389cc677e9",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\strong_recovery\\oursland\\independent.py": "dc597cd4a0899aad15e73358f344803ed1584cc7252c1f63e05cf5fbfe9473cd"
+  },
+  "truth": "candidate generation never accesses cached truth array; scores only after all candidates finish"
+}

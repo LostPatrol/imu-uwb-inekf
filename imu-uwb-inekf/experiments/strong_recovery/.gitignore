@@ -1,0 +1,24 @@
+# Native trajectories, intermediate rows, and per-case debug records regenerate from the sources.
+**/*.npz
+**/__pycache__/
+oursland/diagnostic/const*.json
+oursland/ablation/const*.json
+oursland/independent/K/
+oursland/independent/candidates/
+oursland/independent/scored/
+oursland/feedback_extension/K/
+oursland/feedback_extension/feedback/
+oursland/feedback_extension/candidates/
+oursland/feedback_extension/scored/
+delft_tdoa/smoke/
+delft_tdoa/**/metrics_superseded*.csv
+# Numeric evidence and PNG previews are published; verbose optimizer traces and plot paths are local.
+oursland/independent/candidate_records.json
+oursland/feedback_extension/candidate_records.json
+delft_tdoa/paired/records.json
+delft_tdoa/**/*.svg
+delft_tdoa/native_summary.svg
+# Retain the complete publisher page locally; its reproducible table, hash and parser are tracked.
+external_twr/data_provenance/*_source.html
+external_twr/data_provenance/*_source.pdf
+external_twr/data_provenance/*_source.txt

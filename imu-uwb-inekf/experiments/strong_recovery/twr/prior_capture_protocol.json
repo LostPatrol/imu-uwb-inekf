@@ -1,0 +1,6 @@
+{
+  "question": "Does bounding the prior before creation of the lifted recovery state avoid corrupting its quadratic coordinates? This is a distinct TWR-only candidate.",
+  "status": "Exploratory in the already seen six Delft TWR records; prospective external transfer on all eligible correct-survey QDrone T=25 cases, before any verified external scores were inspected.",
+  "one_decision": "At the first truly returned absolute range, project the current pre-update horizontal prior onto that one frozen 3-sigma radio disk. Use the native measurement variance and lever allowance. If inactive, call the original reference exactly. If active, start the same lifted capture with the bounded XY and old v/R/bias; the original constructor initializes q,s,h and covariance. This first packet is used only as a bound and not again in the Gaussian update. Other same-time packets and all later packets follow the original policy. Preserve original 2s native handoff clock.",
+  "score": "No display switchback, new tuning, GT in estimation or ground-truth reacquisition. Report early/middle/late XY, trigger rate, physical continuity and harmful/unchanged cases. Do not present any post-hoc Delft selection as independent confirmation."
+}

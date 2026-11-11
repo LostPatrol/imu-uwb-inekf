@@ -1,0 +1,37 @@
+{
+  "names": [
+    "const1-trial4-tdoa2",
+    "const2-trial4-tdoa3"
+  ],
+  "yaws_deg": [
+    0.0,
+    180.0
+  ],
+  "variants": [
+    "author_original",
+    "production_proposed",
+    "research_util",
+    "production_full_geometry"
+  ],
+  "workers": 16,
+  "duration_s": 45.0,
+  "independent_test": false,
+  "selection": "fixed original mechanism-development recordings; no data selection by error",
+  "initial": "same sensor-only .6s X/bias; original invariant P exactly; world-z yaw perturbation at initialization",
+  "observations": "same actual TDoA2 ring/TDoA3 full protocol; rhoB-rhoA; raw acc g and interpolated raw gyro deg/s",
+  "queue": "literal previous-event/next-event author dt; first packet per duplicate timestamp; no outage",
+  "changes": {
+    "author_original": "untouched original class; original bias convention and .13 main variance",
+    "production_proposed": "actual current source FilterConfig.proposed; no extra stationary pseudo update",
+    "research_util": "standalone split_handoff/util/kernel, complete world Jacobian+Huber+reset; distinct from production",
+    "production_full_geometry": "production_proposed with ONLY direct_lever_arm_jacobian=True"
+  },
+  "scoring": "common20Hz ZOH; wrapped Euler yaw and relative SO3; no alignment; original paper SO3-log component score is distinct",
+  "source_sha256": {
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf - backup\\scripts\\estimation\\inekf.py": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\scripts\\estimation\\inekf.py": "339068242ecaa41ca080277c15dad4b9e9f25b764390c6fb1c289b757f1ace9f",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\util\\kernel.py": "14dc9eb788ad24bc1012aedb6e1eebdaa7330319c7f93c818142a6b99dcf8679",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\strong_recovery\\oursland\\diagnose.py": "d671edb360197869f0c5917c760bb93658035c56f39e43dd5d6ae12188c80acc",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\strong_recovery\\oursland\\audit.py": "29b283c6fb953f49bc3ad7a1105f1863538e090ba3d8d6f7636c1392e15f4178"
+  }
+}

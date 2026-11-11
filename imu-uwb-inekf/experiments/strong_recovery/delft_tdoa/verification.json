@@ -1,0 +1,26 @@
+{
+  "record": "2021-02-12_10_44_19_tdoa_star",
+  "uses_test_data": false,
+  "rows": [
+    {
+      "queue": "first_per_stamp",
+      "real_correct_calls": 167,
+      "max_state_difference": 1.0547118733938987e-15,
+      "max_covariance_difference": 3.885780586188048e-16,
+      "max_bias_difference": 3.3881317890172014e-21,
+      "all_gate_decisions_equal": true,
+      "passed": true
+    },
+    {
+      "queue": "all_packets_zero_predict",
+      "real_correct_calls": 307,
+      "max_state_difference": 1.27675647831893e-15,
+      "max_covariance_difference": 4.996003610813204e-16,
+      "max_bias_difference": 6.776263578034403e-21,
+      "all_gate_decisions_equal": true,
+      "passed": true
+    }
+  ],
+  "original_source_sha256": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+  "mirror_source_sha256": "3af3c2f677581ff3b7e5776a7be6e4aae8234d2bf7e3b2e3e5dadeaea6fe89bb"
+}
