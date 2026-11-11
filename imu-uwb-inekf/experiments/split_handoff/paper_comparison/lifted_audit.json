@@ -1,0 +1,81 @@
+{
+  "cases": 6,
+  "all_six_reproduce_original_3d": true,
+  "audits": [
+    {
+      "sequence": "2021-02-12_09_43_34_twr_triangle.csv",
+      "metric_differences": {
+        "common_rmse_m": 1.7763568394002505e-15,
+        "output_rmse_m": 1.7763568394002505e-15,
+        "tail5_rmse_m": 9.83935155574045e-15,
+        "p95_m": 9.059419880941277e-14,
+        "max_m": 1.1368683772161603e-13,
+        "availability": 0.0
+      },
+      "stable_success_matches": true
+    },
+    {
+      "sequence": "2021-02-12_09_46_15_twr_octagon.csv",
+      "metric_differences": {
+        "common_rmse_m": 2.1103119252074976e-12,
+        "output_rmse_m": 1.8891554987021664e-12,
+        "tail5_rmse_m": 1.5237811012980274e-14,
+        "p95_m": 5.384137580222159e-12,
+        "max_m": 9.50706180447014e-12,
+        "availability": 0.0
+      },
+      "stable_success_matches": true
+    },
+    {
+      "sequence": "2021-02-12_09_51_57_twr_hourglass.csv",
+      "metric_differences": {
+        "common_rmse_m": 5.189182417097982e-13,
+        "output_rmse_m": 4.736211423050918e-13,
+        "tail5_rmse_m": 4.996003610813204e-16,
+        "p95_m": 4.347633364432113e-13,
+        "max_m": 4.995115432393504e-12,
+        "availability": 0.0
+      },
+      "stable_success_matches": true
+    },
+    {
+      "sequence": "2021-02-12_09_56_09_twr_random.csv",
+      "metric_differences": {
+        "common_rmse_m": 7.578382366091319e-13,
+        "output_rmse_m": 6.752376435770202e-13,
+        "tail5_rmse_m": 1.2448375663609568e-14,
+        "p95_m": 2.2821744494194718e-12,
+        "max_m": 1.680433570072637e-12,
+        "availability": 0.0
+      },
+      "stable_success_matches": true
+    },
+    {
+      "sequence": "2021-02-12_10_09_28_twr_star.csv",
+      "metric_differences": {
+        "common_rmse_m": 3.9546144137148076e-13,
+        "output_rmse_m": 3.4994229736184934e-13,
+        "tail5_rmse_m": 4.524158825347513e-15,
+        "p95_m": 5.631051180898794e-13,
+        "max_m": 2.2088997297942115e-12,
+        "availability": 0.0
+      },
+      "stable_success_matches": true
+    },
+    {
+      "sequence": "2021-02-12_13_43_51_twr_square.csv",
+      "metric_differences": {
+        "common_rmse_m": 2.460254222569347e-13,
+        "output_rmse_m": 2.2426505097428162e-13,
+        "tail5_rmse_m": 3.608224830031759e-15,
+        "p95_m": 6.887823644774471e-13,
+        "max_m": 1.0595968547022494e-12,
+        "availability": 0.0
+      },
+      "stable_success_matches": true
+    }
+  ],
+  "cpu_policy": "cpu_replay.replay_pool(6,workers=6), P cores preferred",
+  "method_modified": false,
+  "post_metric": "t>=25 to each log end, including acquisition/wait outputs"
+}

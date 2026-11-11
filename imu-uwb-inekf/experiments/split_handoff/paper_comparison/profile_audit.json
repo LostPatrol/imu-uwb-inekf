@@ -1,0 +1,181 @@
+{
+  "flights": 6,
+  "primary_layout": "all8",
+  "primary_injected_yaw_deg": 0,
+  "radio_calibration_identical": true,
+  "clock": "Retained clock after1.5s static prefix; shared0.20s alignment; outage15<=t<25",
+  "paper_metric": "Per-flight sqrt(mean(||p-truth||_3D^2)) for t>=8.1, then median of6 flights; wait outputs included",
+  "original_profile_behavior": "2s startup Profile; radio resumption starts a fresh2s window; no scalar updates while acquiring; full p/v/yaw tracker recreated using startup-fixed bias and pure-IMU reference rotation",
+  "baseline_artifact": "Cached profile_reset reproduction; verified against all6 original raw Profile metrics in6 distinct measures, not mislabelled fixed_2s_pv",
+  "archived_original_trajectory_missing": true,
+  "current_source_hashes": {
+    "initializer.py": {
+      "current": "962e18270611efe21ced71df68d2f6dbb87dd1bda452816b57e16e5101d3efe9",
+      "recorded": "b5d73061bbff3978a0550b36d98251f79eecb271ab77a23d9656077cdd7c3e0d"
+    },
+    "run_research.py": {
+      "current": "2accc9b2501631e43fdd1ae38f1227d13032800d3b61357c9026409c7eb18127",
+      "recorded": "8654e561b74a081629583d64de693367562d6669d0c7ad3159ac2a6998729395"
+    }
+  },
+  "source_hash_mismatch_disclosed": true,
+  "flight_audits": [
+    {
+      "sequence": "2021-02-12_09_43_34_twr_triangle.csv",
+      "sensor_cache_identical": {
+        "time": true,
+        "imu": true,
+        "ranges": true,
+        "changed": true,
+        "bias": true,
+        "rotations": true,
+        "displacement": true,
+        "integrated_velocity": true,
+        "anchors": true
+      },
+      "truth_identical": true,
+      "timestamp_identical": true,
+      "common_pv_prefix_max_error": 0.0,
+      "profile_reproduction_vs_original_metric_differences": {
+        "common_rmse": 5.356604049211455e-12,
+        "output_rmse": 4.8894222004491894e-12,
+        "tail_rmse": 1.858944942423335e-11,
+        "peak": 1.7216450487467228e-11,
+        "p95": 1.0942358130705543e-11,
+        "availability": 1.1102230246251565e-16
+      }
+    },
+    {
+      "sequence": "2021-02-12_09_46_15_twr_octagon.csv",
+      "sensor_cache_identical": {
+        "time": true,
+        "imu": true,
+        "ranges": true,
+        "changed": true,
+        "bias": true,
+        "rotations": true,
+        "displacement": true,
+        "integrated_velocity": true,
+        "anchors": true
+      },
+      "truth_identical": true,
+      "timestamp_identical": true,
+      "common_pv_prefix_max_error": 0.0,
+      "profile_reproduction_vs_original_metric_differences": {
+        "common_rmse": 1.4055423491754482e-12,
+        "output_rmse": 1.2931877790833823e-12,
+        "tail_rmse": 3.200217868482014e-14,
+        "peak": 5.510258915819577e-12,
+        "p95": 3.673505943879718e-12,
+        "availability": 0.0
+      }
+    },
+    {
+      "sequence": "2021-02-12_09_51_57_twr_hourglass.csv",
+      "sensor_cache_identical": {
+        "time": true,
+        "imu": true,
+        "ranges": true,
+        "changed": true,
+        "bias": true,
+        "rotations": true,
+        "displacement": true,
+        "integrated_velocity": true,
+        "anchors": true
+      },
+      "truth_identical": true,
+      "timestamp_identical": true,
+      "common_pv_prefix_max_error": 0.0,
+      "profile_reproduction_vs_original_metric_differences": {
+        "common_rmse": 6.999290036446837e-12,
+        "output_rmse": 6.5361049905732216e-12,
+        "tail_rmse": 4.0245584642661925e-15,
+        "peak": 2.900080176004849e-11,
+        "p95": 1.9322321520576224e-11,
+        "availability": 0.0
+      }
+    },
+    {
+      "sequence": "2021-02-12_09_56_09_twr_random.csv",
+      "sensor_cache_identical": {
+        "time": true,
+        "imu": true,
+        "ranges": true,
+        "changed": true,
+        "bias": true,
+        "rotations": true,
+        "displacement": true,
+        "integrated_velocity": true,
+        "anchors": true
+      },
+      "truth_identical": true,
+      "timestamp_identical": true,
+      "common_pv_prefix_max_error": 0.0,
+      "profile_reproduction_vs_original_metric_differences": {
+        "common_rmse": 1.4250289748218847e-07,
+        "output_rmse": 1.351656899739595e-07,
+        "tail_rmse": 6.593475765370727e-13,
+        "peak": 8.552547150486589e-07,
+        "p95": 3.19673111093266e-07,
+        "availability": 1.1102230246251565e-16
+      }
+    },
+    {
+      "sequence": "2021-02-12_10_09_28_twr_star.csv",
+      "sensor_cache_identical": {
+        "time": true,
+        "imu": true,
+        "ranges": true,
+        "changed": true,
+        "bias": true,
+        "rotations": true,
+        "displacement": true,
+        "integrated_velocity": true,
+        "anchors": true
+      },
+      "truth_identical": true,
+      "timestamp_identical": true,
+      "common_pv_prefix_max_error": 0.0,
+      "profile_reproduction_vs_original_metric_differences": {
+        "common_rmse": 2.9790614419766825e-12,
+        "output_rmse": 2.7485791420645e-12,
+        "tail_rmse": 3.2759905899126807e-13,
+        "peak": 1.8345325258906087e-11,
+        "p95": 6.23945339839338e-12,
+        "availability": 0.0
+      }
+    },
+    {
+      "sequence": "2021-02-12_13_43_51_twr_square.csv",
+      "sensor_cache_identical": {
+        "time": true,
+        "imu": true,
+        "ranges": true,
+        "changed": true,
+        "bias": true,
+        "rotations": true,
+        "displacement": true,
+        "integrated_velocity": true,
+        "anchors": true
+      },
+      "truth_identical": true,
+      "timestamp_identical": true,
+      "common_pv_prefix_max_error": 0.0,
+      "profile_reproduction_vs_original_metric_differences": {
+        "common_rmse": 1.5787371410169726e-12,
+        "output_rmse": 1.4730439090726577e-12,
+        "tail_rmse": 3.1086244689504383e-15,
+        "peak": 9.07540709249588e-12,
+        "p95": 3.966604822380759e-12,
+        "availability": 1.1102230246251565e-16
+      }
+    }
+  ],
+  "lifted_capture": {
+    "median_paper_3d_rmse_m": 1.3868640644680355,
+    "max_available_3d_error_m": 17.648326582246156,
+    "successes": 5,
+    "xy_unavailable": true
+  },
+  "extension_limits": "0deg all8 six same-day development flights only; lower4 and +/-90/180 new mean perturbations are separate stress, not manuscript coordinate-yaw replicas"
+}
