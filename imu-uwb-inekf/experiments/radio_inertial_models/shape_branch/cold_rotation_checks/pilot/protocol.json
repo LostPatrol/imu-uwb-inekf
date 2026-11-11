@@ -1,0 +1,245 @@
+{
+  "seeds": [
+    2026111100,
+    2026111101
+  ],
+  "tilts": [
+    0.0,
+    60.0,
+    120.0,
+    179.0
+  ],
+  "motions": [
+    "rich",
+    "weak",
+    "constant_acceleration",
+    "constant_velocity"
+  ],
+  "geometries": [
+    "normal"
+  ],
+  "include_cube24": true,
+  "scope": "Independent physical simulation of moving-window cold acquisition; no real-data generalization",
+  "no_static_prefix": true,
+  "local_initial_attitude": "identity",
+  "sensor_bias": "exactly zero",
+  "imu_white_noise": false,
+  "range_count": 240,
+  "duration_s": 4.0,
+  "imu_rate_hz": 200.0,
+  "range_sigma_m": 0.1,
+  "stand_off_m": 30.0,
+  "lever_arm_m": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "seeding": "Same radio-only path and original observation budget for every method; cube24 spends 24 refinements",
+  "oracle_path": "Used only in verification, never final raw-range refinement",
+  "verification": {
+    "cases": [
+      {
+        "motion": "rich",
+        "tilt_deg": 0.0,
+        "oracle_path_rotation_error_deg": 1.8347773256984782e-13,
+        "oracle_path_cross_singular": [
+          7498.432252226088,
+          35.8810641772693,
+          0.04329965490178546
+        ],
+        "information_eigenvalues": [
+          630.7473702918402,
+          10917.690724800043,
+          653104.4840277755
+        ],
+        "minimum_gyro_radps": 0.44573578270609865
+      },
+      {
+        "motion": "rich",
+        "tilt_deg": 90.0,
+        "oracle_path_rotation_error_deg": 2.8196503456156156e-13,
+        "oracle_path_cross_singular": [
+          7498.432252226091,
+          35.88106417726848,
+          0.043299654901821936
+        ],
+        "information_eigenvalues": [
+          630.7473702917625,
+          10917.690724799882,
+          653104.4840277754
+        ],
+        "minimum_gyro_radps": 0.44573578270609865
+      },
+      {
+        "motion": "rich",
+        "tilt_deg": 179.0,
+        "oracle_path_rotation_error_deg": 3.763557120420624e-13,
+        "oracle_path_cross_singular": [
+          7498.432252226091,
+          35.88106417726958,
+          0.04329965490183223
+        ],
+        "information_eigenvalues": [
+          630.747370291838,
+          10917.690724799853,
+          653104.4840277787
+        ],
+        "minimum_gyro_radps": 0.44573578270609865
+      },
+      {
+        "motion": "weak",
+        "tilt_deg": 0.0,
+        "oracle_path_rotation_error_deg": 8.333250191174629e-11,
+        "oracle_path_cross_singular": [
+          7471.052986636229,
+          0.03233449288083612,
+          3.916012659082386e-05
+        ],
+        "information_eigenvalues": [
+          0.6788299146484649,
+          11490.029560003886,
+          677440.2433106023
+        ],
+        "minimum_gyro_radps": 0.44573578270609865
+      },
+      {
+        "motion": "weak",
+        "tilt_deg": 90.0,
+        "oracle_path_rotation_error_deg": 6.262099058581084e-11,
+        "oracle_path_cross_singular": [
+          7471.052986636223,
+          0.03233449288107142,
+          3.916012661760378e-05
+        ],
+        "information_eigenvalues": [
+          0.6788299146233276,
+          11490.02956000369,
+          677440.2433106073
+        ],
+        "minimum_gyro_radps": 0.44573578270609865
+      },
+      {
+        "motion": "weak",
+        "tilt_deg": 179.0,
+        "oracle_path_rotation_error_deg": 5.278195948350481e-11,
+        "oracle_path_cross_singular": [
+          7471.052986636232,
+          0.03233449288078844,
+          3.9160126592192686e-05
+        ],
+        "information_eigenvalues": [
+          0.6788299146484192,
+          11490.02956000382,
+          677440.2433106189
+        ],
+        "minimum_gyro_radps": 0.44573578270609865
+      },
+      {
+        "motion": "constant_acceleration",
+        "tilt_deg": 0.0,
+        "oracle_path_rotation_error_deg": 64.2655703459477,
+        "oracle_path_cross_singular": [
+          7561.105198830988,
+          1.2111458359410936e-13,
+          1.4700812335470212e-15
+        ],
+        "information_eigenvalues": [
+          0.0,
+          11101.938971225416,
+          703748.8078730946
+        ],
+        "minimum_gyro_radps": 0.44573578270609865
+      },
+      {
+        "motion": "constant_acceleration",
+        "tilt_deg": 90.0,
+        "oracle_path_rotation_error_deg": 172.8223538297863,
+        "oracle_path_cross_singular": [
+          7561.105198831017,
+          1.211457861396514e-12,
+          2.9461968572682523e-16
+        ],
+        "information_eigenvalues": [
+          0.0,
+          11101.93897122541,
+          703748.8078731627
+        ],
+        "minimum_gyro_radps": 0.44573578270609865
+      },
+      {
+        "motion": "constant_acceleration",
+        "tilt_deg": 179.0,
+        "oracle_path_rotation_error_deg": 126.9971352655194,
+        "oracle_path_cross_singular": [
+          7561.105198830956,
+          6.843792373232006e-14,
+          5.2007854533844246e-15
+        ],
+        "information_eigenvalues": [
+          1.613101966549638e-13,
+          11101.93897122532,
+          703748.8078730553
+        ],
+        "minimum_gyro_radps": 0.44573578270609865
+      },
+      {
+        "motion": "constant_velocity",
+        "tilt_deg": 0.0,
+        "oracle_path_rotation_error_deg": 113.14381957546787,
+        "oracle_path_cross_singular": [
+          7390.4663610735,
+          1.861132801097685e-29,
+          0.0
+        ],
+        "information_eigenvalues": [
+          3.6261399141906166e-28,
+          11729.949460810407,
+          645759.1990652219
+        ],
+        "minimum_gyro_radps": 0.44573578270609865
+      },
+      {
+        "motion": "constant_velocity",
+        "tilt_deg": 90.0,
+        "oracle_path_rotation_error_deg": 91.3104265622557,
+        "oracle_path_cross_singular": [
+          7390.466361073462,
+          1.3338348677868824e-26,
+          0.0
+        ],
+        "information_eigenvalues": [
+          0.0,
+          11729.949460810258,
+          645759.1990651786
+        ],
+        "minimum_gyro_radps": 0.44573578270609865
+      },
+      {
+        "motion": "constant_velocity",
+        "tilt_deg": 179.0,
+        "oracle_path_rotation_error_deg": 137.35430678690568,
+        "oracle_path_cross_singular": [
+          7390.466361073478,
+          5.099315768602983e-28,
+          0.0
+        ],
+        "information_eigenvalues": [
+          5.120990437106039e-14,
+          11729.949460810434,
+          645759.19906518
+        ],
+        "minimum_gyro_radps": 0.44573578270609865
+      }
+    ],
+    "analytic_jacobian_max_abs": 7.105796839823597e-08,
+    "oracle_path_diagnostic_only": true,
+    "gyro_bias_radps": 0.0,
+    "accel_bias_mps2": 0.0
+  },
+  "source_sha256": {
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\radio_inertial_models\\shape_branch\\cold_rotation_checks\\run_checks.py": "847fe79cc4b97b5b117e156f709eda8efddb3b5bc2765790f7dcbc68a6c450dc",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\radio_inertial_models\\shape_branch\\cold_rotation_checks\\cases.py": "f3c507888b310a4a0ec48e41d6074ca3eb41f4110672e14c3be3a68935e3f640",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\radio_inertial_models\\rotation_window.py": "c3c192f4253c47105614e902143241bf445b28893e64601307a6ecb77e0c885a",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\radio_inertial_models\\window_dynamics.py": "6b86a1f384828d760014e76d4470107a21eaf001b3309baeb7b7b541a9e10790"
+  }
+}

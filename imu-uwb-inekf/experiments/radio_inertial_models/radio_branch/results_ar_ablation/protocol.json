@@ -1,0 +1,18 @@
+{
+  "parent_protocol": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\radio_inertial_models\\radio_branch\\results\\protocol.json",
+  "purpose": "Disentangle trained correlation whitening from geometry mean correction",
+  "same_fixed_train_test": true,
+  "same_initial_seeds": true,
+  "same_max_nfev": true,
+  "static_ar_rho": [
+    0.8579501443879276,
+    0.7956687057217114,
+    0.8899907711457289,
+    0.7881020088205055,
+    0.9,
+    0.9,
+    0.9,
+    0.8667757262062741
+  ],
+  "truth_used_only_for_scoring": true
+}

@@ -1,0 +1,158 @@
+[
+  {
+    "name": "const3-trial3-tdoa3",
+    "start": 25.0,
+    "end": 31.0,
+    "actual_end": 31.00672,
+    "radio_count": 120,
+    "imu_count": 721,
+    "common_seconds": 0.01617489999625832,
+    "force_singular": [
+      20797.41474749922,
+      4.184752995744541,
+      0.020036772774512497
+    ],
+    "method": "identity",
+    "cost": 1583.3554396520087,
+    "nfev": 6,
+    "seconds": 0.02547770005185157,
+    "success": true,
+    "bias_norm": 0.0015562272893824298,
+    "initial_so3_deg": 2.4965763204501568,
+    "rotation_info_free_bias": [
+      0.13776771980765076,
+      0.4817257823701884,
+      51.68941862679811
+    ],
+    "rotation_info_bias_prior": [
+      51.579839642023266,
+      9186.443338122364,
+      9294.85142011188
+    ],
+    "position_m": 0.1847594910817564,
+    "so3_deg": 8.146539829874465,
+    "yaw_deg": 8.058884813347465
+  },
+  {
+    "name": "const3-trial3-tdoa3",
+    "start": 25.0,
+    "end": 31.0,
+    "actual_end": 31.00672,
+    "radio_count": 120,
+    "imu_count": 721,
+    "common_seconds": 0.01617489999625832,
+    "force_singular": [
+      20797.41474749922,
+      4.184752995744541,
+      0.020036772774512497
+    ],
+    "method": "window_gravity",
+    "cost": 1583.355439637947,
+    "nfev": 6,
+    "seconds": 0.029616499901749194,
+    "success": true,
+    "bias_norm": 0.0015561036087705256,
+    "initial_so3_deg": 2.505448013221842,
+    "rotation_info_free_bias": [
+      0.13776768899562275,
+      0.4817255790832886,
+      51.68947675912293
+    ],
+    "rotation_info_bias_prior": [
+      51.57989707634075,
+      9186.443601767152,
+      9294.851674797632
+    ],
+    "position_m": 0.1847601227704064,
+    "so3_deg": 8.146756028068616,
+    "yaw_deg": 8.05910387524323
+  },
+  {
+    "name": "const3-trial3-tdoa3",
+    "start": 25.0,
+    "end": 31.0,
+    "actual_end": 31.00672,
+    "radio_count": 120,
+    "imu_count": 721,
+    "common_seconds": 0.01617489999625832,
+    "force_singular": [
+      20797.41474749922,
+      4.184752995744541,
+      0.020036772774512497
+    ],
+    "method": "projected_wahba",
+    "cost": 1583.3554397331516,
+    "nfev": 5,
+    "seconds": 0.03179769997950643,
+    "success": true,
+    "bias_norm": 0.0015567984184417275,
+    "initial_so3_deg": 5.46355146870328,
+    "rotation_info_free_bias": [
+      0.1377678629814441,
+      0.4817267251284647,
+      51.689149277268314
+    ],
+    "rotation_info_bias_prior": [
+      51.579573528012276,
+      9186.44212023116,
+      9294.850245775448
+    ],
+    "position_m": 0.18475659224753138,
+    "so3_deg": 8.145538269741483,
+    "yaw_deg": 8.057869983493475
+  },
+  {
+    "name": "const3-trial3-tdoa3",
+    "start": 25.0,
+    "end": 31.0,
+    "actual_end": 31.00672,
+    "radio_count": 120,
+    "imu_count": 721,
+    "common_seconds": 0.01617489999625832,
+    "force_singular": [
+      20797.41474749922,
+      4.184752995744541,
+      0.020036772774512497
+    ],
+    "method": "uniform4_gravity",
+    "cost": 1583.355439607755,
+    "nfev": 71,
+    "seconds": 0.13651750003919005,
+    "success": true,
+    "bias_norm": 0.0015557911194270762,
+    "initial_so3_deg": 90.84342523961713,
+    "rotation_info_free_bias": [
+      0.13776761053189995,
+      0.48172506262332776,
+      51.689624374623726
+    ],
+    "rotation_info_bias_prior": [
+      51.580042917618975,
+      9186.444268145186,
+      9294.852317582507
+    ],
+    "position_m": 0.18476170669788422,
+    "so3_deg": 8.147304932060587,
+    "yaw_deg": 8.059660049245009
+  },
+  {
+    "name": "const3-trial3-tdoa3",
+    "start": 25.0,
+    "end": 31.0,
+    "actual_end": 31.00672,
+    "radio_count": 120,
+    "imu_count": 721,
+    "common_seconds": 0.01617489999625832,
+    "force_singular": [
+      20797.41474749922,
+      4.184752995744541,
+      0.020036772774512497
+    ],
+    "method": "radio_only_tag",
+    "cost": 1579.2103895710582,
+    "nfev": 5,
+    "seconds": 0.01617489999625832,
+    "position_m": 0.21207518312541018,
+    "position_target": "antenna; truth lever used only to define scoring target"
+  }
+]

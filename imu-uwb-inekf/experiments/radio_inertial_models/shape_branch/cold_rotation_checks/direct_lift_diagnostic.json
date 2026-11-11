@@ -1,0 +1,14 @@
+{
+  "seed": 20261111,
+  "tilt_deg": 179.0,
+  "geometry": "normal",
+  "scope": "Previously completed single-seed theoretical/seed diagnostic only; no nonlinear refinement or benchmark panel",
+  "cases": [
+    {"motion": "rich", "noisy_ranges": false, "projected_rotation_rank": 9, "seed_rotation_error_deg": 5.090947666114903e-12, "minimum_design_singular": 0.073049243393512},
+    {"motion": "rich", "noisy_ranges": true, "projected_rotation_rank": 9, "seed_rotation_error_deg": 95.43357301203898, "minimum_design_singular": 0.07305920416480605},
+    {"motion": "weak", "noisy_ranges": false, "projected_rotation_rank": 9, "seed_rotation_error_deg": 9.261783674417189e-05, "minimum_design_singular": 0.0023773383401762506},
+    {"motion": "weak", "noisy_ranges": true, "projected_rotation_rank": 9, "seed_rotation_error_deg": 120.15187070555298, "minimum_design_singular": 0.002377377396447912},
+    {"motion": "constant_velocity", "noisy_ranges": false, "projected_rotation_rank": 3, "seed_rotation_error_deg": 149.78154668536402, "minimum_design_singular": 2.368255684421121e-15},
+    {"motion": "constant_velocity", "noisy_ranges": true, "projected_rotation_rank": 3, "seed_rotation_error_deg": 20.14698476875403, "minimum_design_singular": 1.4790975036660624e-15}
+  ]
+}

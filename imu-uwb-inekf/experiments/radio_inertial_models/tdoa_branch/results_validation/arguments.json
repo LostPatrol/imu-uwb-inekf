@@ -1,0 +1,19 @@
+{
+  "names": [
+    "const1-trial2-tdoa2",
+    "const2-trial2-tdoa2",
+    "const3-trial2-tdoa2",
+    "const4-trial2-tdoa2-traj1",
+    "const1-trial2-tdoa3",
+    "const3-trial2-tdoa3"
+  ],
+  "duration": 60.0,
+  "modes": [
+    "native",
+    "white_inflated",
+    "pair_ou"
+  ],
+  "output": "results_validation",
+  "tau": 2,
+  "pair_sigma": 0.3
+}

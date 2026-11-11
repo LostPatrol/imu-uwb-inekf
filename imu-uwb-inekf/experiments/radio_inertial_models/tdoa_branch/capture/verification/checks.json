@@ -1,0 +1,42 @@
+[
+  {
+    "name": "const3-trial2-tdoa2",
+    "model": "prior",
+    "jacobian_max_error": 1.6622971088509075e-07,
+    "parameters": 12,
+    "radio_rows": 2621,
+    "inertial_projected_energy": 7.689972675856945,
+    "radio_projected_energy": 1.209829218822541,
+    "candidate_yaw_deg": 81.64366040305441
+  },
+  {
+    "name": "const3-trial3-tdoa2",
+    "model": "prior",
+    "jacobian_max_error": 7.37375103199156e-08,
+    "parameters": 12,
+    "radio_rows": 2656,
+    "inertial_projected_energy": 10.865040538976379,
+    "radio_projected_energy": 1.4368933941859514,
+    "candidate_yaw_deg": -38.34730338150916
+  },
+  {
+    "name": "const3-trial3-tdoa3",
+    "model": "prior",
+    "jacobian_max_error": 1.9588208033383125e-07,
+    "parameters": 12,
+    "radio_rows": 1461,
+    "inertial_projected_energy": 3.456168474805824,
+    "radio_projected_energy": 7.471483733362386,
+    "candidate_yaw_deg": -2.192758126732155
+  },
+  {
+    "name": "const1-trial3-tdoa2",
+    "model": "prior",
+    "jacobian_max_error": 3.27315660797467e-07,
+    "parameters": 12,
+    "radio_rows": 2870,
+    "inertial_projected_energy": 2.4040973765236737,
+    "radio_projected_energy": 1.0737802969999601,
+    "candidate_yaw_deg": -60.409882766080216
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "names": [
+    "const3-trial2-tdoa2",
+    "const3-trial3-tdoa2",
+    "const3-trial3-tdoa3",
+    "const1-trial3-tdoa2"
+  ],
+  "start": 10.0,
+  "length": 6.0,
+  "duration": 45.0,
+  "bias_models": [
+    "prior"
+  ],
+  "output": "verification",
+  "gyro_calibration": true,
+  "tilt_model": true,
+  "check_only": true
+}

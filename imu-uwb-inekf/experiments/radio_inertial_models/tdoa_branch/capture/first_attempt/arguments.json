@@ -1,0 +1,13 @@
+{
+  "names": [
+    "const3-trial2-tdoa2"
+  ],
+  "start": 10.0,
+  "length": 6.0,
+  "duration": 45.0,
+  "bias_models": [
+    "fixed",
+    "prior"
+  ],
+  "output": "first_attempt"
+}

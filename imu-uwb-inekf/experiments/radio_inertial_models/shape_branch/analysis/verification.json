@@ -1,0 +1,6 @@
+{
+  "exact_bias_tilt_shape_max_abs_m": 1.591504705800162e-13,
+  "analytic_jacobian_max_abs": 6.13113826375411e-08,
+  "oracle_bias_initial_tilt_correction_gyro_mismatch_rms_m": 1.6132157583861966,
+  "constant_attitude_free_bias_yaw_information": 8.768470034111058e-27
+}

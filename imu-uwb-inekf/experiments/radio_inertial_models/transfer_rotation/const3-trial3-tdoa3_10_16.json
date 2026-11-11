@@ -1,0 +1,158 @@
+[
+  {
+    "name": "const3-trial3-tdoa3",
+    "start": 10.0,
+    "end": 16.0,
+    "actual_end": 16.006387999999998,
+    "radio_count": 120,
+    "imu_count": 721,
+    "common_seconds": 0.012910200050100684,
+    "force_singular": [
+      21001.20871098228,
+      1.4462776803779145,
+      0.023528683961943728
+    ],
+    "method": "identity",
+    "cost": 973.0583910453058,
+    "nfev": 33,
+    "seconds": 0.0627735999878496,
+    "success": true,
+    "bias_norm": 0.03800600863781914,
+    "initial_so3_deg": 7.841858606022603,
+    "rotation_info_free_bias": [
+      0.24177674130840138,
+      1.0231608588244716,
+      10.15552035159137
+    ],
+    "rotation_info_bias_prior": [
+      10.04321942868173,
+      9173.271861416613,
+      9311.376876824872
+    ],
+    "position_m": 0.18871959540902,
+    "so3_deg": 12.949755888681569,
+    "yaw_deg": 12.90975047112599
+  },
+  {
+    "name": "const3-trial3-tdoa3",
+    "start": 10.0,
+    "end": 16.0,
+    "actual_end": 16.006387999999998,
+    "radio_count": 120,
+    "imu_count": 721,
+    "common_seconds": 0.012910200050100684,
+    "force_singular": [
+      21001.20871098228,
+      1.4462776803779145,
+      0.023528683961943728
+    ],
+    "method": "window_gravity",
+    "cost": 973.0583916154134,
+    "nfev": 38,
+    "seconds": 0.08387720002792776,
+    "success": true,
+    "bias_norm": 0.038014540714802425,
+    "initial_so3_deg": 8.875313946905898,
+    "rotation_info_free_bias": [
+      0.24175149816486727,
+      1.023242874293246,
+      10.155195753910146
+    ],
+    "rotation_info_bias_prior": [
+      10.04281256730226,
+      9173.256968598414,
+      9311.35887329742
+    ],
+    "position_m": 0.18875248231053304,
+    "so3_deg": 12.925407990700865,
+    "yaw_deg": 12.885329254020943
+  },
+  {
+    "name": "const3-trial3-tdoa3",
+    "start": 10.0,
+    "end": 16.0,
+    "actual_end": 16.006387999999998,
+    "radio_count": 120,
+    "imu_count": 721,
+    "common_seconds": 0.012910200050100684,
+    "force_singular": [
+      21001.20871098228,
+      1.4462776803779145,
+      0.023528683961943728
+    ],
+    "method": "projected_wahba",
+    "cost": 973.0583909527384,
+    "nfev": 4,
+    "seconds": 0.025107800029218197,
+    "success": true,
+    "bias_norm": 0.03800456617886389,
+    "initial_so3_deg": 12.521147882799081,
+    "rotation_info_free_bias": [
+      0.24177430428711758,
+      1.0231662119380014,
+      10.155494322075041
+    ],
+    "rotation_info_bias_prior": [
+      10.043188733881552,
+      9173.273995220517,
+      9311.379094383963
+    ],
+    "position_m": 0.1887234348116798,
+    "so3_deg": 12.948067107269948,
+    "yaw_deg": 12.908057289671884
+  },
+  {
+    "name": "const3-trial3-tdoa3",
+    "start": 10.0,
+    "end": 16.0,
+    "actual_end": 16.006387999999998,
+    "radio_count": 120,
+    "imu_count": 721,
+    "common_seconds": 0.012910200050100684,
+    "force_singular": [
+      21001.20871098228,
+      1.4462776803779145,
+      0.023528683961943728
+    ],
+    "method": "uniform4_gravity",
+    "cost": 973.0583907308306,
+    "nfev": 109,
+    "seconds": 0.22337850008625537,
+    "success": true,
+    "bias_norm": 0.038010268736863397,
+    "initial_so3_deg": 88.86142379548397,
+    "rotation_info_free_bias": [
+      0.24176398444438352,
+      1.0232021784561973,
+      10.155356560173352
+    ],
+    "rotation_info_bias_prior": [
+      10.04301422916206,
+      9173.264410841814,
+      9311.367853786487
+    ],
+    "position_m": 0.18873623555953692,
+    "so3_deg": 12.937484562309695,
+    "yaw_deg": 12.89744220211248
+  },
+  {
+    "name": "const3-trial3-tdoa3",
+    "start": 10.0,
+    "end": 16.0,
+    "actual_end": 16.006387999999998,
+    "radio_count": 120,
+    "imu_count": 721,
+    "common_seconds": 0.012910200050100684,
+    "force_singular": [
+      21001.20871098228,
+      1.4462776803779145,
+      0.023528683961943728
+    ],
+    "method": "radio_only_tag",
+    "cost": 967.3914035171782,
+    "nfev": 6,
+    "seconds": 0.012910200050100684,
+    "position_m": 0.17781244458295578,
+    "position_target": "antenna; truth lever used only to define scoring target"
+  }
+]

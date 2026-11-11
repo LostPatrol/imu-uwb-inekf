@@ -1,0 +1,11 @@
+{
+  "replayed_seeds": [
+    3276656764,
+    1044331446,
+    1232659812
+  ],
+  "replayed_fits": 75,
+  "maximum_numeric_difference": 4.547473508864641e-13,
+  "synthetic_all_numeric_finite": true,
+  "raw_all_numeric_finite": true
+}

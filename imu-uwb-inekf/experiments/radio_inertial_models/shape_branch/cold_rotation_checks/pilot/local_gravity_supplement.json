@@ -1,0 +1,8 @@
+{
+  "base_metrics_sha256": "4db10b69ee2cffaf7a9a77c18c9eaeab6104d239b4e640c062adf898ab2a8cb4",
+  "added_method": "local_gravity",
+  "added_fits": 32,
+  "seed": "Mean Q(t) f(t) in initial body coordinates aligned to world up; no static interval or truth",
+  "same_original_observations": true,
+  "same_common_radio_path": true
+}
