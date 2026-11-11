@@ -1,0 +1,294 @@
+{
+  "formula": [
+    {
+      "method": "relax_recover_K2",
+      "noiseless_max_coefficient_error": 7.771561172376096e-16,
+      "upstream_max_coefficient_difference": 7.549516567451064e-15,
+      "rank": 9,
+      "expected_rank": 9,
+      "condition": 175.06866588077534,
+      "gram_rank": 3,
+      "linear_residual_norm": 5.4696251232294214e-14,
+      "basis_time_scale_s": 2.0
+    },
+    {
+      "method": "relax_recover_weighted_K2",
+      "noiseless_max_coefficient_error": 1.0436096431476471e-14,
+      "upstream_max_coefficient_difference": 1.0547118733938987e-14,
+      "rank": 9,
+      "expected_rank": 9,
+      "condition": 96.02538596249909,
+      "gram_rank": 3,
+      "linear_residual_norm": 5.70642289908543e-14,
+      "basis_time_scale_s": 2.0
+    },
+    {
+      "method": "relax_recover_weighted_K3_selected_here",
+      "noiseless_max_coefficient_error": 1.8207657603852567e-14,
+      "upstream_max_coefficient_difference": 6.661338147750939e-14,
+      "rank": 14,
+      "expected_rank": 14,
+      "condition": 3773.3125909962982,
+      "gram_rank": 5,
+      "linear_residual_norm": 4.044474298692757e-14,
+      "basis_time_scale_s": 2.0
+    }
+  ],
+  "literal_author_panel": [
+    {
+      "sequence": "2021-02-12_09_43_34_twr_triangle.csv",
+      "layout": "all8",
+      "method": "relax_recover_K2",
+      "max_coefficient_difference": 4.4297898682543746e-14,
+      "relative_difference": 2.4694481395171835e-14
+    },
+    {
+      "sequence": "2021-02-12_09_43_34_twr_triangle.csv",
+      "layout": "all8",
+      "method": "relax_recover_weighted_K2",
+      "max_coefficient_difference": 2.808864252301646e-14,
+      "relative_difference": 1.5700349346408263e-14
+    },
+    {
+      "sequence": "2021-02-12_09_43_34_twr_triangle.csv",
+      "layout": "all8",
+      "method": "relax_recover_weighted_K3_selected_here",
+      "max_coefficient_difference": 7.8026474170656e-13,
+      "relative_difference": 1.929548696986327e-13
+    },
+    {
+      "sequence": "2021-02-12_09_43_34_twr_triangle.csv",
+      "layout": "lower4",
+      "method": "relax_recover_K2",
+      "max_coefficient_difference": 3.58268970046538e-13,
+      "relative_difference": 9.692574458627715e-14
+    },
+    {
+      "sequence": "2021-02-12_09_43_34_twr_triangle.csv",
+      "layout": "lower4",
+      "method": "relax_recover_weighted_K2",
+      "max_coefficient_difference": 3.4638958368304884e-13,
+      "relative_difference": 5.5245094761207226e-14
+    },
+    {
+      "sequence": "2021-02-12_09_43_34_twr_triangle.csv",
+      "layout": "lower4",
+      "method": "relax_recover_weighted_K3_selected_here",
+      "max_coefficient_difference": 8.517986316292081e-11,
+      "relative_difference": 1.9407700680330625e-12
+    },
+    {
+      "sequence": "2021-02-12_09_46_15_twr_octagon.csv",
+      "layout": "all8",
+      "method": "relax_recover_K2",
+      "max_coefficient_difference": 5.140332604014475e-14,
+      "relative_difference": 2.7529483256567933e-14
+    },
+    {
+      "sequence": "2021-02-12_09_46_15_twr_octagon.csv",
+      "layout": "all8",
+      "method": "relax_recover_weighted_K2",
+      "max_coefficient_difference": 2.042810365310288e-14,
+      "relative_difference": 1.0911847654819007e-14
+    },
+    {
+      "sequence": "2021-02-12_09_46_15_twr_octagon.csv",
+      "layout": "all8",
+      "method": "relax_recover_weighted_K3_selected_here",
+      "max_coefficient_difference": 7.924771949774367e-13,
+      "relative_difference": 2.195369410363307e-13
+    },
+    {
+      "sequence": "2021-02-12_09_46_15_twr_octagon.csv",
+      "layout": "lower4",
+      "method": "relax_recover_K2",
+      "max_coefficient_difference": 1.454392162258955e-13,
+      "relative_difference": 7.869029904763635e-14
+    },
+    {
+      "sequence": "2021-02-12_09_46_15_twr_octagon.csv",
+      "layout": "lower4",
+      "method": "relax_recover_weighted_K2",
+      "max_coefficient_difference": 1.7825740883381513e-12,
+      "relative_difference": 4.809586690202497e-13
+    },
+    {
+      "sequence": "2021-02-12_09_46_15_twr_octagon.csv",
+      "layout": "lower4",
+      "method": "relax_recover_weighted_K3_selected_here",
+      "max_coefficient_difference": 5.022826599088148e-11,
+      "relative_difference": 9.474417631439182e-13
+    },
+    {
+      "sequence": "2021-02-12_09_51_57_twr_hourglass.csv",
+      "layout": "all8",
+      "method": "relax_recover_K2",
+      "max_coefficient_difference": 1.2989609388114332e-14,
+      "relative_difference": 5.64941865795786e-15
+    },
+    {
+      "sequence": "2021-02-12_09_51_57_twr_hourglass.csv",
+      "layout": "all8",
+      "method": "relax_recover_weighted_K2",
+      "max_coefficient_difference": 4.393707619954057e-14,
+      "relative_difference": 1.9437196151231464e-14
+    },
+    {
+      "sequence": "2021-02-12_09_51_57_twr_hourglass.csv",
+      "layout": "all8",
+      "method": "relax_recover_weighted_K3_selected_here",
+      "max_coefficient_difference": 2.524203068787756e-12,
+      "relative_difference": 9.89890740400373e-13
+    },
+    {
+      "sequence": "2021-02-12_09_51_57_twr_hourglass.csv",
+      "layout": "lower4",
+      "method": "relax_recover_K2",
+      "max_coefficient_difference": 6.0254023992456496e-12,
+      "relative_difference": 3.7690517582005653e-13
+    },
+    {
+      "sequence": "2021-02-12_09_51_57_twr_hourglass.csv",
+      "layout": "lower4",
+      "method": "relax_recover_weighted_K2",
+      "max_coefficient_difference": 2.192024339819909e-12,
+      "relative_difference": 1.1328724071180505e-13
+    },
+    {
+      "sequence": "2021-02-12_09_51_57_twr_hourglass.csv",
+      "layout": "lower4",
+      "method": "relax_recover_weighted_K3_selected_here",
+      "max_coefficient_difference": 3.802114179052296e-11,
+      "relative_difference": 1.001432712573624e-12
+    },
+    {
+      "sequence": "2021-02-12_09_56_09_twr_random.csv",
+      "layout": "all8",
+      "method": "relax_recover_K2",
+      "max_coefficient_difference": 3.042011087472929e-14,
+      "relative_difference": 1.475872469365863e-14
+    },
+    {
+      "sequence": "2021-02-12_09_56_09_twr_random.csv",
+      "layout": "all8",
+      "method": "relax_recover_weighted_K2",
+      "max_coefficient_difference": 7.549516567451064e-15,
+      "relative_difference": 3.6635259808826215e-15
+    },
+    {
+      "sequence": "2021-02-12_09_56_09_twr_random.csv",
+      "layout": "all8",
+      "method": "relax_recover_weighted_K3_selected_here",
+      "max_coefficient_difference": 1.6608936448392342e-13,
+      "relative_difference": 3.569362896665021e-14
+    },
+    {
+      "sequence": "2021-02-12_09_56_09_twr_random.csv",
+      "layout": "lower4",
+      "method": "relax_recover_K2",
+      "max_coefficient_difference": 6.560529897114975e-12,
+      "relative_difference": 8.18043830149095e-13
+    },
+    {
+      "sequence": "2021-02-12_09_56_09_twr_random.csv",
+      "layout": "lower4",
+      "method": "relax_recover_weighted_K2",
+      "max_coefficient_difference": 6.0285110237146e-13,
+      "relative_difference": 8.278075102040599e-14
+    },
+    {
+      "sequence": "2021-02-12_09_56_09_twr_random.csv",
+      "layout": "lower4",
+      "method": "relax_recover_weighted_K3_selected_here",
+      "max_coefficient_difference": 9.00577390439139e-11,
+      "relative_difference": 4.766457827536815e-12
+    },
+    {
+      "sequence": "2021-02-12_10_09_28_twr_star.csv",
+      "layout": "all8",
+      "method": "relax_recover_K2",
+      "max_coefficient_difference": 5.5816462563029745e-14,
+      "relative_difference": 3.352105331823111e-14
+    },
+    {
+      "sequence": "2021-02-12_10_09_28_twr_star.csv",
+      "layout": "all8",
+      "method": "relax_recover_weighted_K2",
+      "max_coefficient_difference": 6.050715484207103e-15,
+      "relative_difference": 3.693876230634812e-15
+    },
+    {
+      "sequence": "2021-02-12_10_09_28_twr_star.csv",
+      "layout": "all8",
+      "method": "relax_recover_weighted_K3_selected_here",
+      "max_coefficient_difference": 6.288303211476887e-13,
+      "relative_difference": 1.0264149687559711e-13
+    },
+    {
+      "sequence": "2021-02-12_10_09_28_twr_star.csv",
+      "layout": "lower4",
+      "method": "relax_recover_K2",
+      "max_coefficient_difference": 1.7723600365116e-12,
+      "relative_difference": 4.1820032622804283e-13
+    },
+    {
+      "sequence": "2021-02-12_10_09_28_twr_star.csv",
+      "layout": "lower4",
+      "method": "relax_recover_weighted_K2",
+      "max_coefficient_difference": 7.691625114603085e-13,
+      "relative_difference": 1.4328327046345013e-13
+    },
+    {
+      "sequence": "2021-02-12_10_09_28_twr_star.csv",
+      "layout": "lower4",
+      "method": "relax_recover_weighted_K3_selected_here",
+      "max_coefficient_difference": 1.9091928038506012e-10,
+      "relative_difference": 6.1718911769170655e-12
+    },
+    {
+      "sequence": "2021-02-12_13_43_51_twr_square.csv",
+      "layout": "all8",
+      "method": "relax_recover_K2",
+      "max_coefficient_difference": 1.6653345369377348e-14,
+      "relative_difference": 7.317805833071813e-15
+    },
+    {
+      "sequence": "2021-02-12_13_43_51_twr_square.csv",
+      "layout": "all8",
+      "method": "relax_recover_weighted_K2",
+      "max_coefficient_difference": 9.447997939560082e-14,
+      "relative_difference": 4.0924770698280504e-14
+    },
+    {
+      "sequence": "2021-02-12_13_43_51_twr_square.csv",
+      "layout": "all8",
+      "method": "relax_recover_weighted_K3_selected_here",
+      "max_coefficient_difference": 1.0427769758791783e-12,
+      "relative_difference": 4.2878135639335407e-13
+    },
+    {
+      "sequence": "2021-02-12_13_43_51_twr_square.csv",
+      "layout": "lower4",
+      "method": "relax_recover_K2",
+      "max_coefficient_difference": 2.3936408410918375e-12,
+      "relative_difference": 4.157449553029348e-13
+    },
+    {
+      "sequence": "2021-02-12_13_43_51_twr_square.csv",
+      "layout": "lower4",
+      "method": "relax_recover_weighted_K2",
+      "max_coefficient_difference": 4.094502514817577e-12,
+      "relative_difference": 5.504669622189214e-13
+    },
+    {
+      "sequence": "2021-02-12_13_43_51_twr_square.csv",
+      "layout": "lower4",
+      "method": "relax_recover_weighted_K3_selected_here",
+      "max_coefficient_difference": 5.541167524825141e-11,
+      "relative_difference": 3.6365087068832497e-12
+    }
+  ],
+  "matched_reference_windows": 132,
+  "all_event_counts_identical": true,
+  "all_fits_full_rank": true
+}

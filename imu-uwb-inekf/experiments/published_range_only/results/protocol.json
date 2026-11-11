@@ -1,0 +1,103 @@
+{
+  "doi": "10.1109/LRA.2020.2970952",
+  "author_commit": "b2a2b58205a3c33d79c10615e22a3252a55ba090",
+  "author_repo": "https://github.com/LCAV/continuous-localization",
+  "settings": [
+    [
+      "relax_recover_K2",
+      2,
+      false
+    ],
+    [
+      "relax_recover_weighted_K2",
+      2,
+      true
+    ],
+    [
+      "relax_recover_weighted_K3_selected_here",
+      3,
+      true
+    ]
+  ],
+  "training": [
+    "2021-02-12_09_41_16_twr_triangle.csv",
+    "2021-02-12_09_44_51_twr_octagon.csv",
+    "2021-02-12_09_48_14_twr_hourglass.csv",
+    "2021-02-12_09_53_31_twr_random.csv",
+    "2021-02-12_10_05_30_twr_star.csv",
+    "2021-02-12_13_26_02_twr_square.csv"
+  ],
+  "evaluation": [
+    "2021-02-12_09_43_34_twr_triangle.csv",
+    "2021-02-12_09_46_15_twr_octagon.csv",
+    "2021-02-12_09_51_57_twr_hourglass.csv",
+    "2021-02-12_09_56_09_twr_random.csv",
+    "2021-02-12_10_09_28_twr_star.csv",
+    "2021-02-12_13_43_51_twr_square.csv"
+  ],
+  "calibration": "E:/0syncthing/Code/InEKF/imu-uwb-inekf/experiments/radio_inertial_models/radio_branch/results/calibration.json",
+  "calibration_static": [
+    -0.09788141897923275,
+    -0.10531459144752997,
+    -0.2119628770224038,
+    -0.31494024991328295,
+    -0.2219644770060425,
+    -0.2226442454837705,
+    -0.1756493487136308,
+    -0.22816308219003467
+  ],
+  "calibration_sigma": [
+    0.08,
+    0.19469196926856097,
+    0.12482044259551764,
+    0.11500970199682996,
+    0.09835267751123523,
+    0.117369159179757,
+    0.16187285659845982,
+    0.08
+  ],
+  "no_imu_in_solver": true,
+  "no_truth_initialization": true,
+  "no_hyperparameter_search": true,
+  "true_position_used_for_offline_scoring_only": true,
+  "common_truth_clock_crop_in_loader": true,
+  "model": "r(tau)=C*[1,tau/scale,...]; K=2 main, K=3 selected here, weighted as author code",
+  "numerical_change": "SVD least squares replaces normal-equation inverse; same full-rank linear objective",
+  "weighting": "Author weighted option: row multiplier 1/sqrt(calibrated_range^2+0.1); sigma used only for Huber diagnostics",
+  "independent_units": "6 same-day logs, 66 overlapping time windows x 2 anchor layouts; not iid",
+  "blas_threads": 1,
+  "workers": 1,
+  "python": "3.11.15 (main, Jul 18 2026, 17:06:27) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "1.26.4",
+  "scipy": "1.17.1",
+  "pandas": "3.0.6",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "source_sha256": {
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\published_range_only\\run.py": "447646e83e8a0175f957ce404d3433bea5c60b42eaa371c58f398d8ab65fb441",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\radio_inertial_models\\radio_branch\\results\\calibration.json": "f53b37ffb56687317a19350730471ee062549254213e638ded3fb62ca6cb939c",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\radio_inertial_models\\radio_branch\\results\\protocol.json": "2480a74c583f23585911a9305665eef2b82976502d3157e9e90df48297622a17"
+  },
+  "upstream_source_sha256": {
+    "GenerateAllFigures.ipynb": "ac837ea6de259290d10193fb163eaf37debb4f7e2c7b627dbfe40dd8867323ba",
+    "LICENSE": "1c6c1405ccfd0c0956e6c938c3c18bc9b468df0c34122e2b7026d413bb0eaa81",
+    "paper.pdf": "0c476018e08d54d4af45e921fe1807898231cbd17f49feff59ef863f863d2e11",
+    "paper.txt": "f22ebdbfecf00814685636f79ddfb6249164d3420ca753f0bf3881d19383fa82",
+    "PublicDatasets.ipynb": "ee07a897bb53c81838fb23f23f06ab74ceec5eca141b93599c62d7181903e1a4",
+    "published_paper.pdf": "b6702706266d36dc3b7264665f8c0b16b2d987287daabe189b2af514a139c8b3",
+    "published_paper.txt": "a868157d1c5c24ea02c8bc95bbf75f8f04f88e083a9f4fe4c098aa0ac099e1f1",
+    "README.md": "1156af505eef55dbe4977f21830c00a9a92738924e63404dc4704b7fe5b6b1d5",
+    "scripts__generate_results_polynomial.py": "d019b72642afbb4d89cd6c4123c55e2d2c1bd65e1881bbb59dbbcce676b2eaa1",
+    "source__constraints.py": "66631b79f76160a3dc5b469367f12b1369908285068f51dd7f6611d42a4610d3",
+    "source__results_generation.py": "89236c602ae29b398114b5f04dcbcd0c4584ce2ecaa189be4ec3a12d480987cd",
+    "source__solvers.py": "fb4c4f3240ec2c803376d0552c95f755657579f6eef067c906808642aad2a78e",
+    "source__trajectory.py": "c128eb948c6024082f62226cfe073cf9ec50178cbc9322858b4b9b5d87c0e058"
+  },
+  "dataset_sha256": {
+    "2021-02-12_09_43_34_twr_triangle.csv": "3c9ad372d44519e33d11d016bc56c332923b4aa917a785e716ec71c6af3a1754",
+    "2021-02-12_09_46_15_twr_octagon.csv": "8623b924541340ab3a35c631b78122cfd306dd396febeb3ff41211f402e51081",
+    "2021-02-12_09_51_57_twr_hourglass.csv": "85a00c2d41b4258cdb0cb497b33968b6c63d348d281888f62a5b1b49cec3f6ae",
+    "2021-02-12_09_56_09_twr_random.csv": "6610a358119a1970e4bff3487cf41838bcf8c513be9bc3dd131503a95d0a53bd",
+    "2021-02-12_10_09_28_twr_star.csv": "362d0a03d6a01047a45aed2ce78f0ff45c4b5b1a871ac5b2ec8111dbc02c6b65",
+    "2021-02-12_13_43_51_twr_square.csv": "e1662df8c9a6243d23f50a0939d409afecdb45a35fa6c8df75a823ee7fdb0b82"
+  }
+}

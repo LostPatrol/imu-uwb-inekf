@@ -1,0 +1,99 @@
+{
+  "supplement": true,
+  "predeclared_after_author_replay": true,
+  "seed_policy": "Same two CV fits; one original lifted_candidate circle yaw; zero body bias; one BiasPrior raw fit",
+  "cv_fits_per_window": 2,
+  "raw_fits_per_window": 1,
+  "max_raw_nfev": 120,
+  "bias_prior_std_mps2": 0.1,
+  "calibration": {
+    "static": [
+      -0.09788141897923275,
+      -0.10531459144752997,
+      -0.2119628770224038,
+      -0.31494024991328295,
+      -0.2219644770060425,
+      -0.2226442454837705,
+      -0.1756493487136308,
+      -0.22816308219003467
+    ],
+    "sigma": [
+      0.08,
+      0.19469196926856097,
+      0.12482044259551764,
+      0.11500970199682996,
+      0.09835267751123523,
+      0.117369159179757,
+      0.16187285659845982,
+      0.08
+    ]
+  },
+  "evaluation": [
+    "2021-02-12_09_43_34_twr_triangle.csv",
+    "2021-02-12_09_46_15_twr_octagon.csv",
+    "2021-02-12_09_51_57_twr_hourglass.csv",
+    "2021-02-12_09_56_09_twr_random.csv",
+    "2021-02-12_10_09_28_twr_star.csv",
+    "2021-02-12_13_43_51_twr_square.csv"
+  ],
+  "training": [
+    "2021-02-12_09_41_16_twr_triangle.csv",
+    "2021-02-12_09_44_51_twr_octagon.csv",
+    "2021-02-12_09_48_14_twr_hourglass.csv",
+    "2021-02-12_09_53_31_twr_random.csv",
+    "2021-02-12_10_05_30_twr_star.csv",
+    "2021-02-12_13_26_02_twr_square.csv"
+  ],
+  "windows": [
+    [
+      5.0,
+      2.0
+    ],
+    [
+      5.0,
+      4.0
+    ],
+    [
+      10.0,
+      2.0
+    ],
+    [
+      10.0,
+      4.0
+    ],
+    [
+      10.0,
+      8.0
+    ],
+    [
+      20.0,
+      2.0
+    ],
+    [
+      20.0,
+      4.0
+    ],
+    [
+      20.0,
+      8.0
+    ],
+    [
+      30.0,
+      2.0
+    ],
+    [
+      30.0,
+      4.0
+    ],
+    [
+      30.0,
+      8.0
+    ]
+  ],
+  "frame_deg": 0,
+  "truth_usage": "Training calibration, clock crop, final score only",
+  "source_sha256": {
+    "profile_main.py": "4792e9300a2ec3f3a2caf4c2c67f049066d7e23d4a75da2b913278c1caff37a6",
+    "driver.py": "9c1a983ded75f2c74aac0bf34510af7d37235af2982ad4080f968a99e7586fa7"
+  }
+}

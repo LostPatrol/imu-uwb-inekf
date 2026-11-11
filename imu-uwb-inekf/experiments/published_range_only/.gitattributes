@@ -1,0 +1,2 @@
+# Preserve the literal upstream snapshots, including their native whitespace and hashes.
+sources/* -text -whitespace

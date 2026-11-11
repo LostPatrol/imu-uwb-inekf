@@ -1,0 +1,141 @@
+{
+  "author_repo": "https://github.com/SUPfeiffer/uwb-simulator",
+  "author_revision": "cb816bdb291ac933577427448883acfa7c457c33",
+  "paper_doi": "10.1109/LRA.2021.3095519",
+  "dataset_doi": "10.4121/14827680",
+  "training": [
+    "2021-02-12_09_41_16_twr_triangle.csv",
+    "2021-02-12_09_44_51_twr_octagon.csv",
+    "2021-02-12_09_48_14_twr_hourglass.csv",
+    "2021-02-12_09_53_31_twr_random.csv",
+    "2021-02-12_10_05_30_twr_star.csv",
+    "2021-02-12_13_26_02_twr_square.csv"
+  ],
+  "evaluation": [
+    "2021-02-12_09_43_34_twr_triangle.csv",
+    "2021-02-12_09_46_15_twr_octagon.csv",
+    "2021-02-12_09_51_57_twr_hourglass.csv",
+    "2021-02-12_09_56_09_twr_random.csv",
+    "2021-02-12_10_09_28_twr_star.csv",
+    "2021-02-12_13_43_51_twr_square.csv"
+  ],
+  "windows": [
+    [
+      5.0,
+      2.0
+    ],
+    [
+      5.0,
+      4.0
+    ],
+    [
+      10.0,
+      2.0
+    ],
+    [
+      10.0,
+      4.0
+    ],
+    [
+      10.0,
+      8.0
+    ],
+    [
+      20.0,
+      2.0
+    ],
+    [
+      20.0,
+      4.0
+    ],
+    [
+      20.0,
+      8.0
+    ],
+    [
+      30.0,
+      2.0
+    ],
+    [
+      30.0,
+      4.0
+    ],
+    [
+      30.0,
+      8.0
+    ]
+  ],
+  "executed_arms": [
+    "A"
+  ],
+  "mhe": {
+    "enable": true,
+    "rate": 50,
+    "N_max": 20,
+    "iterations": 1,
+    "alpha": 0.015,
+    "mu": 10.0,
+    "ransac_iterations": 10,
+    "ransac_threshold": 1.7,
+    "ransac_fraction": 0.4,
+    "attitude_rate": 250
+  },
+  "ekf": {
+    "enable": true,
+    "rate": 100,
+    "outlierThreshold": 1500
+  },
+  "mass_kg": 0.03,
+  "drag": [
+    0.15,
+    0.15,
+    0.0
+  ],
+  "static_calibration": {
+    "static": [
+      -0.09788141897923275,
+      -0.10531459144752997,
+      -0.2119628770224038,
+      -0.31494024991328295,
+      -0.2219644770060425,
+      -0.2226442454837705,
+      -0.1756493487136308,
+      -0.22816308219003467
+    ],
+    "sigma": [
+      0.08,
+      0.19469196926856097,
+      0.12482044259551764,
+      0.11500970199682996,
+      0.09835267751123523,
+      0.117369159179757,
+      0.16187285659845982,
+      0.08
+    ]
+  },
+  "random_seed": 20261112,
+  "sensor_delay_s": 0.2,
+  "prefix_s": 1.5,
+  "endpoint_success_m": 0.5,
+  "independent_blind_test": false,
+  "native_scope": "Unmodified Drone and author classes; continuous first 31.7s; synthetic truth altimeter and online truth radio sigma; author native time scoring",
+  "common_scope": "Unmodified classes, 2/4/8s cold replay, native .4s MHE horizon; no altimeter, no runtime truth sigma, zero position/velocity/yaw; raw or six-training-log static calibration",
+  "bias_control": "Existing joint BiasPrior: four uniform yaw starts, two range CV fits, bias prior .10 m/s2, 120 evaluations per raw start; initial prefix roll/pitch and IMU bias calibration",
+  "coverage_scope": "Success is finite endpoint below .5m; failure rows remain denominators; native repeated durations are same continuous endpoint",
+  "calibration_truth": "Only six early logs for B calibration; later truth only valid-clock crop and scoring; A explicit truth aids",
+  "input_sha256": {
+    "2021-02-12_09_41_16_twr_triangle.csv": "2669dc9ef90c3e2fb784d18b7872da0aa99ab88d1a9ffc3f40bc210fee9b67e2",
+    "2021-02-12_09_44_51_twr_octagon.csv": "c91bcdf9280b8c8bea12a99259155b749b3b4a68e61ef86f37dbad2f79014132",
+    "2021-02-12_09_48_14_twr_hourglass.csv": "87d3234253b19930fe9e3c1850eefa66236b8895e5c929fa83143fdedb713ad5",
+    "2021-02-12_09_53_31_twr_random.csv": "10b86357e034ba8ae571d41cd92cc6c2bc1395b576a2356dc9b1ccd8ac4133b4",
+    "2021-02-12_10_05_30_twr_star.csv": "115a970e7abf58b76af7195824183f096c3b9df1b472fc86afab30cc468c964f",
+    "2021-02-12_13_26_02_twr_square.csv": "47c0c902504adceca46c41870a0ad77d49addf031f918f2ddef83d6be1b21742",
+    "2021-02-12_09_43_34_twr_triangle.csv": "3c9ad372d44519e33d11d016bc56c332923b4aa917a785e716ec71c6af3a1754",
+    "2021-02-12_09_46_15_twr_octagon.csv": "8623b924541340ab3a35c631b78122cfd306dd396febeb3ff41211f402e51081",
+    "2021-02-12_09_51_57_twr_hourglass.csv": "85a00c2d41b4258cdb0cb497b33968b6c63d348d281888f62a5b1b49cec3f6ae",
+    "2021-02-12_09_56_09_twr_random.csv": "6610a358119a1970e4bff3487cf41838bcf8c513be9bc3dd131503a95d0a53bd",
+    "2021-02-12_10_09_28_twr_star.csv": "362d0a03d6a01047a45aed2ce78f0ff45c4b5b1a871ac5b2ec8111dbc02c6b65",
+    "2021-02-12_13_43_51_twr_square.csv": "e1662df8c9a6243d23f50a0939d409afecdb45a35fa6c8df75a823ee7fdb0b82"
+  },
+  "driver_sha256": "9c1a983ded75f2c74aac0bf34510af7d37235af2982ad4080f968a99e7586fa7"
+}

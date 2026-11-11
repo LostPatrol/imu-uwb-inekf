@@ -1,0 +1,4 @@
+# Reproducible full trajectory caches remain local; retain compact evidence tables.
+__pycache__/
+results/*.npz
+pilot_before_prior_jacobian_fix/

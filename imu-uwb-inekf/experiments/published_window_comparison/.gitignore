@@ -1,0 +1,6 @@
+# Per-flight scratch and continuous native traces can be reproduced from the public release.
+pilot/
+evidence/*__A.csv
+evidence/*__A_trace.csv
+evidence/*__B.csv
+evidence/*__Profile1.csv

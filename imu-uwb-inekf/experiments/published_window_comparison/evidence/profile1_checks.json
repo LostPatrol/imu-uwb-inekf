@@ -1,0 +1,17 @@
+{
+  "rows": 264,
+  "physical_windows": 132,
+  "finite": 264,
+  "all_same_packets_and_imu_as_four_start": true,
+  "all_same_start_end_times": true,
+  "cv_fits_each": 2,
+  "raw_fits_each": 1,
+  "maximum_total_nfev": 360,
+  "maximum_raw_nfev": 120,
+  "unsuccessful_raw_solve": 64,
+  "summary_source_sha256": {
+    "profile_main.py": "16f61b16d35f8552a74f5f0d0f6b2cb24bb7bf84e6baef68e7a026c5b7f6ebc6",
+    "analyze.py": "5e3898961e770da4d2e00ac39294bf7a784c35c943fd86a59b367488463da91a"
+  },
+  "different_3d_errors_than_four_start": 235
+}

@@ -1,0 +1,18 @@
+{
+  "common_rows": 792,
+  "native_rows": 264,
+  "native_distinct_endpoints": 96,
+  "packet_pairing_identical": true,
+  "common_packets_match_acquisition_reference": true,
+  "common_finite": 792,
+  "common_completed": 792,
+  "expected_windows_per_arm": 132,
+  "expected_native_endpoints_per_arm_layout": 24,
+  "native_maximum_clock_rounding_s": 0.005000000000055849,
+  "native_maximum_estimate_hold_s": 0.010999999999999233,
+  "failure_rows_retained": [],
+  "source_sha256": {
+    "analyze.py": "5e3898961e770da4d2e00ac39294bf7a784c35c943fd86a59b367488463da91a",
+    "driver.py": "9c1a983ded75f2c74aac0bf34510af7d37235af2982ad4080f968a99e7586fa7"
+  }
+}

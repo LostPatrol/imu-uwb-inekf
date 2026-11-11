@@ -1,0 +1,21 @@
+{
+  "numerical_policy_frozen_before_scores": true,
+  "purpose": "Exploratory genuine single-filter closed-loop conditional replacement; no success guaranteed",
+  "methods": ["native", "ieks_local", "ieks_profile"],
+  "raw_model": "Existing Invariant15 frozen-R IMU F/G and sample-noise variances; original bias-corrected asynchronous TWR and frozen sigmas",
+  "prior": "Identical centroid, static-prefix tilt/bias, physical 15-state prior to native and historical lifted; retain full checkpoint Gaussian",
+  "trigger": "Startup, or first arrived range after sensor-only gap >1 s; wait 2 s of post-return sensor time; require >=16 positive range packets and >=4 surveyed anchors; attempt once per acquisition",
+  "checkpoint": "Startup prior before first range, or last completed radio posterior before gap. Exclude all checkpoint packets from replacement factors",
+  "window": "Checkpoint to current, including outage IMU, plus exactly arrived positive raw ranges. Startup and return seed only uses last 2s post-return raw TWR",
+  "candidate": "Existing manuscript Profile-1 followed by this round's static-radio Gaussian body-bias window fit supplies a nonlinear reference trajectory; candidate bias prior is only for seeding and adds no batch factors or covariance",
+  "conditional_solver": "Four iterated extended Kalman smoother passes, full 15-state and full original F/G noise including bias random walks; raw-range Huber threshold 2 sigma; no NIS rejection within batch",
+  "covariance": "Full local IEKS endpoint covariance including attitude/velocity/position/bias cross blocks, reset into endpoint tangent and mapped into Invariant15; approximate local covariance, not certified calibrated",
+  "counting": "Each IEKS iteration reconstructs from original checkpoint prior and one factor per unique packet. Previous interval posterior discarded on handoff. No window pseudo measurement",
+  "emission": "Continue genuine native InEKF until replacement ready; then continue from new full endpoint state/P/bias permanently. No retrospective score replacement and no forced return after 2s",
+  "delft": {"six_existing_development_flights": true, "resume_s": 25, "gaps_s": [2,5,10,20]},
+  "qdrone": {"cohort": "All ten verified sensor-eligible existing raw recordings; retain missing truth and failures", "resume_s": 25, "gaps_s": [2,5,10,20]},
+  "scoring": "Uniform 20 Hz past-held states, first2 [0,2), next [2,5), future [6,11), plus handoff-relative [0,2); support >=95%; QDrone has no heading truth",
+  "budget": "Stop representative investigation if divergence or material resource issue; no truth-driven parameter retries",
+  "causal_ablation": "Added after representative scores at parent request: profile_startup_native_recovery repeats identical Profile startup, then disables only resume IEKS replacement; require bitwise X,bias,P-diagonal agreement throughout first2 recovery window with ieks_profile. This isolates recovery replacement from startup history.",
+  "post_freeze_diagnostics": "Identical-history causal ablation and sampling-phase sensitivity were requested after preliminary/full results, respectively; neither changes the primary arms, parameters or frozen 20Hz primary scores. The prior-chart implementation bug was corrected after pilot, whose outputs remain segregated."
+}

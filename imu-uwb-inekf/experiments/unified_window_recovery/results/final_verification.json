@@ -1,0 +1,15 @@
+{
+  "cases": 64,
+  "same_history_bitwise_passes": 64,
+  "all_case_arms": true,
+  "numerical_failures": 0,
+  "current_source_sha256": {
+    "analyze.py": "8ec4aa73e73adcc830b70c0807e718931db325ebaf5c52bfaafe8b616da989e3",
+    "phase_sensitivity.py": "e6b178bb8d70db2472ff50f366bef6f922c462d5fb400cec90ac6c8f2742e46b",
+    "run.py": "1e55f2515435bbd4fcc01fc4caf7e4fc2ec8c9db052d4e8d09f119f3ff602ed9",
+    "smoother.py": "6a721823ed1ec8a6795fc1fdcd916dbb38566da10642077b87a4bb17ed453093",
+    "verify.py": "0ce64cef7ea834658b3d799400d87c75cce90810e7922bce3af622510121f34e"
+  },
+  "frozen_protocol_sha256": "088d5ab27c95f3fe6bf85f1babd4b384d0aae99d72e3f46ab1e7cc7f01d3fe8c",
+  "scoring_phase_primary_unchanged": true
+}

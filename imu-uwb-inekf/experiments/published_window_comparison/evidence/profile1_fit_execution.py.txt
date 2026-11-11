@@ -1,0 +1,136 @@
+"""Supplement the author comparison with the actual single-start Profile-1 arm.
+
+Build two CV fits and one circular yaw candidate, then refine BiasPrior once.
+No preliminary seven-state raw fit or repeated CV construction is performed.
+"""
+
+from __future__ import annotations
+
+import argparse
+from concurrent.futures import ProcessPoolExecutor, as_completed
+import hashlib
+import json
+from pathlib import Path
+import time
+
+import driver as base
+import numpy as np
+import pandas as pd
+
+# Supplemental evidence has its own protocol and leaves author replays untouched.
+HERE = Path(__file__).resolve().parent
+OUTPUT = HERE / "evidence"
+KEYS = ["sequence", "endpoint_s", "duration_s", "layout"]
+
+
+def profile_fit(values, sensitivity, calibration):
+    """Construct one proper Profile-1 seed and run one existing BiasPrior fit."""
+    tau, displacement, anchors, ranges, ids = values
+    corrected = ranges - calibration["static"][ids]
+    sigma = calibration["sigma"][ids]
+    counts = []
+    original = base.joint.shape.init.least_squares
+    def counted(*args, **kwargs):
+        """Count both original CV solves without replacing their mathematics."""
+        result = original(*args, **kwargs)
+        counts.append(result.nfev)
+        return result
+    candidate_started = time.perf_counter()
+    base.joint.shape.init.least_squares = counted
+    try:
+        cv = base.joint.radio.cv_candidate(tau, anchors, corrected, sigma)[0]
+    finally:
+        base.joint.shape.init.least_squares = original
+    lifted, diagnostic = base.joint.shape.init.lifted_candidate(tau, displacement, anchors, corrected, sigma)
+    seed = np.r_[cv, lifted[6], np.zeros(3)]
+    candidate_s = time.perf_counter() - candidate_started
+    x, fit = base.joint.solve(values, sensitivity, "BiasPrior", "static", calibration, [seed])
+    assert len(counts) == 2 and len(fit["seed_costs"]) == 1
+    return x, dict(nfev=fit["nfev"]+sum(counts), cv_nfev=sum(counts), raw_nfev=fit["nfev"],
+        cv_fits=len(counts), raw_fits=len(fit["seed_costs"]), candidate_s=candidate_s,
+        solver_success=fit["success"], objective=fit["objective"],
+        seed_yaw_rad=float(lifted[6]), profile_nuisance_rank=diagnostic["nuisance_rank"])
+
+
+def run_record(name, calibration, output):
+    """Rebuild the exact common windows and run raw/static Profile-1 once each."""
+    full = base.load_real_log(base.DATASET, name, sensor_delay_s=base.SENSOR_DELAY_S)
+    rotation, bias = base.estimate_initial_rotation_and_bias(full)
+    selected = full.time >= base.PREFIX_S
+    times = full.time[selected] - full.time[selected][0]
+    imu, ranges, changed = full.imu[selected], full.ranges[selected], full.changed[selected]
+    truth = full.ground_truth_position[selected]
+    rotations, displacement, velocity = base.preintegrate(times, imu, rotation, bias)
+    anchors = base.load_anchors(base.DATASET)
+    rows = []
+    for endpoint, duration in base.WINDOWS:
+        end = np.searchsorted(times, endpoint, side="right") - 1
+        start = np.searchsorted(times, times[end]-duration, side="left")
+        for layout in ("all8", "lower4"):
+            active = np.ones(8, dtype=bool)
+            if layout == "lower4":
+                active[:] = False
+                active[np.argsort(anchors[:, 2])[:4]] = True
+            index, ids = np.nonzero(changed[start:end+1] & (ranges[start:end+1] > 0) & active)
+            index += start
+            tau = times[index] - times[end]
+            d = displacement[index] - displacement[end] - tau[:, None]*velocity[end]
+            sensitivity = base.joint.shape.reanchor_integral(rotations[start:end], times[start:end+1], times[index])
+            packet_hash = hashlib.sha256(np.column_stack((index, ids, ranges[index, ids])).tobytes()).hexdigest()
+            for cal_name, cal in (("raw", dict(static=np.zeros(8), sigma=np.full(8, .25))), ("static", calibration)):
+                started = time.perf_counter()
+                x, fit = profile_fit((tau, d, anchors[ids], ranges[index, ids], ids), sensitivity, cal)
+                rows.append(dict(sequence=name, endpoint_s=endpoint, duration_s=duration, layout=layout,
+                    protocol="B_supplement_Profile1", method="Profile1_BiasPrior", calibration=cal_name,
+                    actual_endpoint_s=float(times[end]), actual_start_s=float(times[start]),
+                    events=len(index), events_consumed=len(index), packet_sha256=packet_hash,
+                    imu_sha256=hashlib.sha256(imu[start:end+1].tobytes()).hexdigest(), imu_rows=end-start+1,
+                    estimate_timestamp_s=float(times[end]), completed=True, failure="", steps=0,
+                    position_truth_in_estimator=False, initial_position="same_two_CV_fits_as_four_start",
+                    initial_heading="one_profile_circle_candidate", elapsed_s=time.perf_counter()-started,
+                    **fit, **base.score(x[:3], truth[end])))
+    pd.DataFrame(rows).to_csv(output/(Path(name).stem+"__Profile1.csv"), index=False)
+    return len(rows)
+
+
+def main():
+    """Run the supplemental seed policy and preserve pairing checks and summaries."""
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--workers", type=int, default=2)
+    args = parser.parse_args()
+    protocol = json.loads((OUTPUT/"protocol_common_execution.json").read_text(encoding="utf-8"))
+    calibration = {key:np.asarray(value) for key,value in protocol["static_calibration"].items()}
+    base.dump(OUTPUT/"profile1_protocol.json", dict(supplement=True, predeclared_after_author_replay=True,
+        seed_policy="Same two CV fits; one original lifted_candidate circle yaw; zero body bias; one BiasPrior raw fit",
+        cv_fits_per_window=2, raw_fits_per_window=1, max_raw_nfev=120, bias_prior_std_mps2=.10,
+        calibration=calibration, evaluation=protocol["evaluation"], training=protocol["training"],
+        windows=base.WINDOWS, frame_deg=0, truth_usage="Training calibration, clock crop, final score only",
+        source_sha256={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in (Path(__file__), HERE/"driver.py")}))
+    with ProcessPoolExecutor(max_workers=args.workers) as pool:
+        jobs = [pool.submit(run_record, name, calibration, OUTPUT) for name in protocol["evaluation"]]
+        for future in as_completed(jobs):
+            print("Profile1 completed", future.result(), flush=True)
+    frame = pd.concat([pd.read_csv(path) for path in sorted(OUTPUT.glob("*__Profile1.csv"))], ignore_index=True)
+    common = pd.concat([pd.read_csv(path) for path in sorted(OUTPUT.glob("*__B.csv"))], ignore_index=True)
+    reference = common[common.method == "BiasPrior"]
+    paired = frame.merge(reference, on=KEYS+["calibration"], suffixes=("", "_four"), validate="one_to_one")
+    assert len(frame) == len(paired) == 264
+    for column in ("packet_sha256", "imu_sha256", "events", "actual_endpoint_s", "actual_start_s"):
+        assert (paired[column] == paired[column+"_four"]).all()
+    assert (frame.cv_fits == 2).all() and (frame.raw_fits == 1).all()
+    frame.to_csv(OUTPUT/"profile1_windows.csv", index=False)
+    paired.to_csv(OUTPUT/"profile1_vs_four_start.csv", index=False)
+    import analyze
+    for extra,name in (([],"overall"),(["duration_s"],"duration"),(["sequence"],"per_log")):
+        analyze.grouped(frame, analyze.GROUPS+extra, OUTPUT/("profile1_"+name+".csv"))
+    base.dump(OUTPUT/"profile1_checks.json", dict(rows=len(frame), physical_windows=132,
+        finite=int(frame.finite.sum()), all_same_packets_and_imu_as_four_start=True,
+        all_same_start_end_times=True, cv_fits_each=2, raw_fits_each=1,
+        maximum_total_nfev=int(frame.nfev.max()), maximum_raw_nfev=int(frame.raw_nfev.max()),
+        unsuccessful_raw_solve=int((~frame.solver_success).sum()),
+        different_3d_errors_than_four_start=int((np.abs(paired.error_3d_m-paired.error_3d_m_four)>1e-6).sum())))
+    print(pd.read_csv(OUTPUT/"profile1_overall.csv").to_string(index=False))
+
+
+if __name__ == "__main__":
+    main()

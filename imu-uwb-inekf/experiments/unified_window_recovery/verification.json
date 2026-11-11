@@ -1,0 +1,9 @@
+{
+  "single_packet_after_four_passes_position": 1.5,
+  "single_packet_posterior_variance": 0.5,
+  "duplicate_information_avoided": true,
+  "shared_native_F_finite_difference_max_error": 1.3115175612199437e-11,
+  "large_angle_original_prior_residual_jacobian_max_error": 4.6140355425272617e-11,
+  "prior_not_mutated": true,
+  "covariance_finite": true
+}
