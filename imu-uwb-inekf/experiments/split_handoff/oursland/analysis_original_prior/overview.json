@@ -1,0 +1,242 @@
+{
+  "prior": "original",
+  "cases": [
+    {
+      "scenario": "cold_weak",
+      "policy": "author_original_continuous",
+      "cases": 8,
+      "failures": 0,
+      "xy_median": 0.07623682289982205,
+      "z_median": 0.130265782286987,
+      "yaw_median_deg": 6.719171400888531
+    },
+    {
+      "scenario": "dynamic",
+      "policy": "author_original_continuous",
+      "cases": 8,
+      "failures": 0,
+      "xy_median": 0.07821337334532424,
+      "z_median": 0.1298271133874065,
+      "yaw_median_deg": 6.656576406295567
+    },
+    {
+      "scenario": "outage",
+      "policy": "author_original_continuous",
+      "cases": 8,
+      "failures": 0,
+      "xy_median": 0.11175243046766585,
+      "z_median": 0.17109663317059376,
+      "yaw_median_deg": 5.933102482229462
+    },
+    {
+      "scenario": "cold_weak",
+      "policy": "bank_yaw",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.08433766591746145,
+      "z_median": 0.133866737768888,
+      "yaw_median_deg": 60.75623849704483
+    },
+    {
+      "scenario": "cold_weak",
+      "policy": "evidence_yaw",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.08433766591746145,
+      "z_median": 0.133866737768888,
+      "yaw_median_deg": 60.75623849704483
+    },
+    {
+      "scenario": "cold_weak",
+      "policy": "forced_evidence_yaw",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 8,
+      "xy_median": 0.07818372897535444,
+      "z_median": 0.1335056827556581,
+      "yaw_median_deg": 34.78165103833583
+    },
+    {
+      "scenario": "cold_weak",
+      "policy": "forced_yaw_only",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.0779495203672001,
+      "z_median": 0.13349426198525577,
+      "yaw_median_deg": 32.278671057341086
+    },
+    {
+      "scenario": "cold_weak",
+      "policy": "full_attitude",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.07805828006379545,
+      "z_median": 0.1334598468075337,
+      "yaw_median_deg": 32.973732570576814
+    },
+    {
+      "scenario": "cold_weak",
+      "policy": "normal_unmodified",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.0833434971456117,
+      "z_median": 0.12969717805678005,
+      "yaw_median_deg": 63.365016522008574
+    },
+    {
+      "scenario": "cold_weak",
+      "policy": "retain_normal",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.08433766591746145,
+      "z_median": 0.133866737768888,
+      "yaw_median_deg": 60.75623849704483
+    },
+    {
+      "scenario": "dynamic",
+      "policy": "bank_yaw",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.08247662492786005,
+      "z_median": 0.1301479478162222,
+      "yaw_median_deg": 43.667228745883826
+    },
+    {
+      "scenario": "dynamic",
+      "policy": "evidence_yaw",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.08247662492786005,
+      "z_median": 0.1301479478162222,
+      "yaw_median_deg": 43.667228745883826
+    },
+    {
+      "scenario": "dynamic",
+      "policy": "forced_evidence_yaw",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 8,
+      "xy_median": 0.079990700412612,
+      "z_median": 0.12970385623441086,
+      "yaw_median_deg": 35.30411423264853
+    },
+    {
+      "scenario": "dynamic",
+      "policy": "forced_yaw_only",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.08008149615016624,
+      "z_median": 0.1297141447256585,
+      "yaw_median_deg": 47.21837671973385
+    },
+    {
+      "scenario": "dynamic",
+      "policy": "full_attitude",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.0802110314402339,
+      "z_median": 0.1297158752446701,
+      "yaw_median_deg": 47.23616431741698
+    },
+    {
+      "scenario": "dynamic",
+      "policy": "normal_unmodified",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.08296979239820296,
+      "z_median": 0.1300315206784317,
+      "yaw_median_deg": 52.22483409585636
+    },
+    {
+      "scenario": "dynamic",
+      "policy": "retain_normal",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.08247662492786005,
+      "z_median": 0.1301479478162222,
+      "yaw_median_deg": 43.667228745883826
+    },
+    {
+      "scenario": "outage",
+      "policy": "bank_yaw",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.08715030817789765,
+      "z_median": 0.1544382824020194,
+      "yaw_median_deg": 40.14809688521937
+    },
+    {
+      "scenario": "outage",
+      "policy": "evidence_yaw",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.08715030817789765,
+      "z_median": 0.1544382824020194,
+      "yaw_median_deg": 40.14809688521937
+    },
+    {
+      "scenario": "outage",
+      "policy": "forced_evidence_yaw",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 8,
+      "xy_median": 0.0898542445981809,
+      "z_median": 0.15400552930462835,
+      "yaw_median_deg": 62.2803771518757
+    },
+    {
+      "scenario": "outage",
+      "policy": "forced_yaw_only",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.08969351429719974,
+      "z_median": 0.1539626110471686,
+      "yaw_median_deg": 65.64375141864629
+    },
+    {
+      "scenario": "outage",
+      "policy": "full_attitude",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.08923610605283219,
+      "z_median": 0.15393595770484544,
+      "yaw_median_deg": 65.42117041795323
+    },
+    {
+      "scenario": "outage",
+      "policy": "normal_unmodified",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 2.8408454105894148,
+      "z_median": 0.9465477792703295,
+      "yaw_median_deg": 61.57258896698612
+    },
+    {
+      "scenario": "outage",
+      "policy": "retain_normal",
+      "cases": 8,
+      "failures": 0,
+      "heading_acceptances": 0,
+      "xy_median": 0.08715030817789765,
+      "z_median": 0.1544382824020194,
+      "yaw_median_deg": 40.14809688521937
+    }
+  ]
+}

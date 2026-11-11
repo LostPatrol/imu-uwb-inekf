@@ -1,0 +1,98 @@
+{
+  "version": 2,
+  "causality_correction": "Physically delete outage packets before all radio fits; emit independent positions only when new visible packets arrive; clip the candidate path at its actual handoff endpoint. No heading rule, prior, window, recording or threshold changed. Previous partial folders are invalid pre-fix runs and were stopped before truth scoring.",
+  "frozen_date": "2026-11-11",
+  "development_trials": [
+    3
+  ],
+  "holdout_trials": [
+    4,
+    5
+  ],
+  "geometries": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "radio_protocols": [
+    2,
+    3
+  ],
+  "const4_trajectory": 1,
+  "initial_world_yaw_offsets_deg": [
+    0,
+    90,
+    -90,
+    180
+  ],
+  "duration_seconds": 45,
+  "scenarios": {
+    "cold_weak": {
+      "capture_start": 0,
+      "capture_end": 2,
+      "outage_start": null,
+      "outage_end": null
+    },
+    "dynamic": {
+      "capture_start": 10,
+      "capture_end": 16,
+      "outage_start": null,
+      "outage_end": null
+    },
+    "outage": {
+      "capture_start": 20,
+      "capture_end": 26,
+      "outage_start": 10,
+      "outage_end": 20
+    }
+  },
+  "policies": [
+    "retain_normal",
+    "full_attitude",
+    "forced_yaw_only",
+    "evidence_yaw",
+    "bank_yaw",
+    "forced_evidence_yaw",
+    "normal_unmodified"
+  ],
+  "imu_processing_hz": 100,
+  "radio_path_bin_seconds": 0.2,
+  "pv_fit_window_seconds": 0.6,
+  "radio_variance_m2": 0.14,
+  "const4_radio_variance_m2": 0.22,
+  "huber_threshold": 2,
+  "nis_gate": 25,
+  "common_handoff_physical_std": [
+    0.08,
+    0.08,
+    3.141592653589793,
+    0.7,
+    0.7,
+    0.7,
+    0.5,
+    0.5,
+    0.5,
+    0.02,
+    0.02,
+    0.02,
+    0.2,
+    0.2,
+    0.2
+  ],
+  "truth_usage": "Scoring only after all trajectories in a requested split have been generated; no true initialization, alignment, selection or calibration.",
+  "candidate_information_policy": "Window radio is reserved for a conditional reconstruction. All policies share one radio-only p/v reconstruction and physical prior at handoff. It is never replayed as independent raw updates after handoff. Normal-shadow attitude and batch/bank/evidence candidates are alternative conditional estimates from the same window, not likelihood terms added together.",
+  "primary_metric": "Absolute surveyed-world post-handoff horizontal XY trajectory RMSE, with whole-available-trajectory XY also retained.",
+  "secondary_metrics": [
+    "Z_RMSE",
+    "yaw_RMSE",
+    "SO3_RMSE",
+    "handoff_XY",
+    "handoff_yaw",
+    "actual_window_start_yaw",
+    "actual_retained_endpoint_yaw",
+    "first_independent_position_time",
+    "availability",
+    "failure"
+  ]
+}

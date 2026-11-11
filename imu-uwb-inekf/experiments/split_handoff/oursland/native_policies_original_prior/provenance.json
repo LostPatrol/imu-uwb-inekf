@@ -1,0 +1,21 @@
+{
+  "names": [
+    "const1-trial4-tdoa2",
+    "const2-trial4-tdoa3",
+    "const3-trial4-tdoa2",
+    "const4-trial4-tdoa3-traj1"
+  ],
+  "yaws": [
+    0.0,
+    180.0
+  ],
+  "initial_prior": "original",
+  "native_author_event_queue": true,
+  "filter_radio_variance": 0.13,
+  "candidate_model_radio_variance": "original frozen .14/.22 retained",
+  "sensor_only": true,
+  "policies_recomputed": true,
+  "policy_source": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\util\\run.py",
+  "source_sha256": "d3728c32ebe901ee5b63cf1d88391e9f629b89d259228a4f89b4960015ccad63",
+  "wrapper": "Raw native acc/gyro and original event dt in recursive prefix/shadow/post. Existing 100Hz integration remains the frozen batch candidate model. Output alone is resampled to common 20Hz for scoring."
+}

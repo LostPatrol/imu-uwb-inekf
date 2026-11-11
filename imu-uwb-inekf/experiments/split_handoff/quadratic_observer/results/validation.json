@@ -1,0 +1,29 @@
+{
+  "continuation_not_in_original_paper": true,
+  "interval_s": [
+    20,
+    100
+  ],
+  "same_initial_state_and_covariance_as_20s_endpoint": true,
+  "solver_success": true,
+  "elapsed_s": 8.086971799959429,
+  "final_position_error_m": 6.038698613304225e-06,
+  "final_velocity_error_mps": 7.958206690383592e-07,
+  "finite": true,
+  "original_20s_retained": true,
+  "asymptotic_threshold_1mm_pass": true,
+  "40s_position_error_m": 0.004703884570834452,
+  "40s_velocity_error_mps": 0.0012948771899651942,
+  "60s_position_error_m": 9.937458444447189e-05,
+  "60s_velocity_error_mps": 7.2136026130642e-05,
+  "80s_position_error_m": 5.274435628573644e-05,
+  "80s_velocity_error_mps": 1.6919538856169394e-06,
+  "100s_position_error_m": 6.038698613304225e-06,
+  "100s_velocity_error_mps": 7.958206690383592e-07,
+  "real_cases": 72,
+  "same_event_count_all_pairs": true,
+  "real_failed_outputs": 0,
+  "real_complete_fixed_window_outputs": 144,
+  "no_failed_case_dropped": true,
+  "maximum_initial_pv_covariance_mismatch": 0.0
+}

@@ -1,0 +1,14 @@
+{
+  "held_input_exact_step_max_abs": 1.1368683772161603e-13,
+  "solver_success": true,
+  "solver_nfev": 15200,
+  "elapsed_s": 2.5407261000946164,
+  "final_position_error_m": 0.09569955305956555,
+  "final_velocity_error_mps": 0.011769137000594308,
+  "last5_position_rmse_m": 0.13344238828148303,
+  "last5_velocity_rmse_mps": 0.02228493026858783,
+  "dimension_correction": "Sec6 prints S0=100 I6,V=.0001 I6,W=I6 although the actual augmented state is 9 and output scalar; use M0=100 I9,V=.0001 I9,W=1.",
+  "unspecified_initial_estimate": "All nine initial estimates set to zero; paper does not state their values.",
+  "original_example_is_simulation_not_real_flight": true,
+  "noiseless_convergence_verified": false
+}

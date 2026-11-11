@@ -1,0 +1,75 @@
+{
+  "trial": 1,
+  "names": [
+    "const1-trial1-tdoa2",
+    "const1-trial1-tdoa3",
+    "const2-trial1-tdoa2",
+    "const2-trial1-tdoa3",
+    "const3-trial1-tdoa2",
+    "const3-trial1-tdoa3",
+    "const4-trial1-tdoa2-traj1",
+    "const4-trial1-tdoa3-traj1"
+  ],
+  "yaws_deg": [
+    0.0,
+    180.0
+  ],
+  "outage_s": [
+    10.0,
+    20.0
+  ],
+  "score_windows": {
+    "early": [
+      20.0,
+      22.0
+    ],
+    "future": [
+      26.0,
+      31.0
+    ]
+  },
+  "thresholds": {
+    "CHECK_INTERVAL_S": 0.05,
+    "RANGE_STD_FLOOR_M": 0.3,
+    "POSITION_STD_FLOOR_M": 0.5,
+    "UNMODELED_ACCEL_MPS2": 3.0,
+    "MAX_95_HORIZONTAL_RADIUS_M": 2.0,
+    "CHI2_95_2D": 5.991464547,
+    "MAX_NORMALIZED_RMS": 2.0,
+    "MAX_SPEED_MPS": 8.0,
+    "MIN_DISTINCT_ANCHORS": 4,
+    "MIRROR_XY_TOLERANCE_M": 1.0,
+    "RANK_TOLERANCE": 1e-08
+  },
+  "methods": [
+    "native",
+    "fixed_2s_pv",
+    "early_xy",
+    "early_switch"
+  ],
+  "yaw_perturbation_time_s": 10.0,
+  "duration_s": 32.0,
+  "cv_seed_caps": [
+    120,
+    120
+  ],
+  "mirror_cap": 80,
+  "sigma": "Native std sqrt(.14) / sqrt(.22) for geometry4; frozen .30m floor and 3m/s2 mismatch inflation",
+  "handoff": "XY only: antenna-to-IMU lever subtraction; retain z/v/R/bias and their complete physical covariance block; clear XY cross blocks",
+  "information": "Native fuses each recovery packet once. Fixed and early reserve recovery packets until their handoff; thereafter only strictly later raw packets are fused.",
+  "trigger": "First frozen acceptance at existing 100Hz IMU ticks every5 samples after20; Delft rolling maximum2s buffer; no truth selection",
+  "no_accept": "Early remains prediction-only through end; optional early_switch retains native output throughout",
+  "initial": "First .6s sensor-only PV, .2s gravity, common native prefix to10; world-z stress at10",
+  "truth": "Discard loader truth immediately; score only after all requested trajectories finish",
+  "site_claim": "Cross-source TWR-to-TDoA transfer, distinct UTIL trial1; not a blinded multi-site deployment",
+  "expected_cases": 16,
+  "expected_traces": 64,
+  "workers": 2,
+  "source_sha256": {
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\early_tdoa\\run.py": "f62a81c4410667170652afa4dc89c52c0e73691ccb444f3506d26dc12b5fe46d",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\delft\\early_position.py": "3ebeb25b41b634e4233fe872dda915295064501487c0c445595dee8e705a4671",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\util\\run.py": "d3728c32ebe901ee5b63cf1d88391e9f629b89d259228a4f89b4960015ccad63",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\util\\kernel.py": "14dc9eb788ad24bc1012aedb6e1eebdaa7330319c7f93c818142a6b99dcf8679",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\util\\protocol.json": "efca6ab4fdd3948f7bc9297127445fc74eba144c6ef0c3372aeb5865201e6c47"
+  }
+}

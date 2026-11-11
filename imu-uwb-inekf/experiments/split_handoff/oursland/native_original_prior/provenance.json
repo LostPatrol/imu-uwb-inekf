@@ -1,0 +1,26 @@
+{
+  "arguments": {
+    "names": [
+      "const1-trial4-tdoa2",
+      "const2-trial4-tdoa3",
+      "const3-trial4-tdoa2",
+      "const4-trial4-tdoa3-traj1"
+    ],
+    "yaws": [
+      0.0,
+      180.0
+    ],
+    "initialization": "sensor_only_original_prior",
+    "variants": [
+      "author",
+      "current_kernel"
+    ],
+    "output": "native_original_prior"
+  },
+  "source_sha256_before": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+  "source_sha256_after": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+  "author_source_modified": false,
+  "truth_assisted_reference": false,
+  "native_main_queue": true,
+  "modifications": "Output extraction and recording hashes; optimized identical timestamp lookup; current comparator receives identical call times/payload; original source untouched."
+}

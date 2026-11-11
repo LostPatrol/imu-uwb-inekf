@@ -1,0 +1,7 @@
+{
+  "propagation_state_max_error": 0.0,
+  "propagation_covariance_max_error": 1.1102230246251565e-16,
+  "reset_max_error": 2.220446049250313e-16,
+  "native_tdoa_jacobian_max_error": 3.933628041352666e-10,
+  "first_compile_seconds": 14.939361900091171
+}

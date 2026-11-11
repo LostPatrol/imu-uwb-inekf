@@ -1,0 +1,24 @@
+{
+  "case_count": 48,
+  "trajectory_count": 240,
+  "maxima": {
+    "prefix": 0.0,
+    "position_at_heading": 0.0,
+    "bias_at_heading": 0.0,
+    "world_attitude_covariance": 3.3306690738754696e-14,
+    "yaw_only_gravity_direction": 0.0
+  },
+  "all_finite": true,
+  "evaluation_yaw_truth_used": false,
+  "odd_even_radio_groups_disjoint": true,
+  "all_yaw_offsets_share_pre_15s_prefix": true,
+  "fixed_future_interval_s": [
+    31,
+    36
+  ],
+  "source_sha256": {
+    "analyze.py": "4f4fd99d2910cea979e6820d5cc6312d827a345db13e02060b965f5d55ad5db3",
+    "study.py": "a217dd05cf2208edb299754f0f62624d98c2f2e8b6bfb48a078e550ee4e5e642"
+  },
+  "yaw_evidence_sha256": "62e88bfa3ab41160698ee149c2efda8b7d8a4296713b0857f29dc7010050e33b"
+}

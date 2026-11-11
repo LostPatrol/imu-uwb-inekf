@@ -1,0 +1,7 @@
+{
+  "name": "const2-trial1-tdoa3",
+  "native_jacobian_max_absolute_error": 2.548951494318885e-09,
+  "future_and_masked_radio_perturbation_decision_identical": true,
+  "evaluation_truth_used": false,
+  "perturbation_m": 10000.0
+}

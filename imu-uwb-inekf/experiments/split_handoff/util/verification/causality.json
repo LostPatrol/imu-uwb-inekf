@@ -1,0 +1,77 @@
+{
+  "cold_weak": {
+    "poisoned_packets": 19289,
+    "maximum_differences": {
+      "state": 0.0,
+      "covariance": 0.0,
+      "bias": 0.0,
+      "pv": 0.0,
+      "full": 0.0,
+      "path": 0.0,
+      "input_tau": 0.0,
+      "input_force": 0.0,
+      "input_B": 0.0,
+      "input_plus": 0.0,
+      "input_minus": 0.0,
+      "input_y": 0.0,
+      "input_sigma": 0.0,
+      "input_path": 0.0
+    },
+    "decisions_identical": true,
+    "excluded_diagnostic_fields": [
+      "elapsed_s"
+    ],
+    "first_position_seconds": 0.2,
+    "first_recovery_seconds": null
+  },
+  "dynamic": {
+    "poisoned_packets": 12981,
+    "maximum_differences": {
+      "state": 0.0,
+      "covariance": 0.0,
+      "bias": 0.0,
+      "pv": 0.0,
+      "full": 0.0,
+      "path": 0.0,
+      "input_tau": 0.0,
+      "input_force": 0.0,
+      "input_B": 0.0,
+      "input_plus": 0.0,
+      "input_minus": 0.0,
+      "input_y": 0.0,
+      "input_sigma": 0.0,
+      "input_path": 0.0
+    },
+    "decisions_identical": true,
+    "excluded_diagnostic_fields": [
+      "elapsed_s"
+    ],
+    "first_position_seconds": 0.2,
+    "first_recovery_seconds": null
+  },
+  "outage": {
+    "poisoned_packets": 13014,
+    "maximum_differences": {
+      "state": 0.0,
+      "covariance": 0.0,
+      "bias": 0.0,
+      "pv": 0.0,
+      "full": 0.0,
+      "path": 0.0,
+      "input_tau": 0.0,
+      "input_force": 0.0,
+      "input_B": 0.0,
+      "input_plus": 0.0,
+      "input_minus": 0.0,
+      "input_y": 0.0,
+      "input_sigma": 0.0,
+      "input_path": 0.0
+    },
+    "decisions_identical": true,
+    "excluded_diagnostic_fields": [
+      "elapsed_s"
+    ],
+    "first_position_seconds": 0.2,
+    "first_recovery_seconds": 20.2
+  }
+}

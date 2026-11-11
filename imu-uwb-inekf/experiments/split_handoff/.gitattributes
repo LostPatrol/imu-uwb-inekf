@@ -1,0 +1,7 @@
+# Numerical source and hand-written frozen rules have byte-level protocol hashes.
+*.py text eol=lf
+util/protocol.json text eol=lf
+bank/frozen_rules.json text eol=lf
+reference_jump/rules.json text eol=lf
+# Preserve the exact observer used for the external comparison, including its final blank line.
+quadratic_observer/observer.py whitespace=trailing-space,-blank-at-eof

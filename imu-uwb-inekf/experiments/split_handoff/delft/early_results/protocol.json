@@ -1,0 +1,28 @@
+{
+  "check_interval_s": 0.05,
+  "range_std_floor_m": 0.3,
+  "position_std_floor_m": 0.5,
+  "unmodeled_acceleration_mps2": 3.0,
+  "max_95_horizontal_radius_m": 2.0,
+  "threshold_meaning": "Horizontal usage requirement / reference operating point, not universal physical constant",
+  "maximum_normalized_rms": 2.0,
+  "maximum_speed_mps": 8.0,
+  "minimum_distinct_anchors": 4,
+  "mirror_xy_tolerance_m": 1.0,
+  "target": "XY",
+  "nuisance": "z,vx,vy,vz projected with rank-aware SVD; no pseudo-inverse null covariance",
+  "handoff": "XY only; retain z,v,R,bias; clear XY cross covariance; no same-packet scalar reuse",
+  "early_after_handoff": "Only later packets scalar-updated; no 27s reset",
+  "future": "All actual post27 ranges used in every branch; no explicit heading fit or overwrite",
+  "isolated": "Copy complete fixed baseline state at27, only diagnostic attribution of first2s benefit",
+  "continuous": "Same world-z mean perturbation at15; radio remains available15–25",
+  "methods": [
+    "fixed_2s_pv",
+    "native_gate",
+    "early_only_live",
+    "early_common27",
+    "continuous"
+  ],
+  "evaluation_yaw_truth_used": false,
+  "source_sha256": "3ebeb25b41b634e4233fe872dda915295064501487c0c445595dee8e705a4671"
+}

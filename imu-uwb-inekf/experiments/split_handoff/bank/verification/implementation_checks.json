@@ -1,0 +1,159 @@
+{
+  "synthetic_only": true,
+  "oracle_tilt_supplied": true,
+  "seed": 20261111,
+  "rules_sha256": "bf6bf21cc53868fd8ea9130499e603f8efd2867446153d74c3ee16d65b9e70f9",
+  "bank_sha256": "92e4437fa5adf724ef01e99851d40120c9f5e22de06aedb51d16b3252120f401",
+  "cases": [
+    {
+      "motion": "rich",
+      "initial_error_deg": 0.0,
+      "applied_delta_deg": 0.0,
+      "accepted": false,
+      "posterior_mass": 0.9999999946560392,
+      "sd_deg": 12.990381452311619,
+      "blocks": 6,
+      "nonconverged_prefix_fits": 0,
+      "elapsed_s": 0.19721240003127605
+    },
+    {
+      "motion": "rich",
+      "initial_error_deg": 90.0,
+      "applied_delta_deg": -90.0,
+      "accepted": true,
+      "posterior_mass": 0.9999999786241571,
+      "sd_deg": 12.990382638946635,
+      "blocks": 6,
+      "nonconverged_prefix_fits": 0,
+      "elapsed_s": 0.20339979999698699
+    },
+    {
+      "motion": "rich",
+      "initial_error_deg": 180.0,
+      "applied_delta_deg": 180.0,
+      "accepted": true,
+      "posterior_mass": 0.9999999786241573,
+      "sd_deg": 12.990382638946606,
+      "blocks": 6,
+      "nonconverged_prefix_fits": 0,
+      "elapsed_s": 0.19739380001556128
+    },
+    {
+      "motion": "weak",
+      "initial_error_deg": 0.0,
+      "applied_delta_deg": 0.0,
+      "accepted": false,
+      "posterior_mass": 0.7754451832836073,
+      "sd_deg": 24.242186105876836,
+      "blocks": 6,
+      "nonconverged_prefix_fits": 0,
+      "elapsed_s": 0.09884340001735836
+    },
+    {
+      "motion": "weak",
+      "initial_error_deg": 90.0,
+      "applied_delta_deg": 0.0,
+      "accepted": false,
+      "posterior_mass": 0.4632993472160731,
+      "sd_deg": 33.016593125044416,
+      "blocks": 6,
+      "nonconverged_prefix_fits": 0,
+      "elapsed_s": 0.10023750003892928
+    },
+    {
+      "motion": "weak",
+      "initial_error_deg": 180.0,
+      "applied_delta_deg": 0.0,
+      "accepted": false,
+      "posterior_mass": 0.46332177288851367,
+      "sd_deg": 33.010403335757424,
+      "blocks": 6,
+      "nonconverged_prefix_fits": 0,
+      "elapsed_s": 0.09969780000392348
+    },
+    {
+      "motion": "constant_acceleration",
+      "initial_error_deg": 0.0,
+      "applied_delta_deg": 0.0,
+      "accepted": false,
+      "posterior_mass": 0.9982128890806564,
+      "sd_deg": 13.121831032590277,
+      "blocks": 6,
+      "nonconverged_prefix_fits": 0,
+      "elapsed_s": 0.11848910001572222
+    },
+    {
+      "motion": "constant_acceleration",
+      "initial_error_deg": 90.0,
+      "applied_delta_deg": -90.0,
+      "accepted": true,
+      "posterior_mass": 0.9928896769628645,
+      "sd_deg": 13.503943579049896,
+      "blocks": 6,
+      "nonconverged_prefix_fits": 0,
+      "elapsed_s": 0.12180810002610087
+    },
+    {
+      "motion": "constant_acceleration",
+      "initial_error_deg": 180.0,
+      "applied_delta_deg": 180.0,
+      "accepted": true,
+      "posterior_mass": 0.9928896771049838,
+      "sd_deg": 13.503943569025889,
+      "blocks": 6,
+      "nonconverged_prefix_fits": 0,
+      "elapsed_s": 0.12029300001449883
+    },
+    {
+      "motion": "constant_velocity",
+      "initial_error_deg": 0.0,
+      "applied_delta_deg": 0.0,
+      "accepted": false,
+      "posterior_mass": 0.3636363636363847,
+      "sd_deg": 93.27024638934462,
+      "blocks": 6,
+      "nonconverged_prefix_fits": 0,
+      "elapsed_s": 0.039655999979004264
+    },
+    {
+      "motion": "constant_velocity",
+      "initial_error_deg": 90.0,
+      "applied_delta_deg": 0.0,
+      "accepted": false,
+      "posterior_mass": 0.36363636363635377,
+      "sd_deg": 93.2702463893509,
+      "blocks": 6,
+      "nonconverged_prefix_fits": 0,
+      "elapsed_s": 0.043469500029459596
+    },
+    {
+      "motion": "constant_velocity",
+      "initial_error_deg": 180.0,
+      "applied_delta_deg": 0.0,
+      "accepted": false,
+      "posterior_mass": 0.36363636363635016,
+      "sd_deg": 93.27024638935481,
+      "blocks": 6,
+      "nonconverged_prefix_fits": 0,
+      "elapsed_s": 0.04970490001142025
+    }
+  ],
+  "unused_path_identical": true,
+  "affine_gauge_same_decision": true,
+  "affine_gauge_max_loss_difference": 7.253199640899766e-07,
+  "later_radio_preserves_earlier_traces": true,
+  "two_second_defer": {
+    "accepted": false,
+    "blocks": 2,
+    "delta": 0.0
+  },
+  "coherent_radio_fault": {
+    "synthetic_constructed_fault": true,
+    "description": "IMU and retained heading remain correct; radio imitates a trajectory rotated by +90 degrees",
+    "accepted": true,
+    "applied_false_heading_deg": 90.0,
+    "posterior_mass": 1.0,
+    "sd_deg": 12.99038105676658,
+    "radio_fault_rms_m": 4.516290485176681
+  }
+}

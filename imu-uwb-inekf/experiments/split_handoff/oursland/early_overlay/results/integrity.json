@@ -1,0 +1,322 @@
+[
+  {
+    "name": "const3-trial4-tdoa3",
+    "yaw_offset_deg": 180.0,
+    "cohort": "extension",
+    "triggered": true,
+    "trigger_s": 20.100146000000002,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 5.84601811404184e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 189.23504340008367
+  },
+  {
+    "name": "const2-trial4-tdoa3",
+    "yaw_offset_deg": 180.0,
+    "cohort": "primary",
+    "triggered": true,
+    "trigger_s": 20.050186999999998,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 3.41740524767431e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 194.83927750005387
+  },
+  {
+    "name": "const4-trial4-tdoa2-traj1",
+    "yaw_offset_deg": 0.0,
+    "cohort": "extension",
+    "triggered": true,
+    "trigger_s": 20.050947999999995,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 6.938893903907228e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 194.7589386999607
+  },
+  {
+    "name": "const4-trial4-tdoa2-traj1",
+    "yaw_offset_deg": 180.0,
+    "cohort": "extension",
+    "triggered": true,
+    "trigger_s": 20.050947999999995,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 7.598088824778415e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 196.14093560003676
+  },
+  {
+    "name": "const3-trial4-tdoa2",
+    "yaw_offset_deg": 180.0,
+    "cohort": "primary",
+    "triggered": true,
+    "trigger_s": 20.050819000000004,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 5.984795992119984e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 199.283707399969
+  },
+  {
+    "name": "const3-trial4-tdoa2",
+    "yaw_offset_deg": 0.0,
+    "cohort": "primary",
+    "triggered": true,
+    "trigger_s": 20.050819000000004,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 9.575673587391975e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 203.8460377000738
+  },
+  {
+    "name": "const3-trial4-tdoa3",
+    "yaw_offset_deg": 0.0,
+    "cohort": "extension",
+    "triggered": true,
+    "trigger_s": 20.100146000000002,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 1.5612511283791264e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 207.12750389997382
+  },
+  {
+    "name": "const2-trial4-tdoa3",
+    "yaw_offset_deg": 0.0,
+    "cohort": "primary",
+    "triggered": true,
+    "trigger_s": 20.050186999999998,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 5.828670879282072e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 209.36816050007474
+  },
+  {
+    "name": "const1-trial4-tdoa2",
+    "yaw_offset_deg": 0.0,
+    "cohort": "primary",
+    "triggered": true,
+    "trigger_s": 20.050354999999996,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 5.793976409762536e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 212.06942310009617
+  },
+  {
+    "name": "const4-trial4-tdoa3-traj1",
+    "yaw_offset_deg": 180.0,
+    "cohort": "primary",
+    "triggered": true,
+    "trigger_s": 20.20054800000001,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 3.41740524767431e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 215.62839490000624
+  },
+  {
+    "name": "const1-trial4-tdoa3",
+    "yaw_offset_deg": 0.0,
+    "cohort": "extension",
+    "triggered": true,
+    "trigger_s": 20.750353999999998,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 3.0531133177191805e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 216.46436240000185
+  },
+  {
+    "name": "const1-trial4-tdoa3",
+    "yaw_offset_deg": 180.0,
+    "cohort": "extension",
+    "triggered": true,
+    "trigger_s": 20.750353999999998,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 3.677613769070831e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 218.9414822999388
+  },
+  {
+    "name": "const4-trial4-tdoa3-traj1",
+    "yaw_offset_deg": 0.0,
+    "cohort": "primary",
+    "triggered": true,
+    "trigger_s": 20.20054800000001,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 5.499073418846478e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 221.98110430000816
+  },
+  {
+    "name": "const1-trial4-tdoa2",
+    "yaw_offset_deg": 180.0,
+    "cohort": "primary",
+    "triggered": true,
+    "trigger_s": 20.050354999999996,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 3.5735303605122226e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 224.3711209000321
+  },
+  {
+    "name": "const2-trial4-tdoa2",
+    "yaw_offset_deg": 180.0,
+    "cohort": "extension",
+    "triggered": true,
+    "trigger_s": 20.050726,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 3.0878077872387166e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 223.20902720000595
+  },
+  {
+    "name": "const2-trial4-tdoa2",
+    "yaw_offset_deg": 0.0,
+    "cohort": "extension",
+    "triggered": true,
+    "trigger_s": 20.050726,
+    "strict_subsequent_packets": true,
+    "preservation": {
+      "rotation": 0.0,
+      "velocity": 0.0,
+      "vertical_position": 0.0,
+      "bias": 0.0,
+      "retained_covariance": 3.5388358909926865e-16
+    },
+    "failures": {
+      "native": null,
+      "early_reserved": null
+    },
+    "runtime_seconds": 224.01806509995367
+  }
+]

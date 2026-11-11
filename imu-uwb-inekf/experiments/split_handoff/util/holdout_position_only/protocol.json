@@ -1,0 +1,16 @@
+{
+  "source": "holdout_final",
+  "panel": "position_only",
+  "yaws": [
+    0,
+    180
+  ],
+  "policies": [
+    "retain_normal",
+    "full_attitude",
+    "evidence_yaw"
+  ],
+  "information_policy": "Same cached candidate R and shared antenna-derived p, same shadow v/bias and physical P; no new radio fit or heading decision.",
+  "primary_metric": "Same post-handoff XY trajectory clock as the source PV-reset panel.",
+  "truth_usage": "Score only after all position-only trajectories have been generated."
+}

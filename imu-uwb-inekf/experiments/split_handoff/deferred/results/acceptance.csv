@@ -1,0 +1,5 @@
+scenario,yaw_offset_deg,cases,accepted,late_accepts
+cold,0.0,8,2,2
+cold,180.0,8,0,0
+outage,0.0,8,1,1
+outage,180.0,8,1,1

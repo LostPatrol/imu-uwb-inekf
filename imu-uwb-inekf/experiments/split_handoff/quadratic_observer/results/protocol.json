@@ -1,0 +1,109 @@
+{
+  "source_paper": "Local 2006.02688v2.pdf, Section 6 and Theorem 3",
+  "evaluation": [
+    "2021-02-12_09_43_34_twr_triangle.csv",
+    "2021-02-12_09_46_15_twr_octagon.csv",
+    "2021-02-12_09_51_57_twr_hourglass.csv",
+    "2021-02-12_09_56_09_twr_random.csv",
+    "2021-02-12_10_09_28_twr_star.csv",
+    "2021-02-12_13_43_51_twr_square.csv"
+  ],
+  "training": [
+    "2021-02-12_09_41_16_twr_triangle.csv",
+    "2021-02-12_09_44_51_twr_octagon.csv",
+    "2021-02-12_09_48_14_twr_hourglass.csv",
+    "2021-02-12_09_53_31_twr_random.csv",
+    "2021-02-12_10_05_30_twr_star.csv",
+    "2021-02-12_13_26_02_twr_square.csv"
+  ],
+  "model": {
+    "range_bias": [
+      -0.09788141897923275,
+      -0.10531459144752997,
+      -0.2119628770224038,
+      -0.31494024991328295,
+      -0.2219644770060425,
+      -0.2226442454837705,
+      -0.1756493487136308,
+      -0.22816308219003467
+    ],
+    "range_sigma": [
+      0.08,
+      0.19469196926856097,
+      0.12482044259551764,
+      0.11500970199682996,
+      0.09835267751123523,
+      0.117369159179757,
+      0.16187285659845982,
+      0.08
+    ],
+    "training": [
+      "2021-02-12_09_41_16_twr_triangle.csv",
+      "2021-02-12_09_44_51_twr_octagon.csv",
+      "2021-02-12_09_48_14_twr_hourglass.csv",
+      "2021-02-12_09_53_31_twr_random.csv",
+      "2021-02-12_10_05_30_twr_star.csv",
+      "2021-02-12_13_26_02_twr_square.csv"
+    ],
+    "event_counts": [
+      8809,
+      9062,
+      8987,
+      9171,
+      9294,
+      9026,
+      9004,
+      9354
+    ]
+  },
+  "dataset_sha256": {
+    "2021-02-12_09_41_16_twr_triangle.csv": "2669dc9ef90c3e2fb784d18b7872da0aa99ab88d1a9ffc3f40bc210fee9b67e2",
+    "2021-02-12_09_44_51_twr_octagon.csv": "c91bcdf9280b8c8bea12a99259155b749b3b4a68e61ef86f37dbad2f79014132",
+    "2021-02-12_09_48_14_twr_hourglass.csv": "87d3234253b19930fe9e3c1850eefa66236b8895e5c929fa83143fdedb713ad5",
+    "2021-02-12_09_53_31_twr_random.csv": "10b86357e034ba8ae571d41cd92cc6c2bc1395b576a2356dc9b1ccd8ac4133b4",
+    "2021-02-12_10_05_30_twr_star.csv": "115a970e7abf58b76af7195824183f096c3b9df1b472fc86afab30cc468c964f",
+    "2021-02-12_13_26_02_twr_square.csv": "47c0c902504adceca46c41870a0ad77d49addf031f918f2ddef83d6be1b21742",
+    "2021-02-12_09_43_34_twr_triangle.csv": "3c9ad372d44519e33d11d016bc56c332923b4aa917a785e716ec71c6af3a1754",
+    "2021-02-12_09_46_15_twr_octagon.csv": "8623b924541340ab3a35c631b78122cfd306dd396febeb3ff41211f402e51081",
+    "2021-02-12_09_51_57_twr_hourglass.csv": "85a00c2d41b4258cdb0cb497b33968b6c63d348d281888f62a5b1b49cec3f6ae",
+    "2021-02-12_09_56_09_twr_random.csv": "6610a358119a1970e4bff3487cf41838bcf8c513be9bc3dd131503a95d0a53bd",
+    "2021-02-12_10_09_28_twr_star.csv": "362d0a03d6a01047a45aed2ce78f0ff45c4b5b1a871ac5b2ec8111dbc02c6b65",
+    "2021-02-12_13_43_51_twr_square.csv": "e1662df8c9a6243d23f50a0939d409afecdb45a35fa6c8df75a823ee7fdb0b82"
+  },
+  "sensor_delay_s": 0.2,
+  "static_prefix_s": 1.5,
+  "estimator_truth_input": false,
+  "truth_only_for_scoring_and_common_raw_valid_crop": true,
+  "training_truth_for_radio_calibration": true,
+  "independent_test_date": false,
+  "initialization": "Shared sensor-only all8 Profile-1 at first t>=2 s; common [p,v] marginal and exact Gaussian quadratic moments.",
+  "input": "Sensor-only gyro integration, startup Profile-1 yaw, constant sensor-derived IMU bias; no radio/attitude update after startup. Error rotation starts at 15 s.",
+  "input_error_degrees": [
+    0.0,
+    90.0,
+    -90.0,
+    180.0
+  ],
+  "input_error_is_not_yaw_estimation": true,
+  "single_anchor_id": 0,
+  "layouts": [
+    "single0",
+    "all8",
+    "lower4"
+  ],
+  "outage_s": [
+    15,
+    25
+  ],
+  "fixed_score_s": [
+    31.0,
+    36.0
+  ],
+  "no_post_outage_resets": true,
+  "every_arrived_range_used_once": true,
+  "radio_policy": "No NIS gate/Huber in either module; same calibrated raw positive changed arrivals.",
+  "quadratic_multi_anchor_is_extension": true,
+  "quadratic_measurement": ".5*(rho_calibrated^2-sigma^2)-.5*a^T a; H=[1,0,0,-a^T,0]; R=||p_hat-a||^2*sigma^2+.5*sigma^4.",
+  "process": "Same p/v noise marginal: held independent acceleration sample variance 4I and 1e-4 I6 per second; lifted rows use exact held-step input Jacobian with additional 1e-4 I3 latent forcing.",
+  "comparison_limit": "Conditional same-input p/v module experiment, not a full attitude+IMU-bias InEKF. Source observer has no yaw output."
+}

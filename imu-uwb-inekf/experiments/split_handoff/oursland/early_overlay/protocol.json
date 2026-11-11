@@ -1,0 +1,78 @@
+{
+  "names": [
+    "const1-trial4-tdoa2",
+    "const2-trial4-tdoa3",
+    "const3-trial4-tdoa2",
+    "const4-trial4-tdoa3-traj1",
+    "const1-trial4-tdoa3",
+    "const2-trial4-tdoa2",
+    "const3-trial4-tdoa3",
+    "const4-trial4-tdoa2-traj1"
+  ],
+  "primary_names": [
+    "const1-trial4-tdoa2",
+    "const2-trial4-tdoa3",
+    "const3-trial4-tdoa2",
+    "const4-trial4-tdoa3-traj1"
+  ],
+  "extension_names": [
+    "const1-trial4-tdoa3",
+    "const2-trial4-tdoa2",
+    "const3-trial4-tdoa3",
+    "const4-trial4-tdoa2-traj1"
+  ],
+  "yaws_deg": [
+    0.0,
+    180.0
+  ],
+  "workers": 16,
+  "backend": "untouched original author class; original native queue",
+  "initial": "same sensor-only X/bias and exact original invariant P; yaw world-z at initial0.6s; no truth",
+  "outage_s": [
+    10.0,
+    20.0
+  ],
+  "duration_s": 45.0,
+  "score_windows_half_open_s": {
+    "early": [
+      20.0,
+      22.0
+    ],
+    "future": [
+      26.0,
+      31.0
+    ],
+    "post": [
+      26.0,
+      45.0
+    ]
+  },
+  "scoring": "common20Hz zero-order-hold; no alignment",
+  "thresholds": {
+    "CHECK_INTERVAL_S": 0.05,
+    "RANGE_STD_FLOOR_M": 0.3,
+    "POSITION_STD_FLOOR_M": 0.5,
+    "UNMODELED_ACCEL_MPS2": 3.0,
+    "MAX_95_HORIZONTAL_RADIUS_M": 2.0,
+    "CHI2_95_2D": 5.991464547,
+    "MAX_NORMALIZED_RMS": 2.0,
+    "MAX_SPEED_MPS": 8.0,
+    "MIN_DISTINCT_ANCHORS": 4,
+    "MIRROR_XY_TOLERANCE_M": 1.0,
+    "RANK_TOLERANCE": 1e-08
+  },
+  "frontend_source": "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\early_tdoa\\run.py",
+  "frontend_sha256": "f62a81c4410667170652afa4dc89c52c0e73691ccb444f3506d26dc12b5fe46d",
+  "author_sha256": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+  "recovery": "deepcopy complete author object when first native previous timestamp reaches20; preserve X/X_hat/P/P_hat/bias and event dt",
+  "buffer": "first native packet per timestamp; recovery packets<=already reached previous event; rolling max2s; original100Hz checks every5 samples mapped to first native event >= check",
+  "gate": "exact frozen early_tdoa.horizontal_candidate; original thresholds and native .14/.22 fit variance unchanged",
+  "handoff": "exact frozen XY-only mean/covariance; retain R/v/z/bias and full nonXY physical covariance; clear XY cross; refresh X_hat/P_hat only at handoff",
+  "reuse": "reserved branch never scalar-fuses20s..trigger; after handoff only packet timestamp strictly greater than trigger; baseline fuses native packets normally",
+  "fallback": "if no trigger reserved branch remains inertial; optional display early_switch stays native before trigger or entire run if none",
+  "source_hashes": {
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\oursland\\early_overlay\\run.py": "dd96d480a23bd7937adc3f05ab320e559b685d4ab8260213e8b9739ef58049c9",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\oursland\\native_schedule.py": "3920aab8afff23ed31454e5921a0438a1422896288d5b5d8e753965e0d3d112c",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\delft\\early_position.py": "3ebeb25b41b634e4233fe872dda915295064501487c0c445595dee8e705a4671"
+  }
+}

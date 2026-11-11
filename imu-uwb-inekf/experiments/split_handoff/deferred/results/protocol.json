@@ -1,0 +1,79 @@
+{
+  "trial": 6,
+  "names": [
+    "const1-trial6-tdoa2",
+    "const1-trial6-tdoa3",
+    "const2-trial6-tdoa2",
+    "const2-trial6-tdoa3",
+    "const3-trial6-tdoa2",
+    "const3-trial6-tdoa3",
+    "const4-trial6-tdoa2-traj1",
+    "const4-trial6-tdoa3-traj1"
+  ],
+  "geometries": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "radio_protocols": [
+    2,
+    3
+  ],
+  "yaws_deg": [
+    0.0,
+    180.0
+  ],
+  "scenarios": {
+    "cold": {
+      "window_start": 0.0,
+      "attempts": [
+        2.0,
+        6.0,
+        10.0,
+        14.0
+      ],
+      "outage": null
+    },
+    "outage": {
+      "window_start": 20.0,
+      "attempts": [
+        22.0,
+        26.0,
+        30.0,
+        34.0
+      ],
+      "outage": [
+        10.0,
+        20.0
+      ]
+    }
+  },
+  "policies": [
+    "retain",
+    "first_pass",
+    "forced_first",
+    "forced_each"
+  ],
+  "duration_s": 45.0,
+  "position_handoff": "Shared first .6s raw radio CV and .2s gravity tilt; no later p/v reset",
+  "radio_partition": "Per-directed-link transaction parity after .6s; live even, heading candidate odd; fixed across all policies",
+  "candidate_prefix_policy": "All initial <=.6s radio excluded from heading candidates and future live updates",
+  "outage_candidate_policy": "Physically remove all outage candidate packets before radio-only path construction",
+  "deferred_policy": "First accepted fixed yaw_evidence screen changes world-z yaw once; keep normal InEKF between attempts",
+  "force_policy": "Forced-first applies candidate at first scheduled clock; forced-each applies at every clock, including rejected candidates",
+  "covariance": "Only invariant-chart transport; physical covariance, p/v and IMU bias preserved at yaw change",
+  "reference": "Actual current R @ Qend.T at each attempt; fixed known window-start IMU bias",
+  "primary_score": "Every case future XY after the last absolute clock: 14s cold, 34s outage; never choose baseline by trigger",
+  "truth_usage": "Raw loader returns truth then immediately discards it; generation uses no truth value or truth crop. Scoring starts after all names finish.",
+  "date_claim": "Held-out trial relative to trial3/4/5 group; no independent recording date established",
+  "expected_base_cases": 32,
+  "expected_trajectories": 128,
+  "workers": 2,
+  "source_sha256": {
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\deferred\\run.py": "3870fcb51d7a3b715cfbd67c036d09ac32f5320883af2bf0b8623e9000160c63",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\util\\run.py": "3e132411fa425cd248aca70f43da7bec640fb4928cc7629da32de15a8723e4f5",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\util\\kernel.py": "14dc9eb788ad24bc1012aedb6e1eebdaa7330319c7f93c818142a6b99dcf8679",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\yaw_evidence.py": "62e88bfa3ab41160698ee149c2efda8b7d8a4296713b0857f29dc7010050e33b"
+  }
+}

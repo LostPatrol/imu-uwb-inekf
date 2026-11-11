@@ -1,0 +1,11 @@
+{
+  "trigger": "Frozen early-position accepted timestamp",
+  "first_window": "Restored radio through trigger: only early XY",
+  "split": "Post-trigger received per-anchor count starts0: odd live, even reserved CV; through27s inclusive",
+  "pv_handoff": "At27s once from reserved raw radio only; preserve actual live R/bias and retained covariance block",
+  "after27": "All later native scalar updates; no heading or old-branch state replacement",
+  "display": "Native until frozen trigger, then actual staged state; no posterior fusion",
+  "thresholds_changed": false,
+  "evaluation_truth_in_estimator": false,
+  "source_sha256": "ccc313e58a7000adddc5afa32babf17aca81cccc0472096da8e61dc69eb4e7f1"
+}

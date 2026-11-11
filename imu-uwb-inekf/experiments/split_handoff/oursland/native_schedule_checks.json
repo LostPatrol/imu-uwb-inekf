@@ -1,0 +1,36 @@
+{
+  "compiled_vs_literal_python_max_abs": {
+    "state": 0.0,
+    "covariance": 0.0,
+    "bias": 0.0,
+    "history": 0.0
+  },
+  "acceptance_counts_equal": true,
+  "raw_acc_samples": 45406,
+  "raw_radio_packets": 21367,
+  "imu_acc_norm_median_g": 1.0008794842951363,
+  "native_imu_median_dt": 0.0009910000000016295,
+  "thread_pools": [
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libopenblas",
+      "filepath": "E:\\0syncthing\\Code\\InEKF\\.venv\\Lib\\site-packages\\numpy.libs\\libopenblas64__v0.3.23-293-gc2f4bdbb-gcc_10_3_0-2bde3a66a51006b2b53eb373ff767a3f.dll",
+      "version": "0.3.23.dev",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    },
+    {
+      "user_api": "blas",
+      "internal_api": "openblas",
+      "num_threads": 1,
+      "prefix": "libscipy_openblas",
+      "filepath": "E:\\0syncthing\\Code\\InEKF\\.venv\\Lib\\site-packages\\scipy.libs\\libscipy_openblas-64eda39e79589aedb16f58e5547eb599.dll",
+      "version": "0.3.30",
+      "threading_layer": "pthreads",
+      "architecture": "Haswell"
+    }
+  ],
+  "original_source_sha256": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0"
+}

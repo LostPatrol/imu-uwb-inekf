@@ -1,0 +1,10 @@
+policy,metric,median_difference,improved,worsened,unchanged,max_worsening,best_improvement
+retain_normal,post_xy_rmse,0.0,0,0,96,0.0,0.0
+retain_normal,post_z_rmse,0.0,0,0,96,0.0,0.0
+retain_normal,post_yaw_rmse_deg,0.0,0,0,96,0.0,0.0
+full_attitude,post_xy_rmse,0.0003443370596637983,41,55,0,243.64689109896284,-142.90774778093322
+full_attitude,post_z_rmse,4.67157670435564e-06,44,52,0,95.43628977560039,-47.55018625775508
+full_attitude,post_yaw_rmse_deg,1.6607747922515195,46,50,0,139.53948295633327,-138.17231983811877
+evidence_yaw,post_xy_rmse,0.0,0,0,96,0.0,0.0
+evidence_yaw,post_z_rmse,0.0,0,0,96,0.0,0.0
+evidence_yaw,post_yaw_rmse_deg,0.0,0,0,96,0.0,0.0

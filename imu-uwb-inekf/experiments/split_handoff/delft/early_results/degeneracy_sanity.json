@@ -1,0 +1,87 @@
+{
+  "horizontal_coplanar": {
+    "time_s": 0.5,
+    "events": 40,
+    "anchors": 4,
+    "accepted": true,
+    "nuisance_rank": 4,
+    "horizontal_information_eigenvalues": [
+      50.995709537710304,
+      54.03982858158202
+    ],
+    "normalized_rms": 3.4412292238564152e-09,
+    "speed_mps": 1.4910832880523478e-08,
+    "mirror_xy_separation_m": 0.0,
+    "comparable_mirror": true,
+    "fitted_z_m": 1.0000978673245893,
+    "fitted_velocity": [
+      -6.217926062108349e-16,
+      8.501940837260304e-16,
+      1.491083288052344e-08
+    ],
+    "anchor_height_span_m": 0.0,
+    "horizontal_covariance": [
+      [
+        0.2689576361002371,
+        0.0005432666541516635
+      ],
+      [
+        0.0005432666541516635,
+        0.26915672666874835
+      ]
+    ],
+    "radius_95_m": 1.2709664502897366,
+    "prior_advantage_min_eigenvalue_m2": 99.7303905071806,
+    "position_xy": [
+      0.4999999999999999,
+      0.3000000000000003
+    ],
+    "reason": "accepted"
+  },
+  "coincident": {
+    "time_s": 0.5,
+    "events": 40,
+    "anchors": 4,
+    "accepted": false,
+    "nuisance_rank": 2,
+    "horizontal_information_eigenvalues": [
+      3.886019801357503e-53,
+      2.5405142068407037e-37
+    ],
+    "normalized_rms": 2.3945439282897652e-11,
+    "speed_mps": 8.634306659326979e-08,
+    "mirror_xy_separation_m": 0.0,
+    "comparable_mirror": true,
+    "fitted_z_m": 0.41690481052625306,
+    "fitted_velocity": [
+      -1.4650059567835252e-14,
+      -8.634306636001011e-08,
+      6.346691889391385e-12
+    ],
+    "anchor_height_span_m": 0.0,
+    "reason": "horizontal_rank_deficient"
+  },
+  "collinear": {
+    "time_s": 0.5,
+    "events": 40,
+    "anchors": 4,
+    "accepted": false,
+    "nuisance_rank": 4,
+    "horizontal_information_eigenvalues": [
+      3.1578329070316447e-31,
+      83.31089501857848
+    ],
+    "normalized_rms": 1.2869575628237802e-10,
+    "speed_mps": 3.6832956291085186e-06,
+    "mirror_xy_separation_m": 0.0,
+    "comparable_mirror": true,
+    "fitted_z_m": 0.7060430004272301,
+    "fitted_velocity": [
+      -1.0349467244693427e-16,
+      3.60911978913215e-06,
+      -7.354733435717602e-07
+    ],
+    "anchor_height_span_m": 0.0,
+    "reason": "horizontal_rank_deficient"
+  }
+}

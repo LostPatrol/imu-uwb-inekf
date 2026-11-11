@@ -1,0 +1,24 @@
+{
+  "interval": [
+    20.2,
+    22.0
+  ],
+  "timing": "Post-primary-score diagnostic requested by parent; not tuned and not a trigger-relative crop",
+  "cases": 16,
+  "methods": [
+    "native",
+    "fixed_2s_pv",
+    "early_xy",
+    "early_switch"
+  ],
+  "original_primary_intervals_retained": {
+    "early": [
+      20.0,
+      22.0
+    ],
+    "future": [
+      26.0,
+      31.0
+    ]
+  }
+}

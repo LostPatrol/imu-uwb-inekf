@@ -1,0 +1,76 @@
+[
+  {
+    "geometry": 1,
+    "protocol": 2,
+    "canonical": "const1-trial7-tdoa2",
+    "name": null,
+    "missing": true,
+    "available_manuals": []
+  },
+  {
+    "geometry": 1,
+    "protocol": 3,
+    "canonical": "const1-trial7-tdoa3",
+    "name": null,
+    "missing": true,
+    "available_manuals": []
+  },
+  {
+    "geometry": 2,
+    "protocol": 2,
+    "canonical": "const2-trial7-tdoa2",
+    "name": null,
+    "missing": true,
+    "available_manuals": []
+  },
+  {
+    "geometry": 2,
+    "protocol": 3,
+    "canonical": "const2-trial7-tdoa3",
+    "name": null,
+    "missing": true,
+    "available_manuals": []
+  },
+  {
+    "geometry": 3,
+    "protocol": 2,
+    "canonical": "const3-trial7-tdoa2",
+    "name": "const3-trial7-tdoa2-manual1",
+    "missing": false,
+    "available_manuals": [
+      "const3-trial7-tdoa2-manual1",
+      "const3-trial7-tdoa2-manual2"
+    ]
+  },
+  {
+    "geometry": 3,
+    "protocol": 3,
+    "canonical": "const3-trial7-tdoa3",
+    "name": "const3-trial7-tdoa3-manual3",
+    "missing": false,
+    "available_manuals": [
+      "const3-trial7-tdoa3-manual3",
+      "const3-trial7-tdoa3-manual4"
+    ]
+  },
+  {
+    "geometry": 4,
+    "protocol": 2,
+    "canonical": "const4-trial7-tdoa2-traj1",
+    "name": "const4-trial7-tdoa2-manual1",
+    "missing": false,
+    "available_manuals": [
+      "const4-trial7-tdoa2-manual1",
+      "const4-trial7-tdoa2-manual2",
+      "const4-trial7-tdoa2-manual3"
+    ]
+  },
+  {
+    "geometry": 4,
+    "protocol": 3,
+    "canonical": "const4-trial7-tdoa3-traj1",
+    "name": null,
+    "missing": true,
+    "available_manuals": []
+  }
+]

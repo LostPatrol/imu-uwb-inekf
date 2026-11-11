@@ -1,0 +1,11 @@
+{
+  "matched_cases": 96,
+  "rejected_cases": 188,
+  "maximum_differences": {
+    "position_velocity": 0.0,
+    "bias": 0.0,
+    "physical_covariance": 0.0,
+    "rejected_trajectory": 0.0,
+    "yaw_only_gravity": 2.220446049250313e-16
+  }
+}

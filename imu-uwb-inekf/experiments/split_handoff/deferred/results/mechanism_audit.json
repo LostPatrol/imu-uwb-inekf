@@ -1,0 +1,36 @@
+{
+  "trajectories": 128,
+  "base_cases": 32,
+  "unique_keys": 128,
+  "failures": 1,
+  "incomplete_future": 1,
+  "first_pass_accepts": 4,
+  "first_pass_late_accepts": 4,
+  "first_pass_future_xy_wins": 2,
+  "first_pass_future_xy_losses": 2,
+  "first_pass_future_xy_ties": 28,
+  "failed_keys": [
+    "const4-trial6-tdoa2-traj1__outage__yaw0__forced_each"
+  ],
+  "nonfailed_output_clock_mismatches": [],
+  "maximum_handoff_changes": {
+    "position_change_m": 0.0,
+    "velocity_change_mps": 0.0,
+    "body_vertical_change": 2.242025235105681e-16,
+    "physical_covariance_relative_change": 1.7823382885439818e-14
+  },
+  "candidate_packets_after_decision": 0,
+  "source_hash_matches": {
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\deferred\\run.py": true,
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\util\\run.py": false,
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\util\\kernel.py": true,
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\yaw_evidence.py": true
+  },
+  "imported_util_source_provenance": {
+    "imported_util_sha256": "3e132411fa425cd248aca70f43da7bec640fb4928cc7629da32de15a8723e4f5",
+    "current_util_sha256": "aabf8af51cb5b82285b42213a7d71fbca87867947fce4cc748699a7f1a3b9a75",
+    "snapshot_exact_launch_hash": true,
+    "all_imported_functions_unchanged": true,
+    "difference": "Only UTIL's unused main gained --resume checkpoint handling after deferred launch"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "const2-trial6-tdoa3",
+  "future_perturbation_max_absolute_difference": {
+    "tau": 0.0,
+    "force": 0.0,
+    "B": 0.0,
+    "plus": 0.0,
+    "minus": 0.0,
+    "y": 0.0,
+    "sigma": 0.0,
+    "path": 0.0,
+    "Qend": 0.0
+  },
+  "masked_packet_perturbation_max_absolute_difference": {
+    "tau": 0.0,
+    "force": 0.0,
+    "B": 0.0,
+    "plus": 0.0,
+    "minus": 0.0,
+    "y": 0.0,
+    "sigma": 0.0,
+    "path": 0.0,
+    "Qend": 0.0
+  },
+  "initial_and_mask_packets_excluded": true,
+  "radio_split": {
+    "initial_packets": 183,
+    "live_packets": 6227,
+    "candidate_packets": 6223,
+    "intersection_packets": 0,
+    "first_live_time": 0.6054969999999957,
+    "first_candidate_time": 0.6201840000000011,
+    "live_indices_sha256": "58cb2b850a037bf1cf8d9e40ce5328b90350d8533b39b24366535f811da449d6",
+    "candidate_indices_sha256": "780b709753d17ff2f85688accce77966a93202d0f8c06c49d572f21adc84ac29"
+  },
+  "source_sha256": {
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\deferred\\audit.py": "2d99637df38fd5562ede9596e2f26f00250e63dc1bb1d62c57dd858da4157524",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\util\\run.py": "3e132411fa425cd248aca70f43da7bec640fb4928cc7629da32de15a8723e4f5",
+    "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\split_handoff\\util\\kernel.py": "14dc9eb788ad24bc1012aedb6e1eebdaa7330319c7f93c818142a6b99dcf8679"
+  }
+}

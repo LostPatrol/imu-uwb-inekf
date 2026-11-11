@@ -1,0 +1,10 @@
+{
+  "cases": 48,
+  "maxima": {
+    "prefix": 0.0,
+    "trigger": 0.0
+  },
+  "early_xy_radio_disjoint": true,
+  "live_pv_radio_disjoint": true,
+  "received_packet_coverage_exact": true
+}

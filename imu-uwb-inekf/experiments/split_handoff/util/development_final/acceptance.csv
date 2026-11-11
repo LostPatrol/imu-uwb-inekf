@@ -1,0 +1,7 @@
+scenario,policy,sum,count
+cold_weak,bank_yaw,0,32
+cold_weak,evidence_yaw,0,32
+dynamic,bank_yaw,0,32
+dynamic,evidence_yaw,0,32
+outage,bank_yaw,2,32
+outage,evidence_yaw,2,32

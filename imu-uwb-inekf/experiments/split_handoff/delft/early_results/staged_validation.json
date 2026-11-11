@@ -1,0 +1,14 @@
+{
+  "cases": 48,
+  "trajectories": 96,
+  "all_finite": true,
+  "maxima": {
+    "trigger_replay": 0,
+    "rotation": 0,
+    "bias": 0,
+    "retained_covariance": 6.002143226879753e-16
+  },
+  "radio_groups_disjoint": true,
+  "evaluation_yaw_truth_used": false,
+  "source_sha256": "ccc313e58a7000adddc5afa32babf17aca81cccc0472096da8e61dc69eb4e7f1"
+}

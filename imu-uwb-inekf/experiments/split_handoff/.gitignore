@@ -1,0 +1,26 @@
+# Replays can be regenerated from the public sensor logs. Keep compact paired evidence.
+**/cases/
+**/histories/
+**/display_histories/
+**/staged_histories/
+**/cache/
+**/*__*.json
+/util/development/
+/util/holdout/
+/util/smoke/
+/bank/smoke_analysis/
+/oursland/holdout/
+/oursland/smoke/
+# Only selected tables, checks and plot source from these generated directories are tracked.
+/util/development_final/
+/util/holdout_final/
+/util/holdout_position_only/
+/bank/results_development/
+/oursland/analysis/
+/oursland/analysis_original_prior/
+/oursland/native_paired/
+/oursland/native_policies/
+/oursland/native_original_prior/
+/oursland/native_policies_original_prior/
+/oursland/native_smoke/
+/delft/early_results/

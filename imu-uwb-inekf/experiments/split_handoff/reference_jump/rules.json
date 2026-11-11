@@ -1,0 +1,30 @@
+{
+  "frozen_date": "2026-11-11",
+  "purpose": "Controlled coordinate-loss restart at decision time, not a naturally occurring outage failure",
+  "trial": 7,
+  "geometries": [1, 2, 3, 4],
+  "protocols": [2, 3],
+  "const4_trajectory": 1,
+  "missing_rule": "Keep all eight geometry/protocol slots. Prefer the canonical trial7 basename/traj1; if absent, choose the lexicographically first trial7 manual filename in that slot by availability only. Record unavailable slots; never replace the trial or select using scores",
+  "availability_inventory_before_sensor_loading": {
+    "const3_tdoa2": "const3-trial7-tdoa2-manual1",
+    "const3_tdoa3": "const3-trial7-tdoa3-manual3",
+    "const4_tdoa2": "const4-trial7-tdoa2-manual1",
+    "missing_slots": ["const1_tdoa2", "const1_tdoa3", "const2_tdoa2", "const2_tdoa3", "const4_tdoa3"]
+  },
+  "duration_s": 45,
+  "scenarios": {
+    "dynamic": {"window": [10, 16], "outage": null},
+    "outage": {"window": [20, 26], "outage": [10, 20]}
+  },
+  "decision_time_left_yaw_jumps_deg": [0, 90, -90, 180],
+  "policies": ["retain", "gated", "ungated_same_candidate", "full_attitude"],
+  "shared_handoff": "Same nominal-shadow body p, original shadow v and bias, and original shadow physical covariance; change R only",
+  "full_attitude_reuse": "Fit once at nominal reference; exact +/-90/180 world-yaw reparameterizations retain the same eight-start grid and isotropic tilt prior. Verify first available +90 case by direct refitting and retain discrepancy",
+  "future_horizons_s": [5, 15],
+  "sensor_resampling": "100 Hz causal previous-sample hold for independently timestamped raw acc/gyro; native common InEKF uses adjacent held samples",
+  "candidate_radio": "Existing window_inputs pair/time thinning, endpoint-clipped path, outage packets physically deleted",
+  "decisions": "Frozen yaw_evidence.decide, no threshold changes",
+  "truth": "No pose columns read during generation; score every saved nominal and perturbed case only after all decisions and future trajectories finish",
+  "selection": "No condition on actual truth yaw, improvement or acceptance; include nominal jump=0"
+}
