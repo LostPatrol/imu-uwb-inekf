@@ -1,7 +1,13 @@
 <!-- Manuscript entry points and compilation requirements. -->
 # 论文与数学说明
 
-当前研究材料：
+## 期刊稿
+
+[TAES 期刊论文](range_inertial_taes/range_inertial_taes.pdf) 使用学会的 Regular Paper 专用模板。论文以单标签测距和 IMU 的短窗位置获取为主线，给出旋转偏置修正、同窗文献方法对照及 InEKF 交接应用。[源码与编译说明](range_inertial_taes/README.md)
+
+## 会议稿与数学说明
+
+[最近一次会议修订稿](recovery_window_revision.pdf) 独立保留。更早的会议材料如下。
 
 - [英文论文](recovery_bootstrap_paper.pdf) 与 [TeX 源码](recovery_bootstrap_paper.tex)。
 - [精简补充材料](recovery_bootstrap_supplement.pdf) 与 [TeX 源码](recovery_bootstrap_supplement.tex)。
