@@ -1,0 +1,3 @@
+# Preserve the IEEE distribution's line endings on Windows checkouts.
+IEEEtaes.cls text eol=lf
+IEEEtaes.bst text eol=lf

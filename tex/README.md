@@ -3,7 +3,7 @@
 
 ## 期刊稿
 
-[TAES 期刊论文](range_inertial_taes/range_inertial_taes.pdf) 使用学会的 Regular Paper 专用模板。论文以单标签测距和 IMU 的短窗位置获取为主线，给出旋转偏置修正、同窗文献方法对照及 InEKF 交接应用。[源码与编译说明](range_inertial_taes/README.md)
+[TAES 期刊论文第二版](range_inertial_taes_v2/range_inertial_taes_v2.pdf) 使用学会的 Regular Paper 专用模板。新增 Delft 三角航线的全段动捕参考和连续滤波回放，以等比例转弯示意图解释偏置修正，并逐条核对参考文献署名。[创新点答复与编译说明](range_inertial_taes_v2/README.md) · [第一版期刊稿](range_inertial_taes/range_inertial_taes.pdf)
 
 ## 会议稿与数学说明
 
