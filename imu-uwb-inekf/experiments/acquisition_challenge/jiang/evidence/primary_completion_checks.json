@@ -1,0 +1,13 @@
+{
+  "pressure_rows": 768,
+  "pressure_unique": 768,
+  "pressure_episodes": 8,
+  "pressure_finite": 768,
+  "pressure_statuses": {
+    "relative_cost": 664,
+    "iteration_limit": 104
+  },
+  "native_rows": 96,
+  "native_episodes": 16,
+  "native_first_arrival_s": 10.0
+}

@@ -1,0 +1,15 @@
+{
+  "cases_requested": 451,
+  "elapsed_s": 1046.670124199998,
+  "workers": 8,
+  "blas_threads": 1,
+  "horizons_s": [
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "original_prior_retained": true,
+  "exact_time_node_copy": true
+}

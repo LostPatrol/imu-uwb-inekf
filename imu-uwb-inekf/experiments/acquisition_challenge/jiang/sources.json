@@ -1,0 +1,34 @@
+{
+  "description": "Primary sources inspected for the independent Jiang-style graph reproduction.",
+  "accessed_date": "2026-11-13",
+  "paper_title": "Robust Indoor Localization with Ranging-IMU Fusion",
+  "doi": "10.1109/ICRA57147.2024.10611274",
+  "primary_sources": [
+    "https://faculty.cc.gatech.edu/~dhekne/Robust_Indoor_Localization_with_Ranging_IMU_Fusion_ICRA_2024.pdf",
+    "https://arxiv.org/html/2309.08803v1",
+    "https://fanjiang.me/",
+    "https://github.com/ProfFan"
+  ],
+  "author_implementation_located": false,
+  "code_search_scope": "Paper links, first-author publication site, all three public ProfFan repository listing pages (271 repositories), public ProfFan/gtsam branch listing, and exact-title/arXiv-ID/D-iSAM2 searches; absence of located code is not proof that no author code exists.",
+  "paper_supported_components": [
+    "Section V: accumulate 10 seconds and batch-optimize before initializing iSAM2",
+    "Section III-A: IMU preintegration and first-order Gauss-Markov biases",
+    "Section III-B: Gaussian LOS and positive half-Cauchy NLOS modeling",
+    "Section III-B: pose, velocity, bias at range timestamps; anchor and initial bias priors",
+    "Section IV: D-iSAM2 damped incremental Bayes-tree solver"
+  ],
+  "independent_approximations": [
+    "Sparse batch LM in place of unavailable author implementation and D-iSAM2",
+    "One-Hz accumulating full-graph batch continuation after the 10-second output",
+    "Fixed surveyed anchors in place of unspecified finite anchor priors",
+    "Equal-prior maximum-density mixture and gamma=2*sigma; article omits executable switching details",
+    "Explicit independently selected IMU noise, bias time constant, bias priors and native zero pose seed",
+    "Framework initial position/wrapped physical yaw priors added only for the separately labeled stress layer"
+  ],
+  "gtsam_environment_check": {
+    "installed_in_project_environment": false,
+    "pypi_versions_checked": ["4.2", "4.3.0"],
+    "windows_wheels_found_in_these_releases": false
+  }
+}

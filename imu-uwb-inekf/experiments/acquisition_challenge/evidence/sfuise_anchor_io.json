@@ -1,0 +1,113 @@
+{
+  "author_anchor_message_threshold": 20,
+  "common_prefix_s": 1.5,
+  "ground_truth_read": false,
+  "records": [
+    {
+      "walk": 2,
+      "source_bag": "E:\\datasets\\sfuise-isas-walk\\ISAS-Walk2.bag",
+      "anchor_messages": 1241,
+      "anchor_message_has_header": false,
+      "timestamp_source": "rosbag recorded arrival timestamp; Anchorlist has no Header",
+      "first_anchor_from_bag_start_s": 2.430689229,
+      "twentieth_anchor_from_bag_start_s": 3.6544649720000004,
+      "first_to_twentieth_wait_s": 1.223775743,
+      "episodes": [
+        {
+          "episode": "isas_walk2_start",
+          "episode_epoch_ns": 1664959758530627554,
+          "prefix_replay": {
+            "first_arrival_ns": 1664959757032355963,
+            "twentieth_arrival_ns": 1664959758256131706,
+            "first_to_twentieth_wait_s": 1.223775743,
+            "first_arrival_relative_episode_s": -1.4982715910000002,
+            "anchor_ready_relative_episode_s": -0.27449584800000004,
+            "remaining_anchor_wait_at_episode_zero_s": 0.0
+          },
+          "without_prefix_replay": {
+            "first_arrival_ns": 1664959758561154082,
+            "twentieth_arrival_ns": 1664959759786057635,
+            "first_to_twentieth_wait_s": 1.224903553,
+            "first_arrival_relative_episode_s": 0.030526528,
+            "anchor_ready_relative_episode_s": 1.255430081,
+            "remaining_anchor_wait_at_episode_zero_s": 1.255430081
+          }
+        },
+        {
+          "episode": "isas_walk2_recovery",
+          "episode_epoch_ns": 1664959795043640662,
+          "prefix_replay": {
+            "first_arrival_ns": 1664959793560250335,
+            "twentieth_arrival_ns": 1664959794766781418,
+            "first_to_twentieth_wait_s": 1.206531083,
+            "first_arrival_relative_episode_s": -1.4833903270000002,
+            "anchor_ready_relative_episode_s": -0.276859244,
+            "remaining_anchor_wait_at_episode_zero_s": 0.0
+          },
+          "without_prefix_replay": {
+            "first_arrival_ns": 1664959795077098358,
+            "twentieth_arrival_ns": 1664959796272468359,
+            "first_to_twentieth_wait_s": 1.1953700010000001,
+            "first_arrival_relative_episode_s": 0.033457696,
+            "anchor_ready_relative_episode_s": 1.228827697,
+            "remaining_anchor_wait_at_episode_zero_s": 1.228827697
+          }
+        }
+      ]
+    },
+    {
+      "walk": 3,
+      "source_bag": "E:\\datasets\\sfuise-isas-walk\\ISAS-Walk3.bag",
+      "anchor_messages": 1339,
+      "anchor_message_has_header": false,
+      "timestamp_source": "rosbag recorded arrival timestamp; Anchorlist has no Header",
+      "first_anchor_from_bag_start_s": 2.502413503,
+      "twentieth_anchor_from_bag_start_s": 3.684011995,
+      "first_to_twentieth_wait_s": 1.181598492,
+      "episodes": [
+        {
+          "episode": "isas_walk3_start",
+          "episode_epoch_ns": 1664959848321862991,
+          "prefix_replay": {
+            "first_arrival_ns": 1664959846823613386,
+            "twentieth_arrival_ns": 1664959848005211878,
+            "first_to_twentieth_wait_s": 1.181598492,
+            "first_arrival_relative_episode_s": -1.498249605,
+            "anchor_ready_relative_episode_s": -0.31665111300000004,
+            "remaining_anchor_wait_at_episode_zero_s": 0.0
+          },
+          "without_prefix_replay": {
+            "first_arrival_ns": 1664959848359890139,
+            "twentieth_arrival_ns": 1664959849453861193,
+            "first_to_twentieth_wait_s": 1.093971054,
+            "first_arrival_relative_episode_s": 0.038027148000000004,
+            "anchor_ready_relative_episode_s": 1.1319982020000001,
+            "remaining_anchor_wait_at_episode_zero_s": 1.1319982020000001
+          }
+        },
+        {
+          "episode": "isas_walk3_recovery",
+          "episode_epoch_ns": 1664959887628167841,
+          "prefix_replay": {
+            "first_arrival_ns": 1664959886134687956,
+            "twentieth_arrival_ns": 1664959887233715507,
+            "first_to_twentieth_wait_s": 1.099027551,
+            "first_arrival_relative_episode_s": -1.4934798850000002,
+            "anchor_ready_relative_episode_s": -0.394452334,
+            "remaining_anchor_wait_at_episode_zero_s": 0.0
+          },
+          "without_prefix_replay": {
+            "first_arrival_ns": 1664959887640987708,
+            "twentieth_arrival_ns": 1664959888689176855,
+            "first_to_twentieth_wait_s": 1.048189147,
+            "first_arrival_relative_episode_s": 0.012819867,
+            "anchor_ready_relative_episode_s": 1.0610090140000001,
+            "remaining_anchor_wait_at_episode_zero_s": 1.0610090140000001
+          }
+        }
+      ]
+    }
+  ],
+  "interpretation": "Twentieth anchor arrival is only a lower bound on full ROS publication. Sensor-time interpolation and computation add their own constraints. Original startup buffers IMU before anchors, so one must not simply add the 20-message wait to the 0.1 s core first state. Prefix calibration may completely overlap anchor warm-up. No claim is made that running the original filter during the prefix gives the same initialized state as the common t=0 restart.",
+  "clock_caveat": "Bag arrival time and message header time share the recorded ROS epoch but are distinct timing quantities; no hardware-clock correction is inferred."
+}

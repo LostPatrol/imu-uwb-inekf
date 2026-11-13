@@ -1,0 +1,279 @@
+{
+  "author_commit": "75bf5a32f1a8e5c3046a5bd1a1ddf659fa996f7d",
+  "msvc_tools_version": "14.51.36231",
+  "native_compile_flags": [
+    "/utf-8",
+    "/std:c++17",
+    "/O2",
+    "/MD",
+    "/EHsc",
+    "/bigobj",
+    "/D_USE_MATH_DEFINES"
+  ],
+  "native_executable_sha256": "43404f9b47ed0e50f9e2867cf0195251be35e57b7bdb02076a27eec3ac44f2cf",
+  "native_cli_source_sha256": "d7e7df30b28989d04fe85b3cd723b2e3ff1b4598b8d4558398db4c6c632cb0b7",
+  "generated_header_sha256": {
+    "Accumulator.h": "7ef7366bc0f8f9d21897737351556ed457b7727cf6feb573d16677ac882dc9bf",
+    "AuthorFusion.h": "de4ff882bf4da30d598a3d8c9b011b10e1be87f9d7180de51ad7fe10b038d2be",
+    "Linearizer.h": "dc0bcd73602fb935782ee06da043855559623e34812f456bde54556a59772d64",
+    "Residuals.h": "a8bdb1530e102984512057e3b95f76289a63c6863735c3869a24d2f5d67e340d",
+    "SplineState.h": "74e0be70ec9a1880ea9b8bbdd0ac4263d66e4c8a062547a4d2576d90647a6824",
+    "utils\\common_utils.h": "72d19e1541fa5a9d7937bfcbeb29a2f4b713db959a7ae9fd0466f37063595fc3",
+    "utils\\math_tools.h": "041a28a696542f9597f32d2e93f33450dc32796289dae2e1e219fd24d297db24",
+    "utils\\tic_toc.h": "c65a1f884f0860a5c32ef1585ecf98d99cad39f6c22a9468f36ed3f44e2a63bd"
+  },
+  "packages": [
+    {
+      "name": "eigen",
+      "version": "3.4.0",
+      "build": "h5112557_2",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "gmp",
+      "version": "6.3.0",
+      "build": "hbc858fe_3",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "icu",
+      "version": "78.3",
+      "build": "h5112557_2",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libamd",
+      "version": "3.3.3",
+      "build": "h60129d2_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libblas",
+      "version": "3.11.0",
+      "build": "12_h8455456_mkl",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libboost-headers",
+      "version": "1.84.0",
+      "build": "h57928b3_7",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libbtf",
+      "version": "2.3.2",
+      "build": "h8c1c262_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libcamd",
+      "version": "3.3.3",
+      "build": "h8c1c262_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libcblas",
+      "version": "3.11.0",
+      "build": "12_h2a3cdd5_mkl",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libccolamd",
+      "version": "3.3.4",
+      "build": "h8c1c262_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libcholmod",
+      "version": "5.3.1",
+      "build": "hdf2ebef_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libcolamd",
+      "version": "3.3.4",
+      "build": "h8c1c262_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libcxsparse",
+      "version": "4.4.1",
+      "build": "h8c1c262_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libgcc",
+      "version": "16.2.0",
+      "build": "h110b43a_7",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libgomp",
+      "version": "16.2.0",
+      "build": "h8ee18e1_7",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libhwloc",
+      "version": "2.15.0",
+      "build": "default_hae90fe0_1001",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libiconv",
+      "version": "1.18",
+      "build": "hc1393d2_3",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libklu",
+      "version": "2.3.5",
+      "build": "h77a2eaa_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "liblapack",
+      "version": "3.11.0",
+      "build": "12_hf9ab0e9_mkl",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libldl",
+      "version": "3.3.2",
+      "build": "h8c1c262_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "liblzma",
+      "version": "5.8.3",
+      "build": "hfd05255_1",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libparu",
+      "version": "1.0.0",
+      "build": "hd80212b_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "librbio",
+      "version": "4.3.4",
+      "build": "h8c1c262_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libspex",
+      "version": "3.2.3",
+      "build": "h2f847cc_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libspqr",
+      "version": "4.3.4",
+      "build": "h60c7c62_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libsuitesparseconfig",
+      "version": "7.10.1",
+      "build": "h0795de7_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libumfpack",
+      "version": "6.3.5",
+      "build": "h4ca129d_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libwinpthread",
+      "version": "12.0.0.r688.g6b2176247.1",
+      "build": "h57928b3_0",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libxml2-16",
+      "version": "2.15.4",
+      "build": "h3cfd58e_1",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libxml2",
+      "version": "2.15.4",
+      "build": "he095d88_1",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "libzlib",
+      "version": "1.3.2",
+      "build": "hfd05255_3",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "llvm-openmp",
+      "version": "23.1.5",
+      "build": "h49e36cd_0",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "metis",
+      "version": "5.1.0",
+      "build": "h91a0a1d_1008",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "mkl",
+      "version": "2026.1.0",
+      "build": "hac47afa_235",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "mpfr",
+      "version": "4.2.2",
+      "build": "hb393127_1",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "suitesparse",
+      "version": "7.10.1",
+      "build": "hfa24a04_7100102",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "tbb",
+      "version": "2023.1.0",
+      "build": "h272cf33_2",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "ucrt",
+      "version": "10.0.26100.0",
+      "build": "h57928b3_0",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "vc",
+      "version": "14.5",
+      "build": "hda273ae_43",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "vc14_runtime",
+      "version": "14.51.36247",
+      "build": "h072b54c_43",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "vcomp14",
+      "version": "14.51.36247",
+      "build": "h1c3f1cb_43",
+      "channel": "conda-forge"
+    },
+    {
+      "name": "_openmp_mutex",
+      "version": "4.5",
+      "build": "20_gnu",
+      "channel": "conda-forge"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+# Full sensor copies, exploratory graphs and compiled caches are locally reproducible.
+/toronto_heading/data/
+/jiang/preliminary*/
+/jiang/scratch*/
+/jiang/native_numeric_manifold_reference/
+/jiang/native_executability/
+/jiang/evidence/*__native.csv
+/jiang/evidence/*__stress.csv
+/jiang/evidence/*__continuation.csv
+/jiang/evidence/stress_continuation.csv
+/jiang/evidence/resume_checkpoint_archive/
+/jiang/evidence/continuation_resume_transition__previous_*.json
+/jiang/evidence/states10/
+/jiang/evidence/states15/
+/pfeiffer/*/*__*__*.csv

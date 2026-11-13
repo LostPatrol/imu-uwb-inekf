@@ -1,0 +1,28 @@
+{
+  "native_rows": 96,
+  "native_episodes": 16,
+  "pressure_rows": 768,
+  "pressure_episodes": 8,
+  "continuation_rows": 3840,
+  "extended_rows": 4608,
+  "pressure_unique": 768,
+  "extended_unique": 4608,
+  "complete_registered_grid": true,
+  "all_common_radio_preserved": true,
+  "no_publication_before_10s": true,
+  "native_finite": 96,
+  "pressure_finite": 768,
+  "extended_finite": 4608,
+  "pressure_termination": {
+    "relative_cost": 664,
+    "iteration_limit": 104
+  },
+  "extended_termination": {
+    "relative_cost": 4025,
+    "iteration_limit": 583
+  },
+  "maximum_resume_endpoint_delta_m": 8.644125458514252e-14,
+  "maximum_native_stored_rotation_rad": 3.141450762644982,
+  "truth_read_by_estimator": false,
+  "passed": true
+}

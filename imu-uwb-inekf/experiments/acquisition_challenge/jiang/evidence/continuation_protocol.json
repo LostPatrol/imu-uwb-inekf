@@ -1,0 +1,52 @@
+{
+  "episodes": [
+    "isas_walk2_recovery",
+    "isas_walk3_recovery",
+    "delft_triangle_recovery",
+    "delft_octagon_recovery",
+    "delft_hourglass_recovery",
+    "delft_random_recovery",
+    "delft_star_recovery",
+    "delft_square_recovery"
+  ],
+  "all_cases_requested": true,
+  "priority_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95
+  ],
+  "selection_uses_accuracy": false,
+  "horizons_s": [
+    11,
+    12,
+    13,
+    14,
+    15
+  ],
+  "original_position_yaw_prior_retained": true,
+  "workers": 8,
+  "cache_policy": "one_episode_per_worker",
+  "pool": "split_handoff.cpu_replay.replay_pool",
+  "affinity": "physical_P_core_first"
+}

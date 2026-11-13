@@ -1,0 +1,24 @@
+{
+  "workers": 4,
+  "preferred_processors": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      6
+    ]
+  ],
+  "wall_s": 1042.8327881000005,
+  "cases": 388,
+  "author_sha256_after": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0"
+}

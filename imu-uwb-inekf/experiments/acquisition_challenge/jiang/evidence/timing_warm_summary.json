@@ -1,0 +1,18 @@
+{
+  "cases": 32,
+  "case_indices": [
+    0,
+    31,
+    63,
+    95
+  ],
+  "fresh_total_s_median": 1.5596945500001311,
+  "fresh_total_s_p95": 4.392191845007618,
+  "fresh_total_s_max": 5.689126199999009,
+  "maximum_endpoint_delta_from_registered_m": 2.009718347115232e-14,
+  "prepare_s_median": 0.26261649999651127,
+  "solve_s_median": 1.2367746499949135,
+  "workers": 1,
+  "blas_threads": 1,
+  "affinity": "P_core_first"
+}

@@ -1,0 +1,22 @@
+{
+  "common_raw_elapsed_s": true,
+  "duration_s": 15.0,
+  "oursland_prefix_s": 1.5,
+  "sfuise_prefix": "native early publication permitted",
+  "sfuise_config": "official config_test_util.yaml",
+  "lever_sfuise_m": [
+    -0.012,
+    0.001,
+    0.091
+  ],
+  "lever_oursland_m": [
+    -0.01245,
+    0.00127,
+    0.0908
+  ],
+  "truth_read_by_native": false,
+  "gyro_buffer": "fixed max future gyro wait over raw first15s",
+  "availability": "serial compute queue with wall time deltas; outputs never backfilled",
+  "sfuise_portability": "sole first spline endpoint repeated for absent knot[1]; audited sibling generated core copied unchanged",
+  "covariance": "native zero only; no external prior factors"
+}

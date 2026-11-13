@@ -1,0 +1,13 @@
+{
+  "E:\\0syncthing\\Code\\InEKF\\agent\\codex\\toronto_sfuise\\sfuise_native.exe": "7bd748e0e192afd39f374d5e617505a1ca4142686e6145b9884f32793f60f2fe",
+  "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_sfuise\\native_cli.cpp": "3b476930089239bf7eb468632b433cfcc75cc3e1db5e8a7d4b2ca1cef609527e",
+  "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_sfuise\\run.py": "1ea8ad159f39b750eaecdf93fd0c85e63fb490039a7ea556bff7225d67766a50",
+  "E:\\0syncthing\\Code\\InEKF\\agent\\codex\\toronto_sfuise\\generated\\Accumulator.h": "7ef7366bc0f8f9d21897737351556ed457b7727cf6feb573d16677ac882dc9bf",
+  "E:\\0syncthing\\Code\\InEKF\\agent\\codex\\toronto_sfuise\\generated\\AuthorFusion.h": "de4ff882bf4da30d598a3d8c9b011b10e1be87f9d7180de51ad7fe10b038d2be",
+  "E:\\0syncthing\\Code\\InEKF\\agent\\codex\\toronto_sfuise\\generated\\Linearizer.h": "dc0bcd73602fb935782ee06da043855559623e34812f456bde54556a59772d64",
+  "E:\\0syncthing\\Code\\InEKF\\agent\\codex\\toronto_sfuise\\generated\\Residuals.h": "a8bdb1530e102984512057e3b95f76289a63c6863735c3869a24d2f5d67e340d",
+  "E:\\0syncthing\\Code\\InEKF\\agent\\codex\\toronto_sfuise\\generated\\SplineState.h": "74e0be70ec9a1880ea9b8bbdd0ac4263d66e4c8a062547a4d2576d90647a6824",
+  "E:\\0syncthing\\Code\\InEKF\\agent\\codex\\toronto_sfuise\\generated\\utils\\common_utils.h": "72d19e1541fa5a9d7937bfcbeb29a2f4b713db959a7ae9fd0466f37063595fc3",
+  "E:\\0syncthing\\Code\\InEKF\\agent\\codex\\toronto_sfuise\\generated\\utils\\math_tools.h": "041a28a696542f9597f32d2e93f33450dc32796289dae2e1e219fd24d297db24",
+  "E:\\0syncthing\\Code\\InEKF\\agent\\codex\\toronto_sfuise\\generated\\utils\\tic_toc.h": "c65a1f884f0860a5c32ef1585ecf98d99cad39f6c22a9468f36ed3f44e2a63bd"
+}

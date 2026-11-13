@@ -1,0 +1,14 @@
+{
+  "wall_s": 0.2718157999916002,
+  "initial_cost": 50206.16670073466,
+  "final_cost": 1.549090969209224e-12,
+  "accepted_steps": 15,
+  "rejected_steps": 0,
+  "residual_calls": 16,
+  "termination": "relative_cost",
+  "iterations": 15,
+  "finite": true,
+  "position_max_m": 5.218561331677798e-07,
+  "endpoint_m": 4.9906649301507494e-08,
+  "nodes": 201
+}

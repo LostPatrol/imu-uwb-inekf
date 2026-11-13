@@ -1,0 +1,10 @@
+{
+  "files_checked": 16,
+  "causal_all": true,
+  "state_time_increasing_all": true,
+  "quaternion_max_norm_error": 3.552713678800501e-15,
+  "tag_body_lever_max_error_m": 1.605826503721438e-15,
+  "initial_center_yaw_max_error_rad": 4.440892098500626e-16,
+  "initial_center_note": "Local body pose is identity/zero, so configured nav transform is exactly the physical body center; no output initialization rows are counted as estimates",
+  "ground_truth_read": false
+}

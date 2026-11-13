@@ -1,0 +1,26 @@
+{
+  "selection": "fixed indices before observing results",
+  "case_indices": [
+    0,
+    31,
+    63,
+    95
+  ],
+  "episodes": [
+    "isas_walk2_recovery",
+    "isas_walk3_recovery",
+    "delft_triangle_recovery",
+    "delft_octagon_recovery",
+    "delft_hourglass_recovery",
+    "delft_random_recovery",
+    "delft_star_recovery",
+    "delft_square_recovery"
+  ],
+  "workers": 1,
+  "blas_threads": 1,
+  "warmup_s": 0.6026387000019895,
+  "full_fresh_preparation_each_timed_case": true,
+  "parameter_changes": false,
+  "pool": "split_handoff.cpu_replay.replay_pool",
+  "affinity": "P_core_first"
+}

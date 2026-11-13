@@ -1,0 +1,82 @@
+{
+  "completed_cases": 388,
+  "planned_cases": 388,
+  "core_unchanged": true,
+  "invalid_output_timelines": 0,
+  "estimator_failures": 0,
+  "maximum_errors": {
+    "xy_prior_m": 0.0,
+    "yaw_prior_rad": 2.4492935982947064e-16,
+    "z_sensor_m": 0.0,
+    "velocity_sensor_mps": 0.0,
+    "tilt_sensor": 1.1102230246251565e-16,
+    "bias_sensor": 0.0,
+    "physical_covariance": 0.0
+  },
+  "counts": [
+    {
+      "name": "const1-trial4-tdoa2",
+      "mode": "sensor_bootstrap",
+      "count": 1
+    },
+    {
+      "name": "const1-trial4-tdoa2",
+      "mode": "tight",
+      "count": 48
+    },
+    {
+      "name": "const1-trial4-tdoa2",
+      "mode": "wide",
+      "count": 48
+    },
+    {
+      "name": "const2-trial4-tdoa2",
+      "mode": "sensor_bootstrap",
+      "count": 1
+    },
+    {
+      "name": "const2-trial4-tdoa2",
+      "mode": "tight",
+      "count": 48
+    },
+    {
+      "name": "const2-trial4-tdoa2",
+      "mode": "wide",
+      "count": 48
+    },
+    {
+      "name": "const3-trial4-tdoa2",
+      "mode": "sensor_bootstrap",
+      "count": 1
+    },
+    {
+      "name": "const3-trial4-tdoa2",
+      "mode": "tight",
+      "count": 48
+    },
+    {
+      "name": "const3-trial4-tdoa2",
+      "mode": "wide",
+      "count": 48
+    },
+    {
+      "name": "const4-trial4-tdoa2-traj1",
+      "mode": "sensor_bootstrap",
+      "count": 1
+    },
+    {
+      "name": "const4-trial4-tdoa2-traj1",
+      "mode": "tight",
+      "count": 48
+    },
+    {
+      "name": "const4-trial4-tdoa2-traj1",
+      "mode": "wide",
+      "count": 48
+    }
+  ],
+  "causally_buffered_cases": 388,
+  "exact_case_schedule": true,
+  "max_clock_transform_error_s": 1.7763568394002505e-15,
+  "passed": true
+}

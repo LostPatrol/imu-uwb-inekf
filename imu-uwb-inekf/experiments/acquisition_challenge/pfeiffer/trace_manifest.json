@@ -1,0 +1,230 @@
+{
+  "archive_root": "agent/codex/pfeiffer_acquisition/traces",
+  "native": {
+    "files": 24,
+    "completed": 24
+  },
+  "stress_ekf": {
+    "files": 576,
+    "completed": 542,
+    "failed": 34
+  },
+  "stress_mhe": {
+    "files": 96,
+    "completed": 96,
+    "semantics": "16 position-only seeds per recovery; yaw and covariance unavailable"
+  },
+  "scoring_truth_read_by_replay": false,
+  "input_sha256": [
+    {
+      "episode": "delft_hourglass_recovery",
+      "file": "anchors.csv",
+      "sha256": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9"
+    },
+    {
+      "episode": "delft_hourglass_recovery",
+      "file": "imu.csv",
+      "sha256": "c83f8b92e788ca2b96b2239fddfcfe56e62ca1fe3b6e4de6e6a742ed21536a45"
+    },
+    {
+      "episode": "delft_hourglass_recovery",
+      "file": "priors.csv",
+      "sha256": "aa389f3896e57ead9adf86732a96a7926ba3ee124a788417fca4110b7246a6d6"
+    },
+    {
+      "episode": "delft_hourglass_recovery",
+      "file": "radio.csv",
+      "sha256": "c1cd52b7097621f424545ef1b76faf9793ff04e06dfc540bcc80bbae3a36476d"
+    },
+    {
+      "episode": "delft_hourglass_start",
+      "file": "anchors.csv",
+      "sha256": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9"
+    },
+    {
+      "episode": "delft_hourglass_start",
+      "file": "imu.csv",
+      "sha256": "e2e6ef13b748f63b02446c7facaabebab2b5ddd59e0b1c38a5d124c9576074ca"
+    },
+    {
+      "episode": "delft_hourglass_start",
+      "file": "radio.csv",
+      "sha256": "ddc9da263ace7349292b45393c52a01d4ace3cd1c27b67da59f6440ae24638ea"
+    },
+    {
+      "episode": "delft_octagon_recovery",
+      "file": "anchors.csv",
+      "sha256": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9"
+    },
+    {
+      "episode": "delft_octagon_recovery",
+      "file": "imu.csv",
+      "sha256": "b20788d183d4ed967fb2180e2b88ac385d6b34932c6f13814249b17842f61955"
+    },
+    {
+      "episode": "delft_octagon_recovery",
+      "file": "priors.csv",
+      "sha256": "a282353a819c15ac50f2f52439a82480a9c2060b011b13af514f0d58d5fa66af"
+    },
+    {
+      "episode": "delft_octagon_recovery",
+      "file": "radio.csv",
+      "sha256": "c2ea3efbf85b19acc8657a288ddd7c36e395438a39250a14a0133ffe762e0a5b"
+    },
+    {
+      "episode": "delft_octagon_start",
+      "file": "anchors.csv",
+      "sha256": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9"
+    },
+    {
+      "episode": "delft_octagon_start",
+      "file": "imu.csv",
+      "sha256": "6ad66d7fe6fcaf3420493ec83e8d17c1fba5f748e28837a38c9c68b90f48da7e"
+    },
+    {
+      "episode": "delft_octagon_start",
+      "file": "radio.csv",
+      "sha256": "037633350736e88af6d1f0fe6226226e9fbe5770da453b628b5e7ab1ebd5b28e"
+    },
+    {
+      "episode": "delft_random_recovery",
+      "file": "anchors.csv",
+      "sha256": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9"
+    },
+    {
+      "episode": "delft_random_recovery",
+      "file": "imu.csv",
+      "sha256": "4d42eab76276e4dfe70bef1c8bcad1598c7c3d215fba1e3d2a61440a644db9ca"
+    },
+    {
+      "episode": "delft_random_recovery",
+      "file": "priors.csv",
+      "sha256": "e8331d3f74ddb80b86efd323a036025f464308179a63e95f70f747800e1b7fd1"
+    },
+    {
+      "episode": "delft_random_recovery",
+      "file": "radio.csv",
+      "sha256": "9fd48b8af64c289c3bdc57fbe6e5d32219e6c76073372bb5bb267e882a6649cd"
+    },
+    {
+      "episode": "delft_random_start",
+      "file": "anchors.csv",
+      "sha256": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9"
+    },
+    {
+      "episode": "delft_random_start",
+      "file": "imu.csv",
+      "sha256": "d846caa9c3ccf1b225473f2f83b9f23ce13d9621298b79b44f596b616aadda18"
+    },
+    {
+      "episode": "delft_random_start",
+      "file": "radio.csv",
+      "sha256": "1c59f8255a90c65b80fe4a031d37cb14d19a8fd52646f113f8350982352c5fcf"
+    },
+    {
+      "episode": "delft_square_recovery",
+      "file": "anchors.csv",
+      "sha256": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9"
+    },
+    {
+      "episode": "delft_square_recovery",
+      "file": "imu.csv",
+      "sha256": "99410b29a85bf6e24f1dac2fdb1c574e28916f272f599305181fde233444ee9f"
+    },
+    {
+      "episode": "delft_square_recovery",
+      "file": "priors.csv",
+      "sha256": "cc86a86ab521106e9ec18be8d54b70f8ddb20fded70d13a8a3f32096ee34d000"
+    },
+    {
+      "episode": "delft_square_recovery",
+      "file": "radio.csv",
+      "sha256": "56c94583ec05bda1c63175efa4a61bf4d34b4a9b2d7c2ab11704dd26e1efc04f"
+    },
+    {
+      "episode": "delft_square_start",
+      "file": "anchors.csv",
+      "sha256": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9"
+    },
+    {
+      "episode": "delft_square_start",
+      "file": "imu.csv",
+      "sha256": "a95fd4105ae299673f0428dada97df947a73cd567a6a74e495d59850ae17bf02"
+    },
+    {
+      "episode": "delft_square_start",
+      "file": "radio.csv",
+      "sha256": "80b63d7c62775b25ac194749139ae12bd3419f4c2872c047c6d9e88d1a9d697d"
+    },
+    {
+      "episode": "delft_star_recovery",
+      "file": "anchors.csv",
+      "sha256": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9"
+    },
+    {
+      "episode": "delft_star_recovery",
+      "file": "imu.csv",
+      "sha256": "9ca32a599745f97ab18ea3e6538e2aeb706b738ba5d0a7238c0a4c18f3238855"
+    },
+    {
+      "episode": "delft_star_recovery",
+      "file": "priors.csv",
+      "sha256": "bdfdd2bac9610055c4166037fdad4aa5c2538dba628b73262e7e53a007a80964"
+    },
+    {
+      "episode": "delft_star_recovery",
+      "file": "radio.csv",
+      "sha256": "c9f6b7fcaf82ad59eec2ea2d48d3a39c8ada8c083b9c919e3a00163bb287e3c4"
+    },
+    {
+      "episode": "delft_star_start",
+      "file": "anchors.csv",
+      "sha256": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9"
+    },
+    {
+      "episode": "delft_star_start",
+      "file": "imu.csv",
+      "sha256": "3d8793c8068abb1a519793fe7492922261c9429ebdb94566fc3c8dba67852f9b"
+    },
+    {
+      "episode": "delft_star_start",
+      "file": "radio.csv",
+      "sha256": "08e16fdafc3e0bb369c8a93bae28bf59bb7d263300e2eae13cfe9acaab8ff02c"
+    },
+    {
+      "episode": "delft_triangle_recovery",
+      "file": "anchors.csv",
+      "sha256": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9"
+    },
+    {
+      "episode": "delft_triangle_recovery",
+      "file": "imu.csv",
+      "sha256": "461a19dad01fe820c6da442ad6ba5cdb3cbf3b90278c948c68a946cbcb799f28"
+    },
+    {
+      "episode": "delft_triangle_recovery",
+      "file": "priors.csv",
+      "sha256": "e5a1fcbea118b84203c482e7dc41596fdc4ae78dd135f9e669d660be66155a28"
+    },
+    {
+      "episode": "delft_triangle_recovery",
+      "file": "radio.csv",
+      "sha256": "94e99d359c5dd5247a13e5971cf3597a099f54dcb708d5564ead80760211927c"
+    },
+    {
+      "episode": "delft_triangle_start",
+      "file": "anchors.csv",
+      "sha256": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9"
+    },
+    {
+      "episode": "delft_triangle_start",
+      "file": "imu.csv",
+      "sha256": "8326f3fd7bd78748cdbaa12832f39a98a57cc7596172c98a1ffccde1e457e296"
+    },
+    {
+      "episode": "delft_triangle_start",
+      "file": "radio.csv",
+      "sha256": "1a1041c0f036d006e6a97425986f93fe482c1db7813288f558707e28a73eb050"
+    }
+  ]
+}

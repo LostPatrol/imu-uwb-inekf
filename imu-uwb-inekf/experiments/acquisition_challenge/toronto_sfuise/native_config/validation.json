@@ -1,0 +1,62 @@
+[
+  {
+    "name": "const1-trial4-tdoa2",
+    "published": 149,
+    "finite": true,
+    "state_not_after_arrival": true,
+    "available_not_before_arrival": true,
+    "availability_monotonic": true,
+    "shared_sensor_hashes": {
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const1-trial4-tdoa2\\imu.csv": "8a0d69a4790dfdc29bc3d5963db1b421ed64e661894e968bf39276c15b98394c",
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const1-trial4-tdoa2\\radio.csv": "6d88954d840b8e10b2fc47234cdcab6ba039101d6cb819d928d9631e3c7f4d47",
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const1-trial4-tdoa2\\anchors.csv": "790c550d8df7811c50e0664a206c99c5fc114a4ae89fa239c18009f42371bb83",
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const1-trial4-tdoa2\\truth.csv": "001008e97a3f0833ee868e736f2a728bf20be35e11511e2e3267eb152299c426"
+    },
+    "oursland_unbuffered_array_sha256": "d6ac2bfe79d1eb8083455e4d4d2940190993a7b72479e44207a487d446bb46fc"
+  },
+  {
+    "name": "const2-trial4-tdoa2",
+    "published": 149,
+    "finite": true,
+    "state_not_after_arrival": true,
+    "available_not_before_arrival": true,
+    "availability_monotonic": true,
+    "shared_sensor_hashes": {
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const2-trial4-tdoa2\\imu.csv": "bdb889a715eb248cd82203f2017496483a77d2568da05e69aec91818bad28065",
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const2-trial4-tdoa2\\radio.csv": "babb7e8de8330e2d6a58f576b87721e8c84c0ece1e38f15a7953680785fae2a8",
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const2-trial4-tdoa2\\anchors.csv": "e4384422c49141575f2b3d30f0de0546833594fc647502047712b422e92feb19",
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const2-trial4-tdoa2\\truth.csv": "1402ce278ca0915e078ecdd6f69c3c713b09c805e5028c99b741a107ece91a5c"
+    },
+    "oursland_unbuffered_array_sha256": "b7537b3ef731f10f1b6b92be65d4a5401a40b861852457b3b9c47b523c9ece1b"
+  },
+  {
+    "name": "const3-trial4-tdoa2",
+    "published": 149,
+    "finite": true,
+    "state_not_after_arrival": true,
+    "available_not_before_arrival": true,
+    "availability_monotonic": true,
+    "shared_sensor_hashes": {
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const3-trial4-tdoa2\\imu.csv": "d28c8989ca7397b46e1e3e0fdaf350a6b203636728fb9403264cd4f0191063e9",
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const3-trial4-tdoa2\\radio.csv": "84544a223d67bf801cb5878673cfd600f76fdda0f9177c29c0199314c8cc1edb",
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const3-trial4-tdoa2\\anchors.csv": "eedea79c88ca0ef4b43c332344726a320e2bcd6463db1d42b57489239ed91844",
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const3-trial4-tdoa2\\truth.csv": "4777b1715e5272e16ba312e20fde6a903cdecb67266347d90180c580f66a08f6"
+    },
+    "oursland_unbuffered_array_sha256": "50de68f91c5affe88918f0590b4d639e2b9cca2435ac7120f5b9cf0df0f49548"
+  },
+  {
+    "name": "const4-trial4-tdoa2-traj1",
+    "published": 149,
+    "finite": true,
+    "state_not_after_arrival": true,
+    "available_not_before_arrival": true,
+    "availability_monotonic": true,
+    "shared_sensor_hashes": {
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const4-trial4-tdoa2-traj1\\imu.csv": "fb53f7cb1e63c1bd95101b9fa0f0167d21c3306219fac120a4db855ef6835581",
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const4-trial4-tdoa2-traj1\\radio.csv": "aa639a3a371d9863d2e04cfdc8ff07d700c164cb2eab0b0f4640e4c05584e4d4",
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const4-trial4-tdoa2-traj1\\anchors.csv": "17e796ecac8837c453869e63b19cba3de0a43afeecd6776101f488d410a15b4a",
+      "E:\\0syncthing\\Code\\InEKF\\imu-uwb-inekf\\experiments\\acquisition_challenge\\toronto_heading\\data\\const4-trial4-tdoa2-traj1\\truth.csv": "d043dcd592b141cf022402af0c82856bf078bae1c91d1af4c636d00db1dfe88a"
+    },
+    "oursland_unbuffered_array_sha256": "3f99969fa635885fb945290c9d12522b7716b4c3d35ab7696cbc7683fe7bcd53"
+  }
+]

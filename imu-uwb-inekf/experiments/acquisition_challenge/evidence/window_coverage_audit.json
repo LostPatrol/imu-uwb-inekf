@@ -1,0 +1,32 @@
+{
+  "native": {
+    "rows": 864,
+    "episodes": 16,
+    "solver_limits": 46,
+    "numerical_exceptions": 0,
+    "finite_positions": 864,
+    "wall_median_s": 0.09753589996398655,
+    "wall_p95_s": 0.612450100046407
+  },
+  "stress": {
+    "rows": 3104,
+    "episodes": 8,
+    "solver_limits": 303,
+    "numerical_exceptions": 0,
+    "finite_positions": 3104,
+    "wall_median_s": 0.20120295000378968,
+    "wall_p95_s": 0.7590364350980962
+  },
+  "trajectory": {
+    "rows": 10864,
+    "episodes": 8,
+    "solver_limits": 849,
+    "numerical_exceptions": 0,
+    "finite_positions": 10864,
+    "wall_median_s": 0.22740720004367174,
+    "wall_p95_s": 0.7613404249932502
+  },
+  "all_requested_nodes_retained": true,
+  "identical_packets_across_paired_cases_and_methods": true,
+  "queues_include_compute_backlog_and_preserve_state_epoch": true
+}

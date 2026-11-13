@@ -1,0 +1,113 @@
+{
+  "calibration_policy": "Walk1 training only, no Walk2/3 fitting",
+  "sequences": {
+    "isas_walk1": {
+      "range_rmse_m": 0.4544278879767023,
+      "range_median_abs_m": 0.05137097952259717,
+      "range_p95_abs_m": 0.18807867454001048,
+      "range_max_abs_m": 20.47337872239183,
+      "range_count_abs_above_0p6m": 4,
+      "gyro_component_rmse_radps": 0.03147510579643413,
+      "prefix_specific_force_zup_mps2": [
+        -3.729279268258959e-15,
+        -4.0208632942595336e-14,
+        9.987257223706825
+      ],
+      "prefix_tilt_from_up_deg": 0.0
+    },
+    "isas_walk2": {
+      "range_rmse_m": 0.11539728985961376,
+      "range_median_abs_m": 0.0599440267771536,
+      "range_p95_abs_m": 0.2216953286859666,
+      "range_max_abs_m": 0.7208811578903345,
+      "range_count_abs_above_0p6m": 9,
+      "gyro_component_rmse_radps": 0.02689377461537958,
+      "prefix_specific_force_zup_mps2": [
+        0.06074926164102873,
+        -0.2212697232143111,
+        9.953337942054123
+      ],
+      "prefix_tilt_from_up_deg": 1.3206243471378882
+    },
+    "isas_walk3": {
+      "range_rmse_m": 0.3822884424450928,
+      "range_median_abs_m": 0.055061834420995215,
+      "range_p95_abs_m": 0.20750244972337506,
+      "range_max_abs_m": 20.041868635419466,
+      "range_count_abs_above_0p6m": 4,
+      "gyro_component_rmse_radps": 0.030878826354400892,
+      "prefix_specific_force_zup_mps2": [
+        0.16460558477266385,
+        -0.2552556326860477,
+        9.980919906549579
+      ],
+      "prefix_tilt_from_up_deg": 1.7430196107571525
+    }
+  },
+  "episodes": {
+    "isas_walk2_start": {
+      "sensor_values_exactly_preserved": true,
+      "source_start_s": 1.502857552,
+      "samples_imu": 1353,
+      "samples_radio": 1101,
+      "score_rows": 760,
+      "reference_yaw_at_zero_deg": -43.667937506973146,
+      "score_position_origin": "IMU",
+      "test_fitting_or_alignment": false
+    },
+    "isas_walk2_recovery": {
+      "sensor_values_exactly_preserved": true,
+      "source_start_s": 38.0158706605,
+      "samples_imu": 1351,
+      "samples_radio": 1076,
+      "score_rows": 760,
+      "reference_yaw_at_zero_deg": -10.164897146495232,
+      "score_position_origin": "IMU",
+      "test_fitting_or_alignment": false
+    },
+    "isas_walk3_start": {
+      "sensor_values_exactly_preserved": true,
+      "source_start_s": 1.518152131,
+      "samples_imu": 1353,
+      "samples_radio": 1047,
+      "score_rows": 760,
+      "reference_yaw_at_zero_deg": -27.94959848282009,
+      "score_position_origin": "IMU",
+      "test_fitting_or_alignment": false
+    },
+    "isas_walk3_recovery": {
+      "sensor_values_exactly_preserved": true,
+      "source_start_s": 40.824456981,
+      "samples_imu": 1351,
+      "samples_radio": 1093,
+      "score_rows": 760,
+      "reference_yaw_at_zero_deg": -2.729724291289781,
+      "score_position_origin": "IMU",
+      "test_fitting_or_alignment": false
+    }
+  },
+  "limitations": [
+    "Reference is HTC VIVE, not Vicon. Native VIVE and RTLS frames differ.",
+    "Tracker-to-IMU and VIVE-to-RTLS transformations were estimated on Walk1, not supplied by authors.",
+    "Clock lag is an effective training gyro/VIVE delay; no independent hardware timing calibration exists.",
+    "Raw IMU/radio estimator timestamps remain unchanged; score timestamps add fixed training gyro lag.",
+    "Range-derived training reference calibration inherits UWB bias and outliers; it is not metrology-grade absolute pose.",
+    "Half-training fits probe stability only; they do not form statistical confidence intervals."
+  ],
+  "training_half_stability": {
+    "early": {
+      "tracker_rotation_difference_from_full_deg": 0.7308230928154179,
+      "world_rotation_difference_from_full_deg": 1.7116651964085015,
+      "world_translation_difference_from_full_m": 0.06831131580692242,
+      "tag_lever_difference_from_full_m": 0.06959629845845482,
+      "imu_time_minus_vive_time_s": 0.034803687788762014
+    },
+    "late": {
+      "tracker_rotation_difference_from_full_deg": 0.5173607460763284,
+      "world_rotation_difference_from_full_deg": 0.39469999994781774,
+      "world_translation_difference_from_full_m": 0.1051243876565453,
+      "tag_lever_difference_from_full_m": 0.11218903122788433,
+      "imu_time_minus_vive_time_s": 0.03757329281071345
+    }
+  }
+}

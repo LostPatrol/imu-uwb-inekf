@@ -1,0 +1,23 @@
+{
+  "native_start_by_method": {
+    "SFUISE": 8,
+    "Jiang_independent": 8,
+    "profile1": 8,
+    "body_bias_prior": 8,
+    "Pfeiffer_EKF": 6,
+    "Pfeiffer_MHE": 6
+  },
+  "stress_protocol_counts": {
+    "SFUISE/seed_trajectory15": 768,
+    "body_bias_prior/recovery_MAP_trajectory": 768,
+    "Pfeiffer_EKF/conditional_seed_or_prior": 576,
+    "Pfeiffer_MHE/conditional_seed_or_prior": 96
+  },
+  "sf_distinct_seed_centers": 384,
+  "jiang_continued_cases": 768,
+  "xy_snapshots_at_10s_by_method": {
+    "Jiang_independent": 768,
+    "body_bias_prior": 768,
+    "profile1": 768
+  }
+}

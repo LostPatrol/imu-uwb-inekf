@@ -1,0 +1,97 @@
+{
+  "method": "independent_Jiang_style_batch_graph",
+  "author_code": false,
+  "configuration": {
+    "sigma_acc": 0.1,
+    "sigma_gyro": 0.01,
+    "sigma_bg_rw": 0.0001,
+    "sigma_ba_rw": 0.01,
+    "bias_tau_s": 1000.0,
+    "max_iterations": 80,
+    "relative_cost_tolerance": 1e-07,
+    "jacobian": "analytic"
+  },
+  "prior_factors": [
+    "position_xyz",
+    "wrapped_physical_yaw"
+  ],
+  "tilt_prior": false,
+  "velocity_prior": false,
+  "source_of_priors": "common priors.csv",
+  "bias_prior_gyro_std": 0.01,
+  "bias_prior_accel_std": 0.1,
+  "range_gamma_over_sigma": 2.0,
+  "requested_episodes": [
+    "isas_walk2_recovery",
+    "isas_walk3_recovery",
+    "delft_triangle_recovery",
+    "delft_octagon_recovery",
+    "delft_hourglass_recovery",
+    "delft_random_recovery",
+    "delft_star_recovery",
+    "delft_square_recovery"
+  ],
+  "input_sha256": {
+    "isas_walk2_recovery": {
+      "meta.json": "b761b80e71c3bf75d164479512c251442f078e24846b9e03aa2ca82949200b91",
+      "imu.csv": "39355aac3245fd2a0ff3beacdaeb6d5ba8a3e02231859401ef4b13579e5f913c",
+      "radio.csv": "875d19c09c739dad4a65d20c2fc4be7502fccbdeb645958589269126c3a6a93c",
+      "anchors.csv": "433ce6f089f14831e2ee36ae5bf9b1d8b9ecab1f4c184452a6fe8d8be02f096e",
+      "priors.csv": "e30dfe0ae7dafe8ae556021d0a8138763e9934c4ed34dd7150aa8f7c08099904"
+    },
+    "isas_walk3_recovery": {
+      "meta.json": "8f7048d7f7cc407ae6f144e4152a37d69221704be1d0532c2d9d9435972633fa",
+      "imu.csv": "eb3fa05c4e36d6ed88f0d728f0f223002e13354d68fce59b738f651d16d905e7",
+      "radio.csv": "74c1a54b232c16197174bbb27aefbdfed1bb3a5fb065a0526fc7d0b1a8a0e417",
+      "anchors.csv": "433ce6f089f14831e2ee36ae5bf9b1d8b9ecab1f4c184452a6fe8d8be02f096e",
+      "priors.csv": "42a0babf9eaada7515709df9f13c4d1cc2ad8b33cf9761b6ce6b5b9e1dc864f7"
+    },
+    "delft_triangle_recovery": {
+      "meta.json": "402e0b4422f98e6037bda8ae7e39d54962f604cd3fd66c915d7b953485d4f0c0",
+      "imu.csv": "461a19dad01fe820c6da442ad6ba5cdb3cbf3b90278c948c68a946cbcb799f28",
+      "radio.csv": "94e99d359c5dd5247a13e5971cf3597a099f54dcb708d5564ead80760211927c",
+      "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+      "priors.csv": "e5a1fcbea118b84203c482e7dc41596fdc4ae78dd135f9e669d660be66155a28"
+    },
+    "delft_octagon_recovery": {
+      "meta.json": "4757dce24e8db7ed7fd78f19e23cba23093b73096580055e716be3daee8bb6bb",
+      "imu.csv": "b20788d183d4ed967fb2180e2b88ac385d6b34932c6f13814249b17842f61955",
+      "radio.csv": "c2ea3efbf85b19acc8657a288ddd7c36e395438a39250a14a0133ffe762e0a5b",
+      "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+      "priors.csv": "a282353a819c15ac50f2f52439a82480a9c2060b011b13af514f0d58d5fa66af"
+    },
+    "delft_hourglass_recovery": {
+      "meta.json": "f492e9370874c5636c1f18b64dca8adabac2d787ec533a51cdf63cf5ceba9c83",
+      "imu.csv": "c83f8b92e788ca2b96b2239fddfcfe56e62ca1fe3b6e4de6e6a742ed21536a45",
+      "radio.csv": "c1cd52b7097621f424545ef1b76faf9793ff04e06dfc540bcc80bbae3a36476d",
+      "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+      "priors.csv": "aa389f3896e57ead9adf86732a96a7926ba3ee124a788417fca4110b7246a6d6"
+    },
+    "delft_random_recovery": {
+      "meta.json": "337ec369fcac72f791456961a9a1c65dac9e404c4223358bdaf6ba94a065b1e0",
+      "imu.csv": "4d42eab76276e4dfe70bef1c8bcad1598c7c3d215fba1e3d2a61440a644db9ca",
+      "radio.csv": "9fd48b8af64c289c3bdc57fbe6e5d32219e6c76073372bb5bb267e882a6649cd",
+      "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+      "priors.csv": "e8331d3f74ddb80b86efd323a036025f464308179a63e95f70f747800e1b7fd1"
+    },
+    "delft_star_recovery": {
+      "meta.json": "27592099f5f40eb03f40b82f23d5ccb99e9daa03f7be9cd1f0186c55770adf62",
+      "imu.csv": "9ca32a599745f97ab18ea3e6538e2aeb706b738ba5d0a7238c0a4c18f3238855",
+      "radio.csv": "c9f6b7fcaf82ad59eec2ea2d48d3a39c8ada8c083b9c919e3a00163bb287e3c4",
+      "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+      "priors.csv": "bdfdd2bac9610055c4166037fdad4aa5c2538dba628b73262e7e53a007a80964"
+    },
+    "delft_square_recovery": {
+      "meta.json": "08c5aef8040f4f60345aa08608b982cb4bff52c1cbfcda26d3f7cd3655b087cc",
+      "imu.csv": "99410b29a85bf6e24f1dac2fdb1c574e28916f272f599305181fde233444ee9f",
+      "radio.csv": "56c94583ec05bda1c63175efa4a61bf4d34b4a9b2d7c2ab11704dd26e1efc04f",
+      "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+      "priors.csv": "cc86a86ab521106e9ec18be8d54b70f8ddb20fded70d13a8a3f32096ee34d000"
+    }
+  },
+  "blas_threads": 1,
+  "first_output_data_s": 10.0,
+  "stress_trajectory_continuation": false,
+  "same_full_range_imu_graph_as_native": true,
+  "truth_read_by_estimator": false
+}

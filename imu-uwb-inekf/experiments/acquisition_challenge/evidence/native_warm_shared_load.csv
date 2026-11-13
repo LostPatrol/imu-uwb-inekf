@@ -1,0 +1,37 @@
+episode,dataset,method,first_work_s,x,y,z,timing_scope,replay_first_position_difference_m
+delft_hourglass_start,delft,SFUISE,0.0204982,-0.1783203588849576,0.0038147084850846,-0.031284093925246,numerical core from initialization through publication,0.0
+delft_hourglass_start,delft,body_bias_prior,0.049460300026112236,-0.11087375418753913,-0.013972911742885803,0.06269910438170685,"arrived IMU integration, window build and nonlinear fit",6.208759259556274e-17
+delft_hourglass_start,delft,Jiang_independent,2.850726599994232,2.0956374167094562,1.9334826948011226,0.9617909719390607,"CSV input, graph construction/preintegration and nonlinear solve",5.087681048627601e-16
+delft_hourglass_start,delft,Pfeiffer_EKF,0.0420950999978231,-0.1374556174689588,-0.0655167104470532,0.0015269208440316,author replay from beginning of prefix through first release output,0.0
+delft_hourglass_start,delft,Pfeiffer_MHE,0.071595299988985,-0.0072507593420736,-0.0027160872640723,0.0009496714886407,author replay from beginning of prefix through first release output,0.0
+delft_octagon_start,delft,SFUISE,0.0168288,-0.1112660523704127,-0.0007503104828075,0.1363395339061405,numerical core from initialization through publication,0.0
+delft_octagon_start,delft,body_bias_prior,0.0523922000429593,-0.033968555880240316,-0.005670824187399763,0.08835635456902967,"arrived IMU integration, window build and nonlinear fit",9.495531511478057e-17
+delft_octagon_start,delft,Jiang_independent,2.608779499991215,2.158488149354939,0.0413823652627117,1.3804923893778036,"CSV input, graph construction/preintegration and nonlinear solve",0.0
+delft_octagon_start,delft,Pfeiffer_EKF,0.0464330999966478,-0.1090708997433158,0.1130152924535771,0.0040133173417104,author replay from beginning of prefix through first release output,0.0
+delft_octagon_start,delft,Pfeiffer_MHE,0.0732519000011961,0.0001053026516699,0.0059477787392362,0.0017947922114427,author replay from beginning of prefix through first release output,0.0
+delft_random_start,delft,SFUISE,0.0122719,-0.1815006620188492,0.0042676552253465,-0.0630726241647728,numerical core from initialization through publication,0.0
+delft_random_start,delft,body_bias_prior,0.046869799960404634,-0.13236458060749412,-0.004194504521638713,0.033366712769772724,"arrived IMU integration, window build and nonlinear fit",4.1352329342229297e-17
+delft_random_start,delft,Jiang_independent,3.3407377999974415,-0.8071669372030018,1.1256019071565386,1.373636337383224,"CSV input, graph construction/preintegration and nonlinear solve",0.0
+delft_random_start,delft,Pfeiffer_EKF,0.0511889999906998,-0.2549480518317663,-0.0853853803073026,0.0888482356961203,author replay from beginning of prefix through first release output,0.0
+delft_random_start,delft,Pfeiffer_MHE,0.1123720000032335,-0.0012546744063605,0.008280558766491,0.0055152025380467,author replay from beginning of prefix through first release output,0.0
+delft_square_start,delft,SFUISE,0.0182713,-0.1798129244818591,-0.0408106909290505,-0.2282246220399487,numerical core from initialization through publication,0.0
+delft_square_start,delft,body_bias_prior,0.05610570003045723,-0.19418215419798301,0.0163830282614851,-0.1878084410716652,"arrived IMU integration, window build and nonlinear fit",2.7755575615628914e-17
+delft_square_start,delft,Jiang_independent,3.75048699999752,-2.0016547556154327,-2.1018965839945722,0.6966747915269291,"CSV input, graph construction/preintegration and nonlinear solve",4.440892098500626e-16
+delft_square_start,delft,Pfeiffer_EKF,0.0503193999902578,-0.1559990976668875,-0.0197985335542526,-0.1360239941318244,author replay from beginning of prefix through first release output,0.0
+delft_square_start,delft,Pfeiffer_MHE,0.0789614000095753,-0.014241331358515,0.0026465325714908,0.0011989410106169,author replay from beginning of prefix through first release output,0.0
+delft_star_start,delft,SFUISE,0.0149239,-0.1695426839024079,0.0178699462338231,-0.0276249919130905,numerical core from initialization through publication,0.0
+delft_star_start,delft,body_bias_prior,0.10127549989556428,-0.11892548826387876,0.03606902452108644,0.034440557490598045,"arrived IMU integration, window build and nonlinear fit",8.092071311423672e-17
+delft_star_start,delft,Jiang_independent,3.603447800007416,2.0114944106560224,0.08655078938097967,1.7268644051187398,"CSV input, graph construction/preintegration and nonlinear solve",6.938893903907228e-17
+delft_star_start,delft,Pfeiffer_EKF,0.0655751999875065,-0.2605105110624378,-0.140880356772683,0.0846464569011133,author replay from beginning of prefix through first release output,0.0
+delft_star_start,delft,Pfeiffer_MHE,0.0843052999989595,-0.0050619830619855,0.0044752910434239,0.0080366565981186,author replay from beginning of prefix through first release output,0.0
+delft_triangle_start,delft,SFUISE,0.0163568,-0.6295365531108811,0.0875913162551286,-0.1616002891940579,numerical core from initialization through publication,0.0
+delft_triangle_start,delft,body_bias_prior,0.0388176000706153,-0.12116369092451704,-0.0007994337243128966,0.12952403667808762,"arrived IMU integration, window build and nonlinear fit",1.0879216531972738e-16
+delft_triangle_start,delft,Jiang_independent,3.1021935000026133,1.1455194606681822,0.0018385569881227237,1.0551269599886015,"CSV input, graph construction/preintegration and nonlinear solve",2.3635607360183997e-17
+delft_triangle_start,delft,Pfeiffer_EKF,0.063858399997116,-1.8130462812996988,-1.7876592392913346,0.5426262617342382,author replay from beginning of prefix through first release output,0.0
+delft_triangle_start,delft,Pfeiffer_MHE,0.0903669999970588,-0.0100205990727965,0.0065758802864907,-0.0044770805219852,author replay from beginning of prefix through first release output,0.0
+isas_walk2_start,isas,SFUISE,0.0134737,3.039283431114684,0.7233608370756428,-0.6769821695160658,numerical core from initialization through publication,0.0
+isas_walk2_start,isas,body_bias_prior,0.02435160000459291,2.371135866547047,0.46845499125077245,-1.8575173263335638,"arrived IMU integration, window build and nonlinear fit",2.2887833992611187e-16
+isas_walk2_start,isas,Jiang_independent,0.6335257999890018,2.150266495233029,0.3553756914797555,-0.798338176744669,"CSV input, graph construction/preintegration and nonlinear solve",0.0
+isas_walk3_start,isas,SFUISE,0.016998,2.603089990339528,0.7975590953928692,-1.267269340412358,numerical core from initialization through publication,0.0
+isas_walk3_start,isas,body_bias_prior,0.0330294999293983,2.545276773325656,0.5759292842245841,-1.8047424066351807,"arrived IMU integration, window build and nonlinear fit",0.0
+isas_walk3_start,isas,Jiang_independent,0.8235964000050444,1.9066464034448665,0.298537009726405,-0.7831785575793214,"CSV input, graph construction/preintegration and nonlinear solve",0.0

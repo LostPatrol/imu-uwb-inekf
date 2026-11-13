@@ -1,0 +1,319 @@
+{
+  "tracks": 16,
+  "priors": 768,
+  "causal_clock_checks": "passed",
+  "episodes": [
+    {
+      "episode": "delft_hourglass_recovery",
+      "dataset": "delft",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": false,
+      "initial_xy_identity_max_m": 2.0012436152683222e-11,
+      "initial_yaw_identity_max_rad": 4.8965276278067904e-12,
+      "sealed_priors": 96,
+      "imu": 1586,
+      "radio": 3832,
+      "ref_first_s": -1.0,
+      "ref_last_s": 15.99,
+      "hashes": {
+        "radio.csv": "c1cd52b7097621f424545ef1b76faf9793ff04e06dfc540bcc80bbae3a36476d",
+        "imu.csv": "c83f8b92e788ca2b96b2239fddfcfe56e62ca1fe3b6e4de6e6a742ed21536a45",
+        "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+        "meta.json": "f492e9370874c5636c1f18b64dca8adabac2d787ec533a51cdf63cf5ceba9c83",
+        "priors.csv": "aa389f3896e57ead9adf86732a96a7926ba3ee124a788417fca4110b7246a6d6"
+      }
+    },
+    {
+      "episode": "delft_hourglass_start",
+      "dataset": "delft",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": false,
+      "initial_xy_identity_max_m": NaN,
+      "initial_yaw_identity_max_rad": NaN,
+      "sealed_priors": 0,
+      "imu": 1571,
+      "radio": 3538,
+      "ref_first_s": 1.36,
+      "ref_last_s": 15.98,
+      "hashes": {
+        "radio.csv": "ddc9da263ace7349292b45393c52a01d4ace3cd1c27b67da59f6440ae24638ea",
+        "imu.csv": "e2e6ef13b748f63b02446c7facaabebab2b5ddd59e0b1c38a5d124c9576074ca",
+        "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+        "meta.json": "6d8e0ca48adcd9f9fcd040d9c39af12aca9c3857a46e2470886340017d8bbb1a"
+      }
+    },
+    {
+      "episode": "delft_octagon_recovery",
+      "dataset": "delft",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": false,
+      "initial_xy_identity_max_m": 4.000000330961484e-11,
+      "initial_yaw_identity_max_rad": 4.8965276278067904e-12,
+      "sealed_priors": 96,
+      "imu": 1589,
+      "radio": 3750,
+      "ref_first_s": -1.0,
+      "ref_last_s": 16.0,
+      "hashes": {
+        "radio.csv": "c2ea3efbf85b19acc8657a288ddd7c36e395438a39250a14a0133ffe762e0a5b",
+        "imu.csv": "b20788d183d4ed967fb2180e2b88ac385d6b34932c6f13814249b17842f61955",
+        "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+        "meta.json": "4757dce24e8db7ed7fd78f19e23cba23093b73096580055e716be3daee8bb6bb",
+        "priors.csv": "a282353a819c15ac50f2f52439a82480a9c2060b011b13af514f0d58d5fa66af"
+      }
+    },
+    {
+      "episode": "delft_octagon_start",
+      "dataset": "delft",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": false,
+      "initial_xy_identity_max_m": NaN,
+      "initial_yaw_identity_max_rad": NaN,
+      "sealed_priors": 0,
+      "imu": 1588,
+      "radio": 3655,
+      "ref_first_s": 0.46,
+      "ref_last_s": 16.0,
+      "hashes": {
+        "radio.csv": "037633350736e88af6d1f0fe6226226e9fbe5770da453b628b5e7ab1ebd5b28e",
+        "imu.csv": "6ad66d7fe6fcaf3420493ec83e8d17c1fba5f748e28837a38c9c68b90f48da7e",
+        "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+        "meta.json": "9c1e5e0fc14fcc5e3b0821dd2359116cc2b88832017a99d7d060056786f4c0d7"
+      }
+    },
+    {
+      "episode": "delft_random_recovery",
+      "dataset": "delft",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": false,
+      "initial_xy_identity_max_m": 5.000089231543825e-11,
+      "initial_yaw_identity_max_rad": 4.8965276278067904e-12,
+      "sealed_priors": 96,
+      "imu": 1577,
+      "radio": 3642,
+      "ref_first_s": -1.0,
+      "ref_last_s": 16.0,
+      "hashes": {
+        "radio.csv": "9fd48b8af64c289c3bdc57fbe6e5d32219e6c76073372bb5bb267e882a6649cd",
+        "imu.csv": "4d42eab76276e4dfe70bef1c8bcad1598c7c3d215fba1e3d2a61440a644db9ca",
+        "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+        "meta.json": "337ec369fcac72f791456961a9a1c65dac9e404c4223358bdaf6ba94a065b1e0",
+        "priors.csv": "e8331d3f74ddb80b86efd323a036025f464308179a63e95f70f747800e1b7fd1"
+      }
+    },
+    {
+      "episode": "delft_random_start",
+      "dataset": "delft",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": false,
+      "initial_xy_identity_max_m": NaN,
+      "initial_yaw_identity_max_rad": NaN,
+      "sealed_priors": 0,
+      "imu": 1559,
+      "radio": 3628,
+      "ref_first_s": 1.42,
+      "ref_last_s": 16.0,
+      "hashes": {
+        "radio.csv": "1c59f8255a90c65b80fe4a031d37cb14d19a8fd52646f113f8350982352c5fcf",
+        "imu.csv": "d846caa9c3ccf1b225473f2f83b9f23ce13d9621298b79b44f596b616aadda18",
+        "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+        "meta.json": "32a7bf54b6fe235edb9086f7e1036c890fc54602cd72529e9674e069dd8d6b28"
+      }
+    },
+    {
+      "episode": "delft_square_recovery",
+      "dataset": "delft",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": false,
+      "initial_xy_identity_max_m": 4.000000330961484e-11,
+      "initial_yaw_identity_max_rad": 4.8965276278067904e-12,
+      "sealed_priors": 96,
+      "imu": 1596,
+      "radio": 3798,
+      "ref_first_s": -1.0,
+      "ref_last_s": 16.0,
+      "hashes": {
+        "radio.csv": "56c94583ec05bda1c63175efa4a61bf4d34b4a9b2d7c2ab11704dd26e1efc04f",
+        "imu.csv": "99410b29a85bf6e24f1dac2fdb1c574e28916f272f599305181fde233444ee9f",
+        "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+        "meta.json": "08c5aef8040f4f60345aa08608b982cb4bff52c1cbfcda26d3f7cd3655b087cc",
+        "priors.csv": "cc86a86ab521106e9ec18be8d54b70f8ddb20fded70d13a8a3f32096ee34d000"
+      }
+    },
+    {
+      "episode": "delft_square_start",
+      "dataset": "delft",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": false,
+      "initial_xy_identity_max_m": NaN,
+      "initial_yaw_identity_max_rad": NaN,
+      "sealed_priors": 0,
+      "imu": 1604,
+      "radio": 3650,
+      "ref_first_s": 1.45,
+      "ref_last_s": 16.0,
+      "hashes": {
+        "radio.csv": "80b63d7c62775b25ac194749139ae12bd3419f4c2872c047c6d9e88d1a9d697d",
+        "imu.csv": "a95fd4105ae299673f0428dada97df947a73cd567a6a74e495d59850ae17bf02",
+        "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+        "meta.json": "1174972b15295e7b627e2de47877d16721c620be42ee73a1649679bd68ce1008"
+      }
+    },
+    {
+      "episode": "delft_star_recovery",
+      "dataset": "delft",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": false,
+      "initial_xy_identity_max_m": 5.000089231543825e-11,
+      "initial_yaw_identity_max_rad": 4.8965276278067904e-12,
+      "sealed_priors": 96,
+      "imu": 1471,
+      "radio": 3388,
+      "ref_first_s": -1.0,
+      "ref_last_s": 15.99,
+      "hashes": {
+        "radio.csv": "c9f6b7fcaf82ad59eec2ea2d48d3a39c8ada8c083b9c919e3a00163bb287e3c4",
+        "imu.csv": "9ca32a599745f97ab18ea3e6538e2aeb706b738ba5d0a7238c0a4c18f3238855",
+        "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+        "meta.json": "27592099f5f40eb03f40b82f23d5ccb99e9daa03f7be9cd1f0186c55770adf62",
+        "priors.csv": "bdfdd2bac9610055c4166037fdad4aa5c2538dba628b73262e7e53a007a80964"
+      }
+    },
+    {
+      "episode": "delft_star_start",
+      "dataset": "delft",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": false,
+      "initial_xy_identity_max_m": NaN,
+      "initial_yaw_identity_max_rad": NaN,
+      "sealed_priors": 0,
+      "imu": 1572,
+      "radio": 3783,
+      "ref_first_s": 1.51,
+      "ref_last_s": 16.0,
+      "hashes": {
+        "radio.csv": "08e16fdafc3e0bb369c8a93bae28bf59bb7d263300e2eae13cfe9acaab8ff02c",
+        "imu.csv": "3d8793c8068abb1a519793fe7492922261c9429ebdb94566fc3c8dba67852f9b",
+        "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+        "meta.json": "589c982a4ef5bee5d286d946e27f250d600036830336f139dd1ff26f67763700"
+      }
+    },
+    {
+      "episode": "delft_triangle_recovery",
+      "dataset": "delft",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": false,
+      "initial_xy_identity_max_m": 4.000355602329364e-11,
+      "initial_yaw_identity_max_rad": 4.8965276278067904e-12,
+      "sealed_priors": 96,
+      "imu": 1576,
+      "radio": 3661,
+      "ref_first_s": -1.0,
+      "ref_last_s": 16.0,
+      "hashes": {
+        "radio.csv": "94e99d359c5dd5247a13e5971cf3597a099f54dcb708d5564ead80760211927c",
+        "imu.csv": "461a19dad01fe820c6da442ad6ba5cdb3cbf3b90278c948c68a946cbcb799f28",
+        "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+        "meta.json": "402e0b4422f98e6037bda8ae7e39d54962f604cd3fd66c915d7b953485d4f0c0",
+        "priors.csv": "e5a1fcbea118b84203c482e7dc41596fdc4ae78dd135f9e669d660be66155a28"
+      }
+    },
+    {
+      "episode": "delft_triangle_start",
+      "dataset": "delft",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": false,
+      "initial_xy_identity_max_m": NaN,
+      "initial_yaw_identity_max_rad": NaN,
+      "sealed_priors": 0,
+      "imu": 1579,
+      "radio": 3684,
+      "ref_first_s": 2.39,
+      "ref_last_s": 15.99,
+      "hashes": {
+        "radio.csv": "1a1041c0f036d006e6a97425986f93fe482c1db7813288f558707e28a73eb050",
+        "imu.csv": "8326f3fd7bd78748cdbaa12832f39a98a57cc7596172c98a1ffccde1e457e296",
+        "anchors.csv": "188b9ef65f788b384a0e3f8437195d4c127382a3e24e3e9738f48dac085856c9",
+        "meta.json": "cb3f3dd477c5f058e2ef01eb26b795a70afaff9f715eb4fe4a10f67b41b8a0df"
+      }
+    },
+    {
+      "episode": "isas_walk2_recovery",
+      "dataset": "isas",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": true,
+      "initial_xy_identity_max_m": 1.559836704245754e-10,
+      "initial_yaw_identity_max_rad": 1.31250565971186e-11,
+      "sealed_priors": 96,
+      "imu": 1351,
+      "radio": 1076,
+      "ref_first_s": -0.087531202,
+      "ref_last_s": 15.092504627,
+      "hashes": {
+        "radio.csv": "875d19c09c739dad4a65d20c2fc4be7502fccbdeb645958589269126c3a6a93c",
+        "imu.csv": "39355aac3245fd2a0ff3beacdaeb6d5ba8a3e02231859401ef4b13579e5f913c",
+        "anchors.csv": "433ce6f089f14831e2ee36ae5bf9b1d8b9ecab1f4c184452a6fe8d8be02f096e",
+        "meta.json": "b761b80e71c3bf75d164479512c251442f078e24846b9e03aa2ca82949200b91",
+        "priors.csv": "e30dfe0ae7dafe8ae556021d0a8138763e9934c4ed34dd7150aa8f7c08099904"
+      }
+    },
+    {
+      "episode": "isas_walk2_start",
+      "dataset": "isas",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": true,
+      "initial_xy_identity_max_m": NaN,
+      "initial_yaw_identity_max_rad": NaN,
+      "sealed_priors": 0,
+      "imu": 1353,
+      "radio": 1101,
+      "ref_first_s": -0.094498525,
+      "ref_last_s": 15.085480323,
+      "hashes": {
+        "radio.csv": "1abdf33b3d1d7dc4ab47f904001c1b4cc3ce31eba4ca7bdf90ab95a110eff78b",
+        "imu.csv": "f440411216778e497f8d7f2b6dbaf5c7b84d98067bd1973bbb545d7bb457df1c",
+        "anchors.csv": "433ce6f089f14831e2ee36ae5bf9b1d8b9ecab1f4c184452a6fe8d8be02f096e",
+        "meta.json": "6f7dee0b1b9576aa028a2e751facdab8da78a71f9d1265c726eb542b43a320ed"
+      }
+    },
+    {
+      "episode": "isas_walk3_recovery",
+      "dataset": "isas",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": true,
+      "initial_xy_identity_max_m": 3.82840426027542e-11,
+      "initial_yaw_identity_max_rad": 2.022115808131275e-11,
+      "sealed_priors": 96,
+      "imu": 1351,
+      "radio": 1093,
+      "ref_first_s": -0.092058219,
+      "ref_last_s": 15.087954245,
+      "hashes": {
+        "radio.csv": "74c1a54b232c16197174bbb27aefbdfed1bb3a5fb065a0526fc7d0b1a8a0e417",
+        "imu.csv": "eb3fa05c4e36d6ed88f0d728f0f223002e13354d68fce59b738f651d16d905e7",
+        "anchors.csv": "433ce6f089f14831e2ee36ae5bf9b1d8b9ecab1f4c184452a6fe8d8be02f096e",
+        "meta.json": "8f7048d7f7cc407ae6f144e4152a37d69221704be1d0532c2d9d9435972633fa",
+        "priors.csv": "42a0babf9eaada7515709df9f13c4d1cc2ad8b33cf9761b6ce6b5b9e1dc864f7"
+      }
+    },
+    {
+      "episode": "isas_walk3_start",
+      "dataset": "isas",
+      "prefix_and_release_valid": true,
+      "independent_yaw_reference": true,
+      "initial_xy_identity_max_m": NaN,
+      "initial_yaw_identity_max_rad": NaN,
+      "sealed_priors": 0,
+      "imu": 1353,
+      "radio": 1047,
+      "ref_first_s": -0.085751176,
+      "ref_last_s": 15.094265342,
+      "hashes": {
+        "radio.csv": "6de9d87286e1b99863e2b2a8684a15fab3d3341ff7e77e75fbc2e198ac6c65d3",
+        "imu.csv": "af7cc19e4a54441f6188957c5d61bf148856d525e15096c43d82c8a24d8d3883",
+        "anchors.csv": "433ce6f089f14831e2ee36ae5bf9b1d8b9ecab1f4c184452a6fe8d8be02f096e",
+        "meta.json": "0a847dba0f9d2343aed7a24a7b5f0cbf4bebbb19be620ccec351a1cbefb0e534"
+      }
+    }
+  ]
+}

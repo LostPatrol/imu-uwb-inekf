@@ -1,0 +1,112 @@
+{
+  "training_dataset": "isas_walk1",
+  "test_datasets": [
+    "isas_walk2",
+    "isas_walk3"
+  ],
+  "test_pose_used_for_fitting": false,
+  "world_fit": "robust direct absolute-range residual; no estimated filter trajectory",
+  "rtls_from_vive_rotation_matrix": [
+    [
+      0.9658849917831952,
+      -0.22011358707703674,
+      0.13644116472698709
+    ],
+    [
+      0.1901581941838882,
+      0.9604689226886337,
+      0.2033207066042665
+    ],
+    [
+      -0.17580114855341455,
+      -0.17043901353098506,
+      0.9695589197330327
+    ]
+  ],
+  "rtls_from_vive_translation_m": [
+    1.434603462863941,
+    0.9202934921279917,
+    1.62857110073542
+  ],
+  "tracker_to_tag_in_tracker_m": [
+    -0.0710588801070077,
+    -0.06956673385403525,
+    0.005362844351411568
+  ],
+  "tracker_to_imu_in_tracker_m": [
+    0.028546897432493,
+    -0.043090057042839525,
+    0.003727403803121789
+  ],
+  "gyro_bias_radps": [
+    -0.01117394608459854,
+    -0.004423527732148659,
+    -0.00409426846015562
+  ],
+  "imu_time_minus_vive_time_s": 0.03579419405326491,
+  "heading_reference_status": "independent training calibration; not an author-published extrinsic",
+  "gyro_fit_component_rmse_radps": 0.03147510579643413,
+  "gyro_excitation_singular_values": [
+    8.351617645116303,
+    4.323970952036969,
+    4.085324112725074
+  ],
+  "tracker_from_imu_rotation_matrix": [
+    [
+      -0.999803360877237,
+      -0.014982341928920137,
+      -0.01299111268931295
+    ],
+    [
+      -0.014814964082733683,
+      0.999807216116894,
+      -0.012885939617018612
+    ],
+    [
+      0.013181669765580429,
+      -0.012690942869269427,
+      -0.999832577760537
+    ]
+  ],
+  "gyro_fit_samples": 1468,
+  "residual_p95_norm_radps": 0.09204657499491081,
+  "world_fit_success": true,
+  "world_fit_ranges": 4266,
+  "world_range_rmse_m": 0.4544278879767023,
+  "world_range_median_abs_m": 0.05137097952259695,
+  "world_range_p95_abs_m": 0.18807867454000982,
+  "world_fit_parameter_jacobian_singular_values": [
+    88.74939529001877,
+    72.67427078391476,
+    36.732631831281985,
+    30.904355014435847,
+    16.847168566227168,
+    13.294787065757488,
+    9.084276888329953,
+    7.0115452107666165,
+    3.2658954930050723
+  ],
+  "zup_from_native_rtls_rotation_matrix": [
+    [
+      0.9811282653085764,
+      -0.19327982285721793,
+      -0.005498826135266594
+    ],
+    [
+      -0.19327982285721793,
+      -0.9795260231532947,
+      -0.05631767077723802
+    ],
+    [
+      0.005498826135266594,
+      0.05631767077723802,
+      -0.9983977578447183
+    ]
+  ],
+  "zup_training_specific_force_rtls_mps2": [
+    0.05491819104135313,
+    0.5624590642923536,
+    -9.971255219167363
+  ],
+  "zup_policy": "Single Walk1 first-1s mean specific-force direction; applied only to world coordinates, never IMU vectors."
+}

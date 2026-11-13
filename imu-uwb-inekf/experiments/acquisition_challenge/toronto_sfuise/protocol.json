@@ -1,0 +1,26 @@
+{
+  "common_raw_elapsed_s": true,
+  "duration_s": 15.0,
+  "oursland_prefix_s": 1.5,
+  "sfuise_prefix": "native early publication permitted",
+  "sfuise_config": "official config_test_util.yaml except shared measured lever",
+  "lever_sfuise_m": [
+    -0.01245,
+    0.00127,
+    0.0908
+  ],
+  "lever_oursland_m": [
+    -0.01245,
+    0.00127,
+    0.0908
+  ],
+  "sole_numeric_parameter_adaptation": "shared public measured lever",
+  "common_calibration": "same surveyed anchors; same raw g/deg sensor channels, 9.81 and pi/180 conversions, no vector substitution or extra fixed bias subtraction",
+  "raw_available_set_identical": true,
+  "internal_sampling": "SFUISE author 100Hz decimation; Oursland native every sample",
+  "truth_read_by_native": false,
+  "gyro_buffer": "fixed max future gyro wait over raw first15s",
+  "availability": "both clocks preserve sensor endpoint and gyro delay; compute adds serial measured CPU queue, sensor omits CPU costs; no state backfill",
+  "sfuise_portability": "sole first spline endpoint repeated for absent knot[1]; audited sibling generated core copied unchanged",
+  "covariance": "native zero only; no external prior factors"
+}

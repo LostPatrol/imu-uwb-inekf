@@ -1,0 +1,37 @@
+{
+  "scheme": "Per-record fixed maximum forward-gyro-knot buffer added to whole publication service queue; no state backfill",
+  "state_values_unchanged": true,
+  "state_timestamps_unchanged": true,
+  "recordings": {
+    "const1-trial4-tdoa2": {
+      "applied_constant_buffer_s": 0.0011719999999986186,
+      "referenced_knot_wait_max_s": 0.0011719999999986186,
+      "referenced_knot_wait_median_s": 0.0009700000000023579,
+      "imu_samples_audited": 30268,
+      "raw_gyro_samples": 123337
+    },
+    "const2-trial4-tdoa2": {
+      "applied_constant_buffer_s": 0.0011769999999984293,
+      "referenced_knot_wait_max_s": 0.0011769999999984293,
+      "referenced_knot_wait_median_s": 0.0009719999999937556,
+      "imu_samples_audited": 30270,
+      "raw_gyro_samples": 124584
+    },
+    "const3-trial4-tdoa2": {
+      "applied_constant_buffer_s": 0.0011870000000016034,
+      "referenced_knot_wait_max_s": 0.0011870000000016034,
+      "referenced_knot_wait_median_s": 0.0009700000000014697,
+      "imu_samples_audited": 30260,
+      "raw_gyro_samples": 128824
+    },
+    "const4-trial4-tdoa2-traj1": {
+      "applied_constant_buffer_s": 0.0012220000000038311,
+      "referenced_knot_wait_max_s": 0.0012220000000038311,
+      "referenced_knot_wait_median_s": 0.0009699999999942532,
+      "imu_samples_audited": 30258,
+      "raw_gyro_samples": 127914
+    }
+  },
+  "all_cases_recomputed": 388,
+  "data_prefix": "1.5s IMU+TDoA2 CV, using only radio timestamps <=prefix end; differs from TWR IMU-only prefix"
+}

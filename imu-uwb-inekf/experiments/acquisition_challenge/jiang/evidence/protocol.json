@@ -1,0 +1,42 @@
+{
+  "method": "independent_Jiang_style_batch_graph",
+  "author_code": false,
+  "exact_D_iSAM2": false,
+  "native_seed_p": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "native_seed_yaw_rad": 0.0,
+  "first_output_data_s": 10.0,
+  "continuation_data_s": [
+    11.0,
+    12.0,
+    13.0,
+    14.0,
+    15.0
+  ],
+  "configuration": {
+    "sigma_acc": 0.1,
+    "sigma_gyro": 0.01,
+    "sigma_bg_rw": 0.0001,
+    "sigma_ba_rw": 0.01,
+    "bias_tau_s": 1000.0,
+    "max_iterations": 80,
+    "relative_cost_tolerance": 1e-07,
+    "jacobian": "analytic"
+  },
+  "range_gamma_over_sigma": 2.0,
+  "range_mixture": "equal_prior_max_Gaussian_positive_half_Cauchy",
+  "native_pose_prior": false,
+  "stress_framework_pose_prior": true,
+  "bias_prior_gyro_std": 0.01,
+  "bias_prior_accel_std": 0.1,
+  "framework_tilt_prior": false,
+  "framework_velocity_prior": false,
+  "workers": 6,
+  "blas_threads": 1,
+  "random_seed": null,
+  "input_directory": "E:\\0syncthing\\Code\\InEKF\\agent\\codex\\acquisition_challenge_20261113\\streams",
+  "truth_read_by_estimator": false
+}

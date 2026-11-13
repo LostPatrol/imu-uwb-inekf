@@ -1,0 +1,6 @@
+{
+  "cases_requested": 768,
+  "elapsed_s": 477.8167878999957,
+  "workers": 6,
+  "blas_threads": 1
+}

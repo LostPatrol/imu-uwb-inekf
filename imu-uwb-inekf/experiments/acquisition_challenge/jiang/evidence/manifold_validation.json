@@ -1,0 +1,28 @@
+{
+  "derivative_checks": [
+    {
+      "yaw_rad": 0.0,
+      "max_abs": 1.949956640601158e-08,
+      "max_scaled": 1.1065420246758606e-09
+    },
+    {
+      "yaw_rad": 3.141592653589793,
+      "max_abs": 7.178974925636794e-08,
+      "max_scaled": 1.5659757144850772e-09
+    },
+    {
+      "yaw_rad": 3.3415926535897933,
+      "max_abs": 1.2704351526338087e-07,
+      "max_scaled": 1.0251583208639806e-08
+    }
+  ],
+  "passed": true,
+  "retraction": "left Exp(delta) R",
+  "canonical_cost_relative_deltas": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "near_pi_and_many_turn_roundtrip_passed": true,
+  "no_tilt_or_velocity_prior": true
+}

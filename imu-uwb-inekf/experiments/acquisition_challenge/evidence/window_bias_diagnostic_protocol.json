@@ -1,0 +1,21 @@
+{
+  "post_hoc": true,
+  "frozen_main_results_unchanged": true,
+  "model": "body_bias_prior",
+  "endpoints": [
+    2.0,
+    10.0,
+    15.0
+  ],
+  "no_strategy_selected_or_tuned": true,
+  "no_test_pose_used_for_solver_initialization": true,
+  "same_recording_history_is_additional_information": true,
+  "no_Delft_attitude_truth": true,
+  "ISAS_reference": "Independent noisy Walk1 pose calibration",
+  "source_sha256": "647d9f4e8966dacb46e397c67682c6648cb000745b93a7722dce0499bd6d6003",
+  "frozen_csv_sha256": {
+    "native.csv": "f58424843fe0ef9894553a77b3faec482f96c66d97db22b0c7a3116baab3e171",
+    "stress.csv": "6c9be6e6d70442bb9e4e29e03240588c743007b318e2d1457f65cc656d284a19",
+    "trajectory.csv": "ec0d2c1e3a35319ae1666898d78052359bf1ebd0374065387da75dc6f9a68c43"
+  }
+}

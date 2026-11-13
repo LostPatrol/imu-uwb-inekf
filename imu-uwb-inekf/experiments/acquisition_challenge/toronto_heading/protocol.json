@@ -1,0 +1,35 @@
+{
+  "recordings": [
+    "const1-trial4-tdoa2",
+    "const2-trial4-tdoa2",
+    "const3-trial4-tdoa2",
+    "const4-trial4-tdoa2-traj1"
+  ],
+  "duration_s": 15.0,
+  "sensor_prefix_s": 1.5,
+  "recovery_absolute_s": 15.0,
+  "author_sha256": "97142a58a203b100fc539c2581024516fa585efe3329f9fb13af8b19f58045b0",
+  "source_sha256": "6c85aca39af87d9636a951dc300ac5f73d2caa11531ed35b914d67670fe1351a",
+  "data_kind": "UTIL single-tag TDoA2; separate from TWR rankings",
+  "priors": "4 XY magnitudes 1/5/10/20m x 4 directions +x/-x/+y/-y x yaw 0/90/180deg x wide/tight=96 per recording",
+  "truth_policy": "Only XY and yaw construct controlled prior centres; all other state components from sensors",
+  "output_columns": [
+    "state_s",
+    "available_s",
+    "x",
+    "y",
+    "z",
+    "vx",
+    "vy",
+    "vz",
+    "R00",
+    "R01",
+    "R02",
+    "R10",
+    "R11",
+    "R12",
+    "R20",
+    "R21",
+    "R22"
+  ]
+}
