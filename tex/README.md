@@ -3,6 +3,8 @@
 
 ## 期刊稿
 
+[TAES 第三版](range_inertial_taes_v3/range_inertial_taes_v3.pdf) 将核心贡献定位为未知航向窗口初始化。正文增加 18 个真实窗口的含候选生成计时、Delft 与 ISAS 的同包冷启动对照，并报告可用位置持续率和错误先验恢复的边界。[TeX 源码](range_inertial_taes_v3/range_inertial_taes_v3.tex) · [编译与证据入口](range_inertial_taes_v3/README.md)
+
 [TAES 期刊论文第二版](range_inertial_taes_v2/range_inertial_taes_v2.pdf) 使用学会的 Regular Paper 专用模板。新增 Delft 三角航线的全段动捕参考和连续滤波回放，以等比例转弯示意图解释偏置修正，并逐条核对参考文献署名。[创新点答复与编译说明](range_inertial_taes_v2/README.md) · [第一版期刊稿](range_inertial_taes/range_inertial_taes.pdf)
 
 ## 会议稿与数学说明

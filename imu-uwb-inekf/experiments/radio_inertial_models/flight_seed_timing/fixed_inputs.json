@@ -1,0 +1,27 @@
+{
+  "description": "Frozen six-flight split and calibration provenance for the unchanged Delft BODY-bias timing panel.",
+  "training": [
+    "2021-02-12_09_41_16_twr_triangle.csv",
+    "2021-02-12_09_44_51_twr_octagon.csv",
+    "2021-02-12_09_48_14_twr_hourglass.csv",
+    "2021-02-12_09_53_31_twr_random.csv",
+    "2021-02-12_10_05_30_twr_star.csv",
+    "2021-02-12_13_26_02_twr_square.csv"
+  ],
+  "evaluation": [
+    "2021-02-12_09_43_34_twr_triangle.csv",
+    "2021-02-12_09_46_15_twr_octagon.csv",
+    "2021-02-12_09_51_57_twr_hourglass.csv",
+    "2021-02-12_09_56_09_twr_random.csv",
+    "2021-02-12_10_09_28_twr_star.csv",
+    "2021-02-12_13_43_51_twr_square.csv"
+  ],
+  "provenance": {
+    "calibration_source": "experiments/radio_inertial_models/radio_branch/results/calibration.json",
+    "calibration_sha256": "f53b37ffb56687317a19350730471ee062549254213e638ded3fb62ca6cb939c",
+    "calibration_copy": "calibration.json is an exact byte-for-byte copy of the original trained artifact; only static/sigma/beta/centers are used by this target",
+    "split_source": "experiments/radio_inertial_models/joint_branch/results/protocol.json",
+    "split_source_sha256": "86d4d9f9c50843fd79002fb994ec9994fad4b6294b47d5c5a840f126d6a85c5b",
+    "split_copy": "training and evaluation lists are copied without changing order; no historical protocol is required at runtime"
+  }
+}

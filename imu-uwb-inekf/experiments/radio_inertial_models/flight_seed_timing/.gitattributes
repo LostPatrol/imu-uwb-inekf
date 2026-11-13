@@ -1,0 +1,5 @@
+# Match the archived calibration, source snapshot and tables on Windows and POSIX.
+calibration.json text eol=crlf
+measured_run_20261113.py.txt text eol=lf
+summary.csv text eol=crlf
+paired_window_ms.csv text eol=crlf
